@@ -860,7 +860,9 @@ public final class Bots {
     }
 
     public void applySkin(BotPlayer bot, GameProfile withTextures) {
-        if (!bot.isRemoved() && this.bots.containsKey(bot.getUUID()) && !withTextures.properties().get("textures").isEmpty()) {
+        // A coloured bot keeps its plain skin (a random skin arriving late would hide the colour again).
+        if (!bot.isRemoved() && this.bots.containsKey(bot.getUUID()) && !withTextures.properties().get("textures").isEmpty()
+            && bot.getGameProfile().properties().get("botsystem_color").isEmpty()) {
             Multimap<String, Property> merged = LinkedHashMultimap.create(withTextures.properties());
             merged.removeAll("botsystem_color");
             merged.removeAll(SkinFiles.PROPERTY);
@@ -896,6 +898,8 @@ public final class Bots {
             merged.removeAll("botsystem_color");
             if (hex != null) {
                 merged.put("botsystem_color", new Property("botsystem_color", hex));
+                // The client mod only colours the plain skin: a real skin texture hid the colour.
+                merged.removeAll("textures");
             }
 
             this.applyProfile(bot, new PropertyMap(merged));
