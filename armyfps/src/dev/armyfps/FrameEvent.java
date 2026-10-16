@@ -25,6 +25,9 @@ public final class FrameEvent extends Event {
     @Label("Players drawn")
     public int players;
 
+    @Label("Models built on worker threads")
+    public int parallelModels;
+
     @Label("ArmyFPS on")
     public boolean enabled;
 }

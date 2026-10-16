@@ -30,6 +30,12 @@ public final class ArmyFps {
     public static double itemGlint = 32.0;
     /** Faster translucent sort with an identical result. */
     public static boolean fastSort = true;
+    /** Pose and build players, bots and their armour on several CPU cores. */
+    public static boolean parallel = true;
+    /** Threads for that, the render thread included. */
+    public static int parallelThreads = Math.max(2, Math.min(12, Runtime.getRuntime().availableProcessors() / 2));
+    /** Below this many humanoid models in a frame, the render thread does it alone (not worth it). */
+    public static int parallelMinCommands = 48;
     /** GLFW key code of the on/off key (297 = F8). */
     public static int toggleKey = 297;
 
@@ -86,6 +92,9 @@ public final class ArmyFps {
         itemGlint = number(properties, "itemGlintDistance", itemGlint);
         fastSort = !"false".equalsIgnoreCase(properties.getProperty("fastSort", "true").trim());
         toggleKey = (int)number(properties, "toggleKey", toggleKey);
+        parallel = !"false".equalsIgnoreCase(properties.getProperty("parallel", "true").trim());
+        parallelThreads = Math.max(1, (int)number(properties, "parallelThreads", parallelThreads));
+        parallelMinCommands = Math.max(1, (int)number(properties, "parallelMinCommands", parallelMinCommands));
         save();
     }
 
@@ -105,6 +114,9 @@ public final class ArmyFps {
         properties.setProperty("itemGlintDistance", String.valueOf(itemGlint));
         properties.setProperty("fastSort", String.valueOf(fastSort));
         properties.setProperty("toggleKey", String.valueOf(toggleKey));
+        properties.setProperty("parallel", String.valueOf(parallel));
+        properties.setProperty("parallelThreads", String.valueOf(parallelThreads));
+        properties.setProperty("parallelMinCommands", String.valueOf(parallelMinCommands));
         try (Writer writer = Files.newBufferedWriter(FILE)) {
             properties.store(writer, "ArmyFPS - distances in blocks (0 = never skip). toggleKey is a GLFW key code, 297 = F8. Restart the game after editing.");
         } catch (IOException ignored) {

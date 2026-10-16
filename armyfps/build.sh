@@ -6,7 +6,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-VERSION=1.1.0
+VERSION=2.0.0
 PRISM="$HOME/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher"
 LIBS="$PRISM/libraries"
 MODS="$PRISM/instances/1.21.11(1)/minecraft/mods"
