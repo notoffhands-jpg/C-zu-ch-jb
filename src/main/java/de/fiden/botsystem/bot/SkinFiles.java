@@ -140,7 +140,60 @@ public final class SkinFiles {
         return out.toByteArray();
     }
 
+    // ---------------------------------------------------------------- Colour skins
+
+    /**
+     * A plain skin in one colour (lightly shaded, with eyes), for "/bot skin ... color" and type colours.
+     * Same colour -> same PNG -> same hash, so each colour is signed at mineskin.org only once.
+     */
+    public static Skin colored(String hex) {
+        int rgb = Integer.parseInt(hex, 16) & 0xFFFFFF;
+        BufferedImage image = new BufferedImage(64, 64, BufferedImage.TYPE_INT_ARGB);
+        java.util.Random noise = new java.util.Random(rgb);
+        // Base layer of head, body, right arm, right leg, left leg, left arm (the outer layer stays empty).
+        int[][] parts = {{0, 0, 32, 16}, {16, 16, 24, 16}, {40, 16, 16, 16}, {0, 16, 16, 16}, {16, 48, 16, 16}, {32, 48, 16, 16}};
+        for (int p = 0; p < parts.length; p++) {
+            int[] part = parts[p];
+            int limbShade = p < 2 ? 0 : -12;
+            for (int x = part[0]; x < part[0] + part[2]; x++) {
+                for (int y = part[1]; y < part[1] + part[3]; y++) {
+                    image.setRGB(x, y, shaded(rgb, limbShade + noise.nextInt(13) - 6));
+                }
+            }
+        }
+
+        // Eyes on the face (front of the head is x 8-15, y 8-15).
+        int pupil = luminance(rgb) < 90 ? 0xFF8A8A8A : shaded(rgb, -90);
+        image.setRGB(9, 12, 0xFFF0F0F0);
+        image.setRGB(10, 12, pupil);
+        image.setRGB(13, 12, pupil);
+        image.setRGB(14, 12, 0xFFF0F0F0);
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        try {
+            ImageIO.write(image, "png", out);
+        } catch (IOException impossible) {
+            throw new IllegalStateException(impossible);
+        }
+
+        byte[] png = out.toByteArray();
+        return new Skin("color-" + hex + ".png", png, false, sha256(png));
+    }
+
+    private static int shaded(int rgb, int delta) {
+        int r = Math.max(0, Math.min(255, (rgb >> 16 & 0xFF) + delta));
+        int g = Math.max(0, Math.min(255, (rgb >> 8 & 0xFF) + delta));
+        int b = Math.max(0, Math.min(255, (rgb & 0xFF) + delta));
+        return 0xFF000000 | r << 16 | g << 8 | b;
+    }
+
+    private static int luminance(int rgb) {
+        return ((rgb >> 16 & 0xFF) * 299 + (rgb >> 8 & 0xFF) * 587 + (rgb & 0xFF) * 114) / 1000;
+    }
+
     // ---------------------------------------------------------------- MineSkin
+
+    /** Uploads still running, so 300 bots of one new colour share a single request. */
+    private static final Map<String, CompletableFuture<String[]>> PENDING = new ConcurrentHashMap<>();
 
     public static boolean hasApiKey() {
         String key = BotDefaults.get().mineskinKey;
@@ -161,6 +214,12 @@ public final class SkinFiles {
         String[] cached = signedFor(skin);
         if (cached != null) {
             return CompletableFuture.completedFuture(cached);
+        }
+
+        String cacheKey = skin.hash() + (skin.slim() ? ":slim" : ":classic");
+        CompletableFuture<String[]> running = PENDING.get(cacheKey);
+        if (running != null) {
+            return running;
         }
 
         String key = BotDefaults.get().mineskinKey;
@@ -185,7 +244,7 @@ public final class SkinFiles {
             .header("Content-Type", "multipart/form-data; boundary=" + boundary)
             .POST(HttpRequest.BodyPublishers.ofByteArray(body.toByteArray()))
             .build();
-        return HTTP.sendAsync(request, HttpResponse.BodyHandlers.ofString()).thenApply(response -> {
+        CompletableFuture<String[]> upload = HTTP.sendAsync(request, HttpResponse.BodyHandlers.ofString()).thenApply(response -> {
             JsonObject json;
             try {
                 json = JsonParser.parseString(response.body()).getAsJsonObject();
@@ -202,10 +261,13 @@ public final class SkinFiles {
 
             JsonObject data = json.getAsJsonObject("skin").getAsJsonObject("texture").getAsJsonObject("data");
             String[] signed = new String[]{data.get("value").getAsString(), data.get("signature").getAsString()};
-            SIGNED.put(skin.hash() + (skin.slim() ? ":slim" : ":classic"), signed);
+            SIGNED.put(cacheKey, signed);
             saveCache();
             return signed;
         });
+        PENDING.put(cacheKey, upload);
+        upload.whenComplete((signed, error) -> PENDING.remove(cacheKey));
+        return upload;
     }
 
     private static void field(ByteArrayOutputStream out, String boundary, String name, String value) throws IOException {

@@ -7914,7 +7914,11 @@ public final class BotCommands {
                 + (
                     hex.equals("off")
                         ? "haben wieder ihren normalen Skin."
-                        : "tragen jetzt die Farbe " + input + " (#" + hex + ") - sichtbar mit der BotSystem-Mod auf dem Client."
+                        : "tragen jetzt die Farbe " + input + " (#" + hex + ")" + (
+                            SkinFiles.hasApiKey()
+                                ? " - fuer alle sichtbar, sobald mineskin.org den Farb-Skin signiert hat (einmal pro Farbe, danach sofort)."
+                                : " - ohne Client-Mod erst mit MineSkin-Key sichtbar: /bot mineskin key <key> (gratis auf mineskin.org)."
+                        )
                 )
         );
         return targets.size();

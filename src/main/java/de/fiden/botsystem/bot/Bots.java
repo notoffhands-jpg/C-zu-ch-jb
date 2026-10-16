@@ -903,7 +903,58 @@ public final class Bots {
             }
 
             this.applyProfile(bot, new PropertyMap(merged));
+            if (hex != null) {
+                this.applyColorTexture(bot, hex);
+            }
         }
+    }
+
+    /** Colours whose MineSkin upload failed and were already reported (one log line, not one per bot). */
+    private final Set<String> colorErrors = ConcurrentHashMap.newKeySet();
+
+    /**
+     * Vanilla clients only draw Mojang-signed skins. With a MineSkin key the colour becomes a real skin
+     * (generated once per colour, signed once, cached), so everyone sees it - no client mod needed.
+     */
+    private void applyColorTexture(BotPlayer bot, String hex) {
+        if (!SkinFiles.hasApiKey() || !hex.matches("[0-9a-f]{6}")) {
+            return;
+        }
+
+        SkinFiles.sign(SkinFiles.colored(hex)).whenComplete((signed, error) -> this.server.execute(() -> {
+            if (error != null) {
+                if (this.colorErrors.add(hex)) {
+                    Throwable cause = error.getCause() != null ? error.getCause() : error;
+                    BotSystemMod.LOGGER.warn("Farb-Skin #{} nicht signiert: {}", hex, cause.getMessage());
+                }
+
+                return;
+            }
+
+            // Only while the bot still wears this colour, and only once.
+            if (bot.isRemoved() || !this.bots.containsKey(bot.getUUID()) || !hex.equals(colorOf(bot))) {
+                return;
+            }
+
+            for (Property texture : bot.getGameProfile().properties().get("textures")) {
+                if (texture.value().equals(signed[0])) {
+                    return;
+                }
+            }
+
+            Multimap<String, Property> merged = LinkedHashMultimap.create(bot.getGameProfile().properties());
+            merged.removeAll("textures");
+            merged.put("textures", new Property("textures", signed[0], signed[1]));
+            this.applyProfile(bot, new PropertyMap(merged));
+        }));
+    }
+
+    private static String colorOf(BotPlayer bot) {
+        for (Property property : bot.getGameProfile().properties().get("botsystem_color")) {
+            return property.value();
+        }
+
+        return null;
     }
 
     private void applyProfile(BotPlayer bot, PropertyMap properties) {
@@ -1015,6 +1066,12 @@ public final class Bots {
         BotPlayer bot = BotPlayer.spawn(this.server, world, profile, position, yaw);
         BotDefaults.get().applyTo(bot);
         this.bots.put(bot.getUUID(), bot);
+        // Saved / respawned coloured bots: put the signed colour skin (back) on.
+        String hex = colorOf(bot);
+        if (hex != null) {
+            this.applyColorTexture(bot, hex);
+        }
+
         return bot;
     }
 
