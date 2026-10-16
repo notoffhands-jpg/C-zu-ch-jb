@@ -738,15 +738,10 @@ public final class BotPlayer extends ServerPlayer {
         }
     }
 
-    /**
-     * Outer skin layer (hat, jacket, sleeves, trousers): all on or all off, per BotDefaults.skinLayers.
-     * Always off for a bot with a skin colour: the client mod draws a coloured outer layer
-     * see-through up close, and it hid the whole bot behind it.
-     */
+    /** Outer skin layer (hat, jacket, sleeves, trousers): all on or all off, per BotDefaults.skinLayers. */
     public void applySkinLayers() {
         ClientInformation info = this.clientInformation();
-        boolean coloured = !this.getGameProfile().properties().get(SkinColors.PROPERTY).isEmpty();
-        int parts = BotDefaults.get().skinLayers && !coloured ? 0x7F : 0;
+        int parts = BotDefaults.get().skinLayers ? 0x7F : 0;
         if (info.modelCustomisation() != parts) {
             this.updateOptionsNoEvents(new ClientInformation(
                 info.language(), info.viewDistance(), info.chatVisibility(), info.chatColors(), parts,
