@@ -904,6 +904,8 @@ public final class Bots {
 
     private void applyProfile(BotPlayer bot, PropertyMap properties) {
         Nms.setGameProfile(bot, new GameProfile(bot.getUUID(), bot.getGameProfile().name(), properties));
+        // A skin colour switches the outer skin layer off (and removing it switches it back on).
+        bot.applySkinLayers();
         List<ServerPlayer> viewers = realPlayers(this.server.getPlayerList().getPlayers());
         if (!viewers.isEmpty()) {
             ClientboundPlayerInfoRemovePacket remove = new ClientboundPlayerInfoRemovePacket(List.of(bot.getUUID()));
