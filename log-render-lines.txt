@@ -1,0 +1,44 @@
+ - Mod 'Sodium Extra' (sodium-extra) 0.8.3+mc1.21.11 recommends version 1.8.5 or later of reeses-sodium-options, which is missing!
+	 - You should install version 1.8.5 or later of reeses-sodium-options for the optimal experience.
+	- armyfps 2.0.0
+	   |-- fabric-renderer-api-v1 8.0.3+f4ffd2e53e
+	   |-- fabric-renderer-indigo 5.0.3+f4ffd2e53e
+	- sodium 0.8.12+mc1.21.11
+	- sodium-extra 0.8.3+mc1.21.11
+[22:53:54] [main/INFO]: Loaded configuration file for Sodium: 36 options available, 0 override(s) found
+[22:53:54] [main/INFO]: Loaded configuration file for Sodium Extra: 26 options available, 0 override(s) found
+[22:53:54] [main/WARN]: Reference map 'sodium-extra.refmap.json' for sodium-extra.mixins.json could not be read. If this is a development environment you can ignore this message
+[22:53:54] [main/WARN]: Error loading class: net/irisshaders/iris/pathways/HandRenderer (java.lang.ClassNotFoundException: net/irisshaders/iris/pathways/HandRenderer)
+[22:53:54] [main/WARN]: @Mixin target net.irisshaders.iris.pathways.HandRenderer was not found bbs.client.mixins.json:iris.HandRendererMixin from mod bbs
+[22:53:54] [main/INFO]: Apply DH mixin [com.seibel.distanthorizons.fabric.mixins.client.MixinFogRenderer] -> [net.minecraft.class_758]...
+[22:53:54] [main/INFO]: Apply DH mixin [com.seibel.distanthorizons.fabric.mixins.client.MixinGameRenderer] -> [net.minecraft.class_1297]...
+[22:53:54] [main/INFO]: Apply DH mixin [com.seibel.distanthorizons.fabric.mixins.client.MixinLevelRenderer] -> [net.minecraft.class_761]...
+[22:53:54] [main/WARN]: Error loading class: net/caffeinemc/mods/sodium/client/render/chunk/compile/pipeline/BlockOcclusionCache (java.lang.ClassNotFoundException: net/caffeinemc/mods/sodium/client/render/chunk/compile/pipeline/BlockOcclusionCache)
+[22:53:55] [main/INFO]: Found graphics adapter: LinuxPciAdapterInfo[vendor=NVIDIA, name=GA102 [GeForce RTX 3080], pciVendorId=0x10de, pciDeviceId=0x2206]
+[22:53:55] [main/WARN]: Sodium has applied one or more workarounds to prevent crashes or other issues on your system: [NVIDIA_THREADED_OPTIMIZATIONS_BROKEN, NO_ERROR_CONTEXT_UNSUPPORTED]
+[22:53:55] [main/WARN]: This is not necessarily an issue, but it may result in certain features or optimizations being disabled. You can sometimes fix these issues by upgrading your graphics driver.
+[22:53:59] [main/INFO]: Sodium: [0.8.12+mc1.21.11], Iris: [N/F]
+[22:54:00] [Render thread/INFO]: StatsReporter initialized, backend: http://pvpbotstatsapi.survivalworld.win:32220, server: default
+[22:54:01] [Render thread/INFO]: Registered mod compatibility accessor for: [Sodium-Fabric].
+[22:54:02] [Worker-Main-1/INFO]: Update available for 'sodium@0.8.12+mc1.21.11', (-> mc1.21.11-0.8.14-fabric)
+[22:54:02] [Worker-Main-1/INFO]: Update available for 'sodium-extra@0.8.3+mc1.21.11', (-> mc1.21.11-0.9.4+fabric)
+[22:54:02] [Render thread/INFO]: Backend library: LWJGL version 3.3.3-snapshot
+[22:54:02] [Render thread/INFO]: Modifying process environment to apply workarounds for the NVIDIA graphics driver...
+[22:54:02] [Render thread/INFO]: OpenGL Vendor: NVIDIA Corporation
+[22:54:02] [Render thread/INFO]: OpenGL Renderer: NVIDIA GeForce RTX 3080/PCIe/SSE2
+[22:54:02] [Render thread/INFO]: OpenGL Version: 3.3.0 NVIDIA 595.91.07
+[22:54:02] [Render thread/INFO]: Modifying OpenGL context to apply workarounds for the NVIDIA graphics driver...
+[22:54:02] [Render thread/INFO]: Using optional rendering extensions: GL_ARB_buffer_storage, GL_KHR_debug, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access, GL_EXT_texture_filter_anisotropic
+[22:54:03] [Render thread/INFO]: Reloading ResourceManager: vanilla, animatica, bbs, bettermounthud, botsystem, cape-provider, cloth-config, conditional-mixin, config_manager, continuity, controlify, debugify, distanthorizons, dynamic_fps, e4mc, entityculling, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-client-gametest-api-v1, fabric-command-api-v2, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-language-kotlin, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-resource-loader-v1, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-serialization-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, fabrishot, fastquit, forgeconfigapiport, herobot, languagereload, litematica, lithium, malilib, midnightlib, mixintrace, modmenu, morechathistory, moreculling, nochatreports, optigui, paginatedadvancements, placeholder-api, polytone, puzzle, pvp_bot, rrls, skyboxify, sodium, sodium-extra, spark, trender, voicechat, walksylib, worldedit, wurst, yet_another_config_lib_v3, zoomify
+[22:54:04] [DH-PostClientInit Thread/INFO]: DH Rendering successfully bound to: [OpenGL]...
+[22:54:05] [Render thread/ERROR]: [SteamDeckUtil] Skipping Steam Deck checks as steamOS has temporarily broken the enhaned driver.
+[22:54:11] [Render thread/INFO]: ArmyFPS: multi-core model rendering on 12 threads
+[22:54:12] [Render thread/INFO]: Creating [GLProxy]... If this is the last message you see there must have been an OpenGL error.
+[22:54:12] [Render thread/INFO]: Lod Render OpenGL version [3.3.0 NVIDIA 595.91.07].
+Your OpenGL support:
+openGL version 3.3+: [true] <- REQUIRED
+[22:54:12] [Render thread/INFO]: GPU Vendor [NVIDIA CORPORATION] with OS [Linux], Preferred upload method is [BUFFER_STORAGE].
+[22:54:12] [Render thread/INFO]: GLProxy creation successful. OpenGL smiles upon you this day.
+[22:54:30] [Render thread/WARN]: Warning! Mod armyfps has a broken icon, loading default icon
+[22:54:33] [Render thread/INFO]: Setting up renderer
+[22:54:33] [Render thread/INFO]: Renderer setup complete
