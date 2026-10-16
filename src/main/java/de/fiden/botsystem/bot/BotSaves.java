@@ -158,7 +158,7 @@ public final class BotSaves {
     public static JsonObject botJson(MinecraftServer server, BotPlayer bot, long now) {
         JsonObject o = new JsonObject();
         o.addProperty("name", bot.getGameProfile().name());
-        Iterator ox = bot.getGameProfile().properties().get("botsystem_color").iterator();
+        Iterator ox = bot.getGameProfile().properties().get(SkinColors.PROPERTY).iterator();
         if (ox.hasNext()) {
             Property property = (Property)ox.next();
             o.addProperty("skinColor", property.value());
@@ -310,7 +310,7 @@ public final class BotSaves {
             }
 
             if (o.has("skinColor")) {
-                map.put("botsystem_color", new Property("botsystem_color", o.get("skinColor").getAsString()));
+                map.put(SkinColors.PROPERTY, new Property(SkinColors.PROPERTY, o.get("skinColor").getAsString()));
             }
 
             if (o.has("skinFile")) {

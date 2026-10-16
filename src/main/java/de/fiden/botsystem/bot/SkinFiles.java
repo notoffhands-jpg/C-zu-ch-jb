@@ -227,7 +227,8 @@ public final class SkinFiles {
         ByteArrayOutputStream body = new ByteArrayOutputStream();
         try {
             field(body, boundary, "variant", skin.slim() ? "slim" : "classic");
-            field(body, boundary, "visibility", "unlisted");
+            // Unlisted needs an account; without a key the skin goes to the public gallery.
+            field(body, boundary, "visibility", hasApiKey() ? "unlisted" : "public");
             field(body, boundary, "name", skin.name().replaceAll("\\.png$", ""));
             body.write(("--" + boundary + "\r\nContent-Disposition: form-data; name=\"file\"; filename=\"" + skin.name()
                     + "\"\r\nContent-Type: image/png\r\n\r\n").getBytes(StandardCharsets.UTF_8));
@@ -237,13 +238,17 @@ public final class SkinFiles {
             return CompletableFuture.failedFuture(impossible);
         }
 
-        HttpRequest request = HttpRequest.newBuilder(URI.create("https://api.mineskin.org/v2/generate"))
+        HttpRequest.Builder builder = HttpRequest.newBuilder(URI.create("https://api.mineskin.org/v2/generate"))
             .timeout(Duration.ofSeconds(60))
             .header("User-Agent", "BotSystem/3.0")
-            .header("Authorization", "Bearer " + key)
             .header("Content-Type", "multipart/form-data; boundary=" + boundary)
-            .POST(HttpRequest.BodyPublishers.ofByteArray(body.toByteArray()))
-            .build();
+            .POST(HttpRequest.BodyPublishers.ofByteArray(body.toByteArray()));
+        if (hasApiKey()) {
+            // Optional: MineSkin also signs anonymously, only slower.
+            builder.header("Authorization", "Bearer " + key);
+        }
+
+        HttpRequest request = builder.build();
         CompletableFuture<String[]> upload = HTTP.sendAsync(request, HttpResponse.BodyHandlers.ofString()).thenApply(response -> {
             JsonObject json;
             try {

@@ -5,7 +5,12 @@ import java.util.Locale;
 import java.util.Map;
 
 public final class SkinColors {
-    public static final String PROPERTY = "botsystem_color";
+    /**
+     * Profile property holding a bot's colour. Deliberately not "botsystem_color": the client mod
+     * swaps in its own colour skin for that one (and draws it see-through); the plugin now hands out
+     * a real, signed colour skin that every client draws.
+     */
+    public static final String PROPERTY = "botsystem_tint";
     private static final Map<String, String> BY_NAME = Map.ofEntries(
         Map.entry("black", "0f0f0f"),
         Map.entry("schwarz", "0f0f0f"),

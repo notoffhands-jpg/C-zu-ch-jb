@@ -862,12 +862,12 @@ public final class Bots {
     public void applySkin(BotPlayer bot, GameProfile withTextures) {
         // A coloured bot keeps its plain skin (a random skin arriving late would hide the colour again).
         if (!bot.isRemoved() && this.bots.containsKey(bot.getUUID()) && !withTextures.properties().get("textures").isEmpty()
-            && bot.getGameProfile().properties().get("botsystem_color").isEmpty()) {
+            && bot.getGameProfile().properties().get(SkinColors.PROPERTY).isEmpty()) {
             Multimap<String, Property> merged = LinkedHashMultimap.create(withTextures.properties());
-            merged.removeAll("botsystem_color");
+            merged.removeAll(SkinColors.PROPERTY);
             merged.removeAll(SkinFiles.PROPERTY);
             merged.removeAll(SkinFiles.FILE_PROPERTY);
-            merged.putAll("botsystem_color", bot.getGameProfile().properties().get("botsystem_color"));
+            merged.putAll(SkinColors.PROPERTY, bot.getGameProfile().properties().get(SkinColors.PROPERTY));
             this.applyProfile(bot, new PropertyMap(merged));
         }
     }
@@ -895,9 +895,9 @@ public final class Bots {
     public void applySkinColor(BotPlayer bot, String hex) {
         if (!bot.isRemoved() && this.bots.containsKey(bot.getUUID())) {
             Multimap<String, Property> merged = LinkedHashMultimap.create(bot.getGameProfile().properties());
-            merged.removeAll("botsystem_color");
+            merged.removeAll(SkinColors.PROPERTY);
             if (hex != null) {
-                merged.put("botsystem_color", new Property("botsystem_color", hex));
+                merged.put(SkinColors.PROPERTY, new Property(SkinColors.PROPERTY, hex));
                 // The client mod only colours the plain skin: a real skin texture hid the colour.
                 merged.removeAll("textures");
             }
@@ -911,18 +911,27 @@ public final class Bots {
 
     /** Colours whose MineSkin upload failed and were already reported (one log line, not one per bot). */
     private final Set<String> colorErrors = ConcurrentHashMap.newKeySet();
+    /** Last failed upload per colour: retried after a minute, not on every spawn. */
+    private final Map<String, Long> colorFailedAt = new ConcurrentHashMap<>();
 
     /**
-     * Vanilla clients only draw Mojang-signed skins. With a MineSkin key the colour becomes a real skin
-     * (generated once per colour, signed once, cached), so everyone sees it - no client mod needed.
+     * Vanilla clients only draw Mojang-signed skins, so the colour becomes a real skin: generated once
+     * per colour, signed once at mineskin.org (no account needed; a key only makes it faster), cached
+     * for good. Everyone sees it - no client mod needed.
      */
     private void applyColorTexture(BotPlayer bot, String hex) {
-        if (!SkinFiles.hasApiKey() || !hex.matches("[0-9a-f]{6}")) {
+        if (!hex.matches("[0-9a-f]{6}")) {
+            return;
+        }
+
+        Long failed = this.colorFailedAt.get(hex);
+        if (failed != null && System.currentTimeMillis() - failed < 60000L) {
             return;
         }
 
         SkinFiles.sign(SkinFiles.colored(hex)).whenComplete((signed, error) -> this.server.execute(() -> {
             if (error != null) {
+                this.colorFailedAt.put(hex, System.currentTimeMillis());
                 if (this.colorErrors.add(hex)) {
                     Throwable cause = error.getCause() != null ? error.getCause() : error;
                     BotSystemMod.LOGGER.warn("Farb-Skin #{} nicht signiert: {}", hex, cause.getMessage());
@@ -950,7 +959,7 @@ public final class Bots {
     }
 
     private static String colorOf(BotPlayer bot) {
-        for (Property property : bot.getGameProfile().properties().get("botsystem_color")) {
+        for (Property property : bot.getGameProfile().properties().get(SkinColors.PROPERTY)) {
             return property.value();
         }
 
@@ -1049,13 +1058,13 @@ public final class Bots {
             map.put("textures", property);
         }
 
-        for (Property property : source.properties().get("botsystem_color")) {
-            map.put("botsystem_color", property);
+        for (Property property : source.properties().get(SkinColors.PROPERTY)) {
+            map.put(SkinColors.PROPERTY, property);
         }
 
-        if (!map.containsKey("botsystem_color")) {
-            for (Property property : target.properties().get("botsystem_color")) {
-                map.put("botsystem_color", property);
+        if (!map.containsKey(SkinColors.PROPERTY)) {
+            for (Property property : target.properties().get(SkinColors.PROPERTY)) {
+                map.put(SkinColors.PROPERTY, property);
             }
         }
 
