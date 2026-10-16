@@ -18,6 +18,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class GameRendererMixin {
     @Inject(method = "method_3192", at = @At("HEAD"), remap = false)
     private void armyfps$frameStart(class_9779 tick, boolean tickWorld, CallbackInfo ci) {
+        ArmyFps.renderThread = Thread.currentThread();
         Frames.frameStart();
         ArmyFps.pollToggle(class_310.method_1551());
     }

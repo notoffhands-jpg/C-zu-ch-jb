@@ -40,6 +40,10 @@ public final class ArmyFps {
     public static int parallelThreads = Math.max(2, Math.min(12, Runtime.getRuntime().availableProcessors() / 2));
     /** Below this many humanoid models in a frame, the render thread does it alone (not worth it). */
     public static int parallelMinCommands = 48;
+    /** Sort big see-through layers (skins, items) on all cores. */
+    public static boolean parallelSort = true;
+    /** Smallest layer (in quads) that is worth the hand-off to the worker threads. */
+    public static int sortMinQuads = 4096;
     /** GLFW key code of the on/off key (297 = F8). */
     public static int toggleKey = 297;
 
@@ -47,6 +51,8 @@ public final class ArmyFps {
     public static boolean enabled = true;
     /** True while GameRenderer.renderWorld runs. */
     public static boolean inWorld;
+    /** Set at the start of every frame. */
+    public static volatile Thread renderThread;
     private static boolean keyWasDown;
 
     static {
@@ -101,6 +107,8 @@ public final class ArmyFps {
         textCache = !"false".equalsIgnoreCase(properties.getProperty("textCache", "true").trim());
         parallelThreads = Math.max(1, (int)number(properties, "parallelThreads", parallelThreads));
         parallelMinCommands = Math.max(1, (int)number(properties, "parallelMinCommands", parallelMinCommands));
+        parallelSort = !"false".equalsIgnoreCase(properties.getProperty("parallelSort", "true").trim());
+        sortMinQuads = Math.max(1, (int)number(properties, "sortMinQuads", sortMinQuads));
         save();
     }
 
@@ -125,6 +133,8 @@ public final class ArmyFps {
         properties.setProperty("textCache", String.valueOf(textCache));
         properties.setProperty("parallelThreads", String.valueOf(parallelThreads));
         properties.setProperty("parallelMinCommands", String.valueOf(parallelMinCommands));
+        properties.setProperty("parallelSort", String.valueOf(parallelSort));
+        properties.setProperty("sortMinQuads", String.valueOf(sortMinQuads));
         try (Writer writer = Files.newBufferedWriter(FILE)) {
             properties.store(writer, "ArmyFPS - distances in blocks (0 = never skip). toggleKey is a GLFW key code, 297 = F8. Restart the game after editing.");
         } catch (IOException ignored) {

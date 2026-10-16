@@ -9,7 +9,8 @@ import org.slf4j.LoggerFactory;
 
 /**
  * The worker threads. The render thread hands out a batch (index 0..size-1), works on it itself as
- * worker 0, and waits until all are done. One batch at a time; each batch starts with empty arenas.
+ * worker 0, and waits until all are done. One batch at a time; model/item batches start with empty
+ * arenas, sort batches leave them alone.
  */
 final class Pool {
     static final Logger LOGGER = LoggerFactory.getLogger("ArmyFPS");
@@ -19,7 +20,7 @@ final class Pool {
         void run(Worker worker, int index);
     }
 
-    private record Job(int size, Task task, AtomicInteger next, CountDownLatch done) {
+    private record Job(int size, int chunk, Task task, AtomicInteger next, CountDownLatch done) {
     }
 
     static Worker[] workers;
@@ -30,14 +31,28 @@ final class Pool {
     private Pool() {
     }
 
-    /** False if the workers didn't finish in time (then none of the batch may be used). */
+    /** False if the workers didn't finish in time (then none of the batch may be used). Starts with empty arenas. */
     static boolean run(int size, Task task) throws InterruptedException {
         start();
         for (Worker w : workers) {
             w.reset();
         }
 
-        Job current = new Job(size, task, new AtomicInteger(), new CountDownLatch(workers.length));
+        return dispatch(size, CHUNK, task);
+    }
+
+    /**
+     * A batch that doesn't use the arenas (they may still hold prepared vertices: a see-through
+     * layer can get drawn - and sorted - in the middle of the model commands).
+     */
+    static boolean runShared(int size, Task task) throws InterruptedException {
+        start();
+        // Light tasks (sort keys, indices): a few big pieces per thread instead of tiny ones.
+        return dispatch(size, Math.max(256, size / (workers.length * 4)), task);
+    }
+
+    private static boolean dispatch(int size, int chunk, Task task) throws InterruptedException {
+        Job current = new Job(size, chunk, task, new AtomicInteger(), new CountDownLatch(workers.length));
         job = current;
         synchronized (LOCK) {
             LOCK.notifyAll();
@@ -56,8 +71,8 @@ final class Pool {
     private static void work(Worker me, Job current) {
         try {
             int from;
-            while ((from = current.next().getAndAdd(CHUNK)) < current.size()) {
-                int to = Math.min(from + CHUNK, current.size());
+            while ((from = current.next().getAndAdd(current.chunk())) < current.size()) {
+                int to = Math.min(from + current.chunk(), current.size());
                 for (int i = from; i < to; i++) {
                     current.task().run(me, i);
                 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "armyfps",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "name": "ArmyFPS",
   "description": "More FPS with big armies of players/bots on screen: no enchantment glint or armour trims on far players (invisible at that size), a much faster but identical translucent sort, and players/bots with their armour and held items posed and built on all CPU cores, and name tags laid out once instead of every frame. Nothing visible changes. Up close nothing changes. F8 toggles it for A/B comparison.",
   "environment": "client",
