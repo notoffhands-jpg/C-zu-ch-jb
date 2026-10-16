@@ -44,8 +44,6 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
 import net.minecraft.core.BlockPos;
-import net.minecraft.network.protocol.game.ClientboundPlayerInfoRemovePacket;
-import net.minecraft.network.protocol.game.ClientboundPlayerInfoUpdatePacket;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
@@ -968,19 +966,17 @@ public final class Bots {
 
     private void applyProfile(BotPlayer bot, PropertyMap properties) {
         Nms.setGameProfile(bot, new GameProfile(bot.getUUID(), bot.getGameProfile().name(), properties));
-        List<ServerPlayer> viewers = realPlayers(this.server.getPlayerList().getPlayers());
-        if (!viewers.isEmpty()) {
-            ClientboundPlayerInfoRemovePacket remove = new ClientboundPlayerInfoRemovePacket(List.of(bot.getUUID()));
-            ClientboundPlayerInfoUpdatePacket add = ClientboundPlayerInfoUpdatePacket.createPlayerInitializing(List.of(bot));
-
-            for (ServerPlayer viewer : viewers) {
-                viewer.connection.send(remove);
-                viewer.connection.send(add);
+        // Show the new skin the way skin plugins do: hide the bot from each player and show it again
+        // (tab entry + entity are re-sent with the new profile). Taking the bot out of the world and
+        // adding it back, as before, rebuilt its tracker - and freshly re-skinned bots went invisible.
+        org.bukkit.entity.Player shown = bot.getBukkitEntity();
+        org.bukkit.plugin.Plugin plugin = BotSystemPlugin.get();
+        for (ServerPlayer viewer : realPlayers(this.server.getPlayerList().getPlayers())) {
+            org.bukkit.entity.Player eye = viewer.getBukkitEntity();
+            if (eye.canSee(shown)) {
+                eye.hidePlayer(plugin, shown);
+                eye.showPlayer(plugin, shown);
             }
-
-            ServerLevel world = bot.level();
-            world.getChunkSource().removeEntity(bot);
-            world.getChunkSource().addEntity(bot);
         }
     }
 
