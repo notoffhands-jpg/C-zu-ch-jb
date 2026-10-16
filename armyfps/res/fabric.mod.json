@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "armyfps",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "ArmyFPS",
   "description": "More FPS with big armies of players/bots on screen: no enchantment glint or armour trims on far players (invisible at that size), and a much faster but identical translucent sort. Up close nothing changes. F8 toggles it for A/B comparison.",
   "environment": "client",
