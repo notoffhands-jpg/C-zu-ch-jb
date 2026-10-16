@@ -4478,7 +4478,8 @@ public final class BotCommands {
     );
 
     private static com.mojang.brigadier.builder.RequiredArgumentBuilder<CommandSourceStack, String> recordLoadArgs() {
-        return Commands.argument("auswahl", StringArgumentType.string())
+        // Selector type like every other command: plain string() rejected "@a" and "@team:x" (@ and : aren't allowed unquoted).
+        return Commands.argument("auswahl", SelectorArgumentType.selector())
             .suggests(SELECTORS)
             .then(
                 Commands.argument("aufnahme", StringArgumentType.word())
@@ -4500,7 +4501,7 @@ public final class BotCommands {
             throw fail("Aufnahme " + name + " gibt es nicht. Aufnahmen: " + String.join(", ", de.fiden.botsystem.ai.ActionRecorder.names()));
         }
 
-        String who = StringArgumentType.getString(context, "auswahl");
+        String who = SelectorArgumentType.get(context, "auswahl");
         List<BotPlayer> targets;
         try {
             targets = select(context, who);
