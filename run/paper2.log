@@ -1,0 +1,289 @@
+Starting org.bukkit.craftbukkit.Main
+2026-09-20T10:28:15.449425100Z ServerMain WARN Advanced terminal features are not available in this environment
+[12:28:15 INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4+7-LTS; Eclipse Adoptium Temurin-25.0.4+7) on Windows 11 10.0 (amd64)
+[12:28:15 INFO]: [bootstrap] Loading Paper 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) for Minecraft 1.21.11
+[12:28:16 INFO]: [PluginInitializerManager] Initializing plugins...
+[12:28:16 INFO]: [PluginInitializerManager] Initialized 1 plugin
+[12:28:16 INFO]: [PluginInitializerManager] Paper plugins (1):
+ - BotSystem (3.0.0)
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.joml.MemUtil$MemUtilUnsafe (file:/C:/Users/notof/BotSystem-Paper/run/libraries/org/joml/joml/1.10.8/joml-1.10.8.jar)
+WARNING: Please consider reporting this to the maintainers of class org.joml.MemUtil$MemUtilUnsafe
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[12:28:21 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[12:28:22 INFO]: Loaded 1470 recipes
+[12:28:23 INFO]: Loaded 1584 advancements
+[12:28:23 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[12:28:23 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 342,5ms
+[12:28:23 INFO]: Starting minecraft server version 1.21.11
+[12:28:23 INFO]: Loading properties
+[12:28:23 INFO]: This server is running Paper version 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[12:28:23 INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[12:28:23 INFO]: Using 4 threads for Netty based IO
+[12:28:23 INFO]: Server Ping Player Sample Count: 12
+[12:28:24 INFO]: [MoonriseCommon] Paper is using 6 worker threads, 1 I/O threads
+[12:28:24 INFO]: Default game type: SURVIVAL
+[12:28:24 INFO]: Generating keypair
+[12:28:24 INFO]: Starting Minecraft server on *:25599
+[12:28:24 INFO]: Paper: Using Java compression from Velocity.
+[12:28:24 INFO]: Paper: Using Java cipher from Velocity.
+[12:28:24 INFO]: [BotSystem] Loading server plugin BotSystem v3.0.0
+[12:28:24 INFO]: Server permissions file permissions.yml is empty, ignoring it
+[12:28:24 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[12:28:24 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[12:28:24 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[12:28:24 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[12:28:24 INFO]: Preparing level "world"
+[12:28:25 INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
+[12:28:25 INFO]: Preparing spawn area: 100%
+[12:28:25 INFO]: Prepared spawn area in 2 ms
+[12:28:25 INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[12:28:25 INFO]: Preparing spawn area: 100%
+[12:28:25 INFO]: Prepared spawn area in 1 ms
+[12:28:25 INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[12:28:25 INFO]: Prepared spawn area in 1 ms
+[12:28:25 INFO]: Done preparing level "world" (0.359s)
+[12:28:25 INFO]: [BotSystem] Enabling BotSystem v3.0.0
+[12:28:25 INFO]: [BotSystem] BotSystem 2026-09-20a (Paper) bereit.
+[12:28:25 INFO]: [spark] Starting background profiler...
+[12:28:25 INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[12:28:25 INFO]: Running delayed init tasks
+[12:28:25 INFO]: Done (10.728s)! For help, type "help"
+[12:28:25 WARN]: *************************************************************************************
+[12:28:25 WARN]: You are running the latest build for your Minecraft version (1.21.11)
+[12:28:25 WARN]: However, you are 4 release(s) behind the latest stable release (26.2)!
+[12:28:25 WARN]: It is recommended that you update as soon as possible
+[12:28:25 WARN]: https://papermc.io/downloads/paper
+[12:28:25 WARN]: *************************************************************************************
+[12:28:59 INFO]: [38;5;10mSterbeanimation aus: Bots verschwinden beim Tod sofort.[0m
+[12:28:59 INFO]: [38;5;11mJay8 joined the game[0m
+[12:29:00 INFO]: Jay8[bot] logged in with entity id 1 at ([world]1.5, -60.0, 0.5)
+[12:29:00 INFO]: [38;5;11mj8epoa joined the game[0m
+[12:29:00 INFO]: j8epoa[bot] logged in with entity id 2 at ([world]-1.5, -60.0, 1.5)
+[12:29:00 INFO]: [38;5;11mxX1_DJ9854Uv joined the game[0m
+[12:29:00 INFO]: xX1_DJ9854Uv[bot] logged in with entity id 3 at ([world]0.5, -60.0, -2.5)
+[12:29:00 INFO]: [38;5;10m3 Bot(s) werden gespawnt, Kit diamond, Team Rot: Jay8, j8epoa, xX1_DJ9854Uv[0m
+[12:29:00 INFO]: [38;5;11msolfenka joined the game[0m
+[12:29:00 INFO]: solfenka[bot] logged in with entity id 4 at ([world]1.5, -60.0, 0.5)
+[12:29:00 INFO]: [38;5;11mwynkroiva12 joined the game[0m
+[12:29:00 INFO]: wynkroiva12[bot] logged in with entity id 5 at ([world]-1.5, -60.0, 1.5)
+[12:29:00 INFO]: [38;5;11mmirfenkawyn joined the game[0m
+[12:29:00 INFO]: mirfenkawyn[bot] logged in with entity id 6 at ([world]0.5, -60.0, -2.5)
+[12:29:00 INFO]: [38;5;10m3 Bot(s) werden gespawnt, Kit diamond, Team Blau: solfenka, wynkroiva12, mirfenkawyn[0m
+[12:29:00 INFO]: Jay8 has made the advancement [38;5;10m[Cover Me with Diamonds][0m
+[12:29:00 INFO]: j8epoa has made the advancement [38;5;10m[Cover Me with Diamonds][0m
+[12:29:00 INFO]: xX1_DJ9854Uv has made the advancement [38;5;10m[Cover Me with Diamonds][0m
+[12:29:00 INFO]: solfenka has made the advancement [38;5;10m[Cover Me with Diamonds][0m
+[12:29:00 INFO]: wynkroiva12 has made the advancement [38;5;10m[Cover Me with Diamonds][0m
+[12:29:00 INFO]: mirfenkawyn has made the advancement [38;5;10m[Cover Me with Diamonds][0m
+[12:29:06 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 8412922.0 ms/tick | bots 6 (0 aktiv) mobs 0 | ki 0.03 ms avg, 2.4 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 43 x 284 ms | heap 389/3072 MB
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil] Profil ueber 3 s, 502 Stichproben. Eigenzeit (wo der Thread gerade war):
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]    89.4%  Unsafe.park()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     1.2%  MinecraftServer.runServer()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     0.6%  LivingEntity.baseTick()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     0.4%  ChunkMap$TrackedEntity.moonrise$tick()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     0.4%  MinecraftServer.pollTaskInternal()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     0.4%  ServerEntity.sendChanges()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     0.4%  ActivationRange.activateEntities()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     0.4%  ThreadLocal$ThreadLocalMap.getEntryAfterMiss()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     0.4%  ChunkEntitySlices$EntityCollectionBySection.getEntities()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     0.4%  ChunkMap$TrackedEntity.updatePlayer()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     0.4%  Reference.clear0()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     0.4%  ServerChunkCache.iterateTickingChunksFaster()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil] Inklusive (Methode irgendwo im Stack, ohne Rahmenwerk):
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]    89.4%  Unsafe.park()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]    89.4%  LockSupport.parkNanos()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     7.2%  DedicatedServer.tickServer()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     7.2%  ServerLevel.tick()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     3.8%  EntityTickList.forEach()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     3.8%  ServerLevel.lambda$tick$4()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     3.6%  ServerLevel.tickNonPassenger()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     3.6%  Level.guardEntityTick()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     3.0%  LivingEntity.tick()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     2.6%  ServerChunkCache.tick()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     2.4%  Mob.tick()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     2.0%  Slime.tick()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     1.6%  ChunkMap.tick()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     1.6%  Mob.aiStep()
+[12:29:09 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     1.6%  ChunkMap.newTrackerTick()
+[12:29:10 INFO]: wynkroiva12 has made the advancement [38;5;10m[Monster Hunter][0m
+[12:29:11 INFO]: Jay8 lost connection: Bot entfernt
+[12:29:11 INFO]: [38;5;11mJay8 left the game[0m
+[12:29:11 INFO]: [38;5;11mRotbot1 joined the game[0m
+[12:29:11 INFO]: Rotbot1[bot] logged in with entity id 155 at ([world]-0.9759896126608617, -60.0, 4.4808189462851615)
+[12:29:11 INFO]: j8epoa lost connection: Bot entfernt
+[12:29:11 INFO]: [38;5;11mj8epoa left the game[0m
+[12:29:11 INFO]: [38;5;11mRotbot2 joined the game[0m
+[12:29:11 INFO]: Rotbot2[bot] logged in with entity id 156 at ([world]-1.423145659525292, -60.0, 3.3416459170984125)
+[12:29:11 INFO]: xX1_DJ9854Uv lost connection: Bot entfernt
+[12:29:11 INFO]: [38;5;11mxX1_DJ9854Uv left the game[0m
+[12:29:11 INFO]: [38;5;11mRotbot3 joined the game[0m
+[12:29:11 INFO]: Rotbot3[bot] logged in with entity id 157 at ([world]-1.1996813951020715, -60.0, 1.4955335126740674)
+[12:29:11 INFO]: [38;5;10m3 Bot(s) umbenannt: Rotbot1, Rotbot2, Rotbot3[0m
+[12:29:11 INFO]: solfenka lost connection: Bot entfernt
+[12:29:11 INFO]: [38;5;11msolfenka left the game[0m
+[12:29:11 INFO]: [38;5;11mBlaubot1 joined the game[0m
+[12:29:11 INFO]: Blaubot1[bot] logged in with entity id 158 at ([world]0.9738369102304831, -60.0, 2.506790608764939)
+[12:29:11 INFO]: wynkroiva12 lost connection: Bot entfernt
+[12:29:11 INFO]: [38;5;11mwynkroiva12 left the game[0m
+[12:29:11 INFO]: [38;5;11mBlaubot2 joined the game[0m
+[12:29:11 INFO]: Blaubot2[bot] logged in with entity id 159 at ([world]-0.9038351896228783, -60.0, 5.316719143544073)
+[12:29:11 INFO]: mirfenkawyn lost connection: Bot entfernt
+[12:29:11 INFO]: [38;5;11mmirfenkawyn left the game[0m
+[12:29:11 INFO]: [38;5;11mBlaubot3 joined the game[0m
+[12:29:11 INFO]: Blaubot3[bot] logged in with entity id 160 at ([world]0.23452771654703197, -60.0, -1.770479747816345)
+[12:29:11 INFO]: [38;5;10m3 Bot(s) umbenannt: Blaubot1, Blaubot2, Blaubot3[0m
+[12:29:11 INFO]: Blaubot1 lost connection: Bot entfernt
+[12:29:11 INFO]: [38;5;11mBlaubot1 left the game[0m
+[12:29:11 INFO]: [38;5;11mxxKuww2l37 joined the game[0m
+[12:29:11 INFO]: xxKuww2l37[bot] logged in with entity id 161 at ([world]0.9738369102304831, -60.0, 2.506790608764939)
+[12:29:11 INFO]: Blaubot2 lost connection: Bot entfernt
+[12:29:11 INFO]: [38;5;11mBlaubot2 left the game[0m
+[12:29:11 INFO]: [38;5;11mw441899f_1 joined the game[0m
+[12:29:11 INFO]: w441899f_1[bot] logged in with entity id 162 at ([world]-0.9038351896228783, -60.0, 5.316719143544073)
+[12:29:11 INFO]: Blaubot3 lost connection: Bot entfernt
+[12:29:11 INFO]: [38;5;11mBlaubot3 left the game[0m
+[12:29:11 INFO]: [38;5;11m101u5k80 joined the game[0m
+[12:29:11 INFO]: 101u5k80[bot] logged in with entity id 163 at ([world]0.23452771654703197, -60.0, -1.770479747816345)
+[12:29:11 INFO]: [38;5;10m3 Bot(s) umbenannt (6-10, chaos): xxKuww2l37, w441899f_1, 101u5k80[0m
+[12:29:11 INFO]: [38;5;10m3 Bot(s) tragen jetzt die Farbe red (#b3231e) - sichtbar mit der BotSystem-Mod auf dem Client.[0m
+[12:29:11 INFO]: Rotbot1 has made the advancement [38;5;10m[Cover Me with Diamonds][0m
+[12:29:11 INFO]: Rotbot2 has made the advancement [38;5;10m[Cover Me with Diamonds][0m
+[12:29:11 INFO]: Rotbot3 has made the advancement [38;5;10m[Cover Me with Diamonds][0m
+[12:29:11 INFO]: xxKuww2l37 has made the advancement [38;5;10m[Cover Me with Diamonds][0m
+[12:29:11 INFO]: w441899f_1 has made the advancement [38;5;10m[Cover Me with Diamonds][0m
+[12:29:11 INFO]: 101u5k80 has made the advancement [38;5;10m[Cover Me with Diamonds][0m
+[12:29:14 INFO]: [38;5;11m- Rotbot1 | Rot | KÄMPFT gegen Slime | hp 19 | LT4[0m
+[12:29:14 INFO]: [38;5;11m- Rotbot2 | Rot | IDLE | hp 20 | HT5[0m
+[12:29:14 INFO]: [38;5;11m- Rotbot3 | Rot | IDLE | hp 20 | LT4[0m
+[12:29:14 INFO]: [38;5;11m- xxKuww2l37 | Blau | KÄMPFT gegen Slime | hp 19 | LT4[0m
+[12:29:14 INFO]: [38;5;11m- w441899f_1 | Blau | KÄMPFT gegen Slime | hp 19 | HT4[0m
+[12:29:14 INFO]: [38;5;11m- 101u5k80 | Blau | IDLE | hp 20 | HT4[0m
+[12:29:14 INFO]: [38;5;10m3 Bot(s)/Mob(s) verteilt im Umkreis von 3 Blöcken.[0m
+[12:29:14 INFO]: [38;5;10m3 Bot(s)/Mob(s) verteilt im Umkreis von 3 Blöcken.[0m
+[12:29:14 INFO]: Rotbot2 has made the advancement [38;5;10m[Monster Hunter][0m
+[12:29:16 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 7049216.0 ms/tick | bots 6 (1 aktiv) mobs 0 | ki 0.24 ms avg, 5.1 ms max | pfade 12 (0.9 ms/pfad, cpu 0.0), queue 0 | gc 1 x 6 ms | heap 356/3072 MB
+[12:29:16 INFO]: [38;5;10mGespeichert als "papertest": 6 Bots/Mobs mit Position, Inventar, Team, Auftrag, Feindschaften und Buendnissen.[0m
+[12:29:16 INFO]: [38;5;10mSpielstaende: papertest[0m
+[12:29:16 INFO]: [38;5;10mFight gestartet: Rot (3 Bots) vs Blau (3 Bots).[0m
+[12:29:16 WARN]: Couldn't look up profile properties for 77a742c8-6904-3d9a-9b50-e66f42d7c1d1
+com.mojang.authlib.exceptions.MinecraftClientException: Failed to read from https://sessionserver.mojang.com/session/minecraft/profile/77a742c869043d9a9b50e66f42d7c1d1?unsigned=false due to Read timed out
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:111) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:56) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fetchProfileUncached(YggdrasilMinecraftSessionService.java:197) ~[authlib-7.0.61.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fetchProfile(YggdrasilMinecraftSessionService.java:167) ~[authlib-7.0.61.jar:?]
+	at com.destroystokyo.paper.profile.PaperMinecraftSessionService.fetchProfile(PaperMinecraftSessionService.java:40) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.players.ProfileResolver$Cached$1.load(ProfileResolver.java:35) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.players.ProfileResolver$Cached$1.load(ProfileResolver.java:32) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3556) ~[guava-33.5.0-jre.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2307) ~[guava-33.5.0-jre.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2180) ~[guava-33.5.0-jre.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2071) ~[guava-33.5.0-jre.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3985) ~[guava-33.5.0-jre.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4006) ~[guava-33.5.0-jre.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4946) ~[guava-33.5.0-jre.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4953) ~[guava-33.5.0-jre.jar:?]
+	at net.minecraft.server.players.ProfileResolver$Cached$2.lambda$load$0(ProfileResolver.java:51) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at java.base/java.util.Optional.flatMap(Optional.java:289) ~[?:?]
+	at net.minecraft.server.players.ProfileResolver$Cached$2.load(ProfileResolver.java:51) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at net.minecraft.server.players.ProfileResolver$Cached$2.load(ProfileResolver.java:48) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3556) ~[guava-33.5.0-jre.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2307) ~[guava-33.5.0-jre.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2180) ~[guava-33.5.0-jre.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2071) ~[guava-33.5.0-jre.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3985) ~[guava-33.5.0-jre.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4006) ~[guava-33.5.0-jre.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4946) ~[guava-33.5.0-jre.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4953) ~[guava-33.5.0-jre.jar:?]
+	at net.minecraft.server.players.ProfileResolver$Cached.fetchByName(ProfileResolver.java:58) ~[paper-1.21.11.jar:1.21.11-132-c5eb079]
+	at botsystem-paper-3.0.0.jar//de.fiden.botsystem.bot.Bots.fetchSkin(Bots.java:725) ~[?:?]
+	at botsystem-paper-3.0.0.jar//de.fiden.botsystem.bot.Bots.lambda$lookupSkin$15(Bots.java:702) ~[?:?]
+	at botsystem-paper-3.0.0.jar//de.fiden.botsystem.bot.Bots$SkinTask.run(Bots.java:272) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:277) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:302) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:354) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:798) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:974) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:964) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:483) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1068) ~[?:?]
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:289) ~[?:?]
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:330) ~[?:?]
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:388) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:795) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:727) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1392) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1302) ~[?:?]
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:493) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?]
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:82) ~[authlib-7.0.61.jar:?]
+	... 33 more
+[12:29:22 INFO]: Rotbot1 has the following entity data: [{[38;5;14mid[0m: "[38;5;10mminecraft:strength[0m", [38;5;14mduration[0m: [38;5;3m1725[0m, [38;5;14mamplifier[0m: [38;5;3m1[38;5;9mb[0m, [38;5;14mshow_icon[0m: [38;5;3m1[38;5;9mb[0m}]
+[12:29:25 INFO]: Rotbot3 was killed by 101u5k80 using magic
+[12:29:25 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: Rotbot3 [Rot] - indirectMagic durch 101u5k80 [blau] bei -2/-60/-2 (Tick 1179)
+[12:29:25 INFO]: Rotbot3 lost connection: Bot entfernt
+[12:29:25 INFO]: [38;5;11mRotbot3 left the game[0m
+[12:29:26 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 3468465.0 ms/tick | bots 5 (5 aktiv) mobs 0 | ki 0.30 ms avg, 13.4 ms max | pfade 13 (0.4 ms/pfad, cpu 0.0), queue 0 | gc 0 x 0 ms | heap 487/3072 MB
+[12:29:28 INFO]: Rotbot1 was slain by xxKuww2l37
+[12:29:28 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: Rotbot1 [Rot] - player durch xxKuww2l37 [blau] bei 0/-60/13 (Tick 1249)
+[12:29:28 INFO]: Rotbot1 lost connection: Bot entfernt
+[12:29:28 INFO]: [38;5;11mRotbot1 left the game[0m
+[12:29:36 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 2795085.0 ms/tick | bots 4 (4 aktiv) mobs 0 | ki 0.23 ms avg, 12.1 ms max | pfade 14 (0.3 ms/pfad, cpu 0.0), queue 0 | gc 1 x 8 ms | heap 473/3072 MB
+[12:29:43 INFO]: Rotbot2 was slain by xxKuww2l37
+[12:29:43 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: Rotbot2 [Rot] - player durch xxKuww2l37 [blau] bei 6/-60/-15 (Tick 1551)
+[12:29:43 INFO]: Rotbot2 lost connection: Bot entfernt
+[12:29:43 INFO]: [38;5;11mRotbot2 left the game[0m
+[12:29:46 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 2886706.0 ms/tick | bots 3 (3 aktiv) mobs 0 | ki 0.21 ms avg, 13.5 ms max | pfade 26 (0.3 ms/pfad, cpu 0.0), queue 0 | gc 3 x 12 ms | heap 372/3072 MB
+[12:29:47 INFO]: [38;5;3mBotSystem 2026-09-20a | Status: 3 Bot(s)[0m
+[12:29:47 INFO]: [38;5;11m- Blau: 3 gesamt, 3 lebend, 3 im Kampf, 0 als Begleiter | Kills 3 / Tode 0[0m
+[12:29:47 INFO]: [38;5;11m- rot: 0 gesamt, 0 lebend, 0 im Kampf, 0 als Begleiter | Kills 0 / Tode 3[0m
+[12:29:47 INFO]: [38;5;10mSpielstand papertest geloescht.[0m
+[12:29:47 INFO]: [38;5;10mKeine Spielstaende. /bot save <name>[0m
+[12:29:47 INFO]: xxKuww2l37 lost connection: Bot entfernt
+[12:29:47 INFO]: [38;5;11mxxKuww2l37 left the game[0m
+[12:29:47 INFO]: w441899f_1 lost connection: Bot entfernt
+[12:29:47 INFO]: [38;5;11mw441899f_1 left the game[0m
+[12:29:47 INFO]: 101u5k80 lost connection: Bot entfernt
+[12:29:47 INFO]: [38;5;11m101u5k80 left the game[0m
+[12:29:47 INFO]: [38;5;10m3 Bot(s) und 0 Mob(s) entfernt.[0m
+[12:29:49 INFO]: Stopping the server
+[12:29:49 INFO]: Stopping server
+[12:29:49 INFO]: [BotSystem] Disabling BotSystem v3.0.0
+[12:29:49 INFO]: Saving players
+[12:29:49 INFO]: Saving worlds
+[12:29:49 INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[12:29:49 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[12:29:49 INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[12:29:49 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[12:29:49 INFO]: [ChunkHolderManager] Saved 739 block chunks, 378 entity chunks, 0 poi chunks in world 'world' in 0,21s
+[12:29:49 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[12:29:49 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[12:29:49 INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[12:29:49 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[12:29:49 INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[12:29:49 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[12:29:49 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0,00s
+[12:29:49 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
+[12:29:49 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
+[12:29:49 INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[12:29:49 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[12:29:49 INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[12:29:49 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[12:29:49 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0,00s
+[12:29:49 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
+[12:29:49 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
+[12:29:49 INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[12:29:49 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[12:29:49 INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[12:29:49 INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[12:29:49 INFO]: Waiting for all RegionFile I/O tasks to complete...
+[12:29:49 INFO]: All RegionFile I/O tasks to complete
+[12:29:49 INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[12:29:49 INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

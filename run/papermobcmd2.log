@@ -1,0 +1,173 @@
+Starting org.bukkit.craftbukkit.Main
+2026-09-24T16:50:57.372389900Z ServerMain WARN Advanced terminal features are not available in this environment
+[18:50:57 INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4+7-LTS; Eclipse Adoptium Temurin-25.0.4+7) on Windows 11 10.0 (amd64)
+[18:50:57 INFO]: [bootstrap] Loading Paper 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) for Minecraft 1.21.11
+[18:50:58 INFO]: [PluginInitializerManager] Initializing plugins...
+[18:50:58 INFO]: [PluginInitializerManager] Initialized 1 plugin
+[18:50:58 INFO]: [PluginInitializerManager] Paper plugins (1):
+ - BotSystem (3.0.0)
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.joml.MemUtil$MemUtilUnsafe (file:/C:/Users/notof/BotSystem-Paper/run/libraries/org/joml/joml/1.10.8/joml-1.10.8.jar)
+WARNING: Please consider reporting this to the maintainers of class org.joml.MemUtil$MemUtilUnsafe
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[18:51:01 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[18:51:02 INFO]: Loaded 1470 recipes
+[18:51:02 INFO]: Loaded 1584 advancements
+[18:51:03 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[18:51:03 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 243,5ms
+[18:51:03 INFO]: Starting minecraft server version 1.21.11
+[18:51:03 INFO]: Loading properties
+[18:51:03 INFO]: This server is running Paper version 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[18:51:03 INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[18:51:03 INFO]: Server Ping Player Sample Count: 12
+[18:51:03 INFO]: Using 4 threads for Netty based IO
+[18:51:03 INFO]: [MoonriseCommon] Paper is using 6 worker threads, 1 I/O threads
+[18:51:04 INFO]: Default game type: SURVIVAL
+[18:51:04 INFO]: Generating keypair
+[18:51:04 INFO]: Starting Minecraft server on *:25599
+[18:51:04 INFO]: Paper: Using Java compression from Velocity.
+[18:51:04 INFO]: Paper: Using Java cipher from Velocity.
+[18:51:04 INFO]: [BotSystem] Loading server plugin BotSystem v3.0.0
+[18:51:04 INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:51:04 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[18:51:04 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[18:51:04 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[18:51:04 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[18:51:04 INFO]: Preparing level "world"
+[18:51:04 INFO]: Loading 440 persistent chunks for world 'minecraft:overworld'...
+[18:51:04 INFO]: Preparing spawn area: 2%
+[18:51:05 INFO]: Prepared spawn area in 757 ms
+[18:51:05 INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[18:51:05 INFO]: Prepared spawn area in 1 ms
+[18:51:05 INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[18:51:05 INFO]: Prepared spawn area in 1 ms
+[18:51:05 INFO]: Done preparing level "world" (1.070s)
+[18:51:05 INFO]: [BotSystem] Enabling BotSystem v3.0.0
+[18:51:05 INFO]: [BotSystem] BotSystem 2026-09-24f (Paper) bereit.
+[18:51:05 INFO]: [spark] Starting background profiler...
+[18:51:05 INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[18:51:05 INFO]: Running delayed init tasks
+[18:51:05 INFO]: Done (8.842s)! For help, type "help"
+[18:51:05 WARN]: *************************************************************************************
+[18:51:05 WARN]: You are running the latest build for your Minecraft version (1.21.11)
+[18:51:05 WARN]: However, you are 4 release(s) behind the latest stable release (26.2)!
+[18:51:05 WARN]: It is recommended that you update as soon as possible
+[18:51:05 WARN]: https://papermc.io/downloads/paper
+[18:51:05 WARN]: *************************************************************************************
+[18:51:41 INFO]: [38;5;9mThe difficulty did not change; it is already set to normal[0m
+[18:51:41 INFO]: Set the time to 1000
+[18:51:41 INFO]: Killed 15 entities
+[18:51:41 INFO]: [38;5;9mNo chunks were marked for force loading[0m
+[18:51:41 INFO]: [38;5;9mNo blocks were filled[0m
+[18:51:41 INFO]: [38;5;9mNo blocks were filled[0m
+[18:51:41 INFO]: [38;5;9mNo blocks were filled[0m
+[18:51:41 INFO]: [38;5;9mNo blocks were filled[0m
+[18:51:41 INFO]: [38;5;9mNo blocks were filled[0m
+[18:51:41 INFO]: [38;5;9mNo blocks were filled[0m
+[18:51:41 INFO]: [38;5;9mNo blocks were filled[0m
+[18:51:41 INFO]: [38;5;9mNo blocks were filled[0m
+[18:51:41 INFO]: [38;5;9mNo blocks were filled[0m
+[18:51:41 INFO]: [38;5;9mNo blocks were filled[0m
+[18:51:41 INFO]: [38;5;9mNo blocks were filled[0m
+[18:51:41 INFO]: [38;5;9mNo blocks were filled[0m
+[18:51:44 INFO]: [38;5;10m15x villager in Team Blau gespawnt. Steuern wie Bots: /bot goto|fight|attack|march ... @team:Blau[0m
+[18:51:44 INFO]: [38;5;10m15x zombie in Team Blau gespawnt. Steuern wie Bots: /bot goto|fight|attack|march ... @team:Blau[0m
+[18:51:44 INFO]: [38;5;11mwynrex joined the game[0m
+[18:51:44 INFO]: wynrex[bot] logged in with entity id 51 at ([world]-6.5, -60.0, 0.5)
+[18:51:44 INFO]: [38;5;11mi_z_z_5wj joined the game[0m
+[18:51:44 INFO]: i_z_z_5wj[bot] logged in with entity id 52 at ([world]-8.5, -60.0, 1.5)
+[18:51:44 INFO]: [38;5;11mivanyx joined the game[0m
+[18:51:44 INFO]: ivanyx[bot] logged in with entity id 53 at ([world]-7.5, -60.0, -1.5)
+[18:51:44 INFO]: [38;5;11mRealZoro joined the game[0m
+[18:51:44 INFO]: RealZoro[bot] logged in with entity id 54 at ([world]-6.5, -60.0, 2.5)
+[18:51:44 INFO]: [38;5;11mwolf6122 joined the game[0m
+[18:51:44 INFO]: wolf6122[bot] logged in with entity id 55 at ([world]-10.5, -60.0, 0.5)
+[18:51:44 INFO]: [38;5;10m5 Bot(s) werden gespawnt, Kit iron, Team Rot: wynrex, i_z_z_5wj, ivanyx, RealZoro, wolf6122[0m
+[18:51:45 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 7.1 ms/tick | bots 5 (0 aktiv) mobs 30 | ki 0.01 ms avg, 2.5 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 43 x 217 ms | heap 398/3072 MB
+[18:51:55 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 1.6 ms/tick | bots 5 (0 aktiv) mobs 30 | ki 0.06 ms avg, 0.2 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 0 x 0 ms | heap 443/3072 MB
+[18:51:56 INFO]: [38;5;11m- wynrex | Rot | IDLE | hp 20 | HT5[0m
+[18:51:56 INFO]: [38;5;11m- i_z_z_5wj | Rot | IDLE | hp 20 | HT4[0m
+[18:51:56 INFO]: [38;5;11m- ivanyx | Rot | IDLE | hp 20 | LT4[0m
+[18:51:56 INFO]: [38;5;11m- RealZoro | Rot | IDLE | hp 20 | HT4[0m
+[18:51:56 INFO]: [38;5;11m- wolf6122 | Rot | IDLE | hp 20 | LT4[0m
+[18:51:56 INFO]: [38;5;10mFight gestartet: Rot (5 Bots) vs Blau (0 Bots).[0m
+[18:51:59 INFO]: Villager Villager['Villager'/24, uuid='a1f4a281-f1d2-44a5-a3f5-8066e80a3631', l='ServerLevel[world]', x=-6.43, y=-60.00, z=-0.47, cpos=[-1, -1], tl=300, v=true] died, message: 'Villager was slain by i_z_z_5wj'
+[18:52:00 INFO]: Villager Villager['Villager'/23, uuid='03e7595b-b164-4bdb-b207-c51da865d143', l='ServerLevel[world]', x=-6.89, y=-60.00, z=6.35, cpos=[-1, 0], tl=314, v=true] died, message: 'Villager was slain by wolf6122'
+[18:52:00 INFO]: Villager Villager['Villager'/27, uuid='9293c74f-2d56-494b-a7c1-73099a91fb49', l='ServerLevel[world]', x=-7.56, y=-60.00, z=6.78, cpos=[-1, 0], tl=320, v=true] died, message: 'Villager was slain by ivanyx'
+[18:52:01 INFO]: RealZoro has made the advancement [38;5;10m[Monster Hunter][0m
+[18:52:02 INFO]: Villager Villager['Villager'/32, uuid='7298adbd-5e91-47f0-b2b4-2b9916117411', l='ServerLevel[world]', x=-7.85, y=-60.00, z=9.68, cpos=[-1, 0], tl=359, v=true] died, message: 'Villager was slain by ivanyx'
+[18:52:02 INFO]: Villager Villager['Villager'/30, uuid='781524c8-b114-4756-b220-4c1b6a691ad1', l='ServerLevel[world]', x=-11.17, y=-60.00, z=-1.79, cpos=[-1, -1], tl=359, v=true] died, message: 'Villager was slain by RealZoro'
+[18:52:02 INFO]: Villager Villager['Villager'/35, uuid='d25f74f3-1adf-4a0c-a592-2d6094e68399', l='ServerLevel[world]', x=-6.09, y=-60.00, z=2.77, cpos=[-1, 0], tl=360, v=true] died, message: 'Villager was slain by i_z_z_5wj'
+[18:52:03 INFO]: Villager Villager['Villager'/33, uuid='57b804dc-f646-4558-9579-738ec4263b04', l='ServerLevel[world]', x=-12.51, y=-60.00, z=1.53, cpos=[-1, 0], tl=371, v=true] died, message: 'Villager was slain by RealZoro'
+[18:52:04 INFO]: wolf6122 has made the advancement [38;5;10m[Monster Hunter][0m
+[18:52:05 INFO]: ivanyx has made the advancement [38;5;10m[Monster Hunter][0m
+[18:52:05 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 2.1 ms/tick | bots 5 (5 aktiv) mobs 20 | ki 0.34 ms avg, 5.7 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 1 x 4 ms | heap 366/3072 MB
+[18:52:05 INFO]: Villager Villager['Villager'/22, uuid='ce642e63-e4ff-4b12-abcb-3b201993efac', l='ServerLevel[world]', x=-10.96, y=-60.00, z=-7.36, cpos=[-1, -1], tl=424, v=true] died, message: 'Villager was slain by RealZoro'
+[18:52:07 INFO]: i_z_z_5wj has made the advancement [38;5;10m[Monster Hunter][0m
+[18:52:07 INFO]: Villager Villager['Villager'/21, uuid='6d392ba5-5f48-4b22-a565-bb2560d2d8b9', l='ServerLevel[world]', x=-7.73, y=-60.00, z=-7.25, cpos=[-1, -1], tl=461, v=true] died, message: 'Villager was slain by RealZoro'
+[18:52:07 INFO]: Villager Villager['Villager'/29, uuid='26780634-c074-447d-ac38-8f15690bc3e1', l='ServerLevel[world]', x=1.35, y=-60.00, z=6.91, cpos=[0, 0], tl=463, v=true] died, message: 'Villager was slain by i_z_z_5wj'
+[18:52:08 INFO]: Villager Villager['Villager'/31, uuid='c0067495-0fd5-48cf-a4bb-d5e900e4d31a', l='ServerLevel[world]', x=-11.76, y=-60.00, z=-5.26, cpos=[-1, -1], tl=473, v=true] died, message: 'Villager was slain by RealZoro'
+[18:52:08 INFO]: [38;5;3mBotSystem 2026-09-24f | Status: 5 Bot(s), 13 Mob-Einheit(en) - /bot mob list[0m
+[18:52:08 INFO]: [38;5;11m- Blau: 13 gesamt, 13 lebend, 13 im Kampf, 0 als Begleiter | Kills 0 / Tode 0[0m
+[18:52:08 INFO]: [38;5;11m- Rot: 5 gesamt, 5 lebend, 5 im Kampf, 0 als Begleiter | Kills 17 / Tode 0[0m
+[18:52:08 INFO]: [38;5;3mBotSystem 2026-09-24f | Status: 5 Bot(s), 13 Mob-Einheit(en) - /bot mob list[0m
+[18:52:08 INFO]: [38;5;11m- Blau: 13 gesamt, 13 lebend, 13 im Kampf, 0 als Begleiter | Kills 0 / Tode 0[0m
+[18:52:08 INFO]: [38;5;11m- Rot: 5 gesamt, 5 lebend, 5 im Kampf, 0 als Begleiter | Kills 17 / Tode 0[0m
+[18:52:08 INFO]: [38;5;3mBotSystem 2026-09-24f | Status: 5 Bot(s), 13 Mob-Einheit(en) - /bot mob list[0m
+[18:52:08 INFO]: [38;5;11m- Blau: 13 gesamt, 13 lebend, 13 im Kampf, 0 als Begleiter | Kills 0 / Tode 0[0m
+[18:52:08 INFO]: [38;5;11m- Rot: 5 gesamt, 5 lebend, 5 im Kampf, 0 als Begleiter | Kills 17 / Tode 0[0m
+[18:52:08 INFO]: [38;5;10m5 Bot(s) kämpfen nicht mehr.[0m
+[18:52:08 INFO]: [38;5;10m5 Bot(s)/Mob(s) angehalten: alle Auftraege und Feindschaften weg, 15 s Waffenstillstand.[0m
+[18:52:10 INFO]: [38;5;10m0 Bot(s) + 13 Mob(s) laufen zu 50 -60 -39.[0m
+[18:52:15 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 1.1 ms/tick | bots 5 (0 aktiv) mobs 13 | ki 0.12 ms avg, 2.2 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 0 x 0 ms | heap 397/3072 MB
+[18:52:25 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 0.9 ms/tick | bots 5 (0 aktiv) mobs 13 | ki 0.05 ms avg, 0.1 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 0 x 0 ms | heap 422/3072 MB
+[18:52:35 INFO]: Test passed. Count: 5
+[18:52:35 INFO]: Test passed. Count: 4
+[18:52:35 INFO]: [38;5;10m13 Bot(s)/Mob(s) angehalten: alle Auftraege und Feindschaften weg, 15 s Waffenstillstand.[0m
+[18:52:35 INFO]: Test passed. Count: 5
+[18:52:35 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 0.8 ms/tick | bots 5 (0 aktiv) mobs 13 | ki 0.04 ms avg, 0.1 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 0 x 0 ms | heap 445/3072 MB
+[18:52:43 INFO]: Test passed. Count: 6
+[18:52:43 INFO]: Stopping the server
+[18:52:43 INFO]: Stopping server
+[18:52:43 INFO]: [BotSystem] Disabling BotSystem v3.0.0
+[18:52:43 INFO]: wynrex lost connection: Bot entfernt
+[18:52:43 INFO]: [38;5;11mwynrex left the game[0m
+[18:52:43 INFO]: i_z_z_5wj lost connection: Bot entfernt
+[18:52:43 INFO]: [38;5;11mi_z_z_5wj left the game[0m
+[18:52:43 INFO]: ivanyx lost connection: Bot entfernt
+[18:52:43 INFO]: [38;5;11mivanyx left the game[0m
+[18:52:43 INFO]: RealZoro lost connection: Bot entfernt
+[18:52:43 INFO]: [38;5;11mRealZoro left the game[0m
+[18:52:43 INFO]: wolf6122 lost connection: Bot entfernt
+[18:52:43 INFO]: [38;5;11mwolf6122 left the game[0m
+[18:52:43 INFO]: Saving players
+[18:52:43 INFO]: Saving worlds
+[18:52:43 INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[18:52:43 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[18:52:43 INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[18:52:43 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[18:52:43 INFO]: [ChunkHolderManager] Saved 440 block chunks, 440 entity chunks, 0 poi chunks in world 'world' in 0,24s
+[18:52:43 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[18:52:43 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[18:52:43 INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[18:52:43 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[18:52:43 INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[18:52:43 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[18:52:43 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0,00s
+[18:52:43 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
+[18:52:43 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
+[18:52:43 INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[18:52:43 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[18:52:43 INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[18:52:43 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[18:52:43 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0,00s
+[18:52:43 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
+[18:52:43 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
+[18:52:43 INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[18:52:43 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[18:52:43 INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[18:52:43 INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[18:52:43 INFO]: Waiting for all RegionFile I/O tasks to complete...
+[18:52:43 INFO]: All RegionFile I/O tasks to complete
+[18:52:43 INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[18:52:43 INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

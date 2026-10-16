@@ -1,0 +1,121 @@
+Starting org.bukkit.craftbukkit.Main
+2026-09-21T14:11:38.923335600Z ServerMain WARN Advanced terminal features are not available in this environment
+[16:11:39 INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4+7-LTS; Eclipse Adoptium Temurin-25.0.4+7) on Windows 11 10.0 (amd64)
+[16:11:39 INFO]: [bootstrap] Loading Paper 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) for Minecraft 1.21.11
+[16:11:39 INFO]: [PluginInitializerManager] Initializing plugins...
+[16:11:40 INFO]: [PluginInitializerManager] Initialized 1 plugin
+[16:11:40 INFO]: [PluginInitializerManager] Paper plugins (1):
+ - BotSystem (3.0.0)
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.joml.MemUtil$MemUtilUnsafe (file:/C:/Users/notof/BotSystem-Paper/run/libraries/org/joml/joml/1.10.8/joml-1.10.8.jar)
+WARNING: Please consider reporting this to the maintainers of class org.joml.MemUtil$MemUtilUnsafe
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[16:11:44 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[16:11:45 INFO]: Loaded 1470 recipes
+[16:11:45 INFO]: Loaded 1584 advancements
+[16:11:45 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[16:11:46 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 323,5ms
+[16:11:46 INFO]: Starting minecraft server version 1.21.11
+[16:11:46 INFO]: Loading properties
+[16:11:46 INFO]: This server is running Paper version 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[16:11:46 INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[16:11:46 INFO]: Server Ping Player Sample Count: 12
+[16:11:46 INFO]: Using 4 threads for Netty based IO
+[16:11:46 INFO]: [MoonriseCommon] Paper is using 6 worker threads, 1 I/O threads
+[16:11:47 INFO]: Default game type: SURVIVAL
+[16:11:47 INFO]: Generating keypair
+[16:11:47 INFO]: Starting Minecraft server on *:25599
+[16:11:47 INFO]: Paper: Using Java compression from Velocity.
+[16:11:47 INFO]: Paper: Using Java cipher from Velocity.
+[16:11:47 INFO]: [BotSystem] Loading server plugin BotSystem v3.0.0
+[16:11:47 INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:11:47 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[16:11:47 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[16:11:47 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[16:11:47 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[16:11:47 INFO]: Preparing level "world"
+[16:11:47 INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
+[16:11:47 INFO]: Preparing spawn area: 100%
+[16:11:47 INFO]: Prepared spawn area in 1 ms
+[16:11:47 INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[16:11:47 INFO]: Prepared spawn area in 0 ms
+[16:11:47 INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[16:11:47 INFO]: Prepared spawn area in 0 ms
+[16:11:47 INFO]: Done preparing level "world" (0.310s)
+[16:11:47 INFO]: [BotSystem] Enabling BotSystem v3.0.0
+[16:11:47 INFO]: [BotSystem] BotSystem 2026-09-20b (Paper) bereit.
+[16:11:47 INFO]: [spark] Starting background profiler...
+[16:11:47 INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[16:11:47 INFO]: Running delayed init tasks
+[16:11:47 INFO]: Done (9.723s)! For help, type "help"
+[16:11:48 WARN]: *************************************************************************************
+[16:11:48 WARN]: You are running the latest build for your Minecraft version (1.21.11)
+[16:11:48 WARN]: However, you are 4 release(s) behind the latest stable release (26.2)!
+[16:11:48 WARN]: It is recommended that you update as soon as possible
+[16:11:48 WARN]: https://papermc.io/downloads/paper
+[16:11:48 WARN]: *************************************************************************************
+[16:12:23 INFO]: [38;5;11mwynwyn47 joined the game[0m
+[16:12:23 INFO]: wynwyn47[bot] logged in with entity id 1 at ([world]1.5, -60.0, 0.5)
+[16:12:23 INFO]: [38;5;11morawyndradra joined the game[0m
+[16:12:23 INFO]: orawyndradra[bot] logged in with entity id 2 at ([world]-1.5, -60.0, 1.5)
+[16:12:23 INFO]: [38;5;10m2 Bot(s) werden gespawnt, Kit archer, Team Rot: wynwyn47, orawyndradra[0m
+[16:12:23 INFO]: [38;5;11mL30n_PVP joined the game[0m
+[16:12:23 INFO]: L30n_PVP[bot] logged in with entity id 3 at ([world]2.5, -60.0, 0.5)
+[16:12:23 INFO]: [38;5;10m1 Bot(s) werden gespawnt, Team Blau: L30n_PVP[0m
+[16:12:28 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 7.5 ms/tick | bots 3 (0 aktiv) mobs 0 | ki 0.02 ms avg, 2.2 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 40 x 226 ms | heap 360/3072 MB
+[16:12:30 INFO]: [38;5;10m2 Bot(s)/Mob(s) verteilt im Umkreis von 2 Blöcken.[0m
+[16:12:30 INFO]: [38;5;9mInteger must not be less than 2: found 1
+[38;5;7m...team:Blau [4m[38;5;9m1 tp[0m[3m[38;5;9m<--[HERE][0m
+[16:12:30 INFO]: [38;5;9mIncorrect argument for command
+[38;5;7m...hers hold [4m[38;5;9m@team:Rot[0m[3m[38;5;9m<--[HERE][0m
+[16:12:32 INFO]: [38;5;10mAngriff: Rot (2 Bots) -> Blau (1 Bots). Sichtweite der Opfer: aus (erst nach Treffer)[0m
+[16:12:34 INFO]: wynwyn47 has made the advancement [38;5;10m[Take Aim][0m
+[16:12:38 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 2.5 ms/tick | bots 3 (3 aktiv) mobs 0 | ki 0.18 ms avg, 3.9 ms max | pfade 1 (3.5 ms/pfad, cpu 15.6), queue 0 | gc 3 x 12 ms | heap 389/3072 MB
+[16:12:44 INFO]: L30n_PVP was shot by wynwyn47
+[16:12:44 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: L30n_PVP [Blau] - arrow durch wynwyn47 [rot] bei -13/-60/30 (Tick 1105)
+[16:12:44 INFO]: L30n_PVP lost connection: Bot entfernt
+[16:12:44 INFO]: [38;5;11mL30n_PVP left the game[0m
+[16:12:48 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 2.0 ms/tick | bots 2 (2 aktiv) mobs 0 | ki 0.28 ms avg, 25.8 ms max | pfade 8 (1.2 ms/pfad, cpu 0.0), queue 0 | gc 0 x 0 ms | heap 478/3072 MB
+[16:12:58 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 1.2 ms/tick | bots 2 (1 aktiv) mobs 0 | ki 0.10 ms avg, 0.3 ms max | pfade 8 (0.5 ms/pfad, cpu 0.0), queue 0 | gc 1 x 1 ms | heap 347/3072 MB
+[16:13:02 INFO]: [38;5;3mBotSystem 2026-09-20b | Status: 2 Bot(s)[0m
+[16:13:02 INFO]: [38;5;11m- Rot: 2 gesamt, 2 lebend, 2 im Kampf, 0 als Begleiter | Kills 1 / Tode 0[0m
+[16:13:02 INFO]: [38;5;11m- blau: 0 gesamt, 0 lebend, 0 im Kampf, 0 als Begleiter | Kills 0 / Tode 1[0m
+[16:13:02 INFO]: wynwyn47 lost connection: Bot entfernt
+[16:13:02 INFO]: [38;5;11mwynwyn47 left the game[0m
+[16:13:02 INFO]: orawyndradra lost connection: Bot entfernt
+[16:13:03 INFO]: [38;5;11morawyndradra left the game[0m
+[16:13:03 INFO]: [38;5;10m2 Bot(s) und 0 Mob(s) entfernt.[0m
+[16:13:04 INFO]: Stopping the server
+[16:13:05 INFO]: Stopping server
+[16:13:05 INFO]: [BotSystem] Disabling BotSystem v3.0.0
+[16:13:05 INFO]: Saving players
+[16:13:05 INFO]: Saving worlds
+[16:13:05 INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[16:13:05 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[16:13:05 INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[16:13:05 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[16:13:05 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world' in 0,01s
+[16:13:05 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[16:13:05 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[16:13:05 INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[16:13:05 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[16:13:05 INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[16:13:05 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[16:13:05 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0,00s
+[16:13:05 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
+[16:13:05 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
+[16:13:05 INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[16:13:05 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[16:13:05 INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[16:13:05 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[16:13:05 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0,00s
+[16:13:05 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
+[16:13:05 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
+[16:13:05 INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[16:13:05 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[16:13:05 INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[16:13:05 INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[16:13:05 INFO]: Waiting for all RegionFile I/O tasks to complete...
+[16:13:05 INFO]: All RegionFile I/O tasks to complete
+[16:13:05 INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[16:13:05 INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

@@ -1,0 +1,92 @@
+Starting org.bukkit.craftbukkit.Main
+2026-09-22T17:38:41.287633600Z ServerMain WARN Advanced terminal features are not available in this environment
+[19:38:41 INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4+7-LTS; Eclipse Adoptium Temurin-25.0.4+7) on Windows 11 10.0 (amd64)
+[19:38:41 INFO]: [bootstrap] Loading Paper 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) for Minecraft 1.21.11
+[19:38:42 INFO]: [PluginInitializerManager] Initializing plugins...
+[19:38:43 INFO]: [PluginInitializerManager] Initialized 1 plugin
+[19:38:43 INFO]: [PluginInitializerManager] Paper plugins (1):
+ - BotSystem (3.0.0)
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.joml.MemUtil$MemUtilUnsafe (file:/C:/Users/notof/BotSystem-Paper/run/libraries/org/joml/joml/1.10.8/joml-1.10.8.jar)
+WARNING: Please consider reporting this to the maintainers of class org.joml.MemUtil$MemUtilUnsafe
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[19:38:49 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[19:38:51 INFO]: Loaded 1470 recipes
+[19:38:51 INFO]: Loaded 1584 advancements
+[19:38:51 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[19:38:51 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 387,9ms
+[19:38:52 INFO]: Starting minecraft server version 1.21.11
+[19:38:52 INFO]: Loading properties
+[19:38:52 INFO]: This server is running Paper version 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[19:38:52 INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[19:38:52 INFO]: Using 4 threads for Netty based IO
+[19:38:52 INFO]: Server Ping Player Sample Count: 12
+[19:38:52 INFO]: [MoonriseCommon] Paper is using 6 worker threads, 1 I/O threads
+[19:38:53 INFO]: Default game type: SURVIVAL
+[19:38:53 INFO]: Generating keypair
+[19:38:53 INFO]: Starting Minecraft server on *:25599
+[19:38:53 INFO]: Paper: Using Java compression from Velocity.
+[19:38:53 INFO]: Paper: Using Java cipher from Velocity.
+[19:38:53 INFO]: [BotSystem] Loading server plugin BotSystem v3.0.0
+[19:38:53 INFO]: Server permissions file permissions.yml is empty, ignoring it
+[19:38:53 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[19:38:53 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[19:38:53 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[19:38:53 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[19:38:53 INFO]: Preparing level "world"
+[19:38:54 INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
+[19:38:54 INFO]: Preparing spawn area: 100%
+[19:38:54 INFO]: Prepared spawn area in 2 ms
+[19:38:54 INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[19:38:54 INFO]: Prepared spawn area in 1 ms
+[19:38:54 INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[19:38:54 INFO]: Prepared spawn area in 0 ms
+[19:38:54 INFO]: Done preparing level "world" (0.482s)
+[19:38:54 INFO]: [BotSystem] Enabling BotSystem v3.0.0
+[19:38:54 INFO]: [BotSystem] BotSystem 2026-09-22b (Paper) bereit.
+[19:38:54 INFO]: [spark] Starting background profiler...
+[19:38:54 INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[19:38:54 INFO]: Running delayed init tasks
+[19:38:54 INFO]: Done (14.161s)! For help, type "help"
+[19:38:54 WARN]: *************************************************************************************
+[19:38:54 WARN]: You are running the latest build for your Minecraft version (1.21.11)
+[19:38:54 WARN]: However, you are 4 release(s) behind the latest stable release (26.2)!
+[19:38:54 WARN]: It is recommended that you update as soon as possible
+[19:38:54 WARN]: https://papermc.io/downloads/paper
+[19:38:54 WARN]: *************************************************************************************
+[19:40:03 INFO]: UUID of player BotDev is 8851e65a-2d20-3b65-b8c7-b67cbd723f84
+[19:40:06 INFO]: [38;5;11mBotDev joined the game[0m
+[19:40:06 INFO]: BotDev[/127.0.0.1:24225] logged in with entity id 873 at ([world]-37.84145868304635, -60.0, -0.5645049032753311)
+[19:40:11 INFO]: BotDev issued server command: /bot spawn 8 none dorf
+[19:40:11 INFO]: [38;5;11mAimFinn joined the game[0m
+[19:40:11 INFO]: AimFinn[bot] logged in with entity id 966 at ([world]-36.5, -60.0, -0.5)
+[19:40:11 INFO]: [38;5;11m20_2is joined the game[0m
+[19:40:11 INFO]: 20_2is[bot] logged in with entity id 967 at ([world]-39.5, -60.0, 0.5)
+[19:40:11 INFO]: [38;5;11mTurboCube joined the game[0m
+[19:40:11 INFO]: TurboCube[bot] logged in with entity id 968 at ([world]-37.5, -60.0, -2.5)
+[19:40:11 INFO]: [38;5;11mrexivamir82 joined the game[0m
+[19:40:11 INFO]: rexivamir82[bot] logged in with entity id 969 at ([world]-36.5, -60.0, 1.5)
+[19:40:11 INFO]: [38;5;11msolkro joined the game[0m
+[19:40:11 INFO]: solkro[bot] logged in with entity id 970 at ([world]-40.5, -60.0, -1.5)
+[19:40:11 INFO]: [38;5;11mkrofenkrori joined the game[0m
+[19:40:11 INFO]: krofenkrori[bot] logged in with entity id 971 at ([world]-35.5, -60.0, -2.5)
+[19:40:11 INFO]: [38;5;11mW0lf_TV joined the game[0m
+[19:40:11 INFO]: W0lf_TV[bot] logged in with entity id 972 at ([world]-38.5, -60.0, 2.5)
+[19:40:11 INFO]: [38;5;11moraelukrovex joined the game[0m
+[19:40:11 INFO]: oraelukrovex[bot] logged in with entity id 973 at ([world]-39.5, -60.0, -3.5)
+[19:40:12 INFO]: BotDev issued server command: /bot formation loose
+[19:40:13 INFO]: BotDev issued server command: /bot formation width 16
+[19:40:13 INFO]: BotDev issued server command: /bot crowd info
+[19:40:13 INFO]: BotDev issued server command: /bot life @team:dorf 20
+[19:40:15 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 18.7 ms/tick | bots 8 (3 aktiv) mobs 0 | ki 0.04 ms avg, 5.6 ms max | pfade 2 (5.6 ms/pfad, cpu 0.0), queue 0 | gc 45 x 354 ms | heap 374/4096 MB
+[19:40:15 INFO]: BotDev issued server command: /bot emote @team:dorf wave
+[19:40:16 INFO]: BotDev issued server command: /bot emote @team:dorf cheer
+[19:40:18 INFO]: BotDev issued server command: /bot digrestore 30
+[19:40:18 INFO]: BotDev issued server command: /bot standon @team:dorf stone -46 -11 -26 8
+[19:40:20 INFO]: BotDev issued server command: /bot assemble @team:dorf -36 -60 -1
+[19:40:23 INFO]: solkro has made the advancement [38;5;10m[Monster Hunter][0m
+[19:40:24 INFO]: BotDev lost connection: Disconnected
+[19:40:24 INFO]: [38;5;11mBotDev left the game[0m
+[19:40:25 INFO]: oraelukrovex has made the advancement [38;5;10m[Monster Hunter][0m
+[19:40:25 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 9.8 ms/tick | bots 8 (8 aktiv) mobs 0 | ki 0.37 ms avg, 10.7 ms max | pfade 12 (0.6 ms/pfad, cpu 0.0), queue 0 | gc 1 x 8 ms | heap 442/4096 MB
+[19:40:35 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 3.9 ms/tick | bots 8 (2 aktiv) mobs 0 | ki 0.15 ms avg, 0.7 ms max | pfade 7 (0.3 ms/pfad, cpu 0.0), queue 0 | gc 3 x 32 ms | heap 368/4096 MB

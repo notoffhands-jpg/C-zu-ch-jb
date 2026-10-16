@@ -1,0 +1,1404 @@
+Starting org.bukkit.craftbukkit.Main
+2026-09-23T17:41:50.756130600Z ServerMain WARN Advanced terminal features are not available in this environment
+[19:41:50 INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4+7-LTS; Eclipse Adoptium Temurin-25.0.4+7) on Windows 11 10.0 (amd64)
+[19:41:50 INFO]: [bootstrap] Loading Paper 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) for Minecraft 1.21.11
+[19:41:51 INFO]: [PluginInitializerManager] Initializing plugins...
+[19:41:52 INFO]: [PluginInitializerManager] Initialized 1 plugin
+[19:41:52 INFO]: [PluginInitializerManager] Paper plugins (1):
+ - BotSystem (3.0.0)
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.joml.MemUtil$MemUtilUnsafe (file:/C:/Users/notof/BotSystem-Paper/run/libraries/org/joml/joml/1.10.8/joml-1.10.8.jar)
+WARNING: Please consider reporting this to the maintainers of class org.joml.MemUtil$MemUtilUnsafe
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[19:41:56 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[19:41:58 INFO]: Loaded 1470 recipes
+[19:41:58 INFO]: Loaded 1584 advancements
+[19:41:58 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[19:41:58 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 340,2ms
+[19:41:59 INFO]: Starting minecraft server version 1.21.11
+[19:41:59 INFO]: Loading properties
+[19:41:59 INFO]: This server is running Paper version 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[19:41:59 INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[19:41:59 INFO]: Using 4 threads for Netty based IO
+[19:41:59 INFO]: Server Ping Player Sample Count: 12
+[19:41:59 INFO]: [MoonriseCommon] Paper is using 6 worker threads, 1 I/O threads
+[19:42:00 INFO]: Default game type: SURVIVAL
+[19:42:00 INFO]: Generating keypair
+[19:42:00 INFO]: Starting Minecraft server on *:25599
+[19:42:00 INFO]: Paper: Using Java compression from Velocity.
+[19:42:00 INFO]: Paper: Using Java cipher from Velocity.
+[19:42:00 INFO]: [BotSystem] Loading server plugin BotSystem v3.0.0
+[19:42:00 INFO]: Server permissions file permissions.yml is empty, ignoring it
+[19:42:00 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[19:42:00 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[19:42:00 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[19:42:00 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[19:42:00 INFO]: Preparing level "world"
+[19:42:00 INFO]: Loading 412 persistent chunks for world 'minecraft:overworld'...
+[19:42:00 INFO]: Preparing spawn area: 2%
+[19:42:01 INFO]: Prepared spawn area in 1155 ms
+[19:42:01 INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[19:42:01 INFO]: Prepared spawn area in 2 ms
+[19:42:01 INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[19:42:01 INFO]: Prepared spawn area in 1 ms
+[19:42:01 INFO]: Done preparing level "world" (1.623s)
+[19:42:01 INFO]: [BotSystem] Enabling BotSystem v3.0.0
+[19:42:02 INFO]: [BotSystem] BotSystem 2026-09-23c (Paper) bereit.
+[19:42:02 INFO]: [spark] Starting background profiler...
+[19:42:02 INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[19:42:02 INFO]: Running delayed init tasks
+[19:42:02 INFO]: Done (12.309s)! For help, type "help"
+[19:42:02 WARN]: *************************************************************************************
+[19:42:02 WARN]: You are running the latest build for your Minecraft version (1.21.11)
+[19:42:02 WARN]: However, you are 4 release(s) behind the latest stable release (26.2)!
+[19:42:02 WARN]: It is recommended that you update as soon as possible
+[19:42:02 WARN]: https://papermc.io/downloads/paper
+[19:42:02 WARN]: *************************************************************************************
+[19:42:39 INFO]: [38;5;9mThe difficulty did not change; it is already set to normal[0m
+[19:42:39 INFO]: Set the time to 1000
+[19:42:39 INFO]: [38;5;9mToo many chunks in the specified area (maximum 256, but specified 400)[0m
+[19:42:44 INFO]: [38;5;10m300x zombie in Team Rot gespawnt. Steuern wie Bots: /bot goto|fight|attack|march ... @team:Rot[0m
+[19:42:44 INFO]: [38;5;10m150x skeleton in Team Rot gespawnt. Steuern wie Bots: /bot goto|fight|attack|march ... @team:Rot[0m
+[19:42:52 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 7.6 ms/tick | bots 0 (0 aktiv) mobs 450 | ki 0.01 ms avg, 0.5 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 51 x 332 ms | heap 342/8192 MB
+[19:42:52 INFO]: [38;5;10m300x zombie in Team Blau gespawnt. Steuern wie Bots: /bot goto|fight|attack|march ... @team:Blau[0m
+[19:42:52 INFO]: [38;5;10m150x skeleton in Team Blau gespawnt. Steuern wie Bots: /bot goto|fight|attack|march ... @team:Blau[0m
+[19:43:00 INFO]: [38;5;11mFox_506 joined the game[0m
+[19:43:00 INFO]: Fox_506[bot] logged in with entity id 3211 at ([world]0.5, -60.0, 0.5)
+[19:43:00 INFO]: [38;5;11mxblazex joined the game[0m
+[19:43:00 INFO]: xblazex[bot] logged in with entity id 3212 at ([world]-1.5, -60.0, 1.5)
+[19:43:01 INFO]: [38;5;11maue0kqsew_eg joined the game[0m
+[19:43:01 INFO]: aue0kqsew_eg[bot] logged in with entity id 3213 at ([world]0.5, -60.0, -2.5)
+[19:43:01 INFO]: [38;5;11mxdep0y9c_ue joined the game[0m
+[19:43:01 INFO]: xdep0y9c_ue[bot] logged in with entity id 3214 at ([world]1.5, -60.0, 1.5)
+[19:43:01 INFO]: [38;5;11mc_fop joined the game[0m
+[19:43:01 INFO]: c_fop[bot] logged in with entity id 3215 at ([world]-2.5, -60.0, -0.5)
+[19:43:01 INFO]: [38;5;11melukanyx68 joined the game[0m
+[19:43:01 INFO]: elukanyx68[bot] logged in with entity id 3216 at ([world]2.5, -60.0, -1.5)
+[19:43:01 INFO]: [38;5;11mMilaFox joined the game[0m
+[19:43:01 INFO]: MilaFox[bot] logged in with entity id 3217 at ([world]-0.5, -60.0, 3.5)
+[19:43:01 INFO]: [38;5;11mbovexlo78 joined the game[0m
+[19:43:01 INFO]: bovexlo78[bot] logged in with entity id 3218 at ([world]-1.5, -60.0, -3.5)
+[19:43:01 INFO]: [38;5;11mdqvf_u_u joined the game[0m
+[19:43:01 INFO]: dqvf_u_u[bot] logged in with entity id 3219 at ([world]3.5, -60.0, 1.5)
+[19:43:01 INFO]: [38;5;11mkitaurexsol joined the game[0m
+[19:43:01 INFO]: kitaurexsol[bot] logged in with entity id 3220 at ([world]-3.5, -60.0, 1.5)
+[19:43:01 INFO]: [38;5;11m3mMB7mu9_4 joined the game[0m
+[19:43:01 INFO]: 3mMB7mu9_4[bot] logged in with entity id 3221 at ([world]1.5, -60.0, -3.5)
+[19:43:01 INFO]: [38;5;11mqasjjvb_4 joined the game[0m
+[19:43:01 INFO]: qasjjvb_4[bot] logged in with entity id 3222 at ([world]1.5, -60.0, 4.5)
+[19:43:01 INFO]: [38;5;11mCraftD96 joined the game[0m
+[19:43:01 INFO]: CraftD96[bot] logged in with entity id 3223 at ([world]-3.5, -60.0, -2.5)
+[19:43:01 INFO]: [38;5;11mxW0lf_85 joined the game[0m
+[19:43:01 INFO]: xW0lf_85[bot] logged in with entity id 3224 at ([world]4.5, -60.0, -1.5)
+[19:43:01 INFO]: [38;5;11mBlazeTimo joined the game[0m
+[19:43:01 INFO]: BlazeTimo[bot] logged in with entity id 3225 at ([world]-2.5, -60.0, 4.5)
+[19:43:01 INFO]: [38;5;11ma5v6 joined the game[0m
+[19:43:01 INFO]: a5v6[bot] logged in with entity id 3226 at ([world]-0.5, -60.0, -5.5)
+[19:43:01 INFO]: [38;5;11m80_8l436 joined the game[0m
+[19:43:01 INFO]: 80_8l436[bot] logged in with entity id 3227 at ([world]4.5, -60.0, 3.5)
+[19:43:01 INFO]: [38;5;11ms68u joined the game[0m
+[19:43:01 INFO]: s68u[bot] logged in with entity id 3228 at ([world]-5.5, -60.0, 0.5)
+[19:43:01 INFO]: [38;5;11mLuca joined the game[0m
+[19:43:01 INFO]: Luca[bot] logged in with entity id 3229 at ([world]3.5, -60.0, -3.5)
+[19:43:01 INFO]: [38;5;11morakaborex30 joined the game[0m
+[19:43:01 INFO]: orakaborex30[bot] logged in with entity id 3230 at ([world]-0.5, -60.0, 5.5)
+[19:43:01 INFO]: [38;5;11mdtooa5oq joined the game[0m
+[19:43:01 INFO]: dtooa5oq[bot] logged in with entity id 3231 at ([world]-3.5, -60.0, -4.5)
+[19:43:01 INFO]: [38;5;11mtauora joined the game[0m
+[19:43:01 INFO]: tauora[bot] logged in with entity id 3232 at ([world]5.5, -60.0, 0.5)
+[19:43:01 INFO]: [38;5;11mlonyxvex joined the game[0m
+[19:43:01 INFO]: lonyxvex[bot] logged in with entity id 3233 at ([world]-5.5, -60.0, 3.5)
+[19:43:01 INFO]: [38;5;11mLeonCube joined the game[0m
+[19:43:01 INFO]: LeonCube[bot] logged in with entity id 3234 at ([world]1.5, -60.0, -6.5)
+[19:43:01 INFO]: [38;5;11mRave_273 joined the game[0m
+[19:43:01 INFO]: Rave_273[bot] logged in with entity id 3235 at ([world]3.5, -60.0, 5.5)
+[19:43:01 INFO]: [38;5;11m1_6_agx_u joined the game[0m
+[19:43:01 INFO]: 1_6_agx_u[bot] logged in with entity id 3236 at ([world]-6.5, -60.0, -1.5)
+[19:43:01 INFO]: [38;5;11m443O joined the game[0m
+[19:43:01 INFO]: 443O[bot] logged in with entity id 3237 at ([world]6.5, -60.0, -2.5)
+[19:43:01 INFO]: [38;5;11mF1nn_xD joined the game[0m
+[19:43:01 INFO]: F1nn_xD[bot] logged in with entity id 3238 at ([world]-2.5, -60.0, 6.5)
+[19:43:01 INFO]: [38;5;11mwam0 joined the game[0m
+[19:43:01 INFO]: wam0[bot] logged in with entity id 3239 at ([world]-2.5, -60.0, -6.5)
+[19:43:01 INFO]: [38;5;11mo_b4 joined the game[0m
+[19:43:01 INFO]: o_b4[bot] logged in with entity id 3240 at ([world]6.5, -60.0, 3.5)
+[19:43:01 INFO]: [38;5;11mhmwlejumh7 joined the game[0m
+[19:43:01 INFO]: hmwlejumh7[bot] logged in with entity id 3241 at ([world]-6.5, -60.0, 1.5)
+[19:43:01 INFO]: [38;5;11mgeze_ao joined the game[0m
+[19:43:01 INFO]: geze_ao[bot] logged in with entity id 3242 at ([world]3.5, -60.0, -6.5)
+[19:43:01 INFO]: [38;5;11mmirmirzen joined the game[0m
+[19:43:01 INFO]: mirmirzen[bot] logged in with entity id 3243 at ([world]1.5, -60.0, 7.5)
+[19:43:01 INFO]: [38;5;11m3thx_5P_55c2 joined the game[0m
+[19:43:01 INFO]: 3thx_5P_55c2[bot] logged in with entity id 3244 at ([world]-5.5, -60.0, -4.5)
+[19:43:01 INFO]: [38;5;11mxxklDx6R_tOb joined the game[0m
+[19:43:01 INFO]: xxklDx6R_tOb[bot] logged in with entity id 3245 at ([world]7.5, -46.0, -0.5)
+[19:43:01 INFO]: [38;5;11mCraftNexo joined the game[0m
+[19:43:01 INFO]: CraftNexo[bot] logged in with entity id 3246 at ([world]-5.5, -60.0, 5.5)
+[19:43:01 INFO]: [38;5;11mwolf7136 joined the game[0m
+[19:43:01 INFO]: wolf7136[bot] logged in with entity id 3247 at ([world]0.5, -60.0, -7.5)
+[19:43:01 INFO]: [38;5;11mhero8725 joined the game[0m
+[19:43:01 INFO]: hero8725[bot] logged in with entity id 3248 at ([world]5.5, -60.0, 5.5)
+[19:43:01 INFO]: [38;5;11mhss1duui_n joined the game[0m
+[19:43:01 INFO]: hss1duui_n[bot] logged in with entity id 3249 at ([world]-8.5, -60.0, -0.5)
+[19:43:01 INFO]: [38;5;11mtausollo55 joined the game[0m
+[19:43:01 INFO]: tausollo55[bot] logged in with entity id 3250 at ([world]6.5, -60.0, -4.5)
+[19:43:01 INFO]: [38;5;11m66blWV45h joined the game[0m
+[19:43:01 INFO]: 66blWV45h[bot] logged in with entity id 3251 at ([world]-1.5, -60.0, 8.5)
+[19:43:01 INFO]: [38;5;11mubgpuqzaw joined the game[0m
+[19:43:01 INFO]: ubgpuqzaw[bot] logged in with entity id 3252 at ([world]-4.5, -60.0, -7.5)
+[19:43:01 INFO]: [38;5;11mzrC_rc7v_43 joined the game[0m
+[19:43:01 INFO]: zrC_rc7v_43[bot] logged in with entity id 3253 at ([world]8.5, -60.0, 2.5)
+[19:43:01 INFO]: [38;5;11mxXi4u_fW5_bG joined the game[0m
+[19:43:01 INFO]: xXi4u_fW5_bG[bot] logged in with entity id 3254 at ([world]-7.5, -60.0, 3.5)
+[19:43:01 INFO]: [38;5;11mvexkawynlo joined the game[0m
+[19:43:01 INFO]: vexkawynlo[bot] logged in with entity id 3255 at ([world]3.5, -60.0, -8.5)
+[19:43:01 INFO]: [38;5;11msolfen82 joined the game[0m
+[19:43:01 INFO]: solfen82[bot] logged in with entity id 3256 at ([world]3.5, -60.0, 8.5)
+[19:43:01 INFO]: [38;5;11mKai1 joined the game[0m
+[19:43:01 INFO]: Kai1[bot] logged in with entity id 3257 at ([world]-8.5, -60.0, -3.5)
+[19:43:01 INFO]: [38;5;11mCraftNova joined the game[0m
+[19:43:01 INFO]: CraftNova[bot] logged in with entity id 3258 at ([world]8.5, -60.0, -2.5)
+[19:43:01 INFO]: [38;5;11myokd joined the game[0m
+[19:43:01 INFO]: yokd[bot] logged in with entity id 3259 at ([world]-4.5, -60.0, 7.5)
+[19:43:01 INFO]: [38;5;11mLeon2010 joined the game[0m
+[19:43:01 INFO]: Leon2010[bot] logged in with entity id 3260 at ([world]-1.5, -60.0, -8.5)
+[19:43:01 INFO]: [38;5;11mrexfenvex joined the game[0m
+[19:43:01 INFO]: rexfenvex[bot] logged in with entity id 3261 at ([world]7.5, -60.0, 5.5)
+[19:43:01 INFO]: [38;5;11mrexwyn92 joined the game[0m
+[19:43:01 INFO]: rexwyn92[bot] logged in with entity id 3262 at ([world]-9.5, -60.0, 1.5)
+[19:43:01 INFO]: [38;5;11mNovaNinja joined the game[0m
+[19:43:01 INFO]: NovaNinja[bot] logged in with entity id 3263 at ([world]6.5, -60.0, -7.5)
+[19:43:01 INFO]: [38;5;11mozm_uoy4o joined the game[0m
+[19:43:01 INFO]: ozm_uoy4o[bot] logged in with entity id 3264 at ([world]0.5, -46.0, 9.5)
+[19:43:01 INFO]: [38;5;11mHDN3x0 joined the game[0m
+[19:43:01 INFO]: HDN3x0[bot] logged in with entity id 3265 at ([world]-6.5, -60.0, -6.5)
+[19:43:01 INFO]: [38;5;11mxCraft_6 joined the game[0m
+[19:43:01 INFO]: xCraft_6[bot] logged in with entity id 3266 at ([world]9.5, -60.0, 0.5)
+[19:43:01 INFO]: [38;5;11mrexsol33 joined the game[0m
+[19:43:01 INFO]: rexsol33[bot] logged in with entity id 3267 at ([world]-7.5, -60.0, 6.5)
+[19:43:01 INFO]: [38;5;11mLuca2005 joined the game[0m
+[19:43:01 INFO]: Luca2005[bot] logged in with entity id 3268 at ([world]1.5, -60.0, -9.5)
+[19:43:01 INFO]: [38;5;11mtaukroiva joined the game[0m
+[19:43:01 INFO]: taukroiva[bot] logged in with entity id 3269 at ([world]5.5, -60.0, 8.5)
+[19:43:01 INFO]: [38;5;11mTurbo_PVP joined the game[0m
+[19:43:01 INFO]: Turbo_PVP[bot] logged in with entity id 3270 at ([world]-9.5, -60.0, -2.5)
+[19:43:01 INFO]: [38;5;11mPixelWolf joined the game[0m
+[19:43:01 INFO]: PixelWolf[bot] logged in with entity id 3271 at ([world]8.5, -60.0, -4.5)
+[19:43:01 INFO]: [38;5;11mrielukrowyn joined the game[0m
+[19:43:01 INFO]: rielukrowyn[bot] logged in with entity id 3272 at ([world]-3.5, -60.0, 9.5)
+[19:43:01 INFO]: [38;5;11mkakrotaunyx joined the game[0m
+[19:43:01 INFO]: kakrotaunyx[bot] logged in with entity id 3273 at ([world]-4.5, -60.0, -9.5)
+[19:43:01 INFO]: [38;5;11mlonyxkadra18 joined the game[0m
+[19:43:01 INFO]: lonyxkadra18[bot] logged in with entity id 3274 at ([world]9.5, -60.0, 4.5)
+[19:43:01 INFO]: [38;5;11mfensol81 joined the game[0m
+[19:43:01 INFO]: fensol81[bot] logged in with entity id 3275 at ([world]-9.5, -60.0, 3.5)
+[19:43:01 INFO]: [38;5;11mLeonWolf joined the game[0m
+[19:43:01 INFO]: LeonWolf[bot] logged in with entity id 3276 at ([world]4.5, -60.0, -9.5)
+[19:43:01 INFO]: [38;5;11mf63cqwk joined the game[0m
+[19:43:01 INFO]: f63cqwk[bot] logged in with entity id 3277 at ([world]2.5, -46.0, 10.5)
+[19:43:01 INFO]: [38;5;11mkarexlo joined the game[0m
+[19:43:01 INFO]: karexlo[bot] logged in with entity id 3278 at ([world]-8.5, -60.0, -5.5)
+[19:43:01 INFO]: [38;5;11mRealNova joined the game[0m
+[19:43:01 INFO]: RealNova[bot] logged in with entity id 3279 at ([world]10.5, -60.0, -1.5)
+[19:43:01 INFO]: [38;5;11m6gtp_baajylh joined the game[0m
+[19:43:01 INFO]: 6gtp_baajylh[bot] logged in with entity id 3280 at ([world]-6.5, -60.0, 8.5)
+[19:43:01 INFO]: [38;5;11mRealP13 joined the game[0m
+[19:43:01 INFO]: RealP13[bot] logged in with entity id 3281 at ([world]-0.5, -60.0, -10.5)
+[19:43:01 INFO]: [38;5;11mBen8 joined the game[0m
+[19:43:01 INFO]: Ben8[bot] logged in with entity id 3282 at ([world]8.5, -60.0, 7.5)
+[19:43:01 INFO]: [38;5;11mrtxssxf joined the game[0m
+[19:43:01 INFO]: rtxssxf[bot] logged in with entity id 3283 at ([world]-11.5, -60.0, -0.5)
+[19:43:01 INFO]: [38;5;11ma1m371 joined the game[0m
+[19:43:01 INFO]: a1m371[bot] logged in with entity id 3284 at ([world]8.5, -60.0, -7.5)
+[19:43:01 INFO]: [38;5;11mNinjaFinn joined the game[0m
+[19:43:01 INFO]: NinjaFinn[bot] logged in with entity id 3285 at ([world]-1.5, -60.0, 11.5)
+[19:43:01 INFO]: [38;5;11mugvqbptr7cx joined the game[0m
+[19:43:01 INFO]: ugvqbptr7cx[bot] logged in with entity id 3286 at ([world]-6.5, -60.0, -9.5)
+[19:43:01 INFO]: [38;5;11mmirfensolka1 joined the game[0m
+[19:43:01 INFO]: mirfensolka1[bot] logged in with entity id 3287 at ([world]11.5, -60.0, 2.5)
+[19:43:01 INFO]: [38;5;11mWolfMax joined the game[0m
+[19:43:01 INFO]: WolfMax[bot] logged in with entity id 3288 at ([world]-9.5, -60.0, 6.5)
+[19:43:01 INFO]: [38;5;11mcutaoutu joined the game[0m
+[19:43:01 INFO]: cutaoutu[bot] logged in with entity id 3289 at ([world]3.5, -60.0, -11.5)
+[19:43:02 INFO]: [38;5;11mdzybx joined the game[0m
+[19:43:02 INFO]: dzybx[bot] logged in with entity id 3290 at ([world]5.5, -46.0, 10.5)
+[19:43:02 INFO]: [38;5;11mdrazen60 joined the game[0m
+[19:43:02 INFO]: drazen60[bot] logged in with entity id 3291 at ([world]-10.5, -60.0, -4.5)
+[19:43:02 INFO]: [38;5;11mwynzen joined the game[0m
+[19:43:02 INFO]: wynzen[bot] logged in with entity id 3292 at ([world]10.5, -60.0, -4.5)
+[19:43:02 INFO]: [38;5;11mLeon joined the game[0m
+[19:43:02 INFO]: Leon[bot] logged in with entity id 3293 at ([world]-5.5, -60.0, 10.5)
+[19:43:02 INFO]: [38;5;11mwynkro joined the game[0m
+[19:43:02 INFO]: wynkro[bot] logged in with entity id 3294 at ([world]-3.5, -60.0, -11.5)
+[19:43:02 INFO]: [38;5;11mxX3894fjxx joined the game[0m
+[19:43:02 INFO]: xX3894fjxx[bot] logged in with entity id 3295 at ([world]10.5, -60.0, 6.5)
+[19:43:02 INFO]: [38;5;11mmu_a joined the game[0m
+[19:43:02 INFO]: mu_a[bot] logged in with entity id 3296 at ([world]-11.5, -60.0, 2.5)
+[19:43:02 INFO]: [38;5;11mxtimox joined the game[0m
+[19:43:02 INFO]: xtimox[bot] logged in with entity id 3297 at ([world]7.5, -60.0, -9.5)
+[19:43:02 INFO]: [38;5;11mvexka joined the game[0m
+[19:43:02 INFO]: vexka[bot] logged in with entity id 3298 at ([world]1.5, -60.0, 12.5)
+[19:43:02 INFO]: [38;5;11mxWolf_25 joined the game[0m
+[19:43:02 INFO]: xWolf_25[bot] logged in with entity id 3299 at ([world]-9.5, -60.0, -7.5)
+[19:43:02 INFO]: [38;5;11mNinja2001 joined the game[0m
+[19:43:02 INFO]: Ninja2001[bot] logged in with entity id 3300 at ([world]12.5, -46.0, -0.5)
+[19:43:02 INFO]: [38;5;11mKa1R92 joined the game[0m
+[19:43:02 INFO]: Ka1R92[bot] logged in with entity id 3301 at ([world]-8.5, -60.0, 8.5)
+[19:43:02 INFO]: [38;5;11mJay_HD joined the game[0m
+[19:43:02 INFO]: Jay_HD[bot] logged in with entity id 3302 at ([world]0.5, -60.0, -12.5)
+[19:43:02 INFO]: [38;5;11mfenrexiva joined the game[0m
+[19:43:02 INFO]: fenrexiva[bot] logged in with entity id 3303 at ([world]7.5, -46.0, 9.5)
+[19:43:02 INFO]: [38;5;11mrexmirriiva joined the game[0m
+[19:43:02 INFO]: rexmirriiva[bot] logged in with entity id 3304 at ([world]-12.5, -60.0, -1.5)
+[19:43:02 INFO]: [38;5;11mzenkazen joined the game[0m
+[19:43:02 INFO]: zenkazen[bot] logged in with entity id 3305 at ([world]10.5, -60.0, -7.5)
+[19:43:02 INFO]: [38;5;11megzs joined the game[0m
+[19:43:02 INFO]: egzs[bot] logged in with entity id 3306 at ([world]-2.5, -60.0, 12.5)
+[19:43:02 INFO]: [38;5;11melueluri joined the game[0m
+[19:43:02 INFO]: elueluri[bot] logged in with entity id 3307 at ([world]-6.5, -60.0, -11.5)
+[19:43:02 INFO]: [38;5;11mnmo4 joined the game[0m
+[19:43:02 INFO]: nmo4[bot] logged in with entity id 3308 at ([world]12.5, -60.0, 4.5)
+[19:43:02 INFO]: [38;5;11maeikxyuud joined the game[0m
+[19:43:02 INFO]: aeikxyuud[bot] logged in with entity id 3309 at ([world]-11.5, -60.0, 5.5)
+[19:43:02 INFO]: [38;5;11mxblaz3x joined the game[0m
+[19:43:02 INFO]: xblaz3x[bot] logged in with entity id 3310 at ([world]5.5, -60.0, -11.5)
+[19:43:02 INFO]: [38;5;10m100 Bot(s) werden gespawnt, Kit iron, Team Rot: Fox_506, xblazex, aue0kqsew_eg, xdep0y9c_ue, c_fop, elukanyx68 ...[0m
+[19:43:02 INFO]: [38;5;11mxDAim joined the game[0m
+[19:43:02 INFO]: xDAim[bot] logged in with entity id 3311 at ([world]0.5, -60.0, 0.5)
+[19:43:02 INFO]: [38;5;11mxM1la_26 joined the game[0m
+[19:43:02 INFO]: xM1la_26[bot] logged in with entity id 3312 at ([world]-1.5, -60.0, 1.5)
+[19:43:02 INFO]: [38;5;11mTurbo joined the game[0m
+[19:43:02 INFO]: Turbo[bot] logged in with entity id 3313 at ([world]0.5, -60.0, -2.5)
+[19:43:02 INFO]: [38;5;11mNinjaZoro joined the game[0m
+[19:43:02 INFO]: NinjaZoro[bot] logged in with entity id 3314 at ([world]1.5, -60.0, 1.5)
+[19:43:02 INFO]: [38;5;11mpikhu joined the game[0m
+[19:43:02 INFO]: pikhu[bot] logged in with entity id 3315 at ([world]-2.5, -60.0, -0.5)
+[19:43:02 INFO]: [38;5;11mkanyxkisol joined the game[0m
+[19:43:02 INFO]: kanyxkisol[bot] logged in with entity id 3316 at ([world]2.5, -60.0, -1.5)
+[19:43:02 INFO]: [38;5;11md7_j4_88 joined the game[0m
+[19:43:02 INFO]: d7_j4_88[bot] logged in with entity id 3317 at ([world]-0.5, -60.0, 3.5)
+[19:43:02 INFO]: [38;5;11mBlaz_287 joined the game[0m
+[19:43:02 INFO]: Blaz_287[bot] logged in with entity id 3318 at ([world]-1.5, -60.0, -3.5)
+[19:43:02 INFO]: [38;5;11mCubeJay joined the game[0m
+[19:43:02 INFO]: CubeJay[bot] logged in with entity id 3319 at ([world]3.5, -60.0, 1.5)
+[19:43:02 INFO]: [38;5;11mYTNexo joined the game[0m
+[19:43:02 INFO]: YTNexo[bot] logged in with entity id 3320 at ([world]-3.5, -60.0, 1.5)
+[19:43:02 INFO]: [38;5;11mkdwwd joined the game[0m
+[19:43:02 INFO]: kdwwd[bot] logged in with entity id 3321 at ([world]1.5, -60.0, -3.5)
+[19:43:02 INFO]: [38;5;11m0no1 joined the game[0m
+[19:43:02 INFO]: 0no1[bot] logged in with entity id 3322 at ([world]1.5, -60.0, 4.5)
+[19:43:02 INFO]: [38;5;11mAimZoro joined the game[0m
+[19:43:02 INFO]: AimZoro[bot] logged in with entity id 3323 at ([world]-3.5, -60.0, -2.5)
+[19:43:02 INFO]: [38;5;11miuyeuurwak1 joined the game[0m
+[19:43:02 INFO]: iuyeuurwak1[bot] logged in with entity id 3324 at ([world]4.5, -60.0, -1.5)
+[19:43:02 INFO]: [38;5;11m10_8b joined the game[0m
+[19:43:02 INFO]: 10_8b[bot] logged in with entity id 3325 at ([world]-2.5, -60.0, 4.5)
+[19:43:02 INFO]: [38;5;11mFinn joined the game[0m
+[19:43:02 INFO]: Finn[bot] logged in with entity id 3326 at ([world]-0.5, -60.0, -5.5)
+[19:43:02 INFO]: [38;5;11mxMax_95 joined the game[0m
+[19:43:02 INFO]: xMax_95[bot] logged in with entity id 3327 at ([world]4.5, -60.0, 3.5)
+[19:43:02 INFO]: [38;5;11mg_h1h0n joined the game[0m
+[19:43:02 INFO]: g_h1h0n[bot] logged in with entity id 3328 at ([world]-5.5, -60.0, 0.5)
+[19:43:02 INFO]: [38;5;11mbiun_h joined the game[0m
+[19:43:02 INFO]: biun_h[bot] logged in with entity id 3329 at ([world]3.5, -60.0, -3.5)
+[19:43:02 INFO]: [38;5;11mmauqffi joined the game[0m
+[19:43:02 INFO]: mauqffi[bot] logged in with entity id 3330 at ([world]-0.5, -60.0, 5.5)
+[19:43:02 INFO]: [38;5;11mboki joined the game[0m
+[19:43:02 INFO]: boki[bot] logged in with entity id 3331 at ([world]-3.5, -60.0, -4.5)
+[19:43:02 INFO]: [38;5;11mxNoah_70 joined the game[0m
+[19:43:02 INFO]: xNoah_70[bot] logged in with entity id 3332 at ([world]5.5, -60.0, 0.5)
+[19:43:02 INFO]: [38;5;11mxX3uke9s_5Xx joined the game[0m
+[19:43:02 INFO]: xX3uke9s_5Xx[bot] logged in with entity id 3333 at ([world]-5.5, -60.0, 3.5)
+[19:43:02 INFO]: [38;5;11mmirsolwynki joined the game[0m
+[19:43:02 INFO]: mirsolwynki[bot] logged in with entity id 3334 at ([world]1.5, -60.0, -6.5)
+[19:43:02 INFO]: [38;5;11mJay0 joined the game[0m
+[19:43:02 INFO]: Jay0[bot] logged in with entity id 3335 at ([world]3.5, -60.0, 5.5)
+[19:43:02 INFO]: [38;5;11mtauelu71 joined the game[0m
+[19:43:02 INFO]: tauelu71[bot] logged in with entity id 3336 at ([world]-6.5, -60.0, -1.5)
+[19:43:02 INFO]: [38;5;11mTurboReal joined the game[0m
+[19:43:02 INFO]: TurboReal[bot] logged in with entity id 3337 at ([world]6.5, -60.0, -2.5)
+[19:43:02 INFO]: [38;5;11m3f_zrmP79_7 joined the game[0m
+[19:43:02 INFO]: 3f_zrmP79_7[bot] logged in with entity id 3338 at ([world]-2.5, -60.0, 6.5)
+[19:43:02 INFO]: [38;5;11mLucaStorm joined the game[0m
+[19:43:02 INFO]: LucaStorm[bot] logged in with entity id 3339 at ([world]-2.5, -60.0, -6.5)
+[19:43:02 INFO]: [38;5;11meirae9 joined the game[0m
+[19:43:02 INFO]: eirae9[bot] logged in with entity id 3340 at ([world]6.5, -60.0, 3.5)
+[19:43:02 INFO]: [38;5;11mzwwr3 joined the game[0m
+[19:43:02 INFO]: zwwr3[bot] logged in with entity id 3341 at ([world]-6.5, -60.0, 1.5)
+[19:43:02 INFO]: [38;5;11msc_30j joined the game[0m
+[19:43:02 INFO]: sc_30j[bot] logged in with entity id 3342 at ([world]3.5, -60.0, -6.5)
+[19:43:02 INFO]: [38;5;11m3_pihvh joined the game[0m
+[19:43:02 INFO]: 3_pihvh[bot] logged in with entity id 3343 at ([world]1.5, -60.0, 7.5)
+[19:43:02 INFO]: [38;5;11mnyxvexbonyx joined the game[0m
+[19:43:02 INFO]: nyxvexbonyx[bot] logged in with entity id 3344 at ([world]-5.5, -60.0, -4.5)
+[19:43:02 INFO]: [38;5;11mshavex joined the game[0m
+[19:43:02 INFO]: shavex[bot] logged in with entity id 3345 at ([world]7.5, -46.0, -0.5)
+[19:43:02 INFO]: [38;5;11mmirrexrex joined the game[0m
+[19:43:02 INFO]: mirrexrex[bot] logged in with entity id 3346 at ([world]-5.5, -60.0, 5.5)
+[19:43:02 INFO]: [38;5;11mgaaxataeve8 joined the game[0m
+[19:43:02 INFO]: gaaxataeve8[bot] logged in with entity id 3347 at ([world]0.5, -60.0, -7.5)
+[19:43:02 INFO]: [38;5;11maim871 joined the game[0m
+[19:43:02 INFO]: aim871[bot] logged in with entity id 3348 at ([world]5.5, -60.0, 5.5)
+[19:43:02 INFO]: [38;5;11mshasollo45 joined the game[0m
+[19:43:02 INFO]: shasollo45[bot] logged in with entity id 3349 at ([world]-8.5, -60.0, -0.5)
+[19:43:02 INFO]: [38;5;11mkirexboora joined the game[0m
+[19:43:02 INFO]: kirexboora[bot] logged in with entity id 3350 at ([world]6.5, -60.0, -4.5)
+[19:43:02 INFO]: [38;5;11m04_palu_oy0 joined the game[0m
+[19:43:02 INFO]: 04_palu_oy0[bot] logged in with entity id 3351 at ([world]-1.5, -60.0, 8.5)
+[19:43:02 INFO]: [38;5;11mn_kk1igkk joined the game[0m
+[19:43:02 INFO]: n_kk1igkk[bot] logged in with entity id 3352 at ([world]-4.5, -60.0, -7.5)
+[19:43:02 INFO]: [38;5;11mmirelu17 joined the game[0m
+[19:43:02 INFO]: mirelu17[bot] logged in with entity id 3353 at ([world]8.5, -60.0, 2.5)
+[19:43:02 INFO]: [38;5;11mRavenStorm joined the game[0m
+[19:43:02 INFO]: RavenStorm[bot] logged in with entity id 3354 at ([world]-7.5, -60.0, 3.5)
+[19:43:02 INFO]: [38;5;11m4wcfvviwc joined the game[0m
+[19:43:02 INFO]: 4wcfvviwc[bot] logged in with entity id 3355 at ([world]3.5, -60.0, -8.5)
+[19:43:02 INFO]: [38;5;11m7pouww0in7f joined the game[0m
+[19:43:02 INFO]: 7pouww0in7f[bot] logged in with entity id 3356 at ([world]3.5, -60.0, 8.5)
+[19:43:02 INFO]: [38;5;11mrb5Qb6995q joined the game[0m
+[19:43:02 INFO]: rb5Qb6995q[bot] logged in with entity id 3357 at ([world]-8.5, -60.0, -3.5)
+[19:43:02 INFO]: [38;5;11m26B9H1dz_5 joined the game[0m
+[19:43:02 INFO]: 26B9H1dz_5[bot] logged in with entity id 3358 at ([world]8.5, -60.0, -2.5)
+[19:43:02 INFO]: [38;5;11mTimoWolf joined the game[0m
+[19:43:02 INFO]: TimoWolf[bot] logged in with entity id 3359 at ([world]-4.5, -60.0, 7.5)
+[19:43:02 INFO]: [38;5;11mMilaNinja joined the game[0m
+[19:43:02 INFO]: MilaNinja[bot] logged in with entity id 3360 at ([world]-1.5, -60.0, -8.5)
+[19:43:02 INFO]: [38;5;11mk6ik3sypkzi joined the game[0m
+[19:43:02 INFO]: k6ik3sypkzi[bot] logged in with entity id 3361 at ([world]7.5, -60.0, 5.5)
+[19:43:02 INFO]: [38;5;11m3s9dtvh0_g_c joined the game[0m
+[19:43:02 INFO]: 3s9dtvh0_g_c[bot] logged in with entity id 3362 at ([world]-9.5, -60.0, 1.5)
+[19:43:02 INFO]: [38;5;11mbomir30 joined the game[0m
+[19:43:02 INFO]: bomir30[bot] logged in with entity id 3363 at ([world]6.5, -60.0, -7.5)
+[19:43:02 INFO]: [38;5;11mCub32005 joined the game[0m
+[19:43:02 INFO]: Cub32005[bot] logged in with entity id 3364 at ([world]0.5, -46.0, 9.5)
+[19:43:02 INFO]: [38;5;11mJay3 joined the game[0m
+[19:43:02 INFO]: Jay3[bot] logged in with entity id 3365 at ([world]-6.5, -60.0, -6.5)
+[19:43:02 INFO]: [38;5;11mreal1428 joined the game[0m
+[19:43:02 INFO]: real1428[bot] logged in with entity id 3366 at ([world]9.5, -60.0, 0.5)
+[19:43:02 INFO]: [38;5;11mAimJay joined the game[0m
+[19:43:02 INFO]: AimJay[bot] logged in with entity id 3367 at ([world]-7.5, -60.0, 6.5)
+[19:43:02 INFO]: [38;5;11mLucaAim joined the game[0m
+[19:43:02 INFO]: LucaAim[bot] logged in with entity id 3368 at ([world]1.5, -60.0, -9.5)
+[19:43:02 INFO]: [38;5;11mKaiWolf joined the game[0m
+[19:43:02 INFO]: KaiWolf[bot] logged in with entity id 3369 at ([world]5.5, -60.0, 8.5)
+[19:43:02 INFO]: [38;5;11mzenvexvex joined the game[0m
+[19:43:02 INFO]: zenvexvex[bot] logged in with entity id 3370 at ([world]-9.5, -60.0, -2.5)
+[19:43:02 INFO]: [38;5;11mxxLbzwrd49Xx joined the game[0m
+[19:43:02 INFO]: xxLbzwrd49Xx[bot] logged in with entity id 3371 at ([world]8.5, -60.0, -4.5)
+[19:43:02 INFO]: [38;5;11mMax3 joined the game[0m
+[19:43:02 INFO]: Max3[bot] logged in with entity id 3372 at ([world]-3.5, -60.0, 9.5)
+[19:43:02 INFO]: [38;5;11mriora joined the game[0m
+[19:43:02 INFO]: riora[bot] logged in with entity id 3373 at ([world]-4.5, -60.0, -9.5)
+[19:43:02 INFO]: [38;5;11m3de_u joined the game[0m
+[19:43:02 INFO]: 3de_u[bot] logged in with entity id 3374 at ([world]9.5, -60.0, 4.5)
+[19:43:02 INFO]: [38;5;11m50ra_u joined the game[0m
+[19:43:02 INFO]: 50ra_u[bot] logged in with entity id 3375 at ([world]-9.5, -60.0, 3.5)
+[19:43:02 INFO]: [38;5;11mw0qbag joined the game[0m
+[19:43:02 INFO]: w0qbag[bot] logged in with entity id 3376 at ([world]4.5, -60.0, -9.5)
+[19:43:02 INFO]: [38;5;11morashadraki joined the game[0m
+[19:43:02 INFO]: orashadraki[bot] logged in with entity id 3377 at ([world]2.5, -46.0, 10.5)
+[19:43:02 INFO]: [38;5;11mB4v_2 joined the game[0m
+[19:43:02 INFO]: B4v_2[bot] logged in with entity id 3378 at ([world]-8.5, -60.0, -5.5)
+[19:43:02 INFO]: [38;5;11mg7g_5 joined the game[0m
+[19:43:02 INFO]: g7g_5[bot] logged in with entity id 3379 at ([world]10.5, -60.0, -1.5)
+[19:43:02 INFO]: [38;5;11mNinjaTimo joined the game[0m
+[19:43:02 INFO]: NinjaTimo[bot] logged in with entity id 3380 at ([world]-6.5, -60.0, 8.5)
+[19:43:03 INFO]: [38;5;11mnyxorasol32 joined the game[0m
+[19:43:03 INFO]: nyxorasol32[bot] logged in with entity id 3381 at ([world]-0.5, -60.0, -10.5)
+[19:43:03 INFO]: [38;5;11mlCE4do joined the game[0m
+[19:43:03 INFO]: lCE4do[bot] logged in with entity id 3382 at ([world]8.5, -60.0, 7.5)
+[19:43:03 INFO]: [38;5;11mPixel2004 joined the game[0m
+[19:43:03 INFO]: Pixel2004[bot] logged in with entity id 3383 at ([world]-11.5, -60.0, -0.5)
+[19:43:03 INFO]: [38;5;11melusolboka56 joined the game[0m
+[19:43:03 INFO]: elusolboka56[bot] logged in with entity id 3384 at ([world]8.5, -60.0, -7.5)
+[19:43:03 INFO]: [38;5;11mkmx60g_qyop joined the game[0m
+[19:43:03 INFO]: kmx60g_qyop[bot] logged in with entity id 3385 at ([world]-1.5, -60.0, 11.5)
+[19:43:03 INFO]: [38;5;11mxXhurtwqTftm joined the game[0m
+[19:43:03 INFO]: xXhurtwqTftm[bot] logged in with entity id 3386 at ([world]-6.5, -60.0, -9.5)
+[19:43:03 INFO]: [38;5;11mAim_649 joined the game[0m
+[19:43:03 INFO]: Aim_649[bot] logged in with entity id 3387 at ([world]11.5, -60.0, 2.5)
+[19:43:03 INFO]: [38;5;11mka14137 joined the game[0m
+[19:43:03 INFO]: ka14137[bot] logged in with entity id 3388 at ([world]-9.5, -60.0, 6.5)
+[19:43:03 INFO]: [38;5;11mRealTimo joined the game[0m
+[19:43:03 INFO]: RealTimo[bot] logged in with entity id 3389 at ([world]3.5, -60.0, -11.5)
+[19:43:03 INFO]: [38;5;11miedit joined the game[0m
+[19:43:03 INFO]: iedit[bot] logged in with entity id 3390 at ([world]5.5, -46.0, 10.5)
+[19:43:03 INFO]: [38;5;11mZoroWolf joined the game[0m
+[19:43:03 INFO]: ZoroWolf[bot] logged in with entity id 3391 at ([world]-10.5, -60.0, -4.5)
+[19:43:03 INFO]: [38;5;11m3tsloaheqouh joined the game[0m
+[19:43:03 INFO]: 3tsloaheqouh[bot] logged in with entity id 3392 at ([world]10.5, -60.0, -4.5)
+[19:43:03 INFO]: [38;5;11mMaxCube joined the game[0m
+[19:43:03 INFO]: MaxCube[bot] logged in with entity id 3393 at ([world]-5.5, -60.0, 10.5)
+[19:43:03 INFO]: [38;5;11mn3x06314 joined the game[0m
+[19:43:03 INFO]: n3x06314[bot] logged in with entity id 3394 at ([world]-3.5, -60.0, -11.5)
+[19:43:03 INFO]: [38;5;11msolkakro18 joined the game[0m
+[19:43:03 INFO]: solkakro18[bot] logged in with entity id 3395 at ([world]10.5, -60.0, 6.5)
+[19:43:03 INFO]: [38;5;11mvexlovexki joined the game[0m
+[19:43:03 INFO]: vexlovexki[bot] logged in with entity id 3396 at ([world]-11.5, -60.0, 2.5)
+[19:43:03 INFO]: [38;5;11mtyoegam joined the game[0m
+[19:43:03 INFO]: tyoegam[bot] logged in with entity id 3397 at ([world]7.5, -60.0, -9.5)
+[19:43:03 INFO]: [38;5;11mxXc1_wt52h4x joined the game[0m
+[19:43:03 INFO]: xXc1_wt52h4x[bot] logged in with entity id 3398 at ([world]1.5, -60.0, 12.5)
+[19:43:03 INFO]: [38;5;11mpfdgij joined the game[0m
+[19:43:03 INFO]: pfdgij[bot] logged in with entity id 3399 at ([world]-9.5, -60.0, -7.5)
+[19:43:03 INFO]: [38;5;11mb3n4872 joined the game[0m
+[19:43:03 INFO]: b3n4872[bot] logged in with entity id 3400 at ([world]12.5, -46.0, -0.5)
+[19:43:03 INFO]: [38;5;11m7x_b_3zb8 joined the game[0m
+[19:43:03 INFO]: 7x_b_3zb8[bot] logged in with entity id 3401 at ([world]-8.5, -60.0, 8.5)
+[19:43:03 INFO]: [38;5;11mxkaix joined the game[0m
+[19:43:03 INFO]: xkaix[bot] logged in with entity id 3402 at ([world]0.5, -60.0, -12.5)
+[19:43:03 INFO]: [38;5;11mL_ev_f44_7_E joined the game[0m
+[19:43:03 INFO]: L_ev_f44_7_E[bot] logged in with entity id 3403 at ([world]7.5, -46.0, 9.5)
+[19:43:03 INFO]: [38;5;11mxMax_40 joined the game[0m
+[19:43:03 INFO]: xMax_40[bot] logged in with entity id 3404 at ([world]-12.5, -60.0, -1.5)
+[19:43:03 INFO]: [38;5;11maqw5 joined the game[0m
+[19:43:03 INFO]: aqw5[bot] logged in with entity id 3405 at ([world]10.5, -60.0, -7.5)
+[19:43:03 INFO]: [38;5;11mkv3g_vj9_4rh joined the game[0m
+[19:43:03 INFO]: kv3g_vj9_4rh[bot] logged in with entity id 3406 at ([world]-2.5, -60.0, 12.5)
+[19:43:03 INFO]: [38;5;11mas_tL joined the game[0m
+[19:43:03 INFO]: as_tL[bot] logged in with entity id 3407 at ([world]-6.5, -60.0, -11.5)
+[19:43:03 INFO]: [38;5;11m8zhzeze joined the game[0m
+[19:43:03 INFO]: 8zhzeze[bot] logged in with entity id 3408 at ([world]12.5, -60.0, 4.5)
+[19:43:03 INFO]: [38;5;11mPVPCraft joined the game[0m
+[19:43:03 INFO]: PVPCraft[bot] logged in with entity id 3409 at ([world]-11.5, -60.0, 5.5)
+[19:43:03 INFO]: [38;5;11mw6yk_ie3isl joined the game[0m
+[19:43:03 INFO]: w6yk_ie3isl[bot] logged in with entity id 3410 at ([world]5.5, -60.0, -11.5)
+[19:43:03 INFO]: [38;5;10m100 Bot(s) werden gespawnt, Kit iron, Team Blau: xDAim, xM1la_26, Turbo, NinjaZoro, pikhu, kanyxkisol ...[0m
+[19:43:04 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 38.7 ms/tick | bots 200 (0 aktiv) mobs 900 | ki 0.18 ms avg, 8.4 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 15 x 100 ms | heap 634/8192 MB
+[19:43:06 INFO]: drazen60 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:06 INFO]: mu_a has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil] Profil ueber 3 s, 501 Stichproben. Eigenzeit (wo der Thread gerade war):
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]    73.3%  Unsafe.park()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     2.2%  MoveToBlockGoal.findNearestBlock()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     1.0%  Reference.clear0()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     1.0%  ServerEntity.sendChanges()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     1.0%  ServerChunkCache.getChunk()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     0.8%  EntityGetter.getNearestPlayer()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     0.8%  MinecraftServer.runServer()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     0.8%  Reference.refersTo()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     0.6%  LivingEntity.isAlive()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     0.6%  ThreadLocal.get()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     0.6%  EntitySelector.lambda$static$4()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     0.6%  ServerDebugSubscribers.getSubscribersFor()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil] Inklusive (Methode irgendwo im Stack, ohne Rahmenwerk):
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]    73.3%  Unsafe.park()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]    73.3%  LockSupport.parkNanos()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]    22.2%  DedicatedServer.tickServer()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]    17.4%  ServerLevel.tick()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]    15.6%  EntityTickList.forEach()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]    15.6%  ServerLevel.lambda$tick$4()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]    14.8%  Level.guardEntityTick()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]    14.4%  ServerLevel.tickNonPassenger()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     8.2%  LivingEntity.tick()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     7.0%  BotPlayer.tick()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     6.8%  ServerPlayer.doTick()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     5.0%  Player.tick()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     4.2%  LivingEntity.aiStep()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     4.0%  BotBrain.tick()
+[19:43:07 INFO]: [de.fiden.botsystem.BotSystemMod] [perf-profil]     4.0%  CraftScheduler.mainThreadHeartbeat()
+[19:43:14 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 6.0 ms/tick | bots 200 (0 aktiv) mobs 900 | ki 0.98 ms avg, 27.0 ms max | pfade 64 (0.5 ms/pfad, cpu 0.0), queue 0 | gc 0 x 0 ms | heap 838/8192 MB
+[19:43:24 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 5.4 ms/tick | bots 200 (0 aktiv) mobs 900 | ki 0.38 ms avg, 0.6 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 0 x 0 ms | heap 1008/8192 MB
+[19:43:25 INFO]: [38;5;10m550 Bot(s)/Mob(s) verteilt im Umkreis von 20 Blöcken.[0m
+[19:43:25 INFO]: [38;5;10m550 Bot(s)/Mob(s) verteilt im Umkreis von 20 Blöcken.[0m
+[19:43:30 INFO]: [38;5;3mServer: 6.3 ms/Tick (Ziel 50) | Bots: 200 (0 unterwegs)[0m
+[19:43:30 INFO]: [38;5;11mBot-KI seit letztem /bot perf: 0.34 ms/Tick im Schnitt, 0.5 ms schlimmster Tick[0m
+[19:43:30 INFO]: [38;5;11mPfadsuche (asynchron, 6 Threads): 0 Pfade, 0.0 ms Wandzeit (0.00 ms pro Pfad), davon 0.0 ms CPU (0.00 ms pro Pfad), 0 in der Warteschlange[0m
+[19:43:30 INFO]: [38;5;10mFight gestartet: Rot (100 Bots) vs Blau (100 Bots).[0m
+[19:43:34 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 27.4 ms/tick | bots 200 (200 aktiv) mobs 900 | ki 8.94 ms avg, 109.3 ms max | pfade 1000 (0.7 ms/pfad, cpu 0.5), queue 0 | gc 1 x 11 ms | heap 972/8192 MB
+[19:43:39 INFO]: NinjaTimo has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:40 INFO]: 3tsloaheqouh has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:40 INFO]: xDAim has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:41 INFO]: elukanyx68 was slain by biun_h
+[19:43:41 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: elukanyx68 [Rot] - player durch biun_h [blau] bei 0/-60/-12 (Tick 1924)
+[19:43:41 INFO]: elukanyx68 lost connection: Bot entfernt
+[19:43:41 INFO]: [38;5;11melukanyx68 left the game[0m
+[19:43:41 INFO]: 1_6_agx_u was slain by TurboReal
+[19:43:41 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: 1_6_agx_u [Rot] - player durch TurboReal [blau] bei 1/-60/-28 (Tick 1930)
+[19:43:41 INFO]: 1_6_agx_u lost connection: Bot entfernt
+[19:43:41 INFO]: [38;5;11m1_6_agx_u left the game[0m
+[19:43:42 INFO]: w0qbag was slain by xdep0y9c_ue
+[19:43:42 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: w0qbag [Blau] - player durch xdep0y9c_ue [rot] bei 6/-60/-12 (Tick 1951)
+[19:43:42 INFO]: w0qbag lost connection: Bot entfernt
+[19:43:42 INFO]: [38;5;11mw0qbag left the game[0m
+[19:43:42 INFO]: PixelWolf has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:42 INFO]: vexka was slain by xDAim
+[19:43:42 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: vexka [Rot] - player durch xDAim [blau] bei 6/-60/-33 (Tick 1960)
+[19:43:42 INFO]: vexka lost connection: Bot entfernt
+[19:43:42 INFO]: [38;5;11mvexka left the game[0m
+[19:43:42 INFO]: Luca was slain by tauelu71
+[19:43:42 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: Luca [Rot] - player durch tauelu71 [blau] bei 2/-60/-11 (Tick 1961)
+[19:43:43 INFO]: Luca lost connection: Bot entfernt
+[19:43:43 INFO]: [38;5;11mLuca left the game[0m
+[19:43:43 INFO]: shasollo45 was slain by a1m371
+[19:43:43 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: shasollo45 [Blau] - player durch a1m371 [rot] bei 4/-60/-37 (Tick 1965)
+[19:43:43 INFO]: shasollo45 lost connection: Bot entfernt
+[19:43:43 INFO]: [38;5;11mshasollo45 left the game[0m
+[19:43:43 INFO]: c_fop was slain by 3_pihvh
+[19:43:43 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: c_fop [Rot] - player durch 3_pihvh [blau] bei 4/-60/-14 (Tick 1966)
+[19:43:43 INFO]: c_fop lost connection: Bot entfernt
+[19:43:43 INFO]: [38;5;11mc_fop left the game[0m
+[19:43:43 INFO]: 66blWV45h was slain by Blaz_287
+[19:43:43 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: 66blWV45h [Rot] - player durch Blaz_287 [blau] bei 5/-60/-27 (Tick 1967)
+[19:43:43 INFO]: 66blWV45h lost connection: Bot entfernt
+[19:43:43 INFO]: [38;5;11m66blWV45h left the game[0m
+[19:43:43 INFO]: eirae9 was slain by 80_8l436
+[19:43:43 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: eirae9 [Blau] - player durch 80_8l436 [rot] bei 3/-58/-35 (Tick 1972)
+[19:43:43 INFO]: eirae9 lost connection: Bot entfernt
+[19:43:43 INFO]: [38;5;11meirae9 left the game[0m
+[19:43:43 INFO]: dtooa5oq has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:43 INFO]: Rave_273 was slain by KaiWolf
+[19:43:43 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: Rave_273 [Rot] - player durch KaiWolf [blau] bei 0/-59/-16 (Tick 1981)
+[19:43:43 INFO]: RealP13 was slain by elusolboka56
+[19:43:43 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: RealP13 [Rot] - player durch elusolboka56 [blau] bei 0/-60/-7 (Tick 1981)
+[19:43:44 INFO]: Rave_273 lost connection: Bot entfernt
+[19:43:44 INFO]: [38;5;11mRave_273 left the game[0m
+[19:43:44 INFO]: RealP13 lost connection: Bot entfernt
+[19:43:44 INFO]: [38;5;11mRealP13 left the game[0m
+[19:43:44 INFO]: 8zhzeze was slain by orakaborex30
+[19:43:44 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: 8zhzeze [Blau] - player durch orakaborex30 [rot] bei 0/-60/-15 (Tick 1982)
+[19:43:44 INFO]: 8zhzeze lost connection: Bot entfernt
+[19:43:44 INFO]: [38;5;11m8zhzeze left the game[0m
+[19:43:44 INFO]: 0no1 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:44 INFO]: xdep0y9c_ue was slain by boki
+[19:43:44 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: xdep0y9c_ue [Rot] - player durch boki [blau] bei 0/-60/-5 (Tick 1984)
+[19:43:44 INFO]: 3f_zrmP79_7 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:44 INFO]: PixelWolf was slain by rb5Qb6995q
+[19:43:44 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: PixelWolf [Rot] - player durch rb5Qb6995q [blau] bei 4/-59/-23 (Tick 1984)
+[19:43:44 INFO]: xdep0y9c_ue lost connection: Bot entfernt
+[19:43:44 INFO]: [38;5;11mxdep0y9c_ue left the game[0m
+[19:43:44 INFO]: PixelWolf lost connection: Bot entfernt
+[19:43:44 INFO]: [38;5;11mPixelWolf left the game[0m
+[19:43:44 INFO]: lonyxkadra18 was slain by Aim_649
+[19:43:44 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: lonyxkadra18 [Rot] - player durch Aim_649 [blau] bei 0/-60/-26 (Tick 1985)
+[19:43:44 INFO]: lonyxkadra18 lost connection: Bot entfernt
+[19:43:44 INFO]: [38;5;11mlonyxkadra18 left the game[0m
+[19:43:44 INFO]: egzs was slain by 50ra_u
+[19:43:44 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: egzs [Rot] - player durch 50ra_u [blau] bei 7/-60/-37 (Tick 1991)
+[19:43:44 INFO]: egzs lost connection: Bot entfernt
+[19:43:44 INFO]: [38;5;11megzs left the game[0m
+[19:43:44 INFO]: 3s9dtvh0_g_c has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:44 INFO]: Blaz_287 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:44 INFO]: B4v_2 was slain by rexfenvex
+[19:43:44 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: B4v_2 [Blau] - player durch rexfenvex [rot] bei 3/-60/-24 (Tick 1995)
+[19:43:44 INFO]: B4v_2 lost connection: Bot entfernt
+[19:43:44 INFO]: [38;5;11mB4v_2 left the game[0m
+[19:43:44 INFO]: mauqffi was slain by elueluri
+[19:43:44 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: mauqffi [Blau] - player durch elueluri [rot] bei 0/-60/-11 (Tick 1996)
+[19:43:44 INFO]: NinjaFinn was slain by 3f_zrmP79_7
+[19:43:44 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: NinjaFinn [Rot] - player durch 3f_zrmP79_7 [blau] bei 2/-60/-16 (Tick 1996)
+[19:43:44 INFO]: NinjaFinn lost connection: Bot entfernt
+[19:43:44 INFO]: [38;5;11mNinjaFinn left the game[0m
+[19:43:44 INFO]: mauqffi lost connection: Bot entfernt
+[19:43:44 INFO]: [38;5;11mmauqffi left the game[0m
+[19:43:44 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 31.2 ms/tick | bots 181 (181 aktiv) mobs 891 | ki 4.81 ms avg, 15.5 ms max | pfade 867 (1.1 ms/pfad, cpu 0.7), queue 0 | gc 4 x 26 ms | heap 1079/8192 MB
+[19:43:45 INFO]: xX3894fjxx was slain by RealTimo
+[19:43:45 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: xX3894fjxx [Rot] - player durch RealTimo [blau] bei 4/-60/-13 (Tick 2002)
+[19:43:45 INFO]: xX3894fjxx lost connection: Bot entfernt
+[19:43:45 INFO]: [38;5;11mxX3894fjxx left the game[0m
+[19:43:45 INFO]: riora has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:45 INFO]: xXc1_wt52h4x has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:45 INFO]: nyxvexbonyx was slain by wynzen
+[19:43:45 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: nyxvexbonyx [Blau] - player durch wynzen [rot] bei 2/-60/-6 (Tick 2009)
+[19:43:45 INFO]: nyxvexbonyx lost connection: Bot entfernt
+[19:43:45 INFO]: [38;5;11mnyxvexbonyx left the game[0m
+[19:43:45 INFO]: xkaix was slain by taukroiva
+[19:43:45 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: xkaix [Blau] - player durch taukroiva [rot] bei 1/-60/-42 (Tick 2010)
+[19:43:45 INFO]: MilaNinja was slain by kakrotaunyx
+[19:43:45 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: MilaNinja [Blau] - player durch kakrotaunyx [rot] bei 1/-60/3 (Tick 2010)
+[19:43:45 INFO]: 3mMB7mu9_4 was slain by xMax_95
+[19:43:45 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: 3mMB7mu9_4 [Rot] - player durch xMax_95 [blau] bei -3/-60/-27 (Tick 2010)
+[19:43:45 INFO]: 3mMB7mu9_4 lost connection: Bot entfernt
+[19:43:45 INFO]: [38;5;11m3mMB7mu9_4 left the game[0m
+[19:43:45 INFO]: MilaNinja lost connection: Bot entfernt
+[19:43:45 INFO]: [38;5;11mMilaNinja left the game[0m
+[19:43:45 INFO]: xkaix lost connection: Bot entfernt
+[19:43:45 INFO]: [38;5;11mxkaix left the game[0m
+[19:43:45 INFO]: n_kk1igkk has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:45 INFO]: pfdgij was slain by xtimox
+[19:43:45 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: pfdgij [Blau] - player durch xtimox [rot] bei 5/-60/-25 (Tick 2016)
+[19:43:45 INFO]: [38;5;3mServer: 32.3 ms/Tick (Ziel 50) | Bots: 176 (176 unterwegs)[0m
+[19:43:45 INFO]: [38;5;11mBot-KI seit letztem /bot perf: 5.57 ms/Tick im Schnitt, 11.3 ms schlimmster Tick[0m
+[19:43:45 INFO]: [38;5;11mPfadsuche (asynchron, 6 Threads): 42 Pfade, 9.7 ms Wandzeit (0.23 ms pro Pfad), davon 0.0 ms CPU (0.00 ms pro Pfad), 0 in der Warteschlange[0m
+[19:43:45 INFO]: [38;5;11mGC seit letztem /bot perf: 5 Sammlungen, 37 ms Pause (2.5 ms/s) | Heap 1189/8192 MB[0m
+[19:43:45 INFO]: [38;5;10mProfil laeuft 10 s ...[0m
+[19:43:45 INFO]: pfdgij lost connection: Bot entfernt
+[19:43:45 INFO]: [38;5;11mpfdgij left the game[0m
+[19:43:45 INFO]: 3f_zrmP79_7 was slain by bovexlo78
+[19:43:45 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: 3f_zrmP79_7 [Blau] - player durch bovexlo78 [rot] bei 1/-60/-17 (Tick 2019)
+[19:43:45 INFO]: 3f_zrmP79_7 lost connection: Bot entfernt
+[19:43:45 INFO]: [38;5;11m3f_zrmP79_7 left the game[0m
+[19:43:45 INFO]: aue0kqsew_eg was slain by g_h1h0n
+[19:43:45 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: aue0kqsew_eg [Rot] - player durch g_h1h0n [blau] bei 7/-60/-5 (Tick 2021)
+[19:43:46 INFO]: aue0kqsew_eg lost connection: Bot entfernt
+[19:43:46 INFO]: [38;5;11maue0kqsew_eg left the game[0m
+[19:43:46 INFO]: s68u has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:46 INFO]: biun_h was slain by cutaoutu
+[19:43:46 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: biun_h [Blau] - player durch cutaoutu [rot] bei 5/-60/-19 (Tick 2022)
+[19:43:46 INFO]: qasjjvb_4 was slain by orashadraki
+[19:43:46 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: qasjjvb_4 [Rot] - player durch orashadraki [blau] bei 0/-60/-11 (Tick 2022)
+[19:43:46 INFO]: qasjjvb_4 lost connection: Bot entfernt
+[19:43:46 INFO]: [38;5;11mqasjjvb_4 left the game[0m
+[19:43:46 INFO]: biun_h lost connection: Bot entfernt
+[19:43:46 INFO]: [38;5;11mbiun_h left the game[0m
+[19:43:46 INFO]: fenrexiva was slain by Max3
+[19:43:46 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: fenrexiva [Rot] - player durch Max3 [blau] bei 0/-60/-24 (Tick 2024)
+[19:43:46 INFO]: fenrexiva lost connection: Bot entfernt
+[19:43:46 INFO]: [38;5;11mfenrexiva left the game[0m
+[19:43:46 INFO]: ubgpuqzaw has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:46 INFO]: shavex has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:46 INFO]: Leon2010 was slain by w6yk_ie3isl
+[19:43:46 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: Leon2010 [Rot] - player durch w6yk_ie3isl [blau] bei 2/-59/-24 (Tick 2031)
+[19:43:46 INFO]: Leon2010 lost connection: Bot entfernt
+[19:43:46 INFO]: [38;5;11mLeon2010 left the game[0m
+[19:43:46 INFO]: riora was slain by tauora
+[19:43:46 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: riora [Blau] - player durch tauora [rot] bei 2/-60/-30 (Tick 2033)
+[19:43:46 INFO]: riora lost connection: Bot entfernt
+[19:43:46 INFO]: [38;5;11mriora left the game[0m
+[19:43:46 INFO]: xMax_95 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:46 INFO]: lonyxvex was slain by ka14137
+[19:43:46 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: lonyxvex [Rot] - player durch ka14137 [blau] bei -2/-60/-6 (Tick 2037)
+[19:43:46 INFO]: lonyxvex lost connection: Bot entfernt
+[19:43:46 INFO]: [38;5;11mlonyxvex left the game[0m
+[19:43:46 INFO]: 3thx_5P_55c2 was slain by NinjaTimo
+[19:43:46 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: 3thx_5P_55c2 [Rot] - player durch NinjaTimo [blau] bei 0/-60/-22 (Tick 2039)
+[19:43:46 INFO]: WolfMax was slain by vexlovexki
+[19:43:46 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: WolfMax [Rot] - player durch vexlovexki [blau] bei 3/-60/-1 (Tick 2039)
+[19:43:46 INFO]: 3thx_5P_55c2 lost connection: Bot entfernt
+[19:43:46 INFO]: [38;5;11m3thx_5P_55c2 left the game[0m
+[19:43:46 INFO]: WolfMax lost connection: Bot entfernt
+[19:43:46 INFO]: [38;5;11mWolfMax left the game[0m
+[19:43:46 INFO]: mirsolwynki has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:46 INFO]: as_tL has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:46 INFO]: boki was slain by xblaz3x
+[19:43:46 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: boki [Blau] - player durch xblaz3x [rot] bei 7/-60/-1 (Tick 2041)
+[19:43:47 INFO]: boki lost connection: Bot entfernt
+[19:43:47 INFO]: [38;5;11mboki left the game[0m
+[19:43:47 INFO]: 50ra_u was slain by fensol81
+[19:43:47 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: 50ra_u [Blau] - player durch fensol81 [rot] bei 6/-60/-42 (Tick 2043)
+[19:43:47 INFO]: 50ra_u lost connection: Bot entfernt
+[19:43:47 INFO]: [38;5;11m50ra_u left the game[0m
+[19:43:47 INFO]: mirelu17 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:47 INFO]: xDAim was slain by tauora
+[19:43:47 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: xDAim [Blau] - player durch tauora [rot] bei 4/-60/-30 (Tick 2045)
+[19:43:47 INFO]: rexfenvex has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:47 INFO]: rielukrowyn has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:47 INFO]: xDAim lost connection: Bot entfernt
+[19:43:47 INFO]: [38;5;11mxDAim left the game[0m
+[19:43:47 INFO]: Turbo has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:47 INFO]: drazen60 was slain by zenvexvex
+[19:43:47 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: drazen60 [Rot] - player durch zenvexvex [blau] bei 2/-60/-25 (Tick 2047)
+[19:43:47 INFO]: drazen60 lost connection: Bot entfernt
+[19:43:47 INFO]: [38;5;11mdrazen60 left the game[0m
+[19:43:47 INFO]: xXc1_wt52h4x was slain by a1m371
+[19:43:47 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: xXc1_wt52h4x [Blau] - player durch a1m371 [rot] bei 3/-60/-37 (Tick 2051)
+[19:43:47 INFO]: xXc1_wt52h4x lost connection: Bot entfernt
+[19:43:47 INFO]: [38;5;11mxXc1_wt52h4x left the game[0m
+[19:43:47 INFO]: zenkazen was slain by YTNexo
+[19:43:47 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: zenkazen [Rot] - player durch YTNexo [blau] bei 2/-60/-28 (Tick 2054)
+[19:43:47 INFO]: zenkazen lost connection: Bot entfernt
+[19:43:47 INFO]: [38;5;11mzenkazen left the game[0m
+[19:43:47 INFO]: Luca2005 was slain by MaxCube
+[19:43:47 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: Luca2005 [Rot] - player durch MaxCube [blau] bei 3/-60/-39 (Tick 2055)
+[19:43:47 INFO]: Luca2005 lost connection: Bot entfernt
+[19:43:47 INFO]: [38;5;11mLuca2005 left the game[0m
+[19:43:47 INFO]: mirsolwynki was slain by BlazeTimo
+[19:43:47 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: mirsolwynki [Blau] - player durch BlazeTimo [rot] bei -1/-59/-14 (Tick 2057)
+[19:43:47 INFO]: mirsolwynki lost connection: Bot entfernt
+[19:43:47 INFO]: [38;5;11mmirsolwynki left the game[0m
+[19:43:48 INFO]: s68u was slain by kirexboora
+[19:43:48 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: s68u [Rot] - player durch kirexboora [blau] bei 6/-60/-28 (Tick 2062)
+[19:43:48 INFO]: s68u lost connection: Bot entfernt
+[19:43:48 INFO]: [38;5;11ms68u left the game[0m
+[19:43:48 INFO]: taukroiva was slain by 7pouww0in7f
+[19:43:48 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: taukroiva [Rot] - player durch 7pouww0in7f [blau] bei -1/-60/-55 (Tick 2063)
+[19:43:48 INFO]: taukroiva lost connection: Bot entfernt
+[19:43:48 INFO]: [38;5;11mtaukroiva left the game[0m
+[19:43:48 INFO]: CraftNova was slain by tauelu71
+[19:43:48 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: CraftNova [Rot] - player durch tauelu71 [blau] bei -2/-60/-12 (Tick 2065)
+[19:43:48 INFO]: CraftNova lost connection: Bot entfernt
+[19:43:48 INFO]: [38;5;11mCraftNova left the game[0m
+[19:43:48 INFO]: xtimox has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:48 INFO]: Pixel2004 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:48 INFO]: dqvf_u_u has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:48 INFO]: xblaz3x was slain by nyxorasol32
+[19:43:48 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: xblaz3x [Rot] - player durch nyxorasol32 [blau] bei 9/-59/-1 (Tick 2070)
+[19:43:48 INFO]: xblaz3x lost connection: Bot entfernt
+[19:43:48 INFO]: [38;5;11mxblaz3x left the game[0m
+[19:43:48 INFO]: Kai1 was slain by AimJay
+[19:43:48 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: Kai1 [Rot] - player durch AimJay [blau] bei 2/-59/-25 (Tick 2071)
+[19:43:48 INFO]: Kai1 lost connection: Bot entfernt
+[19:43:48 INFO]: [38;5;11mKai1 left the game[0m
+[19:43:48 INFO]: rielukrowyn was slain by 10_8b
+[19:43:48 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: rielukrowyn [Rot] - player durch 10_8b [blau] bei 0/-60/-15 (Tick 2072)
+[19:43:48 INFO]: rielukrowyn lost connection: Bot entfernt
+[19:43:48 INFO]: [38;5;11mrielukrowyn left the game[0m
+[19:43:48 INFO]: tauora has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:48 INFO]: 26B9H1dz_5 was slain by Ben8
+[19:43:48 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: 26B9H1dz_5 [Blau] - player durch Ben8 [rot] bei 3/-60/-22 (Tick 2074)
+[19:43:48 INFO]: 26B9H1dz_5 lost connection: Bot entfernt
+[19:43:48 INFO]: [38;5;11m26B9H1dz_5 left the game[0m
+[19:43:48 INFO]: 3_pihvh was slain by nmo4
+[19:43:48 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: 3_pihvh [Blau] - player durch nmo4 [rot] bei 4/-60/-15 (Tick 2079)
+[19:43:48 INFO]: 3_pihvh lost connection: Bot entfernt
+[19:43:48 INFO]: [38;5;11m3_pihvh left the game[0m
+[19:43:49 INFO]: LucaAim has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:49 INFO]: kdwwd has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:49 INFO]: 6gtp_baajylh was slain by xxLbzwrd49Xx
+[19:43:49 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: 6gtp_baajylh [Rot] - player durch xxLbzwrd49Xx [blau] bei 2/-59/-15 (Tick 2085)
+[19:43:49 INFO]: n3x06314 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:49 INFO]: 6gtp_baajylh lost connection: Bot entfernt
+[19:43:49 INFO]: [38;5;11m6gtp_baajylh left the game[0m
+[19:43:49 INFO]: BlazeTimo has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:49 INFO]: w6yk_ie3isl was slain by o_b4
+[19:43:49 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: w6yk_ie3isl [Blau] - player durch o_b4 [rot] bei 4/-60/-21 (Tick 2087)
+[19:43:49 INFO]: w6yk_ie3isl lost connection: Bot entfernt
+[19:43:49 INFO]: [38;5;11mw6yk_ie3isl left the game[0m
+[19:43:49 INFO]: NinjaZoro has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:49 INFO]: g7g_5 was slain by hero8725
+[19:43:49 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: g7g_5 [Blau] - player durch hero8725 [rot] bei 0/-60/-14 (Tick 2096)
+[19:43:49 INFO]: a5v6 was slain by 0no1
+[19:43:49 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: a5v6 [Rot] - player durch 0no1 [blau] bei 0/-60/-6 (Tick 2096)
+[19:43:49 INFO]: a5v6 lost connection: Bot entfernt
+[19:43:49 INFO]: [38;5;11ma5v6 left the game[0m
+[19:43:49 INFO]: g7g_5 lost connection: Bot entfernt
+[19:43:49 INFO]: [38;5;11mg7g_5 left the game[0m
+[19:43:49 INFO]: ozm_uoy4o was slain by shavex
+[19:43:49 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: ozm_uoy4o [Rot] - player durch shavex [blau] bei 2/-60/-11 (Tick 2097)
+[19:43:49 INFO]: ozm_uoy4o lost connection: Bot entfernt
+[19:43:49 INFO]: [38;5;11mozm_uoy4o left the game[0m
+[19:43:49 INFO]: mirmirzen has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:49 INFO]: ZoroWolf has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:49 INFO]: xWolf_25 was slain by kirexboora
+[19:43:49 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: xWolf_25 [Rot] - player durch kirexboora [blau] bei 0/-60/-19 (Tick 2101)
+[19:43:50 INFO]: xWolf_25 lost connection: Bot entfernt
+[19:43:50 INFO]: [38;5;11mxWolf_25 left the game[0m
+[19:43:50 INFO]: k6ik3sypkzi has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:50 INFO]: rexwyn92 was slain by NinjaZoro
+[19:43:50 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: rexwyn92 [Rot] - player durch NinjaZoro [blau] bei 0/-60/-6 (Tick 2103)
+[19:43:50 INFO]: solkakro18 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:50 INFO]: rexwyn92 lost connection: Bot entfernt
+[19:43:50 INFO]: [38;5;11mrexwyn92 left the game[0m
+[19:43:50 INFO]: xM1la_26 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:50 INFO]: aim871 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:50 INFO]: tauelu71 was slain by xW0lf_85
+[19:43:50 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: tauelu71 [Blau] - player durch xW0lf_85 [rot] bei 0/-60/-9 (Tick 2106)
+[19:43:50 INFO]: tauelu71 lost connection: Bot entfernt
+[19:43:50 INFO]: [38;5;11mtauelu71 left the game[0m
+[19:43:50 INFO]: xX3uke9s_5Xx has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:50 INFO]: nmo4 was slain by iedit
+[19:43:50 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: nmo4 [Rot] - player durch iedit [blau] bei 3/-60/-14 (Tick 2108)
+[19:43:50 INFO]: nmo4 lost connection: Bot entfernt
+[19:43:50 INFO]: [38;5;11mnmo4 left the game[0m
+[19:43:50 INFO]: nyxorasol32 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:50 INFO]: 10_8b has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:50 INFO]: tausollo55 was slain by TimoWolf
+[19:43:50 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: tausollo55 [Rot] - player durch TimoWolf [blau] bei 6/-60/-14 (Tick 2112)
+[19:43:50 INFO]: zenvexvex has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:50 INFO]: tausollo55 lost connection: Bot entfernt
+[19:43:50 INFO]: [38;5;11mtausollo55 left the game[0m
+[19:43:50 INFO]: tauora was slain by kirexboora
+[19:43:50 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: tauora [Rot] - player durch kirexboora [blau] bei 0/-60/-25 (Tick 2115)
+[19:43:50 INFO]: hero8725 was slain by orashadraki
+[19:43:50 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: hero8725 [Rot] - player durch orashadraki [blau] bei -2/-60/-13 (Tick 2115)
+[19:43:50 INFO]: tauora lost connection: Bot entfernt
+[19:43:50 INFO]: [38;5;11mtauora left the game[0m
+[19:43:50 INFO]: hero8725 lost connection: Bot entfernt
+[19:43:50 INFO]: [38;5;11mhero8725 left the game[0m
+[19:43:50 INFO]: TurboReal was slain by MilaFox
+[19:43:50 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: TurboReal [Blau] - player durch MilaFox [rot] bei -6/-59/-36 (Tick 2116)
+[19:43:50 INFO]: Ninja2001 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:50 INFO]: TurboReal lost connection: Bot entfernt
+[19:43:50 INFO]: [38;5;11mTurboReal left the game[0m
+[19:43:50 INFO]: Ben8 was slain by Zombie
+[19:43:50 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: Ben8 [Rot] - mob durch Zombie [blau] bei 8/-60/-30 (Tick 2117)
+[19:43:50 INFO]: Ben8 lost connection: Bot entfernt
+[19:43:50 INFO]: [38;5;11mBen8 left the game[0m
+[19:43:50 INFO]: n_kk1igkk was slain by xxklDx6R_tOb
+[19:43:50 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: n_kk1igkk [Blau] - player durch xxklDx6R_tOb [rot] bei -3/-59/-22 (Tick 2118)
+[19:43:50 INFO]: kmx60g_qyop has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:50 INFO]: n_kk1igkk lost connection: Bot entfernt
+[19:43:50 INFO]: [38;5;11mn_kk1igkk left the game[0m
+[19:43:50 INFO]: karexlo has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:51 INFO]: hss1duui_n was slain by Cub32005
+[19:43:51 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: hss1duui_n [Rot] - player durch Cub32005 [blau] bei -1/-60/-26 (Tick 2122)
+[19:43:51 INFO]: hss1duui_n lost connection: Bot entfernt
+[19:43:51 INFO]: [38;5;11mhss1duui_n left the game[0m
+[19:43:51 INFO]: Pixel2004 was slain by LeonWolf
+[19:43:51 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: Pixel2004 [Blau] - player durch LeonWolf [rot] bei -2/-59/-26 (Tick 2123)
+[19:43:51 INFO]: o_b4 was slain by YTNexo
+[19:43:51 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: o_b4 [Rot] - player durch YTNexo [blau] bei 0/-60/-17 (Tick 2123)
+[19:43:51 INFO]: solfen82 was slain by L_ev_f44_7_E
+[19:43:51 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: solfen82 [Rot] - player durch L_ev_f44_7_E [blau] bei 3/-60/-12 (Tick 2123)
+[19:43:51 INFO]: o_b4 lost connection: Bot entfernt
+[19:43:51 INFO]: [38;5;11mo_b4 left the game[0m
+[19:43:51 INFO]: solfen82 lost connection: Bot entfernt
+[19:43:51 INFO]: [38;5;11msolfen82 left the game[0m
+[19:43:51 INFO]: Pixel2004 lost connection: Bot entfernt
+[19:43:51 INFO]: [38;5;11mPixel2004 left the game[0m
+[19:43:51 INFO]: wynkro was slain by KaiWolf
+[19:43:51 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: wynkro [Rot] - player durch KaiWolf [blau] bei -1/-60/-9 (Tick 2124)
+[19:43:51 INFO]: wynkro lost connection: Bot entfernt
+[19:43:51 INFO]: [38;5;11mwynkro left the game[0m
+[19:43:51 INFO]: rexsol33 was slain by TimoWolf
+[19:43:51 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: rexsol33 [Rot] - player durch TimoWolf [blau] bei 5/-60/-14 (Tick 2125)
+[19:43:51 INFO]: rexsol33 lost connection: Bot entfernt
+[19:43:51 INFO]: [38;5;11mrexsol33 left the game[0m
+[19:43:51 INFO]: LucaStorm has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:51 INFO]: CubeJay was slain by rtxssxf
+[19:43:51 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: CubeJay [Blau] - player durch rtxssxf [rot] bei -2/-59/-33 (Tick 2127)
+[19:43:51 INFO]: rexmirriiva has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:51 INFO]: CubeJay lost connection: Bot entfernt
+[19:43:51 INFO]: [38;5;11mCubeJay left the game[0m
+[19:43:51 INFO]: 0no1 was slain by xCraft_6
+[19:43:51 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: 0no1 [Blau] - player durch xCraft_6 [rot] bei 0/-60/-2 (Tick 2128)
+[19:43:51 INFO]: lCE4do has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:51 INFO]: 0no1 lost connection: Bot entfernt
+[19:43:51 INFO]: [38;5;11m0no1 left the game[0m
+[19:43:51 INFO]: zrC_rc7v_43 was slain by AimZoro
+[19:43:51 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: zrC_rc7v_43 [Rot] - player durch AimZoro [blau] bei 1/-59/-10 (Tick 2129)
+[19:43:51 INFO]: fensol81 was slain by PVPCraft
+[19:43:51 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: fensol81 [Rot] - player durch PVPCraft [blau] bei 4/-59/-31 (Tick 2129)
+[19:43:51 INFO]: zrC_rc7v_43 lost connection: Bot entfernt
+[19:43:51 INFO]: [38;5;11mzrC_rc7v_43 left the game[0m
+[19:43:51 INFO]: fensol81 lost connection: Bot entfernt
+[19:43:51 INFO]: [38;5;11mfensol81 left the game[0m
+[19:43:51 INFO]: f63cqwk has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:51 INFO]: YTNexo has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:51 INFO]: iedit has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:52 INFO]: 4wcfvviwc was slain by dzybx
+[19:43:52 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: 4wcfvviwc [Blau] - player durch dzybx [rot] bei 7/-60/-35 (Tick 2143)
+[19:43:52 INFO]: 4wcfvviwc lost connection: Bot entfernt
+[19:43:52 INFO]: [38;5;11m4wcfvviwc left the game[0m
+[19:43:52 INFO]: cutaoutu was slain by Finn
+[19:43:52 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: cutaoutu [Rot] - player durch Finn [blau] bei -1/-60/-26 (Tick 2144)
+[19:43:52 INFO]: cutaoutu lost connection: Bot entfernt
+[19:43:52 INFO]: [38;5;11mcutaoutu left the game[0m
+[19:43:52 INFO]: Fox_506 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:52 INFO]: karexlo was slain by Blaz_287
+[19:43:52 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: karexlo [Rot] - player durch Blaz_287 [blau] bei 2/-60/-30 (Tick 2148)
+[19:43:52 INFO]: karexlo lost connection: Bot entfernt
+[19:43:52 INFO]: [38;5;11mkarexlo left the game[0m
+[19:43:52 INFO]: mirrexrex has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:52 INFO]: kanyxkisol has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:52 INFO]: 3tsloaheqouh was slain by RealNova
+[19:43:52 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: 3tsloaheqouh [Blau] - player durch RealNova [rot] bei 2/-60/-14 (Tick 2154)
+[19:43:52 INFO]: mu_a was slain by 10_8b
+[19:43:52 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: mu_a [Rot] - player durch 10_8b [blau] bei -3/-60/-22 (Tick 2154)
+[19:43:52 INFO]: mu_a lost connection: Bot entfernt
+[19:43:52 INFO]: [38;5;11mmu_a left the game[0m
+[19:43:52 INFO]: 3tsloaheqouh lost connection: Bot entfernt
+[19:43:52 INFO]: [38;5;11m3tsloaheqouh left the game[0m
+[19:43:52 INFO]: 7pouww0in7f was slain by NovaNinja
+[19:43:52 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: 7pouww0in7f [Blau] - player durch NovaNinja [rot] bei -19/-60/-53 (Tick 2155)
+[19:43:52 INFO]: AimZoro has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:52 INFO]: 7pouww0in7f lost connection: Bot entfernt
+[19:43:52 INFO]: [38;5;11m7pouww0in7f left the game[0m
+[19:43:52 INFO]: zwwr3 was slain by LeonCube
+[19:43:52 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: zwwr3 [Blau] - player durch LeonCube [rot] bei -4/-60/-24 (Tick 2156)
+[19:43:52 INFO]: mirmirzen was slain by iuyeuurwak1
+[19:43:52 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: mirmirzen [Rot] - player durch iuyeuurwak1 [blau] bei 2/-60/-6 (Tick 2156)
+[19:43:52 INFO]: mirmirzen lost connection: Bot entfernt
+[19:43:52 INFO]: [38;5;11mmirmirzen left the game[0m
+[19:43:52 INFO]: zwwr3 lost connection: Bot entfernt
+[19:43:52 INFO]: [38;5;11mzwwr3 left the game[0m
+[19:43:52 INFO]: solkakro18 was slain by rtxssxf
+[19:43:52 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: solkakro18 [Blau] - player durch rtxssxf [rot] bei 5/-60/-34 (Tick 2157)
+[19:43:52 INFO]: solkakro18 lost connection: Bot entfernt
+[19:43:52 INFO]: [38;5;11msolkakro18 left the game[0m
+[19:43:52 INFO]: elusolboka56 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:52 INFO]: nyxorasol32 was slain by xCraft_6
+[19:43:52 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: nyxorasol32 [Blau] - player durch xCraft_6 [rot] bei 5/-58/-1 (Tick 2160)
+[19:43:52 INFO]: nyxorasol32 lost connection: Bot entfernt
+[19:43:52 INFO]: [38;5;11mnyxorasol32 left the game[0m
+[19:43:53 INFO]: yokd has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:53 INFO]: iedit was slain by BlazeTimo
+[19:43:53 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: iedit [Blau] - player durch BlazeTimo [rot] bei 0/-60/-8 (Tick 2166)
+[19:43:53 INFO]: bomir30 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:53 INFO]: geze_ao was slain by tyoegam
+[19:43:53 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: geze_ao [Rot] - player durch tyoegam [blau] bei 5/-60/-6 (Tick 2166)
+[19:43:53 INFO]: geze_ao lost connection: Bot entfernt
+[19:43:53 INFO]: [38;5;11mgeze_ao left the game[0m
+[19:43:53 INFO]: iedit lost connection: Bot entfernt
+[19:43:53 INFO]: [38;5;11miedit left the game[0m
+[19:43:53 INFO]: real1428 was slain by wam0
+[19:43:53 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: real1428 [Blau] - player durch wam0 [rot] bei 2/-60/-5 (Tick 2167)
+[19:43:53 INFO]: Ka1R92 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:53 INFO]: real1428 lost connection: Bot entfernt
+[19:43:53 INFO]: [38;5;11mreal1428 left the game[0m
+[19:43:53 INFO]: AimJay was slain by dqvf_u_u
+[19:43:53 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: AimJay [Blau] - player durch dqvf_u_u [rot] bei 0/-59/-27 (Tick 2170)
+[19:43:53 INFO]: AimJay lost connection: Bot entfernt
+[19:43:53 INFO]: [38;5;11mAimJay left the game[0m
+[19:43:53 INFO]: Jay_HD was slain by xMax_95
+[19:43:53 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: Jay_HD [Rot] - player durch xMax_95 [blau] bei 4/-60/-41 (Tick 2173)
+[19:43:53 INFO]: Jay_HD lost connection: Bot entfernt
+[19:43:53 INFO]: [38;5;11mJay_HD left the game[0m
+[19:43:53 INFO]: KaiWolf has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:53 INFO]: kirexboora was slain by aeikxyuud
+[19:43:53 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: kirexboora [Blau] - player durch aeikxyuud [rot] bei -6/-60/-25 (Tick 2177)
+[19:43:53 INFO]: kirexboora lost connection: Bot entfernt
+[19:43:53 INFO]: [38;5;11mkirexboora left the game[0m
+[19:43:53 INFO]: iuyeuurwak1 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:54 INFO]: Turbo_PVP was slain by b3n4872
+[19:43:54 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: Turbo_PVP [Rot] - player durch b3n4872 [blau] bei -5/-60/-9 (Tick 2184)
+[19:43:54 INFO]: Turbo_PVP lost connection: Bot entfernt
+[19:43:54 INFO]: [38;5;11mTurbo_PVP left the game[0m
+[19:43:54 INFO]: orakaborex30 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:54 INFO]: CraftNexo has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:54 INFO]: kv3g_vj9_4rh has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:54 INFO]: LeonWolf was slain by Zombie
+[19:43:54 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: LeonWolf [Rot] - mob durch Zombie [blau] bei 2/-60/-26 (Tick 2190)
+[19:43:54 INFO]: LeonWolf lost connection: Bot entfernt
+[19:43:54 INFO]: [38;5;11mLeonWolf left the game[0m
+[19:43:54 INFO]: g_h1h0n was slain by 443O
+[19:43:54 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: g_h1h0n [Blau] - player durch 443O [rot] bei -3/-59/-19 (Tick 2195)
+[19:43:54 INFO]: g_h1h0n lost connection: Bot entfernt
+[19:43:54 INFO]: [38;5;11mg_h1h0n left the game[0m
+[19:43:54 INFO]: dzybx was slain by xXhurtwqTftm
+[19:43:54 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: dzybx [Rot] - player durch xXhurtwqTftm [blau] bei 11/-60/-49 (Tick 2199)
+[19:43:54 INFO]: dzybx lost connection: Bot entfernt
+[19:43:54 INFO]: [38;5;11mdzybx left the game[0m
+[19:43:54 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 27.5 ms/tick | bots 104 (104 aktiv) mobs 793 | ki 4.02 ms avg, 13.8 ms max | pfade 186 (0.2 ms/pfad, cpu 0.1), queue 0 | gc 2 x 25 ms | heap 695/8192 MB
+[19:43:55 INFO]: rtxssxf was slain by xMax_95
+[19:43:55 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: rtxssxf [Rot] - player durch xMax_95 [blau] bei -2/-60/-41 (Tick 2202)
+[19:43:55 INFO]: xNoah_70 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:55 INFO]: rtxssxf lost connection: Bot entfernt
+[19:43:55 INFO]: [38;5;11mrtxssxf left the game[0m
+[19:43:55 INFO]: RealTimo has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:55 INFO]: sc_30j has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:55 INFO]: hmwlejumh7 was slain by mirrexrex
+[19:43:55 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: hmwlejumh7 [Rot] - player durch mirrexrex [blau] bei -1/-60/-10 (Tick 2211)
+[19:43:55 INFO]: wolf7136 was slain by Max3
+[19:43:55 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: wolf7136 [Rot] - player durch Max3 [blau] bei 6/-60/-34 (Tick 2211)
+[19:43:55 INFO]: hmwlejumh7 lost connection: Bot entfernt
+[19:43:55 INFO]: [38;5;11mhmwlejumh7 left the game[0m
+[19:43:55 INFO]: wolf7136 lost connection: Bot entfernt
+[19:43:55 INFO]: [38;5;11mwolf7136 left the game[0m
+[19:43:55 INFO]: vexlovexki has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:55 INFO]: MaxCube was slain by 80_8l436
+[19:43:55 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: MaxCube [Blau] - player durch 80_8l436 [rot] bei 3/-60/-29 (Tick 2215)
+[19:43:55 INFO]: ugvqbptr7cx has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:55 INFO]: MaxCube lost connection: Bot entfernt
+[19:43:55 INFO]: [38;5;11mMaxCube left the game[0m
+[19:43:55 INFO]: [38;5;7mProfil ueber 10 s, 635 Stichproben. Eigenzeit (wo der Thread gerade war):[0m
+[19:43:55 INFO]: [BotSystem] Profil ueber 10 s, 635 Stichproben. Eigenzeit (wo der Thread gerade war):
+[19:43:55 INFO]: [38;5;7m   32.0%  Unsafe.park()[0m
+[19:43:55 INFO]: [BotSystem]    32.0%  Unsafe.park()
+[19:43:55 INFO]: [38;5;7m    8.7%  MinecraftServer.runServer()[0m
+[19:43:55 INFO]: [BotSystem]     8.7%  MinecraftServer.runServer()
+[19:43:55 INFO]: [38;5;7m    5.7%  ChunkEntitySlices$EntityCollectionBySection.getEntities()[0m
+[19:43:55 INFO]: [BotSystem]     5.7%  ChunkEntitySlices$EntityCollectionBySection.getEntities()
+[19:43:55 INFO]: [38;5;7m    3.1%  ThreadLocal.get()[0m
+[19:43:55 INFO]: [BotSystem]     3.1%  ThreadLocal.get()
+[19:43:55 INFO]: [38;5;7m    1.7%  BlockGetter.forEachBlockIntersectedBetween()[0m
+[19:43:55 INFO]: [BotSystem]     1.7%  BlockGetter.forEachBlockIntersectedBetween()
+[19:43:55 INFO]: [38;5;7m    1.7%  EntitySelector.lambda$static$4()[0m
+[19:43:55 INFO]: [BotSystem]     1.7%  EntitySelector.lambda$static$4()
+[19:43:55 INFO]: [38;5;7m    1.7%  ServerDebugSubscribers.getSubscribersFor()[0m
+[19:43:55 INFO]: [BotSystem]     1.7%  ServerDebugSubscribers.getSubscribersFor()
+[19:43:55 INFO]: [38;5;7m    1.6%  Profiler.stopUsing()[0m
+[19:43:55 INFO]: [BotSystem]     1.6%  Profiler.stopUsing()
+[19:43:55 INFO]: [38;5;7m    1.4%  ThreadLocal$ThreadLocalMap.getEntryAfterMiss()[0m
+[19:43:55 INFO]: [BotSystem]     1.4%  ThreadLocal$ThreadLocalMap.getEntryAfterMiss()
+[19:43:55 INFO]: [38;5;7m    1.4%  WalkNodeEvaluator.checkNeighbourBlocks()[0m
+[19:43:55 INFO]: [BotSystem]     1.4%  WalkNodeEvaluator.checkNeighbourBlocks()
+[19:43:55 INFO]: [38;5;7m    1.1%  MobUnits.nearest()[0m
+[19:43:55 INFO]: [BotSystem]     1.1%  MobUnits.nearest()
+[19:43:55 INFO]: [38;5;7m    1.1%  Reference2ObjectArrayMap.get()[0m
+[19:43:55 INFO]: [BotSystem]     1.1%  Reference2ObjectArrayMap.get()
+[19:43:55 INFO]: [38;5;7mInklusive (Methode irgendwo im Stack, ohne Rahmenwerk):[0m
+[19:43:55 INFO]: [BotSystem] Inklusive (Methode irgendwo im Stack, ohne Rahmenwerk):
+[19:43:55 INFO]: [38;5;7m   43.0%  DedicatedServer.tickServer()[0m
+[19:43:55 INFO]: [BotSystem]    43.0%  DedicatedServer.tickServer()
+[19:43:55 INFO]: [38;5;7m   37.5%  ServerLevel.tick()[0m
+[19:43:55 INFO]: [BotSystem]    37.5%  ServerLevel.tick()
+[19:43:55 INFO]: [38;5;7m   37.2%  EntityTickList.forEach()[0m
+[19:43:55 INFO]: [BotSystem]    37.2%  EntityTickList.forEach()
+[19:43:55 INFO]: [38;5;7m   37.2%  ServerLevel.lambda$tick$4()[0m
+[19:43:55 INFO]: [BotSystem]    37.2%  ServerLevel.lambda$tick$4()
+[19:43:55 INFO]: [38;5;7m   37.0%  Level.guardEntityTick()[0m
+[19:43:55 INFO]: [BotSystem]    37.0%  Level.guardEntityTick()
+[19:43:55 INFO]: [38;5;7m   36.2%  ServerLevel.tickNonPassenger()[0m
+[19:43:55 INFO]: [BotSystem]    36.2%  ServerLevel.tickNonPassenger()
+[19:43:55 INFO]: [38;5;7m   32.0%  Unsafe.park()[0m
+[19:43:55 INFO]: [BotSystem]    32.0%  Unsafe.park()
+[19:43:55 INFO]: [38;5;7m   32.0%  LockSupport.parkNanos()[0m
+[19:43:55 INFO]: [BotSystem]    32.0%  LockSupport.parkNanos()
+[19:43:55 INFO]: [38;5;7m   31.8%  LivingEntity.tick()[0m
+[19:43:55 INFO]: [BotSystem]    31.8%  LivingEntity.tick()
+[19:43:55 INFO]: [38;5;7m   24.3%  LivingEntity.aiStep()[0m
+[19:43:55 INFO]: [BotSystem]    24.3%  LivingEntity.aiStep()
+[19:43:55 INFO]: [38;5;7m   24.3%  Mob.tick()[0m
+[19:43:55 INFO]: [BotSystem]    24.3%  Mob.tick()
+[19:43:55 INFO]: [38;5;7m   21.4%  Mob.aiStep()[0m
+[19:43:55 INFO]: [BotSystem]    21.4%  Mob.aiStep()
+[19:43:55 INFO]: [38;5;7m   21.4%  Monster.aiStep()[0m
+[19:43:55 INFO]: [BotSystem]    21.4%  Monster.aiStep()
+[19:43:55 INFO]: [38;5;7m   13.5%  Zombie.tick()[0m
+[19:43:55 INFO]: [BotSystem]    13.5%  Zombie.tick()
+[19:43:55 INFO]: [38;5;7m   10.6%  Skeleton.tick()[0m
+[19:43:55 INFO]: [BotSystem]    10.6%  Skeleton.tick()
+[19:43:55 INFO]: Turbo was slain by f63cqwk
+[19:43:55 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: Turbo [Blau] - player durch f63cqwk [rot] bei 0/-60/-22 (Tick 2217)
+[19:43:55 INFO]: Turbo lost connection: Bot entfernt
+[19:43:55 INFO]: [38;5;11mTurbo left the game[0m
+[19:43:55 INFO]: Cub32005 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:55 INFO]: TimoWolf has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:55 INFO]: L_ev_f44_7_E was slain by Zombie
+[19:43:55 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: L_ev_f44_7_E [Blau] - mob durch Zombie [rot] bei -6/-60/-12 (Tick 2219)
+[19:43:55 INFO]: L_ev_f44_7_E lost connection: Bot entfernt
+[19:43:55 INFO]: [38;5;11mL_ev_f44_7_E left the game[0m
+[19:43:56 INFO]: 443O has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:56 INFO]: MilaFox was slain by Blaz_287
+[19:43:56 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: MilaFox [Rot] - player durch Blaz_287 [blau] bei -3/-60/-35 (Tick 2223)
+[19:43:56 INFO]: MilaFox lost connection: Bot entfernt
+[19:43:56 INFO]: [38;5;11mMilaFox left the game[0m
+[19:43:56 INFO]: Fox_506 was slain by k6ik3sypkzi
+[19:43:56 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: Fox_506 [Rot] - player durch k6ik3sypkzi [blau] bei -6/-59/-21 (Tick 2224)
+[19:43:56 INFO]: F1nn_xD was slain by Aim_649
+[19:43:56 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: F1nn_xD [Rot] - player durch Aim_649 [blau] bei 0/-60/-30 (Tick 2224)
+[19:43:56 INFO]: Fox_506 lost connection: Bot entfernt
+[19:43:56 INFO]: [38;5;11mFox_506 left the game[0m
+[19:43:56 INFO]: F1nn_xD lost connection: Bot entfernt
+[19:43:56 INFO]: [38;5;11mF1nn_xD left the game[0m
+[19:43:56 INFO]: tyoegam has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:56 INFO]: CraftNexo was slain by RealTimo
+[19:43:56 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: CraftNexo [Rot] - player durch RealTimo [blau] bei 0/-60/-19 (Tick 2229)
+[19:43:56 INFO]: CraftNexo lost connection: Bot entfernt
+[19:43:56 INFO]: [38;5;11mCraftNexo left the game[0m
+[19:43:56 INFO]: rb5Qb6995q has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:56 INFO]: tyoegam has made the advancement [38;5;10m[Not Today, Thank You][0m
+[19:43:56 INFO]: RavenStorm has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:56 INFO]: 7x_b_3zb8 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:56 INFO]: xblazex was slain by sc_30j
+[19:43:56 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: xblazex [Rot] - player durch sc_30j [blau] bei 7/-59/-21 (Tick 2237)
+[19:43:56 INFO]: xblazex lost connection: Bot entfernt
+[19:43:56 INFO]: [38;5;11mxblazex left the game[0m
+[19:43:57 INFO]: xxklDx6R_tOb has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:57 INFO]: rexmirriiva was slain by Zombie
+[19:43:57 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: rexmirriiva [Rot] - mob durch Zombie [blau] bei 1/-60/-5 (Tick 2245)
+[19:43:57 INFO]: rexmirriiva lost connection: Bot entfernt
+[19:43:57 INFO]: [38;5;11mrexmirriiva left the game[0m
+[19:43:57 INFO]: mirrexrex was slain by orakaborex30
+[19:43:57 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: mirrexrex [Blau] - player durch orakaborex30 [rot] bei 2/-60/-10 (Tick 2249)
+[19:43:57 INFO]: RealNova has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:57 INFO]: Max3 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:57 INFO]: Aim_649 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:57 INFO]: mirrexrex lost connection: Bot entfernt
+[19:43:57 INFO]: [38;5;11mmirrexrex left the game[0m
+[19:43:57 INFO]: a1m371 was slain by 3de_u
+[19:43:57 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: a1m371 [Rot] - player durch 3de_u [blau] bei -3/-60/-36 (Tick 2252)
+[19:43:57 INFO]: a1m371 lost connection: Bot entfernt
+[19:43:57 INFO]: [38;5;11ma1m371 left the game[0m
+[19:43:57 INFO]: 80_8l436 was slain by LucaStorm
+[19:43:57 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: 80_8l436 [Rot] - player durch LucaStorm [blau] bei -1/-60/-22 (Tick 2253)
+[19:43:57 INFO]: 80_8l436 lost connection: Bot entfernt
+[19:43:57 INFO]: [38;5;11m80_8l436 left the game[0m
+[19:43:57 INFO]: [38;5;3mServer: 25.4 ms/Tick (Ziel 50) | Bots: 89 (89 unterwegs)[0m
+[19:43:57 INFO]: [38;5;11mBot-KI seit letztem /bot perf: 2.68 ms/Tick im Schnitt, 5.3 ms schlimmster Tick[0m
+[19:43:57 INFO]: [38;5;11mPfadsuche (asynchron, 6 Threads): 29 Pfade, 5.6 ms Wandzeit (0.19 ms pro Pfad), davon 0.0 ms CPU (0.00 ms pro Pfad), 0 in der Warteschlange[0m
+[19:43:57 INFO]: [38;5;11mGC seit letztem /bot perf: 2 Sammlungen, 25 ms Pause (2.1 ms/s) | Heap 1047/8192 MB[0m
+[19:43:57 INFO]: yokd was slain by bomir30
+[19:43:57 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: yokd [Rot] - player durch bomir30 [blau] bei -5/-60/-20 (Tick 2257)
+[19:43:57 INFO]: yokd lost connection: Bot entfernt
+[19:43:57 INFO]: [38;5;11myokd left the game[0m
+[19:43:57 INFO]: ZoroWolf was slain by xtimox
+[19:43:57 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: ZoroWolf [Blau] - player durch xtimox [rot] bei 1/-60/-32 (Tick 2259)
+[19:43:57 INFO]: ZoroWolf lost connection: Bot entfernt
+[19:43:57 INFO]: [38;5;11mZoroWolf left the game[0m
+[19:43:58 INFO]: xMax_40 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:58 INFO]: wam0 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:58 INFO]: orashadraki has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:58 INFO]: LucaAim was slain by aeikxyuud
+[19:43:58 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: LucaAim [Blau] - player durch aeikxyuud [rot] bei 1/-59/-21 (Tick 2275)
+[19:43:58 INFO]: pikhu has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:58 INFO]: ubgpuqzaw was slain by TimoWolf
+[19:43:58 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: ubgpuqzaw [Rot] - player durch TimoWolf [blau] bei 0/-60/-10 (Tick 2275)
+[19:43:58 INFO]: ubgpuqzaw lost connection: Bot entfernt
+[19:43:58 INFO]: [38;5;11mubgpuqzaw left the game[0m
+[19:43:58 INFO]: LucaAim lost connection: Bot entfernt
+[19:43:58 INFO]: [38;5;11mLucaAim left the game[0m
+[19:43:58 INFO]: LucaStorm was slain by vexkawynlo
+[19:43:58 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: LucaStorm [Blau] - player durch vexkawynlo [rot] bei -1/-59/-24 (Tick 2280)
+[19:43:58 INFO]: LucaStorm lost connection: Bot entfernt
+[19:43:58 INFO]: [38;5;11mLucaStorm left the game[0m
+[19:43:58 INFO]: aqw5 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:59 INFO]: k6ik3sypkzi was shot by Skeleton
+[19:43:59 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: k6ik3sypkzi [Blau] - arrow durch Skeleton [rot] bei -12/-60/-30 (Tick 2283)
+[19:43:59 INFO]: k6ik3sypkzi lost connection: Bot entfernt
+[19:43:59 INFO]: [38;5;11mk6ik3sypkzi left the game[0m
+[19:43:59 INFO]: b3n4872 was slain by xXi4u_fW5_bG
+[19:43:59 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: b3n4872 [Blau] - player durch xXi4u_fW5_bG [rot] bei -5/-60/-17 (Tick 2288)
+[19:43:59 INFO]: bomir30 was slain by ugvqbptr7cx
+[19:43:59 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: bomir30 [Blau] - player durch ugvqbptr7cx [rot] bei -4/-60/-31 (Tick 2288)
+[19:43:59 INFO]: bomir30 lost connection: Bot entfernt
+[19:43:59 INFO]: [38;5;11mbomir30 left the game[0m
+[19:43:59 INFO]: b3n4872 lost connection: Bot entfernt
+[19:43:59 INFO]: [38;5;11mb3n4872 left the game[0m
+[19:43:59 INFO]: ka14137 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:59 INFO]: d7_j4_88 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:43:59 INFO]: xtimox was slain by Jay3
+[19:43:59 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: xtimox [Rot] - player durch Jay3 [blau] bei 6/-60/-30 (Tick 2294)
+[19:43:59 INFO]: xtimox lost connection: Bot entfernt
+[19:43:59 INFO]: [38;5;11mxtimox left the game[0m
+[19:43:59 INFO]: AimZoro was slain by Ninja2001
+[19:43:59 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: AimZoro [Blau] - player durch Ninja2001 [rot] bei 0/-59/-16 (Tick 2297)
+[19:43:59 INFO]: AimZoro lost connection: Bot entfernt
+[19:43:59 INFO]: [38;5;11mAimZoro left the game[0m
+[19:43:59 INFO]: zenvexvex was slain by f63cqwk
+[19:43:59 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: zenvexvex [Blau] - player durch f63cqwk [rot] bei -3/-60/-29 (Tick 2300)
+[19:43:59 INFO]: zenvexvex lost connection: Bot entfernt
+[19:43:59 INFO]: [38;5;11mzenvexvex left the game[0m
+[19:44:00 INFO]: xW0lf_85 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:44:00 INFO]: xX3uke9s_5Xx was slain by LeonCube
+[19:44:00 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: xX3uke9s_5Xx [Blau] - player durch LeonCube [rot] bei 0/-60/-17 (Tick 2307)
+[19:44:00 INFO]: mirfensolka1 was slain by orashadraki
+[19:44:00 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: mirfensolka1 [Rot] - player durch orashadraki [blau] bei -4/-60/0 (Tick 2307)
+[19:44:00 INFO]: mirfensolka1 lost connection: Bot entfernt
+[19:44:00 INFO]: [38;5;11mmirfensolka1 left the game[0m
+[19:44:00 INFO]: xX3uke9s_5Xx lost connection: Bot entfernt
+[19:44:00 INFO]: [38;5;11mxX3uke9s_5Xx left the game[0m
+[19:44:00 INFO]: vexkawynlo has made the advancement [38;5;10m[Monster Hunter][0m
+[19:44:00 INFO]: Leon has made the advancement [38;5;10m[Monster Hunter][0m
+[19:44:00 INFO]: xXhurtwqTftm has made the advancement [38;5;10m[Monster Hunter][0m
+[19:44:00 INFO]: aqw5 was slain by elueluri
+[19:44:00 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: aqw5 [Blau] - player durch elueluri [rot] bei 2/-60/-1 (Tick 2319)
+[19:44:00 INFO]: aqw5 lost connection: Bot entfernt
+[19:44:00 INFO]: [38;5;11maqw5 left the game[0m
+[19:44:00 INFO]: NovaNinja was slain by kdwwd
+[19:44:00 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: NovaNinja [Rot] - player durch kdwwd [blau] bei -3/-60/-26 (Tick 2320)
+[19:44:00 INFO]: NovaNinja lost connection: Bot entfernt
+[19:44:00 INFO]: [38;5;11mNovaNinja left the game[0m
+[19:44:01 INFO]: CraftD96 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:44:01 INFO]: xxklDx6R_tOb was slain by 3de_u
+[19:44:01 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: xxklDx6R_tOb [Rot] - player durch 3de_u [blau] bei -1/-60/-29 (Tick 2325)
+[19:44:01 INFO]: xxklDx6R_tOb lost connection: Bot entfernt
+[19:44:01 INFO]: [38;5;11mxxklDx6R_tOb left the game[0m
+[19:44:01 INFO]: ugvqbptr7cx was slain by Zombie
+[19:44:01 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: ugvqbptr7cx [Rot] - mob durch Zombie [blau] bei 2/-60/-34 (Tick 2326)
+[19:44:01 INFO]: ugvqbptr7cx lost connection: Bot entfernt
+[19:44:01 INFO]: [38;5;11mugvqbptr7cx left the game[0m
+[19:44:01 INFO]: RealNova was slain by YTNexo
+[19:44:01 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: RealNova [Rot] - player durch YTNexo [blau] bei 9/-60/-17 (Tick 2332)
+[19:44:01 INFO]: RealNova lost connection: Bot entfernt
+[19:44:01 INFO]: [38;5;11mRealNova left the game[0m
+[19:44:01 INFO]: LeonCube has made the advancement [38;5;10m[Monster Hunter][0m
+[19:44:01 INFO]: 3de_u has made the advancement [38;5;10m[Monster Hunter][0m
+[19:44:02 INFO]: dqvf_u_u was slain by d7_j4_88
+[19:44:02 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: dqvf_u_u [Rot] - player durch d7_j4_88 [blau] bei -8/-60/-31 (Tick 2343)
+[19:44:02 INFO]: dqvf_u_u lost connection: Bot entfernt
+[19:44:02 INFO]: [38;5;11mdqvf_u_u left the game[0m
+[19:44:02 INFO]: Aim_649 was slain by bovexlo78
+[19:44:02 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: Aim_649 [Blau] - player durch bovexlo78 [rot] bei -3/-60/-21 (Tick 2346)
+[19:44:02 INFO]: Aim_649 lost connection: Bot entfernt
+[19:44:02 INFO]: [38;5;11mAim_649 left the game[0m
+[19:44:02 INFO]: elueluri has made the advancement [38;5;10m[Monster Hunter][0m
+[19:44:02 INFO]: Jay0 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:44:02 INFO]: f63cqwk was slain by 3de_u
+[19:44:02 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: f63cqwk [Rot] - player durch 3de_u [blau] bei 0/-59/-30 (Tick 2352)
+[19:44:02 INFO]: f63cqwk lost connection: Bot entfernt
+[19:44:02 INFO]: [38;5;11mf63cqwk left the game[0m
+[19:44:02 INFO]: gaaxataeve8 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:44:02 INFO]: Jay3 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:44:03 INFO]: Finn has made the advancement [38;5;10m[Monster Hunter][0m
+[19:44:03 INFO]: wynzen has made the advancement [38;5;10m[Monster Hunter][0m
+[19:44:03 INFO]: n3x06314 was slain by 443O
+[19:44:03 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: n3x06314 [Blau] - player durch 443O [rot] bei -1/-60/-30 (Tick 2369)
+[19:44:03 INFO]: n3x06314 lost connection: Bot entfernt
+[19:44:03 INFO]: [38;5;11mn3x06314 left the game[0m
+[19:44:03 INFO]: 04_palu_oy0 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:44:04 INFO]: xxLbzwrd49Xx has made the advancement [38;5;10m[Monster Hunter][0m
+[19:44:04 INFO]: bovexlo78 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:44:04 INFO]: pikhu was slain by rexfenvex
+[19:44:04 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: pikhu [Blau] - player durch rexfenvex [rot] bei 1/-60/-22 (Tick 2399)
+[19:44:04 INFO]: pikhu lost connection: Bot entfernt
+[19:44:04 INFO]: [38;5;11mpikhu left the game[0m
+[19:44:04 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 22.8 ms/tick | bots 66 (66 aktiv) mobs 619 | ki 2.07 ms avg, 5.1 ms max | pfade 49 (0.2 ms/pfad, cpu 0.0), queue 0 | gc 3 x 29 ms | heap 978/8192 MB
+[19:44:05 INFO]: xCraft_6 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:44:05 INFO]: HDN3x0 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:44:06 INFO]: PVPCraft has made the advancement [38;5;10m[Monster Hunter][0m
+[19:44:06 INFO]: vexkawynlo was slain by xMax_40
+[19:44:06 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: vexkawynlo [Rot] - player durch xMax_40 [blau] bei -4/-60/-29 (Tick 2437)
+[19:44:06 INFO]: vexkawynlo lost connection: Bot entfernt
+[19:44:06 INFO]: [38;5;11mvexkawynlo left the game[0m
+[19:44:07 INFO]: rexfenvex has made the advancement [38;5;10m[Not Today, Thank You][0m
+[19:44:07 INFO]: [38;5;3mServer: 19.7 ms/Tick (Ziel 50) | Bots: 65 (65 unterwegs)[0m
+[19:44:07 INFO]: [38;5;11mBot-KI seit letztem /bot perf: 1.26 ms/Tick im Schnitt, 2.7 ms schlimmster Tick[0m
+[19:44:07 INFO]: [38;5;11mPfadsuche (asynchron, 6 Threads): 17 Pfade, 2.8 ms Wandzeit (0.17 ms pro Pfad), davon 0.0 ms CPU (0.00 ms pro Pfad), 0 in der Warteschlange[0m
+[19:44:07 INFO]: [38;5;11mGC seit letztem /bot perf: 3 Sammlungen, 29 ms Pause (2.9 ms/s) | Heap 1270/8192 MB[0m
+[19:44:07 INFO]: [Not Secure] [Server] BENCH_DONE
+[19:44:07 INFO]: KaiWolf was slain by orakaborex30
+[19:44:07 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: KaiWolf [Blau] - player durch orakaborex30 [rot] bei -17/-60/-7 (Tick 2461)
+[19:44:08 INFO]: KaiWolf lost connection: Bot entfernt
+[19:44:08 INFO]: [38;5;11mKaiWolf left the game[0m
+[19:44:08 INFO]: rexfenvex was slain by Zombie
+[19:44:08 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: rexfenvex [Rot] - mob durch Zombie [blau] bei 2/-59/-22 (Tick 2465)
+[19:44:08 INFO]: rexfenvex lost connection: Bot entfernt
+[19:44:08 INFO]: [38;5;11mrexfenvex left the game[0m
+[19:44:08 INFO]: aeikxyuud has made the advancement [38;5;10m[Monster Hunter][0m
+[19:44:09 INFO]: xCraft_6 was slain by gaaxataeve8
+[19:44:09 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: xCraft_6 [Rot] - player durch gaaxataeve8 [blau] bei -1/-59/0 (Tick 2486)
+[19:44:09 INFO]: xCraft_6 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mxCraft_6 left the game[0m
+[19:44:09 INFO]: CraftD96 was slain by 3de_u
+[19:44:09 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: CraftD96 [Rot] - player durch 3de_u [blau] bei -9/-60/-31 (Tick 2491)
+[19:44:09 INFO]: CraftD96 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mCraftD96 left the game[0m
+[19:44:09 INFO]: elueluri was slain by RavenStorm
+[19:44:09 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: elueluri [Rot] - player durch RavenStorm [blau] bei -6/-60/1 (Tick 2494)
+[19:44:09 INFO]: elueluri lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11melueluri left the game[0m
+[19:44:09 INFO]: Stopping the server
+[19:44:09 INFO]: Stopping server
+[19:44:09 INFO]: [BotSystem] Disabling BotSystem v3.0.0
+[19:44:09 INFO]: bovexlo78 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mbovexlo78 left the game[0m
+[19:44:09 INFO]: kitaurexsol lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mkitaurexsol left the game[0m
+[19:44:09 INFO]: xW0lf_85 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mxW0lf_85 left the game[0m
+[19:44:09 INFO]: BlazeTimo lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mBlazeTimo left the game[0m
+[19:44:09 INFO]: orakaborex30 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11morakaborex30 left the game[0m
+[19:44:09 INFO]: dtooa5oq lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mdtooa5oq left the game[0m
+[19:44:09 INFO]: LeonCube lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mLeonCube left the game[0m
+[19:44:09 INFO]: 443O lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11m443O left the game[0m
+[19:44:09 INFO]: wam0 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mwam0 left the game[0m
+[19:44:09 INFO]: xXi4u_fW5_bG lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mxXi4u_fW5_bG left the game[0m
+[19:44:09 INFO]: HDN3x0 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mHDN3x0 left the game[0m
+[19:44:09 INFO]: kakrotaunyx lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mkakrotaunyx left the game[0m
+[19:44:09 INFO]: wynzen lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mwynzen left the game[0m
+[19:44:09 INFO]: Leon lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mLeon left the game[0m
+[19:44:09 INFO]: Ninja2001 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mNinja2001 left the game[0m
+[19:44:09 INFO]: Ka1R92 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mKa1R92 left the game[0m
+[19:44:09 INFO]: aeikxyuud lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11maeikxyuud left the game[0m
+[19:44:09 INFO]: xM1la_26 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mxM1la_26 left the game[0m
+[19:44:09 INFO]: NinjaZoro lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mNinjaZoro left the game[0m
+[19:44:09 INFO]: kanyxkisol lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mkanyxkisol left the game[0m
+[19:44:09 INFO]: d7_j4_88 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11md7_j4_88 left the game[0m
+[19:44:09 INFO]: Blaz_287 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mBlaz_287 left the game[0m
+[19:44:09 INFO]: YTNexo lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mYTNexo left the game[0m
+[19:44:09 INFO]: kdwwd lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mkdwwd left the game[0m
+[19:44:09 INFO]: iuyeuurwak1 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11miuyeuurwak1 left the game[0m
+[19:44:09 INFO]: 10_8b lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11m10_8b left the game[0m
+[19:44:09 INFO]: Finn lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mFinn left the game[0m
+[19:44:09 INFO]: xMax_95 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mxMax_95 left the game[0m
+[19:44:09 INFO]: xNoah_70 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mxNoah_70 left the game[0m
+[19:44:09 INFO]: Jay0 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mJay0 left the game[0m
+[19:44:09 INFO]: sc_30j lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11msc_30j left the game[0m
+[19:44:09 INFO]: shavex lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mshavex left the game[0m
+[19:44:09 INFO]: gaaxataeve8 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mgaaxataeve8 left the game[0m
+[19:44:09 INFO]: aim871 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11maim871 left the game[0m
+[19:44:09 INFO]: 04_palu_oy0 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11m04_palu_oy0 left the game[0m
+[19:44:09 INFO]: mirelu17 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mmirelu17 left the game[0m
+[19:44:09 INFO]: RavenStorm lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mRavenStorm left the game[0m
+[19:44:09 INFO]: rb5Qb6995q lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mrb5Qb6995q left the game[0m
+[19:44:09 INFO]: TimoWolf lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mTimoWolf left the game[0m
+[19:44:09 INFO]: 3s9dtvh0_g_c lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11m3s9dtvh0_g_c left the game[0m
+[19:44:09 INFO]: Cub32005 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mCub32005 left the game[0m
+[19:44:09 INFO]: Jay3 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mJay3 left the game[0m
+[19:44:09 INFO]: xxLbzwrd49Xx lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mxxLbzwrd49Xx left the game[0m
+[19:44:09 INFO]: Max3 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mMax3 left the game[0m
+[19:44:09 INFO]: 3de_u lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11m3de_u left the game[0m
+[19:44:09 INFO]: orashadraki lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11morashadraki left the game[0m
+[19:44:09 INFO]: NinjaTimo lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mNinjaTimo left the game[0m
+[19:44:09 INFO]: lCE4do lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mlCE4do left the game[0m
+[19:44:09 INFO]: elusolboka56 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11melusolboka56 left the game[0m
+[19:44:09 INFO]: kmx60g_qyop lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mkmx60g_qyop left the game[0m
+[19:44:09 INFO]: xXhurtwqTftm lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mxXhurtwqTftm left the game[0m
+[19:44:09 INFO]: ka14137 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mka14137 left the game[0m
+[19:44:09 INFO]: RealTimo lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mRealTimo left the game[0m
+[19:44:09 INFO]: vexlovexki lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mvexlovexki left the game[0m
+[19:44:09 INFO]: tyoegam lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mtyoegam left the game[0m
+[19:44:09 INFO]: 7x_b_3zb8 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11m7x_b_3zb8 left the game[0m
+[19:44:09 INFO]: xMax_40 lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mxMax_40 left the game[0m
+[19:44:09 INFO]: kv3g_vj9_4rh lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mkv3g_vj9_4rh left the game[0m
+[19:44:09 INFO]: as_tL lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mas_tL left the game[0m
+[19:44:09 INFO]: PVPCraft lost connection: Bot entfernt
+[19:44:09 INFO]: [38;5;11mPVPCraft left the game[0m
+[19:44:09 INFO]: Saving players
+[19:44:10 INFO]: Saving worlds
+[19:44:10 INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[19:44:10 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[19:44:10 INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[19:44:10 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[19:44:10 INFO]: [ChunkHolderManager] Saved 412 block chunks, 412 entity chunks, 0 poi chunks in world 'world' in 0,22s
+[19:44:10 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[19:44:10 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[19:44:10 INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[19:44:10 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[19:44:10 INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[19:44:10 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[19:44:10 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0,00s
+[19:44:10 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
+[19:44:10 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
+[19:44:10 INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[19:44:10 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[19:44:10 INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[19:44:10 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[19:44:10 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0,00s
+[19:44:10 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
+[19:44:10 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
+[19:44:10 INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[19:44:10 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[19:44:10 INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[19:44:10 INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[19:44:10 INFO]: Waiting for all RegionFile I/O tasks to complete...
+[19:44:10 INFO]: All RegionFile I/O tasks to complete
+[19:44:10 INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[19:44:10 INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

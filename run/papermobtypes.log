@@ -1,0 +1,291 @@
+Starting org.bukkit.craftbukkit.Main
+2026-09-24T17:24:39.958872300Z ServerMain WARN Advanced terminal features are not available in this environment
+[19:24:40 INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4+7-LTS; Eclipse Adoptium Temurin-25.0.4+7) on Windows 11 10.0 (amd64)
+[19:24:40 INFO]: [bootstrap] Loading Paper 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) for Minecraft 1.21.11
+[19:24:40 INFO]: [PluginInitializerManager] Initializing plugins...
+[19:24:41 INFO]: [PluginInitializerManager] Initialized 1 plugin
+[19:24:41 INFO]: [PluginInitializerManager] Paper plugins (1):
+ - BotSystem (3.0.0)
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.joml.MemUtil$MemUtilUnsafe (file:/C:/Users/notof/BotSystem-Paper/run/libraries/org/joml/joml/1.10.8/joml-1.10.8.jar)
+WARNING: Please consider reporting this to the maintainers of class org.joml.MemUtil$MemUtilUnsafe
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[19:24:44 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[19:24:46 INFO]: Loaded 1470 recipes
+[19:24:46 INFO]: Loaded 1584 advancements
+[19:24:46 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[19:24:46 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 283,8ms
+[19:24:46 INFO]: Starting minecraft server version 1.21.11
+[19:24:46 INFO]: Loading properties
+[19:24:46 INFO]: This server is running Paper version 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[19:24:46 INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[19:24:46 INFO]: Server Ping Player Sample Count: 12
+[19:24:46 INFO]: Using 4 threads for Netty based IO
+[19:24:47 INFO]: [MoonriseCommon] Paper is using 6 worker threads, 1 I/O threads
+[19:24:47 INFO]: Default game type: SURVIVAL
+[19:24:47 INFO]: Generating keypair
+[19:24:47 INFO]: Starting Minecraft server on *:25599
+[19:24:47 INFO]: Paper: Using Java compression from Velocity.
+[19:24:47 INFO]: Paper: Using Java cipher from Velocity.
+[19:24:47 INFO]: [BotSystem] Loading server plugin BotSystem v3.0.0
+[19:24:47 INFO]: Server permissions file permissions.yml is empty, ignoring it
+[19:24:47 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[19:24:47 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[19:24:47 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[19:24:47 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[19:24:47 INFO]: Preparing level "world"
+[19:24:48 INFO]: Loading 440 persistent chunks for world 'minecraft:overworld'...
+[19:24:48 INFO]: Preparing spawn area: 2%
+[19:24:48 INFO]: Prepared spawn area in 693 ms
+[19:24:48 INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[19:24:48 INFO]: Prepared spawn area in 0 ms
+[19:24:48 INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[19:24:48 INFO]: Prepared spawn area in 1 ms
+[19:24:48 INFO]: Done preparing level "world" (1.058s)
+[19:24:48 INFO]: [BotSystem] Enabling BotSystem v3.0.0
+[19:24:48 INFO]: [BotSystem] BotSystem 2026-09-24f (Paper) bereit.
+[19:24:48 INFO]: [spark] Starting background profiler...
+[19:24:49 INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[19:24:49 INFO]: Running delayed init tasks
+[19:24:49 INFO]: Done (10.040s)! For help, type "help"
+[19:24:49 WARN]: *************************************************************************************
+[19:24:49 WARN]: You are running the latest build for your Minecraft version (1.21.11)
+[19:24:49 WARN]: However, you are 4 release(s) behind the latest stable release (26.2)!
+[19:24:49 WARN]: It is recommended that you update as soon as possible
+[19:24:49 WARN]: https://papermc.io/downloads/paper
+[19:24:49 WARN]: *************************************************************************************
+[19:25:23 INFO]: [38;5;9mThe difficulty did not change; it is already set to normal[0m
+[19:25:23 INFO]: Set the time to 1000
+[19:25:23 INFO]: Killed 10 entities
+[19:25:23 INFO]: Marked 4 chunks in minecraft:overworld from [-9, -2] to [8, 1] to be force loaded
+[19:25:23 INFO]: [38;5;9mNo blocks were filled[0m
+[19:25:23 INFO]: [38;5;9mNo blocks were filled[0m
+[19:25:23 INFO]: [38;5;9mNo blocks were filled[0m
+[19:25:23 INFO]: [38;5;9mNo blocks were filled[0m
+[19:25:23 INFO]: [38;5;9mNo blocks were filled[0m
+[19:25:23 INFO]: [38;5;9mNo blocks were filled[0m
+[19:25:23 INFO]: [38;5;9mNo blocks were filled[0m
+[19:25:23 INFO]: [38;5;9mNo blocks were filled[0m
+[19:25:23 INFO]: [38;5;9mNo blocks were filled[0m
+[19:25:23 INFO]: [38;5;9mNo blocks were filled[0m
+[19:25:23 INFO]: [38;5;9mNo blocks were filled[0m
+[19:25:23 INFO]: [38;5;9mNo blocks were filled[0m
+[19:25:23 INFO]: [38;5;9mNo blocks were filled[0m
+[19:25:23 INFO]: [38;5;9mNo blocks were filled[0m
+[19:25:23 INFO]: [38;5;9mNo blocks were filled[0m
+[19:25:23 INFO]: [38;5;9mNo blocks were filled[0m
+[19:25:23 INFO]: [38;5;9mNo blocks were filled[0m
+[19:25:23 INFO]: [38;5;9mNo blocks were filled[0m
+[19:25:23 INFO]: [38;5;9mNo blocks were filled[0m
+[19:25:23 INFO]: [38;5;9mNo blocks were filled[0m
+[19:25:23 INFO]: Successfully filled 90 block(s)
+[19:25:23 INFO]: Successfully filled 100 block(s)
+[19:25:23 INFO]: Successfully filled 100 block(s)
+[19:25:23 INFO]: Successfully filled 100 block(s)
+[19:25:23 INFO]: Successfully filled 35 block(s)
+[19:25:23 INFO]: [38;5;9mNo blocks were filled[0m
+[19:25:23 INFO]: [38;5;9mNo blocks were filled[0m
+[19:25:23 INFO]: [38;5;9mNo blocks were filled[0m
+[19:25:26 INFO]: [38;5;10m3x pillager in Team M0 gespawnt. Steuern wie Bots: /bot goto|fight|attack|march ... @team:M0[0m
+[19:25:26 INFO]: [38;5;11mxrealx joined the game[0m
+[19:25:26 INFO]: xrealx[bot] logged in with entity id 20 at ([world]-122.5, -60.0, 0.5)
+[19:25:26 INFO]: [38;5;11mbbgaa8ee joined the game[0m
+[19:25:26 INFO]: bbgaa8ee[bot] logged in with entity id 21 at ([world]-124.5, -60.0, 1.5)
+[19:25:26 INFO]: [38;5;11mfibtk_ahb joined the game[0m
+[19:25:26 INFO]: fibtk_ahb[bot] logged in with entity id 22 at ([world]-123.5, -60.0, -1.5)
+[19:25:26 INFO]: [38;5;10m3 Bot(s) werden gespawnt, Kit sword, Team B0: xrealx, bbgaa8ee, fibtk_ahb[0m
+[19:25:26 INFO]: [38;5;10m3x creeper in Team M1 gespawnt. Steuern wie Bots: /bot goto|fight|attack|march ... @team:M1[0m
+[19:25:26 INFO]: [38;5;11mB3n_MC joined the game[0m
+[19:25:26 INFO]: B3n_MC[bot] logged in with entity id 26 at ([world]-90.5, -60.0, 0.5)
+[19:25:26 INFO]: [38;5;11mujempw joined the game[0m
+[19:25:26 INFO]: ujempw[bot] logged in with entity id 27 at ([world]-92.5, -60.0, 1.5)
+[19:25:26 INFO]: [38;5;11mWolf_xD joined the game[0m
+[19:25:26 INFO]: Wolf_xD[bot] logged in with entity id 28 at ([world]-91.5, -60.0, -1.5)
+[19:25:26 INFO]: [38;5;10m3 Bot(s) werden gespawnt, Kit sword, Team B1: B3n_MC, ujempw, Wolf_xD[0m
+[19:25:26 INFO]: [38;5;10m3x vindicator in Team M2 gespawnt. Steuern wie Bots: /bot goto|fight|attack|march ... @team:M2[0m
+[19:25:26 INFO]: [38;5;11meee_ieiqpavw joined the game[0m
+[19:25:26 INFO]: eee_ieiqpavw[bot] logged in with entity id 32 at ([world]-58.5, -60.0, 0.5)
+[19:25:26 INFO]: [38;5;11m9Gq_0_mh6 joined the game[0m
+[19:25:26 INFO]: 9Gq_0_mh6[bot] logged in with entity id 33 at ([world]-60.5, -60.0, 1.5)
+[19:25:27 INFO]: [38;5;11mxxia71h7hxx joined the game[0m
+[19:25:27 INFO]: xxia71h7hxx[bot] logged in with entity id 34 at ([world]-59.5, -60.0, -1.5)
+[19:25:27 INFO]: [38;5;10m3 Bot(s) werden gespawnt, Kit sword, Team B2: eee_ieiqpavw, 9Gq_0_mh6, xxia71h7hxx[0m
+[19:25:27 INFO]: [38;5;10m3x skeleton in Team M3 gespawnt. Steuern wie Bots: /bot goto|fight|attack|march ... @team:M3[0m
+[19:25:27 INFO]: [38;5;11m6s2y joined the game[0m
+[19:25:27 INFO]: 6s2y[bot] logged in with entity id 38 at ([world]-26.5, -60.0, 0.5)
+[19:25:27 INFO]: [38;5;11meluora35 joined the game[0m
+[19:25:27 INFO]: eluora35[bot] logged in with entity id 39 at ([world]-28.5, -60.0, 1.5)
+[19:25:27 INFO]: [38;5;11m1f_sqlle joined the game[0m
+[19:25:27 INFO]: 1f_sqlle[bot] logged in with entity id 40 at ([world]-27.5, -60.0, -1.5)
+[19:25:27 INFO]: [38;5;10m3 Bot(s) werden gespawnt, Kit sword, Team B3: 6s2y, eluora35, 1f_sqlle[0m
+[19:25:27 INFO]: [38;5;10m3x spider in Team M4 gespawnt. Steuern wie Bots: /bot goto|fight|attack|march ... @team:M4[0m
+[19:25:27 INFO]: [38;5;11mivaeluka79 joined the game[0m
+[19:25:27 INFO]: ivaeluka79[bot] logged in with entity id 44 at ([world]5.5, -60.0, 0.5)
+[19:25:27 INFO]: [38;5;11mvexrexkaki73 joined the game[0m
+[19:25:27 INFO]: vexrexkaki73[bot] logged in with entity id 45 at ([world]3.5, -60.0, 1.5)
+[19:25:27 INFO]: [38;5;11m71Q_9b3 joined the game[0m
+[19:25:27 INFO]: 71Q_9b3[bot] logged in with entity id 46 at ([world]4.5, -60.0, -1.5)
+[19:25:27 INFO]: [38;5;10m3 Bot(s) werden gespawnt, Kit sword, Team B4: ivaeluka79, vexrexkaki73, 71Q_9b3[0m
+[19:25:27 INFO]: [38;5;10m3x witch in Team M5 gespawnt. Steuern wie Bots: /bot goto|fight|attack|march ... @team:M5[0m
+[19:25:27 INFO]: [38;5;11mT_k_am_u joined the game[0m
+[19:25:27 INFO]: T_k_am_u[bot] logged in with entity id 50 at ([world]37.5, -60.0, 0.5)
+[19:25:27 INFO]: [38;5;11mTimo2007 joined the game[0m
+[19:25:27 INFO]: Timo2007[bot] logged in with entity id 51 at ([world]35.5, -60.0, 1.5)
+[19:25:27 INFO]: [38;5;11mFinnWolf joined the game[0m
+[19:25:27 INFO]: FinnWolf[bot] logged in with entity id 52 at ([world]36.5, -60.0, -1.5)
+[19:25:27 INFO]: [38;5;10m3 Bot(s) werden gespawnt, Kit sword, Team B5: T_k_am_u, Timo2007, FinnWolf[0m
+[19:25:27 INFO]: [38;5;10m3x piglin in Team M6 gespawnt. Steuern wie Bots: /bot goto|fight|attack|march ... @team:M6[0m
+[19:25:27 INFO]: [38;5;11mxl30nx joined the game[0m
+[19:25:27 INFO]: xl30nx[bot] logged in with entity id 56 at ([world]69.5, -60.0, 0.5)
+[19:25:27 INFO]: [38;5;11maa8a0kugwo joined the game[0m
+[19:25:27 INFO]: aa8a0kugwo[bot] logged in with entity id 57 at ([world]67.5, -60.0, 1.5)
+[19:25:27 INFO]: [38;5;11mZoroW31 joined the game[0m
+[19:25:27 INFO]: ZoroW31[bot] logged in with entity id 58 at ([world]68.5, -60.0, -1.5)
+[19:25:27 INFO]: [38;5;10m3 Bot(s) werden gespawnt, Kit sword, Team B6: xl30nx, aa8a0kugwo, ZoroW31[0m
+[19:25:27 INFO]: [38;5;10m3x iron_golem in Team M7 gespawnt. Steuern wie Bots: /bot goto|fight|attack|march ... @team:M7[0m
+[19:25:27 INFO]: [38;5;11mxXC_QuapXyxx joined the game[0m
+[19:25:27 INFO]: xXC_QuapXyxx[bot] logged in with entity id 62 at ([world]101.5, -60.0, 0.5)
+[19:25:27 INFO]: [38;5;11mzenzenkroka6 joined the game[0m
+[19:25:27 INFO]: zenzenkroka6[bot] logged in with entity id 63 at ([world]99.5, -60.0, 1.5)
+[19:25:27 INFO]: [38;5;11mn5z_z_b joined the game[0m
+[19:25:27 INFO]: n5z_z_b[bot] logged in with entity id 64 at ([world]100.5, -60.0, -1.5)
+[19:25:27 INFO]: [38;5;10m3 Bot(s) werden gespawnt, Kit sword, Team B7: xXC_QuapXyxx, zenzenkroka6, n5z_z_b[0m
+[19:25:29 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 11.2 ms/tick | bots 24 (0 aktiv) mobs 24 | ki 0.03 ms avg, 5.0 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 44 x 283 ms | heap 419/3072 MB
+[19:25:34 INFO]: ZoroW31 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:25:36 INFO]: aa8a0kugwo has made the advancement [38;5;10m[Monster Hunter][0m
+[19:25:39 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 2.5 ms/tick | bots 24 (3 aktiv) mobs 21 | ki 0.41 ms avg, 10.5 ms max | pfade 6 (1.3 ms/pfad, cpu 0.0), queue 0 | gc 0 x 0 ms | heap 460/3072 MB
+[19:25:41 INFO]: [38;5;10mFight gestartet: B0 (3 Bots) vs M0 (0 Bots).[0m
+[19:25:41 INFO]: [38;5;10mFight gestartet: B1 (3 Bots) vs M1 (0 Bots).[0m
+[19:25:41 INFO]: [38;5;10mFight gestartet: B2 (3 Bots) vs M2 (0 Bots).[0m
+[19:25:41 INFO]: [38;5;10mFight gestartet: B3 (3 Bots) vs M3 (0 Bots).[0m
+[19:25:41 INFO]: [38;5;10mFight gestartet: B4 (3 Bots) vs M4 (0 Bots).[0m
+[19:25:41 INFO]: [38;5;10mFight gestartet: B5 (3 Bots) vs M5 (0 Bots).[0m
+[19:25:41 INFO]: [38;5;9mTeam M6 ist leer oder existiert nicht.[0m
+[19:25:41 INFO]: [38;5;10mFight gestartet: B7 (3 Bots) vs M7 (0 Bots).[0m
+[19:25:44 INFO]: Wolf_xD has made the advancement [38;5;10m[Monster Hunter][0m
+[19:25:44 INFO]: xXC_QuapXyxx was slain by Iron Golem
+[19:25:44 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: xXC_QuapXyxx [B7] - mob durch Iron Golem [m7] bei 107/-59/2 (Tick 1096)
+[19:25:44 INFO]: xXC_QuapXyxx lost connection: Bot entfernt
+[19:25:44 INFO]: [38;5;11mxXC_QuapXyxx left the game[0m
+[19:25:44 INFO]: Wolf_xD was blown up by Creeper
+[19:25:44 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: Wolf_xD [B1] - explosion.player durch Creeper [m1] bei -80/-60/1 (Tick 1099)
+[19:25:44 INFO]: B3n_MC was blown up by Creeper
+[19:25:44 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: B3n_MC [B1] - explosion.player durch Creeper [m1] bei -78/-58/1 (Tick 1099)
+[19:25:44 INFO]: B3n_MC lost connection: Bot entfernt
+[19:25:44 INFO]: [38;5;11mB3n_MC left the game[0m
+[19:25:44 INFO]: Wolf_xD lost connection: Bot entfernt
+[19:25:44 INFO]: [38;5;11mWolf_xD left the game[0m
+[19:25:44 INFO]: 71Q_9b3 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:25:44 INFO]: 1f_sqlle has made the advancement [38;5;10m[Monster Hunter][0m
+[19:25:45 INFO]: eluora35 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:25:45 INFO]: T_k_am_u has made the advancement [38;5;10m[Monster Hunter][0m
+[19:25:45 INFO]: xrealx has made the advancement [38;5;10m[Monster Hunter][0m
+[19:25:45 INFO]: bbgaa8ee has made the advancement [38;5;10m[Monster Hunter][0m
+[19:25:46 INFO]: ivaeluka79 has made the advancement [38;5;10m[Monster Hunter][0m
+[19:25:46 INFO]: 6s2y has made the advancement [38;5;10m[Monster Hunter][0m
+[19:25:46 INFO]: fibtk_ahb has made the advancement [38;5;10m[Monster Hunter][0m
+[19:25:47 INFO]: eee_ieiqpavw was slain by Vindicator
+[19:25:47 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: eee_ieiqpavw [B2] - mob durch Vindicator [m2] bei -52/-60/1 (Tick 1152)
+[19:25:47 INFO]: eee_ieiqpavw lost connection: Bot entfernt
+[19:25:47 INFO]: [38;5;11meee_ieiqpavw left the game[0m
+[19:25:49 INFO]: FinnWolf has made the advancement [38;5;10m[Monster Hunter][0m
+[19:25:49 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 2.9 ms/tick | bots 20 (19 aktiv) mobs 7 | ki 0.64 ms avg, 4.9 ms max | pfade 36 (0.3 ms/pfad, cpu 0.0), queue 0 | gc 3 x 27 ms | heap 366/3072 MB
+[19:25:50 INFO]: 9Gq_0_mh6 was slain by Vindicator
+[19:25:50 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: 9Gq_0_mh6 [B2] - mob durch Vindicator [m2] bei -65/-59/14 (Tick 1217)
+[19:25:50 INFO]: zenzenkroka6 was slain by Iron Golem
+[19:25:50 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: zenzenkroka6 [B7] - mob durch Iron Golem [m7] bei 96/-60/-8 (Tick 1217)
+[19:25:50 INFO]: 9Gq_0_mh6 lost connection: Bot entfernt
+[19:25:50 INFO]: [38;5;11m9Gq_0_mh6 left the game[0m
+[19:25:50 INFO]: zenzenkroka6 lost connection: Bot entfernt
+[19:25:50 INFO]: [38;5;11mzenzenkroka6 left the game[0m
+[19:25:52 INFO]: n5z_z_b was slain by Iron Golem
+[19:25:52 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: n5z_z_b [B7] - mob durch Iron Golem [m7] bei 101/-58/0 (Tick 1264)
+[19:25:52 INFO]: n5z_z_b lost connection: Bot entfernt
+[19:25:52 INFO]: [38;5;11mn5z_z_b left the game[0m
+[19:25:55 INFO]: xxia71h7hxx was slain by Vindicator
+[19:25:55 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: xxia71h7hxx [B2] - mob durch Vindicator [m2] bei -43/-60/15 (Tick 1312)
+[19:25:55 INFO]: xxia71h7hxx lost connection: Bot entfernt
+[19:25:55 INFO]: [38;5;11mxxia71h7hxx left the game[0m
+[19:25:59 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 1.3 ms/tick | bots 16 (12 aktiv) mobs 6 | ki 0.36 ms avg, 2.4 ms max | pfade 58 (0.2 ms/pfad, cpu 0.0), queue 0 | gc 0 x 0 ms | heap 409/3072 MB
+[19:26:06 INFO]: [38;5;11m- xrealx | B0 | LAUFEN | hp 20 | HT4[0m
+[19:26:06 INFO]: [38;5;11m- bbgaa8ee | B0 | LAUFEN | hp 20 | LT4[0m
+[19:26:06 INFO]: [38;5;11m- fibtk_ahb | B0 | LAUFEN | hp 20 | HT4[0m
+[19:26:06 INFO]: [38;5;11m- ujempw | B1 | LAUFEN | hp 20 | LT4[0m
+[19:26:06 INFO]: [38;5;11m- 6s2y | B3 | IDLE | hp 20 | LT4[0m
+[19:26:06 INFO]: [38;5;11m- eluora35 | B3 | LAUFEN | hp 20 | LT4[0m
+[19:26:06 INFO]: [38;5;11m- 1f_sqlle | B3 | IDLE | hp 20 | HT5[0m
+[19:26:06 INFO]: [38;5;11m- ivaeluka79 | B4 | LAUFEN | hp 20 | LT4[0m
+[19:26:06 INFO]: [38;5;11m- vexrexkaki73 | B4 | IDLE | hp 20 | HT5[0m
+[19:26:06 INFO]: [38;5;11m- 71Q_9b3 | B4 | LAUFEN | hp 20 | HT5[0m
+[19:26:06 INFO]: [38;5;11m- T_k_am_u | B5 | LAUFEN | hp 10 | HT5[0m
+[19:26:06 INFO]: [38;5;11m- Timo2007 | B5 | LAUFEN | hp 12 | HT5[0m
+[19:26:06 INFO]: [38;5;11m- FinnWolf | B5 | LAUFEN | hp 20 | HT4[0m
+[19:26:06 INFO]: [38;5;11m- xl30nx | B6 | WACHSAM | hp 20 | HT4[0m
+[19:26:06 INFO]: [38;5;11m- aa8a0kugwo | B6 | LAUFEN | hp 20 | HT4[0m
+[19:26:06 INFO]: [38;5;11m- ZoroW31 | B6 | LAUFEN | hp 20 | LT4[0m
+[19:26:06 INFO]: Stopping the server
+[19:26:06 INFO]: Stopping server
+[19:26:06 INFO]: [BotSystem] Disabling BotSystem v3.0.0
+[19:26:06 INFO]: xrealx lost connection: Bot entfernt
+[19:26:06 INFO]: [38;5;11mxrealx left the game[0m
+[19:26:06 INFO]: bbgaa8ee lost connection: Bot entfernt
+[19:26:06 INFO]: [38;5;11mbbgaa8ee left the game[0m
+[19:26:06 INFO]: fibtk_ahb lost connection: Bot entfernt
+[19:26:06 INFO]: [38;5;11mfibtk_ahb left the game[0m
+[19:26:06 INFO]: ujempw lost connection: Bot entfernt
+[19:26:06 INFO]: [38;5;11mujempw left the game[0m
+[19:26:06 INFO]: 6s2y lost connection: Bot entfernt
+[19:26:06 INFO]: [38;5;11m6s2y left the game[0m
+[19:26:06 INFO]: eluora35 lost connection: Bot entfernt
+[19:26:06 INFO]: [38;5;11meluora35 left the game[0m
+[19:26:06 INFO]: 1f_sqlle lost connection: Bot entfernt
+[19:26:06 INFO]: [38;5;11m1f_sqlle left the game[0m
+[19:26:06 INFO]: ivaeluka79 lost connection: Bot entfernt
+[19:26:06 INFO]: [38;5;11mivaeluka79 left the game[0m
+[19:26:06 INFO]: vexrexkaki73 lost connection: Bot entfernt
+[19:26:06 INFO]: [38;5;11mvexrexkaki73 left the game[0m
+[19:26:06 INFO]: 71Q_9b3 lost connection: Bot entfernt
+[19:26:06 INFO]: [38;5;11m71Q_9b3 left the game[0m
+[19:26:06 INFO]: T_k_am_u lost connection: Bot entfernt
+[19:26:06 INFO]: [38;5;11mT_k_am_u left the game[0m
+[19:26:06 INFO]: Timo2007 lost connection: Bot entfernt
+[19:26:06 INFO]: [38;5;11mTimo2007 left the game[0m
+[19:26:06 INFO]: FinnWolf lost connection: Bot entfernt
+[19:26:06 INFO]: [38;5;11mFinnWolf left the game[0m
+[19:26:06 INFO]: xl30nx lost connection: Bot entfernt
+[19:26:06 INFO]: [38;5;11mxl30nx left the game[0m
+[19:26:06 INFO]: aa8a0kugwo lost connection: Bot entfernt
+[19:26:06 INFO]: [38;5;11maa8a0kugwo left the game[0m
+[19:26:06 INFO]: ZoroW31 lost connection: Bot entfernt
+[19:26:06 INFO]: [38;5;11mZoroW31 left the game[0m
+[19:26:06 INFO]: Saving players
+[19:26:06 INFO]: Saving worlds
+[19:26:06 INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[19:26:06 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[19:26:06 INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[19:26:06 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[19:26:07 INFO]: [ChunkHolderManager] Saved 450 block chunks, 450 entity chunks, 0 poi chunks in world 'world' in 0,19s
+[19:26:07 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[19:26:07 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[19:26:07 INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[19:26:07 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[19:26:07 INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[19:26:07 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[19:26:07 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0,00s
+[19:26:07 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
+[19:26:07 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
+[19:26:07 INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[19:26:07 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[19:26:07 INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[19:26:07 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[19:26:07 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0,00s
+[19:26:07 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
+[19:26:07 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
+[19:26:07 INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[19:26:07 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[19:26:07 INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[19:26:07 INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[19:26:07 INFO]: Waiting for all RegionFile I/O tasks to complete...
+[19:26:07 INFO]: All RegionFile I/O tasks to complete
+[19:26:07 INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[19:26:07 INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

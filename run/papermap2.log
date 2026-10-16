@@ -1,0 +1,140 @@
+Starting org.bukkit.craftbukkit.Main
+2026-09-24T16:25:03.035811200Z ServerMain WARN Advanced terminal features are not available in this environment
+[18:25:03 INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4+7-LTS; Eclipse Adoptium Temurin-25.0.4+7) on Windows 11 10.0 (amd64)
+[18:25:03 INFO]: [bootstrap] Loading Paper 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) for Minecraft 1.21.11
+[18:25:04 INFO]: [PluginInitializerManager] Initializing plugins...
+[18:25:04 INFO]: [PluginInitializerManager] Initialized 1 plugin
+[18:25:04 INFO]: [PluginInitializerManager] Paper plugins (1):
+ - BotSystem (3.0.0)
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.joml.MemUtil$MemUtilUnsafe (file:/C:/Users/notof/BotSystem-Paper/run/libraries/org/joml/joml/1.10.8/joml-1.10.8.jar)
+WARNING: Please consider reporting this to the maintainers of class org.joml.MemUtil$MemUtilUnsafe
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[18:25:07 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[18:25:07 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[18:25:08 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 297,8ms
+[18:25:09 INFO]: Loaded 1470 recipes
+[18:25:09 INFO]: Loaded 1584 advancements
+[18:25:09 INFO]: Starting minecraft server version 1.21.11
+[18:25:09 INFO]: Loading properties
+[18:25:09 INFO]: This server is running Paper version 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[18:25:09 INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[18:25:09 INFO]: Server Ping Player Sample Count: 12
+[18:25:09 INFO]: Using 4 threads for Netty based IO
+[18:25:10 INFO]: [MoonriseCommon] Paper is using 6 worker threads, 1 I/O threads
+[18:25:10 INFO]: Default game type: SURVIVAL
+[18:25:10 INFO]: Generating keypair
+[18:25:10 INFO]: Starting Minecraft server on *:25599
+[18:25:10 INFO]: Paper: Using Java compression from Velocity.
+[18:25:10 INFO]: Paper: Using Java cipher from Velocity.
+[18:25:10 INFO]: [BotSystem] Loading server plugin BotSystem v3.0.0
+[18:25:10 INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:25:10 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[18:25:10 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[18:25:10 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[18:25:10 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[18:25:10 INFO]: Preparing level "world_user"
+[18:25:11 INFO]: Loading 143 persistent chunks for world 'minecraft:overworld'...
+[18:25:11 INFO]: Preparing spawn area: 6%
+[18:25:11 INFO]: Prepared spawn area in 761 ms
+[18:25:11 INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[18:25:11 INFO]: Prepared spawn area in 1 ms
+[18:25:11 INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[18:25:11 INFO]: Prepared spawn area in 2 ms
+[18:25:11 INFO]: Done preparing level "world_user" (1.171s)
+[18:25:11 INFO]: [BotSystem] Enabling BotSystem v3.0.0
+[18:25:11 INFO]: [BotSystem] BotSystem 2026-09-24e (Paper) bereit.
+[18:25:12 INFO]: [spark] Starting background profiler...
+[18:25:12 INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[18:25:12 INFO]: Running delayed init tasks
+[18:25:12 INFO]: Done (9.792s)! For help, type "help"
+[18:25:12 WARN]: *************************************************************************************
+[18:25:12 WARN]: You are running the latest build for your Minecraft version (1.21.11)
+[18:25:12 WARN]: However, you are 4 release(s) behind the latest stable release (26.2)!
+[18:25:12 WARN]: It is recommended that you update as soon as possible
+[18:25:12 WARN]: https://papermc.io/downloads/paper
+[18:25:12 WARN]: *************************************************************************************
+[18:26:34 INFO]: UUID of player BotDev is 8851e65a-2d20-3b65-b8c7-b67cbd723f84
+[18:26:35 INFO]: [38;5;11mBotDev joined the game[0m
+[18:26:35 INFO]: BotDev[/127.0.0.1:27724] logged in with entity id 23 at ([world_user]-226.5, 73.0, -2435.5)
+[18:26:38 INFO]: BotDev issued server command: /tp @s -190 120 -2300
+[18:26:38 INFO]: [3m[38;5;7m[BotDev: Teleported BotDev to -189.500000, 120.000000, -2299.500000][0m
+[18:26:40 INFO]: BotDev issued server command: /execute positioned -230 0 -2300 positioned over motion_blocking_no_leaves run bot mob zombie 200 Rot
+[18:26:40 INFO]: BotDev fell from a high place
+[18:26:40 INFO]: BotDev issued server command: /execute positioned -150 0 -2300 positioned over motion_blocking_no_leaves run bot mob skeleton 200 Blau
+[18:26:42 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 6.3 ms/tick | bots 0 (0 aktiv) mobs 400 | ki 0.01 ms avg, 3.3 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 36 x 235 ms | heap 516/6144 MB
+[18:26:52 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 5.0 ms/tick | bots 0 (0 aktiv) mobs 400 | ki 0.01 ms avg, 0.2 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 4 x 34 ms | heap 434/6144 MB
+[18:26:55 INFO]: BotDev issued server command: /bot minimap on
+[18:26:56 INFO]: BotDev issued server command: /bot fight @team:Rot , @team:Blau
+[18:26:58 INFO]: BotDev issued server command: /bot map
+[18:27:02 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 7.3 ms/tick | bots 0 (0 aktiv) mobs 400 | ki 0.01 ms avg, 0.0 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 1 x 6 ms | heap 507/6144 MB
+[18:27:03 INFO]: BotDev issued server command: /bot map
+[18:27:08 INFO]: BotDev issued server command: /bot map
+[18:27:12 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 10.8 ms/tick | bots 0 (0 aktiv) mobs 397 | ki 0.01 ms avg, 0.1 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 4 x 21 ms | heap 489/6144 MB
+[18:27:13 INFO]: BotDev issued server command: /bot map
+[18:27:18 INFO]: BotDev issued server command: /bot map
+[18:27:22 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 12.6 ms/tick | bots 0 (0 aktiv) mobs 384 | ki 0.01 ms avg, 0.1 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 4 x 17 ms | heap 584/6144 MB
+[18:27:23 INFO]: BotDev lost connection: Disconnected
+[18:27:23 INFO]: [38;5;11mBotDev left the game[0m
+[18:27:32 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 9.3 ms/tick | bots 0 (0 aktiv) mobs 351 | ki 0.01 ms avg, 0.1 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 5 x 16 ms | heap 446/6144 MB
+[18:27:42 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 10.4 ms/tick | bots 0 (0 aktiv) mobs 317 | ki 0.00 ms avg, 0.0 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 5 x 15 ms | heap 361/6144 MB
+[18:27:52 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 9.5 ms/tick | bots 0 (0 aktiv) mobs 287 | ki 0.00 ms avg, 0.1 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 2 x 7 ms | heap 600/6144 MB
+[18:28:02 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 9.7 ms/tick | bots 0 (0 aktiv) mobs 242 | ki 0.00 ms avg, 0.0 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 5 x 17 ms | heap 602/6144 MB
+[18:28:12 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 9.1 ms/tick | bots 0 (0 aktiv) mobs 229 | ki 0.00 ms avg, 0.0 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 6 x 18 ms | heap 344/6144 MB
+[18:28:22 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 9.0 ms/tick | bots 0 (0 aktiv) mobs 195 | ki 0.01 ms avg, 0.0 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 4 x 11 ms | heap 541/6144 MB
+[18:28:32 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 7.2 ms/tick | bots 0 (0 aktiv) mobs 181 | ki 0.01 ms avg, 0.1 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 5 x 33 ms | heap 374/6144 MB
+[18:28:42 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 3.8 ms/tick | bots 0 (0 aktiv) mobs 180 | ki 0.00 ms avg, 0.1 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 3 x 4 ms | heap 498/6144 MB
+[18:28:52 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 3.2 ms/tick | bots 0 (0 aktiv) mobs 170 | ki 0.00 ms avg, 0.1 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 1 x 3 ms | heap 506/6144 MB
+[18:29:02 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 3.5 ms/tick | bots 0 (0 aktiv) mobs 169 | ki 0.01 ms avg, 0.1 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 1 x 3 ms | heap 481/6144 MB
+[18:29:12 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 3.8 ms/tick | bots 0 (0 aktiv) mobs 169 | ki 0.01 ms avg, 0.1 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 3 x 13 ms | heap 413/6144 MB
+[18:29:22 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 3.2 ms/tick | bots 0 (0 aktiv) mobs 166 | ki 0.01 ms avg, 0.2 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 0 x 0 ms | heap 547/6144 MB
+[18:29:32 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 1.7 ms/tick | bots 0 (0 aktiv) mobs 160 | ki 0.01 ms avg, 0.1 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 1 x 2 ms | heap 342/6144 MB
+[18:29:42 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 1.6 ms/tick | bots 0 (0 aktiv) mobs 157 | ki 0.01 ms avg, 0.1 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 0 x 0 ms | heap 390/6144 MB
+[18:29:43 INFO]: UUID of player BotDev is 8851e65a-2d20-3b65-b8c7-b67cbd723f84
+[18:29:44 INFO]: [38;5;11mBotDev joined the game[0m
+[18:29:44 INFO]: BotDev[/127.0.0.1:40550] logged in with entity id 6532 at ([world_user]-226.5, 73.0, -2435.5)
+[18:29:47 INFO]: BotDev issued server command: /tp @s -190 120 -2300
+[18:29:47 INFO]: [3m[38;5;7m[BotDev: Teleported BotDev to -189.500000, 120.000000, -2299.500000][0m
+[18:29:49 INFO]: BotDev fell from a high place
+[18:29:49 INFO]: BotDev issued server command: /execute positioned -230 0 -2300 positioned over motion_blocking_no_leaves run bot mob zombie 200 Rot
+[18:29:49 INFO]: BotDev issued server command: /execute positioned -150 0 -2300 positioned over motion_blocking_no_leaves run bot mob skeleton 200 Blau
+[18:29:52 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 8.0 ms/tick | bots 0 (0 aktiv) mobs 549 | ki 0.01 ms avg, 0.1 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 1 x 4 ms | heap 350/6144 MB
+[18:30:02 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 6.3 ms/tick | bots 0 (0 aktiv) mobs 547 | ki 0.00 ms avg, 0.1 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 3 x 6 ms | heap 506/6144 MB
+[18:30:12 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 5.9 ms/tick | bots 0 (0 aktiv) mobs 528 | ki 0.00 ms avg, 0.0 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 1 x 2 ms | heap 544/6144 MB
+[18:30:22 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 6.4 ms/tick | bots 0 (0 aktiv) mobs 485 | ki 0.00 ms avg, 0.1 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 4 x 13 ms | heap 502/6144 MB
+[18:30:31 INFO]: Stopping the server
+[18:30:31 INFO]: Stopping server
+[18:30:31 INFO]: [BotSystem] Disabling BotSystem v3.0.0
+[18:30:31 INFO]: Saving players
+[18:30:31 INFO]: BotDev lost connection: Server closed
+[18:30:31 INFO]: [38;5;11mBotDev left the game[0m
+[18:30:32 INFO]: Saving worlds
+[18:30:32 INFO]: Saving chunks for level 'ServerLevel[world_user]'/minecraft:overworld
+[18:30:32 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_user'
+[18:30:32 INFO]: [ChunkHolderManager] Halted chunk system for world 'world_user'
+[18:30:32 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_user'
+[18:30:32 INFO]: [ChunkHolderManager] Saved 356 block chunks, 396 entity chunks, 0 poi chunks in world 'world_user' in 0,16s
+[18:30:32 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_user'
+[18:30:32 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_user'
+[18:30:32 INFO]: Saving chunks for level 'ServerLevel[world_user_nether]'/minecraft:the_nether
+[18:30:32 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_user_nether'
+[18:30:32 INFO]: [ChunkHolderManager] Halted chunk system for world 'world_user_nether'
+[18:30:32 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_user_nether'
+[18:30:32 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_user_nether' in 0,00s
+[18:30:32 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_user_nether'
+[18:30:32 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_user_nether'
+[18:30:32 INFO]: Saving chunks for level 'ServerLevel[world_user_the_end]'/minecraft:the_end
+[18:30:32 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_user_the_end'
+[18:30:32 INFO]: [ChunkHolderManager] Halted chunk system for world 'world_user_the_end'
+[18:30:32 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_user_the_end'
+[18:30:32 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_user_the_end' in 0,00s
+[18:30:32 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_user_the_end'
+[18:30:32 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_user_the_end'
+[18:30:32 INFO]: ThreadedAnvilChunkStorage (world_user): All chunks are saved
+[18:30:32 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[18:30:32 INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[18:30:32 INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[18:30:32 INFO]: Waiting for all RegionFile I/O tasks to complete...
+[18:30:32 INFO]: All RegionFile I/O tasks to complete
+[18:30:32 INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[18:30:32 INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

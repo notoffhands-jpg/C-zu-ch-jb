@@ -1,0 +1,155 @@
+Starting org.bukkit.craftbukkit.Main
+2026-09-21T14:09:38.472098700Z ServerMain WARN Advanced terminal features are not available in this environment
+[16:09:38 INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4+7-LTS; Eclipse Adoptium Temurin-25.0.4+7) on Windows 11 10.0 (amd64)
+[16:09:38 INFO]: [bootstrap] Loading Paper 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) for Minecraft 1.21.11
+[16:09:39 INFO]: [PluginInitializerManager] Initializing plugins...
+[16:09:39 INFO]: [PluginInitializerManager] Initialized 1 plugin
+[16:09:39 INFO]: [PluginInitializerManager] Paper plugins (1):
+ - BotSystem (3.0.0)
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.joml.MemUtil$MemUtilUnsafe (file:/C:/Users/notof/BotSystem-Paper/run/libraries/org/joml/joml/1.10.8/joml-1.10.8.jar)
+WARNING: Please consider reporting this to the maintainers of class org.joml.MemUtil$MemUtilUnsafe
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[16:09:43 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[16:09:45 INFO]: Loaded 1470 recipes
+[16:09:45 INFO]: Loaded 1584 advancements
+[16:09:45 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[16:09:45 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 330,8ms
+[16:09:45 INFO]: Starting minecraft server version 1.21.11
+[16:09:45 INFO]: Loading properties
+[16:09:45 INFO]: This server is running Paper version 1.21.11-132-ver/1.21.11@c5eb079 (2026-05-11T11:43:09Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[16:09:45 INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[16:09:45 INFO]: Server Ping Player Sample Count: 12
+[16:09:45 INFO]: Using 4 threads for Netty based IO
+[16:09:46 INFO]: [MoonriseCommon] Paper is using 6 worker threads, 1 I/O threads
+[16:09:46 INFO]: Default game type: SURVIVAL
+[16:09:46 INFO]: Generating keypair
+[16:09:46 INFO]: Starting Minecraft server on *:25599
+[16:09:46 INFO]: Paper: Using Java compression from Velocity.
+[16:09:46 INFO]: Paper: Using Java cipher from Velocity.
+[16:09:46 INFO]: [BotSystem] Loading server plugin BotSystem v3.0.0
+[16:09:46 INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:09:46 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[16:09:46 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[16:09:46 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[16:09:46 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[16:09:46 INFO]: Preparing level "world"
+[16:09:46 INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
+[16:09:46 INFO]: Prepared spawn area in 1 ms
+[16:09:46 INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[16:09:46 INFO]: Prepared spawn area in 2 ms
+[16:09:46 INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[16:09:46 INFO]: Prepared spawn area in 1 ms
+[16:09:46 INFO]: Done preparing level "world" (0.329s)
+[16:09:46 INFO]: [BotSystem] Enabling BotSystem v3.0.0
+[16:09:47 INFO]: [BotSystem] BotSystem 2026-09-20b (Paper) bereit.
+[16:09:47 INFO]: [spark] Starting background profiler...
+[16:09:47 INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[16:09:47 INFO]: Running delayed init tasks
+[16:09:47 INFO]: Done (9.428s)! For help, type "help"
+[16:09:47 WARN]: *************************************************************************************
+[16:09:47 WARN]: You are running the latest build for your Minecraft version (1.21.11)
+[16:09:47 WARN]: However, you are 4 release(s) behind the latest stable release (26.2)!
+[16:09:47 WARN]: It is recommended that you update as soon as possible
+[16:09:47 WARN]: https://papermc.io/downloads/paper
+[16:09:47 WARN]: *************************************************************************************
+[16:10:23 INFO]: [38;5;11mFinn2011 joined the game[0m
+[16:10:23 INFO]: Finn2011[bot] logged in with entity id 1 at ([world]0.5, -60.0, 0.5)
+[16:10:23 INFO]: [38;5;11mouhaarf joined the game[0m
+[16:10:23 INFO]: ouhaarf[bot] logged in with entity id 2 at ([world]-1.5, -60.0, 1.5)
+[16:10:23 INFO]: [38;5;11mriivalosol22 joined the game[0m
+[16:10:23 INFO]: riivalosol22[bot] logged in with entity id 3 at ([world]0.5, -60.0, -2.5)
+[16:10:23 INFO]: [38;5;11mPixelS66 joined the game[0m
+[16:10:23 INFO]: PixelS66[bot] logged in with entity id 4 at ([world]1.5, -60.0, 1.5)
+[16:10:23 INFO]: [38;5;10m4 Bot(s) werden gespawnt, Kit archer, Team Rot: Finn2011, ouhaarf, riivalosol22, PixelS66[0m
+[16:10:23 INFO]: [38;5;11mzenmir joined the game[0m
+[16:10:23 INFO]: zenmir[bot] logged in with entity id 5 at ([world]0.5, -60.0, 0.5)
+[16:10:23 INFO]: [38;5;11m4lgxu_of joined the game[0m
+[16:10:23 INFO]: 4lgxu_of[bot] logged in with entity id 6 at ([world]-1.5, -60.0, 1.5)
+[16:10:23 INFO]: [38;5;11m7c55xxldgd joined the game[0m
+[16:10:23 INFO]: 7c55xxldgd[bot] logged in with entity id 7 at ([world]0.5, -60.0, -2.5)
+[16:10:23 INFO]: [38;5;11m14ufms joined the game[0m
+[16:10:23 INFO]: 14ufms[bot] logged in with entity id 8 at ([world]1.5, -60.0, 1.5)
+[16:10:23 INFO]: [38;5;10m4 Bot(s) werden gespawnt, Kit iron, Team Blau: zenmir, 4lgxu_of, 7c55xxldgd, 14ufms[0m
+[16:10:23 INFO]: zenmir has made the advancement [38;5;10m[Suit Up][0m
+[16:10:23 INFO]: 4lgxu_of has made the advancement [38;5;10m[Suit Up][0m
+[16:10:23 INFO]: 7c55xxldgd has made the advancement [38;5;10m[Suit Up][0m
+[16:10:23 INFO]: 14ufms has made the advancement [38;5;10m[Suit Up][0m
+[16:10:28 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 17.9 ms/tick | bots 8 (0 aktiv) mobs 0 | ki 0.02 ms avg, 2.6 ms max | pfade 0 (0.0 ms/pfad, cpu 0.0), queue 0 | gc 40 x 216 ms | heap 334/3072 MB
+[16:10:30 INFO]: [38;5;10m4 Bot(s)/Mob(s) verteilt im Umkreis von 3 Blöcken.[0m
+[16:10:30 INFO]: [38;5;10m4 Bot(s)/Mob(s) verteilt im Umkreis von 3 Blöcken.[0m
+[16:10:32 INFO]: [38;5;10mFight gestartet: Rot (4 Bots) vs Blau (4 Bots).[0m
+[16:10:34 INFO]: PixelS66 has made the advancement [38;5;10m[Take Aim][0m
+[16:10:35 INFO]: ouhaarf has made the advancement [38;5;10m[Take Aim][0m
+[16:10:37 INFO]: riivalosol22 has made the advancement [38;5;10m[Take Aim][0m
+[16:10:38 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 2.6 ms/tick | bots 8 (8 aktiv) mobs 0 | ki 0.21 ms avg, 5.8 ms max | pfade 6 (4.5 ms/pfad, cpu 0.0), queue 0 | gc 0 x 0 ms | heap 416/3072 MB
+[16:10:39 INFO]: Finn2011 was slain by 14ufms
+[16:10:39 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: Finn2011 [Rot] - player durch 14ufms [blau] bei -7/-60/-2 (Tick 1038)
+[16:10:40 INFO]: Finn2011 lost connection: Bot entfernt
+[16:10:40 INFO]: [38;5;11mFinn2011 left the game[0m
+[16:10:40 INFO]: ouhaarf was slain by 7c55xxldgd
+[16:10:40 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: ouhaarf [Rot] - player durch 7c55xxldgd [blau] bei 0/-60/23 (Tick 1049)
+[16:10:40 INFO]: ouhaarf lost connection: Bot entfernt
+[16:10:40 INFO]: [38;5;11mouhaarf left the game[0m
+[16:10:41 INFO]: PixelS66 was slain by zenmir
+[16:10:41 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: PixelS66 [Rot] - player durch zenmir [blau] bei -6/-60/-11 (Tick 1071)
+[16:10:41 INFO]: PixelS66 lost connection: Bot entfernt
+[16:10:41 INFO]: [38;5;11mPixelS66 left the game[0m
+[16:10:43 INFO]: riivalosol22 was slain by 4lgxu_of
+[16:10:43 INFO]: [de.fiden.botsystem.BotSystemMod] Bot-Tod: riivalosol22 [Rot] - player durch 4lgxu_of [blau] bei -9/-60/-21 (Tick 1110)
+[16:10:43 INFO]: riivalosol22 lost connection: Bot entfernt
+[16:10:43 INFO]: [38;5;11mriivalosol22 left the game[0m
+[16:10:48 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 1.6 ms/tick | bots 4 (4 aktiv) mobs 0 | ki 0.56 ms avg, 25.6 ms max | pfade 24 (0.5 ms/pfad, cpu 0.0), queue 0 | gc 0 x 0 ms | heap 502/3072 MB
+[16:10:58 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 2.4 ms/tick | bots 4 (3 aktiv) mobs 0 | ki 0.10 ms avg, 0.3 ms max | pfade 16 (1.9 ms/pfad, cpu 0.0), queue 0 | gc 3 x 11 ms | heap 422/3072 MB
+[16:11:08 INFO]: [de.fiden.botsystem.BotSystemMod] [perf] server 1.1 ms/tick | bots 4 (1 aktiv) mobs 0 | ki 0.07 ms avg, 0.1 ms max | pfade 7 (0.2 ms/pfad, cpu 0.0), queue 0 | gc 0 x 0 ms | heap 470/3072 MB
+[16:11:12 INFO]: [38;5;3mBotSystem 2026-09-20b | Status: 4 Bot(s)[0m
+[16:11:12 INFO]: [38;5;11m- Blau: 4 gesamt, 4 lebend, 4 im Kampf, 0 als Begleiter | Kills 4 / Tode 0[0m
+[16:11:12 INFO]: [38;5;11m- rot: 0 gesamt, 0 lebend, 0 im Kampf, 0 als Begleiter | Kills 0 / Tode 4[0m
+[16:11:12 INFO]: [38;5;3mLetzte Bot-Tode (neueste unten):[0m
+[16:11:12 INFO]: [38;5;11m- Finn2011 [Rot] - player durch 14ufms [blau] bei -7/-60/-2 (Tick 1038)[0m
+[16:11:12 INFO]: [38;5;11m- ouhaarf [Rot] - player durch 7c55xxldgd [blau] bei 0/-60/23 (Tick 1049)[0m
+[16:11:12 INFO]: [38;5;11m- PixelS66 [Rot] - player durch zenmir [blau] bei -6/-60/-11 (Tick 1071)[0m
+[16:11:12 INFO]: [38;5;11m- riivalosol22 [Rot] - player durch 4lgxu_of [blau] bei -9/-60/-21 (Tick 1110)[0m
+[16:11:12 INFO]: zenmir lost connection: Bot entfernt
+[16:11:12 INFO]: [38;5;11mzenmir left the game[0m
+[16:11:12 INFO]: 4lgxu_of lost connection: Bot entfernt
+[16:11:12 INFO]: [38;5;11m4lgxu_of left the game[0m
+[16:11:12 INFO]: 7c55xxldgd lost connection: Bot entfernt
+[16:11:12 INFO]: [38;5;11m7c55xxldgd left the game[0m
+[16:11:12 INFO]: 14ufms lost connection: Bot entfernt
+[16:11:12 INFO]: [38;5;11m14ufms left the game[0m
+[16:11:12 INFO]: [38;5;10m4 Bot(s) und 0 Mob(s) entfernt.[0m
+[16:11:14 INFO]: Stopping the server
+[16:11:14 INFO]: Stopping server
+[16:11:14 INFO]: [BotSystem] Disabling BotSystem v3.0.0
+[16:11:14 INFO]: Saving players
+[16:11:14 INFO]: Saving worlds
+[16:11:14 INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[16:11:14 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[16:11:14 INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[16:11:14 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[16:11:14 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world' in 0,01s
+[16:11:14 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[16:11:14 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[16:11:14 INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[16:11:14 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[16:11:14 INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[16:11:14 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[16:11:14 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0,00s
+[16:11:14 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
+[16:11:14 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
+[16:11:14 INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[16:11:14 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[16:11:14 INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[16:11:14 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[16:11:14 INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0,00s
+[16:11:14 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
+[16:11:14 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
+[16:11:14 INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[16:11:14 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[16:11:14 INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[16:11:14 INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[16:11:14 INFO]: Waiting for all RegionFile I/O tasks to complete...
+[16:11:14 INFO]: All RegionFile I/O tasks to complete
+[16:11:14 INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[16:11:14 INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
