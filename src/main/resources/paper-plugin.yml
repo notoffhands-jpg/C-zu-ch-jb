@@ -1,6 +1,0 @@
-name: BotSystem
-version: "${version}"
-main: de.fiden.botsystem.BotSystemPlugin
-api-version: "1.21"
-description: Fake-Player-Bots, Mob-Armeen, Strategiekarte - Paper-Version der BotSystem-Fabric-Mod.
-author: fiden

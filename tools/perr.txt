@@ -1,2 +1,0 @@
-Hinweis: C:\Users\notof\BotSystem-Paper\src\main\java\de\fiden\botsystem\bot\BotPlayer.java verwendet oder überschreibt eine veraltete API.
-Hinweis: Wiederholen Sie die Kompilierung mit -Xlint:deprecation, um Details zu erhalten.
