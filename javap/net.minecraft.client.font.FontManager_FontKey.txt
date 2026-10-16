@@ -1,0 +1,67 @@
+// net/minecraft/client/font/FontManager$FontKey = net/minecraft/class_378$class_8534
+Compiled from "class_378.java"
+final class net.minecraft.class_378$class_8534 extends java.lang.Record {
+  private final net.minecraft.class_2960 comp_1491;
+
+  private final java.lang.String comp_1492;
+
+  private final int comp_1493;
+
+  net.minecraft.class_378$class_8534(net.minecraft.class_2960, java.lang.String, int);
+    Code:
+         0: aload_0
+         1: invokespecial #31                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #33                 // Field comp_1491:Lnet/minecraft/class_2960;
+         9: aload_0
+        10: aload_2
+        11: putfield      #35                 // Field comp_1492:Ljava/lang/String;
+        14: aload_0
+        15: iload_3
+        16: putfield      #37                 // Field comp_1493:I
+        19: return
+
+  public java.lang.String toString();
+    Code:
+         0: aload_0
+         1: getfield      #33                 // Field comp_1491:Lnet/minecraft/class_2960;
+         4: invokestatic  #47                 // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+         7: aload_0
+         8: getfield      #37                 // Field comp_1493:I
+        11: aload_0
+        12: getfield      #35                 // Field comp_1492:Ljava/lang/String;
+        15: invokedynamic #59,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+        20: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #76,  0             // InvokeDynamic #1:hashCode:(Lnet/minecraft/class_378$class_8534;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #82,  0             // InvokeDynamic #1:equals:(Lnet/minecraft/class_378$class_8534;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public net.minecraft.class_2960 comp_1491();
+    Code:
+         0: aload_0
+         1: getfield      #33                 // Field comp_1491:Lnet/minecraft/class_2960;
+         4: areturn
+
+  public java.lang.String comp_1492();
+    Code:
+         0: aload_0
+         1: getfield      #35                 // Field comp_1492:Ljava/lang/String;
+         4: areturn
+
+  public int comp_1493();
+    Code:
+         0: aload_0
+         1: getfield      #37                 // Field comp_1493:I
+         4: ireturn
+}

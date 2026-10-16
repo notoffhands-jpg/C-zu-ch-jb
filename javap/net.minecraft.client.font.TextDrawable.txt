@@ -1,0 +1,19 @@
+// net/minecraft/client/font/TextDrawable = net/minecraft/class_11767
+Compiled from "class_11767.java"
+public interface net.minecraft.class_11767 {
+  public abstract void method_73403(org.joml.Matrix4f, net.minecraft.class_4588, int, boolean);
+
+  public abstract net.minecraft.class_1921 method_73401(net.minecraft.class_327$class_6415);
+
+  public abstract com.mojang.blaze3d.textures.GpuTextureView comp_4629();
+
+  public abstract com.mojang.blaze3d.pipeline.RenderPipeline method_73400();
+
+  public abstract float method_71829();
+
+  public abstract float method_71830();
+
+  public abstract float method_71831();
+
+  public abstract float method_71832();
+}

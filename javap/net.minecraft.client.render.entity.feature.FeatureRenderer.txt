@@ -1,0 +1,61 @@
+// net/minecraft/client/render/entity/feature/FeatureRenderer = net/minecraft/class_3887
+Compiled from "class_3887.java"
+public abstract class net.minecraft.class_3887<S extends net.minecraft.class_10017, M extends net.minecraft.class_583<? super S>> {
+  private final net.minecraft.class_3883<S, M> field_17155;
+
+  public net.minecraft.class_3887(net.minecraft.class_3883<S, M>);
+    Code:
+         0: aload_0
+         1: invokespecial #25                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #27                 // Field field_17155:Lnet/minecraft/class_3883;
+         9: return
+
+  protected static <S extends net.minecraft.class_10042> void method_23196(net.minecraft.class_3879<? super S>, net.minecraft.class_2960, net.minecraft.class_4587, net.minecraft.class_11659, int, S, int, int);
+    Code:
+         0: aload         5
+         2: getfield      #46                 // Field net/minecraft/class_10042.field_53333:Z
+         5: ifne          23
+         8: aload_0
+         9: aload_1
+        10: aload_2
+        11: aload_3
+        12: iload         4
+        14: aload         5
+        16: iload         6
+        18: iload         7
+        20: invokestatic  #49                 // Method method_23199:(Lnet/minecraft/class_3879;Lnet/minecraft/class_2960;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;ILnet/minecraft/class_10042;II)V
+        23: return
+
+  protected static <S extends net.minecraft.class_10042> void method_23199(net.minecraft.class_3879<? super S>, net.minecraft.class_2960, net.minecraft.class_4587, net.minecraft.class_11659, int, S, int, int);
+    Code:
+         0: aload_3
+         1: iload         7
+         3: invokeinterface #63,  2           // InterfaceMethod net/minecraft/class_11659.method_73529:(I)Lnet/minecraft/class_11785;
+         8: aload_0
+         9: aload         5
+        11: aload_2
+        12: aload_1
+        13: invokestatic  #69                 // Method net/minecraft/class_12249.method_75994:(Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+        16: iload         4
+        18: aload         5
+        20: fconst_0
+        21: invokestatic  #75                 // Method net/minecraft/class_922.method_23622:(Lnet/minecraft/class_10042;F)I
+        24: iload         6
+        26: aconst_null
+        27: aload         5
+        29: getfield      #78                 // Field net/minecraft/class_10042.field_61821:I
+        32: aconst_null
+        33: invokeinterface #84,  11          // InterfaceMethod net/minecraft/class_11785.method_73490:(Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IIILnet/minecraft/class_1058;ILnet/minecraft/class_11683$class_11792;)V
+        38: return
+
+  public M method_17165();
+    Code:
+         0: aload_0
+         1: getfield      #27                 // Field field_17155:Lnet/minecraft/class_3883;
+         4: invokeinterface #92,  1           // InterfaceMethod net/minecraft/class_3883.method_4038:()Lnet/minecraft/class_583;
+         9: areturn
+
+  public abstract void method_4199(net.minecraft.class_4587, net.minecraft.class_11659, int, S, float, float);
+}

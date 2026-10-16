@@ -1,0 +1,20 @@
+// net/minecraft/client/font/Alignment$2 = net/minecraft/class_11735$2
+Compiled from "class_11735.java"
+final class net.minecraft.class_11735$2 extends net.minecraft.class_11735 {
+  net.minecraft.class_11735$2(java.lang.String, int);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: iload_2
+         3: invokespecial #15                 // Method net/minecraft/class_11735."<init>":(Ljava/lang/String;I)V
+         6: return
+
+  public int method_73214(int, int);
+    Code:
+         0: iload_1
+         1: iload_2
+         2: iconst_2
+         3: idiv
+         4: isub
+         5: ireturn
+}

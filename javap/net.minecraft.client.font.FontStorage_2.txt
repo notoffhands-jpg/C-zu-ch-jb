@@ -1,0 +1,36 @@
+// net/minecraft/client/font/FontStorage$2 = net/minecraft/class_377$2
+Compiled from "class_377.java"
+class net.minecraft.class_377$2 implements net.minecraft.class_11759$class_11760 {
+  final net.minecraft.class_377 field_62138;
+
+  net.minecraft.class_377$2(net.minecraft.class_377);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: putfield      #23                 // Field field_62138:Lnet/minecraft/class_377;
+         5: aload_0
+         6: invokespecial #26                 // Method java/lang/Object."<init>":()V
+         9: return
+
+  public net.minecraft.class_11768 method_73334(net.minecraft.class_379, net.minecraft.class_383);
+    Code:
+         0: aload_0
+         1: getfield      #23                 // Field field_62138:Lnet/minecraft/class_377;
+         4: getfield      #35                 // Field net/minecraft/class_377.field_61611:Lnet/minecraft/class_11642;
+         7: aload_1
+         8: aload_2
+         9: invokevirtual #41                 // Method net/minecraft/class_11642.method_72797:(Lnet/minecraft/class_379;Lnet/minecraft/class_383;)Lnet/minecraft/class_382;
+        12: aload_0
+        13: getfield      #23                 // Field field_62138:Lnet/minecraft/class_377;
+        16: getfield      #45                 // Field net/minecraft/class_377.field_2256:Lnet/minecraft/class_11768;
+        19: invokestatic  #51                 // Method java/util/Objects.requireNonNullElse:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        22: checkcast     #53                 // class net/minecraft/class_11768
+        25: areturn
+
+  public net.minecraft.class_11768 method_73333();
+    Code:
+         0: aload_0
+         1: getfield      #23                 // Field field_62138:Lnet/minecraft/class_377;
+         4: getfield      #45                 // Field net/minecraft/class_377.field_2256:Lnet/minecraft/class_11768;
+         7: areturn
+}

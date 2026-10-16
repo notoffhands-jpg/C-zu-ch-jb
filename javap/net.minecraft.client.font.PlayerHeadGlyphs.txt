@@ -1,0 +1,44 @@
+// net/minecraft/client/font/PlayerHeadGlyphs = net/minecraft/class_11879
+Compiled from "class_11879.java"
+public class net.minecraft.class_11879 {
+  static final net.minecraft.class_379 field_62470;
+
+  final net.minecraft.class_11786 field_62471;
+
+  private final com.google.common.cache.LoadingCache<net.minecraft.class_11719$class_11881, net.minecraft.class_11603> field_62472;
+
+  public net.minecraft.class_11879(net.minecraft.class_11786);
+    Code:
+         0: aload_0
+         1: invokespecial #34                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: invokestatic  #40                 // Method com/google/common/cache/CacheBuilder.newBuilder:()Lcom/google/common/cache/CacheBuilder;
+         8: getstatic     #46                 // Field net/minecraft/class_11786.field_62478:Ljava/time/Duration;
+        11: invokevirtual #50                 // Method com/google/common/cache/CacheBuilder.expireAfterAccess:(Ljava/time/Duration;)Lcom/google/common/cache/CacheBuilder;
+        14: new           #13                 // class net/minecraft/class_11879$1
+        17: dup
+        18: aload_0
+        19: invokespecial #53                 // Method net/minecraft/class_11879$1."<init>":(Lnet/minecraft/class_11879;)V
+        22: invokevirtual #57                 // Method com/google/common/cache/CacheBuilder.build:(Lcom/google/common/cache/CacheLoader;)Lcom/google/common/cache/LoadingCache;
+        25: putfield      #59                 // Field field_62472:Lcom/google/common/cache/LoadingCache;
+        28: aload_0
+        29: aload_1
+        30: putfield      #61                 // Field field_62471:Lnet/minecraft/class_11786;
+        33: return
+
+  public net.minecraft.class_11603 method_74040(net.minecraft.class_11719$class_11881);
+    Code:
+         0: aload_0
+         1: getfield      #59                 // Field field_62472:Lcom/google/common/cache/LoadingCache;
+         4: aload_1
+         5: invokeinterface #71,  2           // InterfaceMethod com/google/common/cache/LoadingCache.getUnchecked:(Ljava/lang/Object;)Ljava/lang/Object;
+        10: checkcast     #73                 // class net/minecraft/class_11603
+        13: areturn
+
+  static {};
+    Code:
+         0: ldc           #76                 // float 8.0f
+         2: invokestatic  #82                 // InterfaceMethod net/minecraft/class_379.method_73329:(F)Lnet/minecraft/class_379;
+         5: putstatic     #84                 // Field field_62470:Lnet/minecraft/class_379;
+         8: return
+}

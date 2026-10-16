@@ -1,0 +1,88 @@
+// net/minecraft/client/font/Alignment = net/minecraft/class_11735
+Compiled from "class_11735.java"
+public abstract class net.minecraft.class_11735 extends java.lang.Enum<net.minecraft.class_11735> {
+  public static final net.minecraft.class_11735 field_62009;
+
+  public static final net.minecraft.class_11735 field_62010;
+
+  public static final net.minecraft.class_11735 field_62011;
+
+  private static final net.minecraft.class_11735[] field_62012;
+
+  public static net.minecraft.class_11735[] values();
+    Code:
+         0: getstatic     #26                 // Field field_62012:[Lnet/minecraft/class_11735;
+         3: invokevirtual #31                 // Method "[Lnet/minecraft/class_11735;".clone:()Ljava/lang/Object;
+         6: checkcast     #27                 // class "[Lnet/minecraft/class_11735;"
+         9: areturn
+
+  public static net.minecraft.class_11735 valueOf(java.lang.String);
+    Code:
+         0: ldc           #2                  // class net/minecraft/class_11735
+         2: aload_0
+         3: invokestatic  #37                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+         6: checkcast     #2                  // class net/minecraft/class_11735
+         9: areturn
+
+  net.minecraft.class_11735();
+    Code:
+         0: aload_0
+         1: aload_1
+         2: iload_2
+         3: invokespecial #44                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+         6: return
+
+  public abstract int method_73214(int, int);
+
+  public int method_75792(int, net.minecraft.class_327, net.minecraft.class_5481);
+    Code:
+         0: aload_0
+         1: iload_1
+         2: aload_2
+         3: aload_3
+         4: invokevirtual #59                 // Method net/minecraft/class_327.method_30880:(Lnet/minecraft/class_5481;)I
+         7: invokevirtual #61                 // Method method_73214:(II)I
+        10: ireturn
+
+  private static net.minecraft.class_11735[] method_73213();
+    Code:
+         0: iconst_3
+         1: anewarray     #2                  // class net/minecraft/class_11735
+         4: dup
+         5: iconst_0
+         6: getstatic     #66                 // Field field_62009:Lnet/minecraft/class_11735;
+         9: aastore
+        10: dup
+        11: iconst_1
+        12: getstatic     #68                 // Field field_62010:Lnet/minecraft/class_11735;
+        15: aastore
+        16: dup
+        17: iconst_2
+        18: getstatic     #70                 // Field field_62011:Lnet/minecraft/class_11735;
+        21: aastore
+        22: areturn
+
+  static {};
+    Code:
+         0: new           #16                 // class net/minecraft/class_11735$1
+         3: dup
+         4: ldc           #73                 // String LEFT
+         6: iconst_0
+         7: invokespecial #74                 // Method net/minecraft/class_11735$1."<init>":(Ljava/lang/String;I)V
+        10: putstatic     #66                 // Field field_62009:Lnet/minecraft/class_11735;
+        13: new           #14                 // class net/minecraft/class_11735$2
+        16: dup
+        17: ldc           #76                 // String CENTER
+        19: iconst_1
+        20: invokespecial #77                 // Method net/minecraft/class_11735$2."<init>":(Ljava/lang/String;I)V
+        23: putstatic     #68                 // Field field_62010:Lnet/minecraft/class_11735;
+        26: new           #12                 // class net/minecraft/class_11735$3
+        29: dup
+        30: ldc           #79                 // String RIGHT
+        32: iconst_2
+        33: invokespecial #80                 // Method net/minecraft/class_11735$3."<init>":(Ljava/lang/String;I)V
+        36: putstatic     #70                 // Field field_62011:Lnet/minecraft/class_11735;
+        39: invokestatic  #82                 // Method method_73213:()[Lnet/minecraft/class_11735;
+        42: putstatic     #26                 // Field field_62012:[Lnet/minecraft/class_11735;
+        45: return
+}

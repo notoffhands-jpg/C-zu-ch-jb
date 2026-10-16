@@ -1,0 +1,82 @@
+// net/minecraft/client/font/FontFilterType = net/minecraft/class_9243
+Compiled from "class_9243.java"
+public final class net.minecraft.class_9243 extends java.lang.Enum<net.minecraft.class_9243> implements net.minecraft.class_3542 {
+  public static final net.minecraft.class_9243 field_49112;
+
+  public static final net.minecraft.class_9243 field_49113;
+
+  public static final com.mojang.serialization.Codec<net.minecraft.class_9243> field_49114;
+
+  private final java.lang.String field_49115;
+
+  private static final net.minecraft.class_9243[] field_49116;
+
+  public static net.minecraft.class_9243[] values();
+    Code:
+         0: getstatic     #37                 // Field field_49116:[Lnet/minecraft/class_9243;
+         3: invokevirtual #42                 // Method "[Lnet/minecraft/class_9243;".clone:()Ljava/lang/Object;
+         6: checkcast     #38                 // class "[Lnet/minecraft/class_9243;"
+         9: areturn
+
+  public static net.minecraft.class_9243 valueOf(java.lang.String);
+    Code:
+         0: ldc           #2                  // class net/minecraft/class_9243
+         2: aload_0
+         3: invokestatic  #48                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+         6: checkcast     #2                  // class net/minecraft/class_9243
+         9: areturn
+
+  private net.minecraft.class_9243(java.lang.String);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: iload_2
+         3: invokespecial #56                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+         6: aload_0
+         7: aload_3
+         8: putfield      #58                 // Field field_49115:Ljava/lang/String;
+        11: return
+
+  public java.lang.String method_15434();
+    Code:
+         0: aload_0
+         1: getfield      #58                 // Field field_49115:Ljava/lang/String;
+         4: areturn
+
+  private static net.minecraft.class_9243[] method_57030();
+    Code:
+         0: iconst_2
+         1: anewarray     #2                  // class net/minecraft/class_9243
+         4: dup
+         5: iconst_0
+         6: getstatic     #65                 // Field field_49112:Lnet/minecraft/class_9243;
+         9: aastore
+        10: dup
+        11: iconst_1
+        12: getstatic     #67                 // Field field_49113:Lnet/minecraft/class_9243;
+        15: aastore
+        16: areturn
+
+  static {};
+    Code:
+         0: new           #2                  // class net/minecraft/class_9243
+         3: dup
+         4: ldc           #71                 // String UNIFORM
+         6: iconst_0
+         7: ldc           #73                 // String uniform
+         9: invokespecial #75                 // Method "<init>":(Ljava/lang/String;ILjava/lang/String;)V
+        12: putstatic     #65                 // Field field_49112:Lnet/minecraft/class_9243;
+        15: new           #2                  // class net/minecraft/class_9243
+        18: dup
+        19: ldc           #77                 // String JAPANESE_VARIANTS
+        21: iconst_1
+        22: ldc           #79                 // String jp
+        24: invokespecial #75                 // Method "<init>":(Ljava/lang/String;ILjava/lang/String;)V
+        27: putstatic     #67                 // Field field_49113:Lnet/minecraft/class_9243;
+        30: invokestatic  #81                 // Method method_57030:()[Lnet/minecraft/class_9243;
+        33: putstatic     #37                 // Field field_49116:[Lnet/minecraft/class_9243;
+        36: invokedynamic #97,  0             // InvokeDynamic #0:get:()Ljava/util/function/Supplier;
+        41: invokestatic  #101                // InterfaceMethod net/minecraft/class_3542.method_28140:(Ljava/util/function/Supplier;)Lnet/minecraft/class_3542$class_7292;
+        44: putstatic     #103                // Field field_49114:Lcom/mojang/serialization/Codec;
+        47: return
+}

@@ -1,0 +1,57 @@
+// net/minecraft/client/font/Font$FontFilterPair = net/minecraft/class_390$class_9241
+Compiled from "class_390.java"
+public final class net.minecraft.class_390$class_9241 extends java.lang.Record implements java.lang.AutoCloseable {
+  private final net.minecraft.class_390 comp_2348;
+
+  private final net.minecraft.class_9243$class_9244 comp_2349;
+
+  public net.minecraft.class_390$class_9241(net.minecraft.class_390, net.minecraft.class_9243$class_9244);
+    Code:
+         0: aload_0
+         1: invokespecial #35                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #37                 // Field comp_2348:Lnet/minecraft/class_390;
+         9: aload_0
+        10: aload_2
+        11: putfield      #39                 // Field comp_2349:Lnet/minecraft/class_9243$class_9244;
+        14: return
+
+  public void close();
+    Code:
+         0: aload_0
+         1: getfield      #37                 // Field comp_2348:Lnet/minecraft/class_390;
+         4: invokeinterface #44,  1           // InterfaceMethod net/minecraft/class_390.close:()V
+         9: return
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #60,  0             // InvokeDynamic #0:toString:(Lnet/minecraft/class_390$class_9241;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #65,  0             // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_390$class_9241;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #71,  0             // InvokeDynamic #0:equals:(Lnet/minecraft/class_390$class_9241;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public net.minecraft.class_390 comp_2348();
+    Code:
+         0: aload_0
+         1: getfield      #37                 // Field comp_2348:Lnet/minecraft/class_390;
+         4: areturn
+
+  public net.minecraft.class_9243$class_9244 comp_2349();
+    Code:
+         0: aload_0
+         1: getfield      #39                 // Field comp_2349:Lnet/minecraft/class_9243$class_9244;
+         4: areturn
+}

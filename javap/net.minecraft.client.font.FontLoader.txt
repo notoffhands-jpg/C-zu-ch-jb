@@ -1,0 +1,18 @@
+// net/minecraft/client/font/FontLoader = net/minecraft/class_389
+Compiled from "class_389.java"
+public interface net.minecraft.class_389 {
+  public static final com.mojang.serialization.MapCodec<net.minecraft.class_389> field_44801;
+
+  public abstract net.minecraft.class_394 method_51731();
+
+  public abstract com.mojang.datafixers.util.Either<net.minecraft.class_389$class_8539, net.minecraft.class_389$class_8540> method_51734();
+
+  static {};
+    Code:
+         0: getstatic     #39                 // Field net/minecraft/class_394.field_44802:Lcom/mojang/serialization/Codec;
+         3: invokedynamic #57,  0             // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+         8: invokedynamic #65,  0             // InvokeDynamic #1:apply:()Ljava/util/function/Function;
+        13: invokeinterface #71,  3           // InterfaceMethod com/mojang/serialization/Codec.dispatchMap:(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;
+        18: putstatic     #73                 // Field field_44801:Lcom/mojang/serialization/MapCodec;
+        21: return
+}

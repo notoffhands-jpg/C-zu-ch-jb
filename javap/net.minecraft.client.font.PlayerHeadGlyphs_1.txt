@@ -1,0 +1,45 @@
+// net/minecraft/client/font/PlayerHeadGlyphs$1 = net/minecraft/class_11879$1
+Compiled from "class_11879.java"
+class net.minecraft.class_11879$1 extends com.google.common.cache.CacheLoader<net.minecraft.class_11719$class_11881, net.minecraft.class_11603> {
+  final net.minecraft.class_11879 field_62473;
+
+  net.minecraft.class_11879$1(net.minecraft.class_11879);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: putfield      #31                 // Field field_62473:Lnet/minecraft/class_11879;
+         5: aload_0
+         6: invokespecial #34                 // Method com/google/common/cache/CacheLoader."<init>":()V
+         9: return
+
+  public net.minecraft.class_11603 method_74041(net.minecraft.class_11719$class_11881);
+    Code:
+         0: aload_0
+         1: getfield      #31                 // Field field_62473:Lnet/minecraft/class_11879;
+         4: getfield      #42                 // Field net/minecraft/class_11879.field_62471:Lnet/minecraft/class_11786;
+         7: aload_1
+         8: invokevirtual #46                 // Method net/minecraft/class_11719$class_11881.comp_4761:()Lnet/minecraft/class_9296;
+        11: invokevirtual #50                 // Method net/minecraft/class_11786.method_74050:(Lnet/minecraft/class_9296;)Ljava/util/function/Supplier;
+        14: astore_2
+        15: aload_1
+        16: invokevirtual #54                 // Method net/minecraft/class_11719$class_11881.comp_4762:()Z
+        19: istore_3
+        20: new           #56                 // class net/minecraft/class_11715
+        23: dup
+        24: new           #19                 // class net/minecraft/class_11879$1$1
+        27: dup
+        28: aload_0
+        29: aload_2
+        30: iload_3
+        31: invokespecial #59                 // Method net/minecraft/class_11879$1$1."<init>":(Lnet/minecraft/class_11879$1;Ljava/util/function/Supplier;Z)V
+        34: invokespecial #62                 // Method net/minecraft/class_11715."<init>":(Lnet/minecraft/class_11768;)V
+        37: areturn
+
+  public java.lang.Object load(java.lang.Object) throws java.lang.Exception;
+    Code:
+         0: aload_0
+         1: aload_1
+         2: checkcast     #14                 // class net/minecraft/class_11719$class_11881
+         5: invokevirtual #75                 // Method method_74041:(Lnet/minecraft/class_11719$class_11881;)Lnet/minecraft/class_11603;
+         8: areturn
+}

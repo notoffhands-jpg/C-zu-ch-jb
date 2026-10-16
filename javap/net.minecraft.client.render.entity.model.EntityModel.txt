@@ -1,0 +1,21 @@
+// net/minecraft/client/render/entity/model/EntityModel = net/minecraft/class_583
+Compiled from "class_583.java"
+public abstract class net.minecraft.class_583<T extends net.minecraft.class_10017> extends net.minecraft.class_3879<T> {
+  public static final float field_52908;
+
+  protected net.minecraft.class_583(net.minecraft.class_630);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #42,  0             // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+         7: invokespecial #45                 // Method "<init>":(Lnet/minecraft/class_630;Ljava/util/function/Function;)V
+        10: return
+
+  protected net.minecraft.class_583(net.minecraft.class_630, java.util.function.Function<net.minecraft.class_2960, net.minecraft.class_1921>);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: invokespecial #52                 // Method net/minecraft/class_3879."<init>":(Lnet/minecraft/class_630;Ljava/util/function/Function;)V
+         6: return
+}

@@ -1,0 +1,295 @@
+// net/minecraft/client/font/PlayerHeadGlyphs$HeadGlyph = net/minecraft/class_11879$class_11880
+Compiled from "class_11879.java"
+final class net.minecraft.class_11879$class_11880 extends java.lang.Record implements net.minecraft.class_11878 {
+  private final java.util.function.Supplier<net.minecraft.class_11786$class_11787> comp_4754;
+
+  private final boolean comp_4755;
+
+  private final float comp_4631;
+
+  private final float comp_4632;
+
+  private final int comp_4633;
+
+  private final int comp_4634;
+
+  private final float comp_4635;
+
+  private final net.minecraft.class_2583 comp_3317;
+
+  net.minecraft.class_11879$class_11880(java.util.function.Supplier<net.minecraft.class_11786$class_11787>, boolean, float, float, int, int, float, net.minecraft.class_2583);
+    Code:
+         0: aload_0
+         1: invokespecial #57                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #59                 // Field comp_4754:Ljava/util/function/Supplier;
+         9: aload_0
+        10: iload_2
+        11: putfield      #61                 // Field comp_4755:Z
+        14: aload_0
+        15: fload_3
+        16: putfield      #63                 // Field comp_4631:F
+        19: aload_0
+        20: fload         4
+        22: putfield      #65                 // Field comp_4632:F
+        25: aload_0
+        26: iload         5
+        28: putfield      #67                 // Field comp_4633:I
+        31: aload_0
+        32: iload         6
+        34: putfield      #69                 // Field comp_4634:I
+        37: aload_0
+        38: fload         7
+        40: putfield      #71                 // Field comp_4635:F
+        43: aload_0
+        44: aload         8
+        46: putfield      #73                 // Field comp_3317:Lnet/minecraft/class_2583;
+        49: return
+
+  public void method_73402(org.joml.Matrix4f, net.minecraft.class_4588, int, float, float, float, int);
+    Code:
+         0: fload         4
+         2: aload_0
+         3: invokevirtual #82                 // Method method_71829:()F
+         6: fadd
+         7: fstore        8
+         9: fload         4
+        11: aload_0
+        12: invokevirtual #85                 // Method method_71831:()F
+        15: fadd
+        16: fstore        9
+        18: fload         5
+        20: aload_0
+        21: invokevirtual #88                 // Method method_71830:()F
+        24: fadd
+        25: fstore        10
+        27: fload         5
+        29: aload_0
+        30: invokevirtual #91                 // Method method_71832:()F
+        33: fadd
+        34: fstore        11
+        36: aload_1
+        37: aload_2
+        38: iload_3
+        39: fload         8
+        41: fload         9
+        43: fload         10
+        45: fload         11
+        47: fload         6
+        49: iload         7
+        51: ldc           #92                 // float 8.0f
+        53: ldc           #92                 // float 8.0f
+        55: bipush        8
+        57: bipush        8
+        59: bipush        64
+        61: bipush        64
+        63: invokestatic  #96                 // Method method_74042:(Lorg/joml/Matrix4f;Lnet/minecraft/class_4588;IFFFFFIFFIIII)V
+        66: aload_0
+        67: getfield      #61                 // Field comp_4755:Z
+        70: ifeq          103
+        73: aload_1
+        74: aload_2
+        75: iload_3
+        76: fload         8
+        78: fload         9
+        80: fload         10
+        82: fload         11
+        84: fload         6
+        86: iload         7
+        88: ldc           #97                 // float 40.0f
+        90: ldc           #92                 // float 8.0f
+        92: bipush        8
+        94: bipush        8
+        96: bipush        64
+        98: bipush        64
+       100: invokestatic  #96                 // Method method_74042:(Lorg/joml/Matrix4f;Lnet/minecraft/class_4588;IFFFFFIFFIIII)V
+       103: return
+
+  private static void method_74042(org.joml.Matrix4f, net.minecraft.class_4588, int, float, float, float, float, float, int, float, float, int, int, int, int);
+    Code:
+         0: fload         9
+         2: fconst_0
+         3: fadd
+         4: iload         13
+         6: i2f
+         7: fdiv
+         8: fstore        15
+        10: fload         9
+        12: iload         11
+        14: i2f
+        15: fadd
+        16: iload         13
+        18: i2f
+        19: fdiv
+        20: fstore        16
+        22: fload         10
+        24: fconst_0
+        25: fadd
+        26: iload         14
+        28: i2f
+        29: fdiv
+        30: fstore        17
+        32: fload         10
+        34: iload         12
+        36: i2f
+        37: fadd
+        38: iload         14
+        40: i2f
+        41: fdiv
+        42: fstore        18
+        44: aload_1
+        45: aload_0
+        46: fload_3
+        47: fload         5
+        49: fload         7
+        51: invokeinterface #113,  5          // InterfaceMethod net/minecraft/class_4588.method_22918:(Lorg/joml/Matrix4fc;FFF)Lnet/minecraft/class_4588;
+        56: fload         15
+        58: fload         17
+        60: invokeinterface #117,  3          // InterfaceMethod net/minecraft/class_4588.method_22913:(FF)Lnet/minecraft/class_4588;
+        65: iload         8
+        67: invokeinterface #121,  2          // InterfaceMethod net/minecraft/class_4588.method_39415:(I)Lnet/minecraft/class_4588;
+        72: iload_2
+        73: invokeinterface #124,  2          // InterfaceMethod net/minecraft/class_4588.method_60803:(I)Lnet/minecraft/class_4588;
+        78: pop
+        79: aload_1
+        80: aload_0
+        81: fload_3
+        82: fload         6
+        84: fload         7
+        86: invokeinterface #113,  5          // InterfaceMethod net/minecraft/class_4588.method_22918:(Lorg/joml/Matrix4fc;FFF)Lnet/minecraft/class_4588;
+        91: fload         15
+        93: fload         18
+        95: invokeinterface #117,  3          // InterfaceMethod net/minecraft/class_4588.method_22913:(FF)Lnet/minecraft/class_4588;
+       100: iload         8
+       102: invokeinterface #121,  2          // InterfaceMethod net/minecraft/class_4588.method_39415:(I)Lnet/minecraft/class_4588;
+       107: iload_2
+       108: invokeinterface #124,  2          // InterfaceMethod net/minecraft/class_4588.method_60803:(I)Lnet/minecraft/class_4588;
+       113: pop
+       114: aload_1
+       115: aload_0
+       116: fload         4
+       118: fload         6
+       120: fload         7
+       122: invokeinterface #113,  5          // InterfaceMethod net/minecraft/class_4588.method_22918:(Lorg/joml/Matrix4fc;FFF)Lnet/minecraft/class_4588;
+       127: fload         16
+       129: fload         18
+       131: invokeinterface #117,  3          // InterfaceMethod net/minecraft/class_4588.method_22913:(FF)Lnet/minecraft/class_4588;
+       136: iload         8
+       138: invokeinterface #121,  2          // InterfaceMethod net/minecraft/class_4588.method_39415:(I)Lnet/minecraft/class_4588;
+       143: iload_2
+       144: invokeinterface #124,  2          // InterfaceMethod net/minecraft/class_4588.method_60803:(I)Lnet/minecraft/class_4588;
+       149: pop
+       150: aload_1
+       151: aload_0
+       152: fload         4
+       154: fload         5
+       156: fload         7
+       158: invokeinterface #113,  5          // InterfaceMethod net/minecraft/class_4588.method_22918:(Lorg/joml/Matrix4fc;FFF)Lnet/minecraft/class_4588;
+       163: fload         16
+       165: fload         17
+       167: invokeinterface #117,  3          // InterfaceMethod net/minecraft/class_4588.method_22913:(FF)Lnet/minecraft/class_4588;
+       172: iload         8
+       174: invokeinterface #121,  2          // InterfaceMethod net/minecraft/class_4588.method_39415:(I)Lnet/minecraft/class_4588;
+       179: iload_2
+       180: invokeinterface #124,  2          // InterfaceMethod net/minecraft/class_4588.method_60803:(I)Lnet/minecraft/class_4588;
+       185: pop
+       186: return
+
+  public net.minecraft.class_1921 method_73401(net.minecraft.class_327$class_6415);
+    Code:
+         0: aload_0
+         1: getfield      #59                 // Field comp_4754:Ljava/util/function/Supplier;
+         4: invokeinterface #136,  1          // InterfaceMethod java/util/function/Supplier.get:()Ljava/lang/Object;
+         9: checkcast     #16                 // class net/minecraft/class_11786$class_11787
+        12: invokevirtual #140                // Method net/minecraft/class_11786$class_11787.method_74052:()Lnet/minecraft/class_8538;
+        15: aload_1
+        16: invokevirtual #145                // Method net/minecraft/class_8538.method_51642:(Lnet/minecraft/class_327$class_6415;)Lnet/minecraft/class_1921;
+        19: areturn
+
+  public com.mojang.blaze3d.pipeline.RenderPipeline method_73400();
+    Code:
+         0: aload_0
+         1: getfield      #59                 // Field comp_4754:Ljava/util/function/Supplier;
+         4: invokeinterface #136,  1          // InterfaceMethod java/util/function/Supplier.get:()Ljava/lang/Object;
+         9: checkcast     #16                 // class net/minecraft/class_11786$class_11787
+        12: invokevirtual #140                // Method net/minecraft/class_11786$class_11787.method_74052:()Lnet/minecraft/class_8538;
+        15: invokevirtual #151                // Method net/minecraft/class_8538.comp_4371:()Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+        18: areturn
+
+  public com.mojang.blaze3d.textures.GpuTextureView comp_4629();
+    Code:
+         0: aload_0
+         1: getfield      #59                 // Field comp_4754:Ljava/util/function/Supplier;
+         4: invokeinterface #136,  1          // InterfaceMethod java/util/function/Supplier.get:()Ljava/lang/Object;
+         9: checkcast     #16                 // class net/minecraft/class_11786$class_11787
+        12: invokevirtual #156                // Method net/minecraft/class_11786$class_11787.method_74051:()Lcom/mojang/blaze3d/textures/GpuTextureView;
+        15: areturn
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #178,  0            // InvokeDynamic #0:toString:(Lnet/minecraft/class_11879$class_11880;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #183,  0            // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_11879$class_11880;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #189,  0            // InvokeDynamic #0:equals:(Lnet/minecraft/class_11879$class_11880;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public java.util.function.Supplier<net.minecraft.class_11786$class_11787> comp_4754();
+    Code:
+         0: aload_0
+         1: getfield      #59                 // Field comp_4754:Ljava/util/function/Supplier;
+         4: areturn
+
+  public boolean comp_4755();
+    Code:
+         0: aload_0
+         1: getfield      #61                 // Field comp_4755:Z
+         4: ireturn
+
+  public float comp_4631();
+    Code:
+         0: aload_0
+         1: getfield      #63                 // Field comp_4631:F
+         4: freturn
+
+  public float comp_4632();
+    Code:
+         0: aload_0
+         1: getfield      #65                 // Field comp_4632:F
+         4: freturn
+
+  public int comp_4633();
+    Code:
+         0: aload_0
+         1: getfield      #67                 // Field comp_4633:I
+         4: ireturn
+
+  public int comp_4634();
+    Code:
+         0: aload_0
+         1: getfield      #69                 // Field comp_4634:I
+         4: ireturn
+
+  public float comp_4635();
+    Code:
+         0: aload_0
+         1: getfield      #71                 // Field comp_4635:F
+         4: freturn
+
+  public net.minecraft.class_2583 comp_3317();
+    Code:
+         0: aload_0
+         1: getfield      #73                 // Field comp_3317:Lnet/minecraft/class_2583;
+         4: areturn
+}

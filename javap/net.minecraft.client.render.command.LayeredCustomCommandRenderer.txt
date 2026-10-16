@@ -1,0 +1,241 @@
+// net/minecraft/client/render/command/LayeredCustomCommandRenderer = net/minecraft/class_11977
+Compiled from "class_11977.java"
+public class net.minecraft.class_11977 implements java.lang.AutoCloseable {
+  private final java.util.Queue<net.minecraft.class_11977$class_12051> field_62989;
+
+  private final java.util.List<net.minecraft.class_11977$class_12051> field_62990;
+
+  public net.minecraft.class_11977();
+    Code:
+         0: aload_0
+         1: invokespecial #39                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: new           #41                 // class java/util/ArrayDeque
+         8: dup
+         9: invokespecial #42                 // Method java/util/ArrayDeque."<init>":()V
+        12: putfield      #44                 // Field field_62989:Ljava/util/Queue;
+        15: aload_0
+        16: new           #46                 // class java/util/ArrayList
+        19: dup
+        20: invokespecial #47                 // Method java/util/ArrayList."<init>":()V
+        23: putfield      #49                 // Field field_62990:Ljava/util/List;
+        26: return
+
+  public void method_74407(net.minecraft.class_11788);
+    Code:
+         0: aload_1
+         1: invokevirtual #62                 // Method net/minecraft/class_11788.method_74330:()Ljava/util/List;
+         4: invokeinterface #68,  1           // InterfaceMethod java/util/List.isEmpty:()Z
+         9: ifeq          13
+        12: return
+        13: invokestatic  #74                 // Method com/mojang/blaze3d/systems/RenderSystem.getDevice:()Lcom/mojang/blaze3d/systems/GpuDevice;
+        16: astore_2
+        17: invokestatic  #80                 // Method net/minecraft/class_310.method_1551:()Lnet/minecraft/class_310;
+        20: astore_3
+        21: aload_3
+        22: invokevirtual #84                 // Method net/minecraft/class_310.method_1531:()Lnet/minecraft/class_1060;
+        25: astore        4
+        27: aload_3
+        28: invokevirtual #88                 // Method net/minecraft/class_310.method_1522:()Lnet/minecraft/class_276;
+        31: astore        5
+        33: aload_3
+        34: getfield      #92                 // Field net/minecraft/class_310.field_1769:Lnet/minecraft/class_761;
+        37: invokevirtual #97                 // Method net/minecraft/class_761.method_29362:()Lnet/minecraft/class_276;
+        40: astore        6
+        42: aload_1
+        43: invokevirtual #62                 // Method net/minecraft/class_11788.method_74330:()Ljava/util/List;
+        46: invokeinterface #101,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+        51: astore        7
+        53: aload         7
+        55: invokeinterface #112,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+        60: ifeq          363
+        63: aload         7
+        65: invokeinterface #116,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        70: checkcast     #15                 // class net/minecraft/class_11659$class_11947
+        73: astore        8
+        75: aload_0
+        76: getfield      #44                 // Field field_62989:Ljava/util/Queue;
+        79: invokeinterface #121,  1          // InterfaceMethod java/util/Queue.poll:()Ljava/lang/Object;
+        84: checkcast     #13                 // class net/minecraft/class_11977$class_12051
+        87: astore        9
+        89: aload         9
+        91: ifnonnull     103
+        94: new           #13                 // class net/minecraft/class_11977$class_12051
+        97: dup
+        98: invokespecial #122                // Method net/minecraft/class_11977$class_12051."<init>":()V
+       101: astore        9
+       103: aload_0
+       104: getfield      #49                 // Field field_62990:Ljava/util/List;
+       107: aload         9
+       109: invokeinterface #126,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+       114: pop
+       115: aload         8
+       117: aload         9
+       119: invokeinterface #130,  2          // InterfaceMethod net/minecraft/class_11659$class_11947.method_74755:(Lnet/minecraft/class_11977$class_12051;)Lnet/minecraft/class_11944$class_12041;
+       124: astore        10
+       126: aload         10
+       128: ifnonnull     134
+       131: goto          53
+       134: aload_2
+       135: invokeinterface #134,  1          // InterfaceMethod com/mojang/blaze3d/systems/GpuDevice.createCommandEncoder:()Lcom/mojang/blaze3d/systems/CommandEncoder;
+       140: invokedynamic #152,  0            // InvokeDynamic #0:get:()Ljava/util/function/Supplier;
+       145: aload         5
+       147: invokevirtual #156                // Method net/minecraft/class_276.method_71639:()Lcom/mojang/blaze3d/textures/GpuTextureView;
+       150: invokestatic  #162                // Method java/util/OptionalInt.empty:()Ljava/util/OptionalInt;
+       153: aload         5
+       155: invokevirtual #165                // Method net/minecraft/class_276.method_71640:()Lcom/mojang/blaze3d/textures/GpuTextureView;
+       158: invokestatic  #170                // Method java/util/OptionalDouble.empty:()Ljava/util/OptionalDouble;
+       161: invokeinterface #176,  6          // InterfaceMethod com/mojang/blaze3d/systems/CommandEncoder.createRenderPass:(Ljava/util/function/Supplier;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/OptionalInt;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/OptionalDouble;)Lcom/mojang/blaze3d/systems/RenderPass;
+       166: astore        11
+       168: aload_0
+       169: aload         11
+       171: invokevirtual #180                // Method method_74831:(Lcom/mojang/blaze3d/systems/RenderPass;)V
+       174: aload         8
+       176: aload         10
+       178: aload         9
+       180: aload         11
+       182: aload         4
+       184: iconst_0
+       185: invokeinterface #184,  6          // InterfaceMethod net/minecraft/class_11659$class_11947.method_74324:(Lnet/minecraft/class_11944$class_12041;Lnet/minecraft/class_11977$class_12051;Lcom/mojang/blaze3d/systems/RenderPass;Lnet/minecraft/class_1060;Z)V
+       190: aload         6
+       192: ifnonnull     211
+       195: aload         8
+       197: aload         10
+       199: aload         9
+       201: aload         11
+       203: aload         4
+       205: iconst_1
+       206: invokeinterface #184,  6          // InterfaceMethod net/minecraft/class_11659$class_11947.method_74324:(Lnet/minecraft/class_11944$class_12041;Lnet/minecraft/class_11977$class_12051;Lcom/mojang/blaze3d/systems/RenderPass;Lnet/minecraft/class_1060;Z)V
+       211: aload         11
+       213: ifnull        255
+       216: aload         11
+       218: invokeinterface #189,  1          // InterfaceMethod com/mojang/blaze3d/systems/RenderPass.close:()V
+       223: goto          255
+       226: astore        12
+       228: aload         11
+       230: ifnull        252
+       233: aload         11
+       235: invokeinterface #189,  1          // InterfaceMethod com/mojang/blaze3d/systems/RenderPass.close:()V
+       240: goto          252
+       243: astore        13
+       245: aload         12
+       247: aload         13
+       249: invokevirtual #193                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+       252: aload         12
+       254: athrow
+       255: aload         6
+       257: ifnull        360
+       260: aload_2
+       261: invokeinterface #134,  1          // InterfaceMethod com/mojang/blaze3d/systems/GpuDevice.createCommandEncoder:()Lcom/mojang/blaze3d/systems/CommandEncoder;
+       266: invokedynamic #198,  0            // InvokeDynamic #1:get:()Ljava/util/function/Supplier;
+       271: aload         6
+       273: invokevirtual #156                // Method net/minecraft/class_276.method_71639:()Lcom/mojang/blaze3d/textures/GpuTextureView;
+       276: invokestatic  #162                // Method java/util/OptionalInt.empty:()Ljava/util/OptionalInt;
+       279: aload         6
+       281: invokevirtual #165                // Method net/minecraft/class_276.method_71640:()Lcom/mojang/blaze3d/textures/GpuTextureView;
+       284: invokestatic  #170                // Method java/util/OptionalDouble.empty:()Ljava/util/OptionalDouble;
+       287: invokeinterface #176,  6          // InterfaceMethod com/mojang/blaze3d/systems/CommandEncoder.createRenderPass:(Ljava/util/function/Supplier;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/OptionalInt;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/OptionalDouble;)Lcom/mojang/blaze3d/systems/RenderPass;
+       292: astore        11
+       294: aload_0
+       295: aload         11
+       297: invokevirtual #180                // Method method_74831:(Lcom/mojang/blaze3d/systems/RenderPass;)V
+       300: aload         8
+       302: aload         10
+       304: aload         9
+       306: aload         11
+       308: aload         4
+       310: iconst_1
+       311: invokeinterface #184,  6          // InterfaceMethod net/minecraft/class_11659$class_11947.method_74324:(Lnet/minecraft/class_11944$class_12041;Lnet/minecraft/class_11977$class_12051;Lcom/mojang/blaze3d/systems/RenderPass;Lnet/minecraft/class_1060;Z)V
+       316: aload         11
+       318: ifnull        360
+       321: aload         11
+       323: invokeinterface #189,  1          // InterfaceMethod com/mojang/blaze3d/systems/RenderPass.close:()V
+       328: goto          360
+       331: astore        12
+       333: aload         11
+       335: ifnull        357
+       338: aload         11
+       340: invokeinterface #189,  1          // InterfaceMethod com/mojang/blaze3d/systems/RenderPass.close:()V
+       345: goto          357
+       348: astore        13
+       350: aload         12
+       352: aload         13
+       354: invokevirtual #193                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+       357: aload         12
+       359: athrow
+       360: goto          53
+       363: return
+      Exception table:
+         from    to  target type
+           168   211   226   Class java/lang/Throwable
+           233   240   243   Class java/lang/Throwable
+           294   316   331   Class java/lang/Throwable
+           338   345   348   Class java/lang/Throwable
+
+  public void method_74830();
+    Code:
+         0: aload_0
+         1: getfield      #49                 // Field field_62990:Ljava/util/List;
+         4: invokeinterface #101,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+         9: astore_1
+        10: aload_1
+        11: invokeinterface #112,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+        16: ifeq          36
+        19: aload_1
+        20: invokeinterface #116,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        25: checkcast     #13                 // class net/minecraft/class_11977$class_12051
+        28: astore_2
+        29: aload_2
+        30: invokevirtual #220                // Method net/minecraft/class_11977$class_12051.method_74836:()V
+        33: goto          10
+        36: aload_0
+        37: getfield      #44                 // Field field_62989:Ljava/util/Queue;
+        40: aload_0
+        41: getfield      #49                 // Field field_62990:Ljava/util/List;
+        44: invokeinterface #224,  2          // InterfaceMethod java/util/Queue.addAll:(Ljava/util/Collection;)Z
+        49: pop
+        50: aload_0
+        51: getfield      #49                 // Field field_62990:Ljava/util/List;
+        54: invokeinterface #227,  1          // InterfaceMethod java/util/List.clear:()V
+        59: return
+
+  private void method_74831(com.mojang.blaze3d.systems.RenderPass);
+    Code:
+         0: aload_1
+         1: ldc           #229                // String Projection
+         3: invokestatic  #233                // Method com/mojang/blaze3d/systems/RenderSystem.getProjectionMatrixBuffer:()Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+         6: invokeinterface #237,  3          // InterfaceMethod com/mojang/blaze3d/systems/RenderPass.setUniform:(Ljava/lang/String;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
+        11: aload_1
+        12: ldc           #239                // String Fog
+        14: invokestatic  #242                // Method com/mojang/blaze3d/systems/RenderSystem.getShaderFog:()Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+        17: invokeinterface #237,  3          // InterfaceMethod com/mojang/blaze3d/systems/RenderPass.setUniform:(Ljava/lang/String;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
+        22: aload_1
+        23: ldc           #244                // String Sampler2
+        25: invokestatic  #80                 // Method net/minecraft/class_310.method_1551:()Lnet/minecraft/class_310;
+        28: getfield      #248                // Field net/minecraft/class_310.field_1773:Lnet/minecraft/class_757;
+        31: invokevirtual #254                // Method net/minecraft/class_757.method_22974:()Lnet/minecraft/class_765;
+        34: invokevirtual #259                // Method net/minecraft/class_765.method_71650:()Lcom/mojang/blaze3d/textures/GpuTextureView;
+        37: invokestatic  #263                // Method com/mojang/blaze3d/systems/RenderSystem.getSamplerCache:()Lnet/minecraft/class_12136;
+        40: getstatic     #269                // Field com/mojang/blaze3d/textures/FilterMode.LINEAR:Lcom/mojang/blaze3d/textures/FilterMode;
+        43: invokevirtual #275                // Method net/minecraft/class_12136.method_75294:(Lcom/mojang/blaze3d/textures/FilterMode;)Lnet/minecraft/class_12137;
+        46: invokeinterface #279,  4          // InterfaceMethod com/mojang/blaze3d/systems/RenderPass.bindTexture:(Ljava/lang/String;Lcom/mojang/blaze3d/textures/GpuTextureView;Lnet/minecraft/class_12137;)V
+        51: return
+
+  public void close();
+    Code:
+         0: aload_0
+         1: getfield      #44                 // Field field_62989:Ljava/util/Queue;
+         4: invokedynamic #289,  0            // InvokeDynamic #2:accept:()Ljava/util/function/Consumer;
+         9: invokeinterface #293,  2          // InterfaceMethod java/util/Queue.forEach:(Ljava/util/function/Consumer;)V
+        14: return
+
+  private static java.lang.String method_74832();
+    Code:
+         0: ldc_w         #295                // String Particles - Transparent
+         3: areturn
+
+  private static java.lang.String method_74833();
+    Code:
+         0: ldc_w         #297                // String Particles - Main
+         3: areturn
+}

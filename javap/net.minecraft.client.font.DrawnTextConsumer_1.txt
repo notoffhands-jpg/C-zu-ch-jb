@@ -1,0 +1,61 @@
+// net/minecraft/client/font/DrawnTextConsumer$1 = net/minecraft/class_12225$1
+Compiled from "class_12225.java"
+class net.minecraft.class_12225$1 implements net.minecraft.class_327$class_11464 {
+  final float field_63834;
+
+  final float field_63835;
+
+  final java.util.function.Consumer field_63836;
+
+  net.minecraft.class_12225$1();
+    Code:
+         0: aload_0
+         1: fload_1
+         2: putfield      #37                 // Field field_63834:F
+         5: aload_0
+         6: fload_2
+         7: putfield      #39                 // Field field_63835:F
+        10: aload_0
+        11: aload_3
+        12: putfield      #41                 // Field field_63836:Ljava/util/function/Consumer;
+        15: aload_0
+        16: invokespecial #43                 // Method java/lang/Object."<init>":()V
+        19: return
+
+  public void method_71797(net.minecraft.class_11767$class_12238);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokevirtual #52                 // Method method_75774:(Lnet/minecraft/class_12236;)V
+         5: return
+
+  public void method_75775(net.minecraft.class_12237);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokevirtual #52                 // Method method_75774:(Lnet/minecraft/class_12236;)V
+         5: return
+
+  private void method_75774(net.minecraft.class_12236);
+    Code:
+         0: aload_0
+         1: getfield      #37                 // Field field_63834:F
+         4: aload_0
+         5: getfield      #39                 // Field field_63835:F
+         8: aload_1
+         9: invokeinterface #62,  1           // InterfaceMethod net/minecraft/class_12236.method_75818:()F
+        14: aload_1
+        15: invokeinterface #65,  1           // InterfaceMethod net/minecraft/class_12236.method_75819:()F
+        20: aload_1
+        21: invokeinterface #68,  1           // InterfaceMethod net/minecraft/class_12236.method_75820:()F
+        26: aload_1
+        27: invokeinterface #71,  1           // InterfaceMethod net/minecraft/class_12236.method_75821:()F
+        32: invokestatic  #75                 // InterfaceMethod net/minecraft/class_12225.method_75761:(FFFFFF)Z
+        35: ifeq          53
+        38: aload_0
+        39: getfield      #41                 // Field field_63836:Ljava/util/function/Consumer;
+        42: aload_1
+        43: invokeinterface #79,  1           // InterfaceMethod net/minecraft/class_12236.comp_3317:()Lnet/minecraft/class_2583;
+        48: invokeinterface #85,  2           // InterfaceMethod java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+        53: return
+}

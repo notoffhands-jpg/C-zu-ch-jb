@@ -1,0 +1,7 @@
+// net/minecraft/client/render/command/OrderedRenderCommandQueue$LayeredCustom = net/minecraft/class_11659$class_11947
+Compiled from "class_11659.java"
+public interface net.minecraft.class_11659$class_11947 {
+  public abstract net.minecraft.class_11944$class_12041 method_74755(net.minecraft.class_11977$class_12051);
+
+  public abstract void method_74324(net.minecraft.class_11944$class_12041, net.minecraft.class_11977$class_12051, com.mojang.blaze3d.systems.RenderPass, net.minecraft.class_1060, boolean);
+}

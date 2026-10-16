@@ -1,0 +1,182 @@
+// net/minecraft/client/font/TextHandler$LineBreakingVisitor = net/minecraft/class_5225$class_5227
+Compiled from "class_5225.java"
+class net.minecraft.class_5225$class_5227 implements net.minecraft.class_5224 {
+  private final float field_24223;
+
+  private int field_24224;
+
+  private net.minecraft.class_2583 field_24225;
+
+  private boolean field_24226;
+
+  private float field_24227;
+
+  private int field_24228;
+
+  private net.minecraft.class_2583 field_24229;
+
+  private int field_24230;
+
+  private int field_24231;
+
+  final net.minecraft.class_5225 field_24222;
+
+  public net.minecraft.class_5225$class_5227(net.minecraft.class_5225, float);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: putfield      #38                 // Field field_24222:Lnet/minecraft/class_5225;
+         5: aload_0
+         6: invokespecial #41                 // Method java/lang/Object."<init>":()V
+         9: aload_0
+        10: iconst_m1
+        11: putfield      #43                 // Field field_24224:I
+        14: aload_0
+        15: getstatic     #48                 // Field net/minecraft/class_2583.field_24360:Lnet/minecraft/class_2583;
+        18: putfield      #50                 // Field field_24225:Lnet/minecraft/class_2583;
+        21: aload_0
+        22: iconst_m1
+        23: putfield      #52                 // Field field_24228:I
+        26: aload_0
+        27: getstatic     #48                 // Field net/minecraft/class_2583.field_24360:Lnet/minecraft/class_2583;
+        30: putfield      #54                 // Field field_24229:Lnet/minecraft/class_2583;
+        33: aload_0
+        34: fload_2
+        35: fconst_1
+        36: invokestatic  #60                 // Method java/lang/Math.max:(FF)F
+        39: putfield      #62                 // Field field_24223:F
+        42: return
+
+  public boolean accept(int, net.minecraft.class_2583, int);
+    Code:
+         0: iload_1
+         1: aload_0
+         2: getfield      #70                 // Field field_24231:I
+         5: iadd
+         6: istore        4
+         8: iload_3
+         9: lookupswitch  { // 2
+                      10: 36
+                      32: 44
+                 default: 55
+            }
+        36: aload_0
+        37: iload         4
+        39: aload_2
+        40: invokevirtual #74                 // Method method_27507:(ILnet/minecraft/class_2583;)Z
+        43: ireturn
+        44: aload_0
+        45: iload         4
+        47: putfield      #52                 // Field field_24228:I
+        50: aload_0
+        51: aload_2
+        52: putfield      #54                 // Field field_24229:Lnet/minecraft/class_2583;
+        55: aload_0
+        56: getfield      #38                 // Field field_24222:Lnet/minecraft/class_5225;
+        59: getfield      #78                 // Field net/minecraft/class_5225.field_24216:Lnet/minecraft/class_5225$class_5231;
+        62: iload_3
+        63: aload_2
+        64: invokeinterface #82,  3           // InterfaceMethod net/minecraft/class_5225$class_5231.getWidth:(ILnet/minecraft/class_2583;)F
+        69: fstore        5
+        71: aload_0
+        72: dup
+        73: getfield      #84                 // Field field_24227:F
+        76: fload         5
+        78: fadd
+        79: putfield      #84                 // Field field_24227:F
+        82: aload_0
+        83: getfield      #86                 // Field field_24226:Z
+        86: ifeq          130
+        89: aload_0
+        90: getfield      #84                 // Field field_24227:F
+        93: aload_0
+        94: getfield      #62                 // Field field_24223:F
+        97: fcmpl
+        98: ifle          130
+       101: aload_0
+       102: getfield      #52                 // Field field_24228:I
+       105: iconst_m1
+       106: if_icmpeq     122
+       109: aload_0
+       110: aload_0
+       111: getfield      #52                 // Field field_24228:I
+       114: aload_0
+       115: getfield      #54                 // Field field_24229:Lnet/minecraft/class_2583;
+       118: invokevirtual #74                 // Method method_27507:(ILnet/minecraft/class_2583;)Z
+       121: ireturn
+       122: aload_0
+       123: iload         4
+       125: aload_2
+       126: invokevirtual #74                 // Method method_27507:(ILnet/minecraft/class_2583;)Z
+       129: ireturn
+       130: aload_0
+       131: dup
+       132: getfield      #86                 // Field field_24226:Z
+       135: fload         5
+       137: fconst_0
+       138: fcmpl
+       139: ifeq          146
+       142: iconst_1
+       143: goto          147
+       146: iconst_0
+       147: ior
+       148: putfield      #86                 // Field field_24226:Z
+       151: aload_0
+       152: iload         4
+       154: iload_3
+       155: invokestatic  #92                 // Method java/lang/Character.charCount:(I)I
+       158: iadd
+       159: putfield      #94                 // Field field_24230:I
+       162: iconst_1
+       163: ireturn
+
+  private boolean method_27507(int, net.minecraft.class_2583);
+    Code:
+         0: aload_0
+         1: iload_1
+         2: putfield      #43                 // Field field_24224:I
+         5: aload_0
+         6: aload_2
+         7: putfield      #50                 // Field field_24225:Lnet/minecraft/class_2583;
+        10: iconst_0
+        11: ireturn
+
+  private boolean method_27509();
+    Code:
+         0: aload_0
+         1: getfield      #43                 // Field field_24224:I
+         4: iconst_m1
+         5: if_icmpeq     12
+         8: iconst_1
+         9: goto          13
+        12: iconst_0
+        13: ireturn
+
+  public int method_27505();
+    Code:
+         0: aload_0
+         1: invokevirtual #101                // Method method_27509:()Z
+         4: ifeq          14
+         7: aload_0
+         8: getfield      #43                 // Field field_24224:I
+        11: goto          18
+        14: aload_0
+        15: getfield      #94                 // Field field_24230:I
+        18: ireturn
+
+  public net.minecraft.class_2583 method_27508();
+    Code:
+         0: aload_0
+         1: getfield      #50                 // Field field_24225:Lnet/minecraft/class_2583;
+         4: areturn
+
+  public void method_27506(int);
+    Code:
+         0: aload_0
+         1: dup
+         2: getfield      #70                 // Field field_24231:I
+         5: iload_1
+         6: iadd
+         7: putfield      #70                 // Field field_24231:I
+        10: return
+}

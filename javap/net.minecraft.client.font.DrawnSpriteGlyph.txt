@@ -1,0 +1,108 @@
+// net/minecraft/client/font/DrawnSpriteGlyph = net/minecraft/class_11878
+Compiled from "class_11878.java"
+public interface net.minecraft.class_11878 extends net.minecraft.class_11767$class_12238 {
+  public static final float field_63888;
+
+  public static final float field_63889;
+
+  public static final float field_63890;
+
+  public default void method_73403(org.joml.Matrix4f, net.minecraft.class_4588, int, boolean);
+    Code:
+         0: fconst_0
+         1: fstore        5
+         3: aload_0
+         4: invokeinterface #29,  1           // InterfaceMethod comp_4634:()I
+         9: ifeq          52
+        12: aload_0
+        13: aload_1
+        14: aload_2
+        15: iload_3
+        16: aload_0
+        17: invokeinterface #33,  1           // InterfaceMethod comp_4635:()F
+        22: aload_0
+        23: invokeinterface #33,  1           // InterfaceMethod comp_4635:()F
+        28: fconst_0
+        29: aload_0
+        30: invokeinterface #29,  1           // InterfaceMethod comp_4634:()I
+        35: invokeinterface #37,  8           // InterfaceMethod method_73402:(Lorg/joml/Matrix4f;Lnet/minecraft/class_4588;IFFFI)V
+        40: iload         4
+        42: ifne          52
+        45: fload         5
+        47: ldc           #38                 // float 0.03f
+        49: fadd
+        50: fstore        5
+        52: aload_0
+        53: aload_1
+        54: aload_2
+        55: iload_3
+        56: fconst_0
+        57: fconst_0
+        58: fload         5
+        60: aload_0
+        61: invokeinterface #45,  1           // InterfaceMethod comp_4633:()I
+        66: invokeinterface #37,  8           // InterfaceMethod method_73402:(Lorg/joml/Matrix4f;Lnet/minecraft/class_4588;IFFFI)V
+        71: return
+
+  public abstract void method_73402(org.joml.Matrix4f, net.minecraft.class_4588, int, float, float, float, int);
+
+  public abstract float comp_4631();
+
+  public abstract float comp_4632();
+
+  public abstract int comp_4633();
+
+  public abstract int comp_4634();
+
+  public abstract float comp_4635();
+
+  public default float method_75822();
+    Code:
+         0: ldc           #17                 // float 8.0f
+         2: freturn
+
+  public default float method_75823();
+    Code:
+         0: ldc           #17                 // float 8.0f
+         2: freturn
+
+  public default float method_75824();
+    Code:
+         0: ldc           #17                 // float 8.0f
+         2: freturn
+
+  public default float method_71829();
+    Code:
+         0: aload_0
+         1: invokeinterface #63,  1           // InterfaceMethod comp_4631:()F
+         6: freturn
+
+  public default float method_71831();
+    Code:
+         0: aload_0
+         1: invokeinterface #66,  1           // InterfaceMethod method_71829:()F
+         6: aload_0
+         7: invokeinterface #68,  1           // InterfaceMethod method_75822:()F
+        12: fadd
+        13: freturn
+
+  public default float method_71830();
+    Code:
+         0: aload_0
+         1: invokeinterface #71,  1           // InterfaceMethod comp_4632:()F
+         6: ldc           #72                 // float 7.0f
+         8: fadd
+         9: aload_0
+        10: invokeinterface #74,  1           // InterfaceMethod method_75824:()F
+        15: fsub
+        16: freturn
+
+  public default float method_71832();
+    Code:
+         0: aload_0
+         1: invokeinterface #78,  1           // InterfaceMethod method_75819:()F
+         6: aload_0
+         7: invokeinterface #80,  1           // InterfaceMethod method_75823:()F
+        12: fadd
+        13: freturn
+}

@@ -1,0 +1,262 @@
+// net/minecraft/client/render/command/OrderedRenderCommandQueueImpl = net/minecraft/class_11661
+Compiled from "class_11661.java"
+public class net.minecraft.class_11661 implements net.minecraft.class_11659 {
+  private final it.unimi.dsi.fastutil.ints.Int2ObjectAVLTreeMap<net.minecraft.class_11788> field_62244;
+
+  public net.minecraft.class_11661();
+    Code:
+         0: aload_0
+         1: invokespecial #91                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: new           #93                 // class it/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap
+         8: dup
+         9: invokespecial #94                 // Method it/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap."<init>":()V
+        12: putfield      #96                 // Field field_62244:Lit/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap;
+        15: return
+
+  public net.minecraft.class_11788 method_73531(int);
+    Code:
+         0: aload_0
+         1: getfield      #96                 // Field field_62244:Lit/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap;
+         4: iload_1
+         5: aload_0
+         6: invokedynamic #119,  0            // InvokeDynamic #0:get:(Lnet/minecraft/class_11661;)Lit/unimi/dsi/fastutil/ints/Int2ObjectFunction;
+        11: invokevirtual #123                // Method it/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap.computeIfAbsent:(ILit/unimi/dsi/fastutil/ints/Int2ObjectFunction;)Ljava/lang/Object;
+        14: checkcast     #125                // class net/minecraft/class_11788
+        17: areturn
+
+  public void method_73479(net.minecraft.class_4587, float, java.util.List<net.minecraft.class_10017$class_11680>);
+    Code:
+         0: aload_0
+         1: iconst_0
+         2: invokevirtual #134                // Method method_73531:(I)Lnet/minecraft/class_11788;
+         5: aload_1
+         6: fload_2
+         7: aload_3
+         8: invokevirtual #136                // Method net/minecraft/class_11788.method_73479:(Lnet/minecraft/class_4587;FLjava/util/List;)V
+        11: return
+
+  public void method_73482(net.minecraft.class_4587, net.minecraft.class_243, int, net.minecraft.class_2561, boolean, int, double, net.minecraft.class_12075);
+    Code:
+         0: aload_0
+         1: iconst_0
+         2: invokevirtual #134                // Method method_73531:(I)Lnet/minecraft/class_11788;
+         5: aload_1
+         6: aload_2
+         7: iload_3
+         8: aload         4
+        10: iload         5
+        12: iload         6
+        14: dload         7
+        16: aload         9
+        18: invokevirtual #151                // Method net/minecraft/class_11788.method_73482:(Lnet/minecraft/class_4587;Lnet/minecraft/class_243;ILnet/minecraft/class_2561;ZIDLnet/minecraft/class_12075;)V
+        21: return
+
+  public void method_73478(net.minecraft.class_4587, float, float, net.minecraft.class_5481, boolean, net.minecraft.class_327$class_6415, int, int, int, int);
+    Code:
+         0: aload_0
+         1: iconst_0
+         2: invokevirtual #134                // Method method_73531:(I)Lnet/minecraft/class_11788;
+         5: aload_1
+         6: fload_2
+         7: fload_3
+         8: aload         4
+        10: iload         5
+        12: aload         6
+        14: iload         7
+        16: iload         8
+        18: iload         9
+        20: iload         10
+        22: invokevirtual #163                // Method net/minecraft/class_11788.method_73478:(Lnet/minecraft/class_4587;FFLnet/minecraft/class_5481;ZLnet/minecraft/class_327$class_6415;IIII)V
+        25: return
+
+  public void method_73488(net.minecraft.class_4587, net.minecraft.class_10017, org.joml.Quaternionf);
+    Code:
+         0: aload_0
+         1: iconst_0
+         2: invokevirtual #134                // Method method_73531:(I)Lnet/minecraft/class_11788;
+         5: aload_1
+         6: aload_2
+         7: aload_3
+         8: invokevirtual #170                // Method net/minecraft/class_11788.method_73488:(Lnet/minecraft/class_4587;Lnet/minecraft/class_10017;Lorg/joml/Quaternionf;)V
+        11: return
+
+  public void method_73486(net.minecraft.class_4587, net.minecraft.class_10017$class_10018);
+    Code:
+         0: aload_0
+         1: iconst_0
+         2: invokevirtual #134                // Method method_73531:(I)Lnet/minecraft/class_11788;
+         5: aload_1
+         6: aload_2
+         7: invokevirtual #176                // Method net/minecraft/class_11788.method_73486:(Lnet/minecraft/class_4587;Lnet/minecraft/class_10017$class_10018;)V
+        10: return
+
+  public <S> void method_73490(net.minecraft.class_3879<? super S>, S, net.minecraft.class_4587, net.minecraft.class_1921, int, int, int, net.minecraft.class_1058, int, net.minecraft.class_11683$class_11792);
+    Code:
+         0: aload_0
+         1: iconst_0
+         2: invokevirtual #134                // Method method_73531:(I)Lnet/minecraft/class_11788;
+         5: aload_1
+         6: aload_2
+         7: aload_3
+         8: aload         4
+        10: iload         5
+        12: iload         6
+        14: iload         7
+        16: aload         8
+        18: iload         9
+        20: aload         10
+        22: invokevirtual #184                // Method net/minecraft/class_11788.method_73490:(Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IIILnet/minecraft/class_1058;ILnet/minecraft/class_11683$class_11792;)V
+        25: return
+
+  public void method_73494(net.minecraft.class_630, net.minecraft.class_4587, net.minecraft.class_1921, int, int, net.minecraft.class_1058, boolean, boolean, int, net.minecraft.class_11683$class_11792, int);
+    Code:
+         0: aload_0
+         1: iconst_0
+         2: invokevirtual #134                // Method method_73531:(I)Lnet/minecraft/class_11788;
+         5: aload_1
+         6: aload_2
+         7: aload_3
+         8: iload         4
+        10: iload         5
+        12: aload         6
+        14: iload         7
+        16: iload         8
+        18: iload         9
+        20: aload         10
+        22: iload         11
+        24: invokevirtual #196                // Method net/minecraft/class_11788.method_73494:(Lnet/minecraft/class_630;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IILnet/minecraft/class_1058;ZZILnet/minecraft/class_11683$class_11792;I)V
+        27: return
+
+  public void method_73481(net.minecraft.class_4587, net.minecraft.class_2680, int, int, int);
+    Code:
+         0: aload_0
+         1: iconst_0
+         2: invokevirtual #134                // Method method_73531:(I)Lnet/minecraft/class_11788;
+         5: aload_1
+         6: aload_2
+         7: iload_3
+         8: iload         4
+        10: iload         5
+        12: invokevirtual #201                // Method net/minecraft/class_11788.method_73481:(Lnet/minecraft/class_4587;Lnet/minecraft/class_2680;III)V
+        15: return
+
+  public void method_73485(net.minecraft.class_4587, net.minecraft.class_11791);
+    Code:
+         0: aload_0
+         1: iconst_0
+         2: invokevirtual #134                // Method method_73531:(I)Lnet/minecraft/class_11788;
+         5: aload_1
+         6: aload_2
+         7: invokevirtual #206                // Method net/minecraft/class_11788.method_73485:(Lnet/minecraft/class_4587;Lnet/minecraft/class_11791;)V
+        10: return
+
+  public void method_73484(net.minecraft.class_4587, net.minecraft.class_1921, net.minecraft.class_1087, float, float, float, int, int, int);
+    Code:
+         0: aload_0
+         1: iconst_0
+         2: invokevirtual #134                // Method method_73531:(I)Lnet/minecraft/class_11788;
+         5: aload_1
+         6: aload_2
+         7: aload_3
+         8: fload         4
+        10: fload         5
+        12: fload         6
+        14: iload         7
+        16: iload         8
+        18: iload         9
+        20: invokevirtual #212                // Method net/minecraft/class_11788.method_73484:(Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;Lnet/minecraft/class_1087;FFFIII)V
+        23: return
+
+  public void method_73480(net.minecraft.class_4587, net.minecraft.class_811, int, int, int, int[], java.util.List<net.minecraft.class_777>, net.minecraft.class_1921, net.minecraft.class_10444$class_10445);
+    Code:
+         0: aload_0
+         1: iconst_0
+         2: invokevirtual #134                // Method method_73531:(I)Lnet/minecraft/class_11788;
+         5: aload_1
+         6: aload_2
+         7: iload_3
+         8: iload         4
+        10: iload         5
+        12: aload         6
+        14: aload         7
+        16: aload         8
+        18: aload         9
+        20: invokevirtual #219                // Method net/minecraft/class_11788.method_73480:(Lnet/minecraft/class_4587;Lnet/minecraft/class_811;III[ILjava/util/List;Lnet/minecraft/class_1921;Lnet/minecraft/class_10444$class_10445;)V
+        23: return
+
+  public void method_73483(net.minecraft.class_4587, net.minecraft.class_1921, net.minecraft.class_11659$class_11660);
+    Code:
+         0: aload_0
+         1: iconst_0
+         2: invokevirtual #134                // Method method_73531:(I)Lnet/minecraft/class_11788;
+         5: aload_1
+         6: aload_2
+         7: aload_3
+         8: invokevirtual #227                // Method net/minecraft/class_11788.method_73483:(Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;Lnet/minecraft/class_11659$class_11660;)V
+        11: return
+
+  public void method_74315(net.minecraft.class_11659$class_11947);
+    Code:
+         0: aload_0
+         1: iconst_0
+         2: invokevirtual #134                // Method method_73531:(I)Lnet/minecraft/class_11788;
+         5: aload_1
+         6: invokevirtual #232                // Method net/minecraft/class_11788.method_74315:(Lnet/minecraft/class_11659$class_11947;)V
+         9: return
+
+  public void method_72953();
+    Code:
+         0: aload_0
+         1: getfield      #96                 // Field field_62244:Lit/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap;
+         4: invokevirtual #238                // Method it/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap.values:()Lit/unimi/dsi/fastutil/objects/ObjectCollection;
+         7: invokedynamic #250,  0            // InvokeDynamic #1:accept:()Ljava/util/function/Consumer;
+        12: invokeinterface #256,  2          // InterfaceMethod it/unimi/dsi/fastutil/objects/ObjectCollection.forEach:(Ljava/util/function/Consumer;)V
+        17: return
+
+  public void method_72954();
+    Code:
+         0: aload_0
+         1: getfield      #96                 // Field field_62244:Lit/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap;
+         4: invokevirtual #238                // Method it/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap.values:()Lit/unimi/dsi/fastutil/objects/ObjectCollection;
+         7: invokedynamic #269,  0            // InvokeDynamic #2:test:()Ljava/util/function/Predicate;
+        12: invokeinterface #273,  2          // InterfaceMethod it/unimi/dsi/fastutil/objects/ObjectCollection.removeIf:(Ljava/util/function/Predicate;)Z
+        17: pop
+        18: aload_0
+        19: getfield      #96                 // Field field_62244:Lit/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap;
+        22: invokevirtual #238                // Method it/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap.values:()Lit/unimi/dsi/fastutil/objects/ObjectCollection;
+        25: invokedynamic #278,  0            // InvokeDynamic #3:accept:()Ljava/util/function/Consumer;
+        30: invokeinterface #256,  2          // InterfaceMethod it/unimi/dsi/fastutil/objects/ObjectCollection.forEach:(Ljava/util/function/Consumer;)V
+        35: return
+
+  public it.unimi.dsi.fastutil.ints.Int2ObjectAVLTreeMap<net.minecraft.class_11788> method_73532();
+    Code:
+         0: aload_0
+         1: getfield      #96                 // Field field_62244:Lit/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap;
+         4: areturn
+
+  public net.minecraft.class_11785 method_73529(int);
+    Code:
+         0: aload_0
+         1: iload_1
+         2: invokevirtual #134                // Method method_73531:(I)Lnet/minecraft/class_11788;
+         5: areturn
+
+  private static boolean method_73530(net.minecraft.class_11788);
+    Code:
+         0: aload_0
+         1: invokevirtual #287                // Method net/minecraft/class_11788.method_73526:()Z
+         4: ifne          11
+         7: iconst_1
+         8: goto          12
+        11: iconst_0
+        12: ireturn
+
+  private net.minecraft.class_11788 method_73533(int);
+    Code:
+         0: new           #125                // class net/minecraft/class_11788
+         3: dup
+         4: aload_0
+         5: invokespecial #291                // Method net/minecraft/class_11788."<init>":(Lnet/minecraft/class_11661;)V
+         8: areturn
+}

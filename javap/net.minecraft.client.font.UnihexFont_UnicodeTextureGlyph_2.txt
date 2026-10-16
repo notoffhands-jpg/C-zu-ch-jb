@@ -1,0 +1,78 @@
+// net/minecraft/client/font/UnihexFont$UnicodeTextureGlyph$2 = net/minecraft/class_391$class_393$2
+Compiled from "class_391.java"
+class net.minecraft.class_391$class_393$2 implements net.minecraft.class_383 {
+  final net.minecraft.class_391$class_393 field_62146;
+
+  net.minecraft.class_391$class_393$2(net.minecraft.class_391$class_393);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: putfield      #39                 // Field field_62146:Lnet/minecraft/class_391$class_393;
+         5: aload_0
+         6: invokespecial #42                 // Method java/lang/Object."<init>":()V
+         9: return
+
+  public float method_2035();
+    Code:
+         0: fconst_2
+         1: freturn
+
+  public int method_2031();
+    Code:
+         0: aload_0
+         1: getfield      #39                 // Field field_62146:Lnet/minecraft/class_391$class_393;
+         4: invokevirtual #51                 // Method net/minecraft/class_391$class_393.method_51675:()I
+         7: ireturn
+
+  public int method_2032();
+    Code:
+         0: bipush        16
+         2: ireturn
+
+  public void method_2030(int, int, com.mojang.blaze3d.textures.GpuTexture);
+    Code:
+         0: aload_0
+         1: getfield      #39                 // Field field_62146:Lnet/minecraft/class_391$class_393;
+         4: invokevirtual #51                 // Method net/minecraft/class_391$class_393.method_51675:()I
+         7: bipush        16
+         9: imul
+        10: invokestatic  #63                 // Method org/lwjgl/system/MemoryUtil.memAllocInt:(I)Ljava/nio/IntBuffer;
+        13: astore        4
+        15: aload         4
+        17: aload_0
+        18: getfield      #39                 // Field field_62146:Lnet/minecraft/class_391$class_393;
+        21: getfield      #67                 // Field net/minecraft/class_391$class_393.comp_1508:Lnet/minecraft/class_391$class_8544;
+        24: aload_0
+        25: getfield      #39                 // Field field_62146:Lnet/minecraft/class_391$class_393;
+        28: getfield      #71                 // Field net/minecraft/class_391$class_393.comp_1509:I
+        31: aload_0
+        32: getfield      #39                 // Field field_62146:Lnet/minecraft/class_391$class_393;
+        35: getfield      #74                 // Field net/minecraft/class_391$class_393.comp_1510:I
+        38: invokestatic  #78                 // Method net/minecraft/class_391.method_51656:(Ljava/nio/IntBuffer;Lnet/minecraft/class_391$class_8544;II)V
+        41: aload         4
+        43: invokevirtual #84                 // Method java/nio/IntBuffer.rewind:()Ljava/nio/IntBuffer;
+        46: pop
+        47: invokestatic  #90                 // Method com/mojang/blaze3d/systems/RenderSystem.getDevice:()Lcom/mojang/blaze3d/systems/GpuDevice;
+        50: invokeinterface #96,  1           // InterfaceMethod com/mojang/blaze3d/systems/GpuDevice.createCommandEncoder:()Lcom/mojang/blaze3d/systems/CommandEncoder;
+        55: aload_3
+        56: aload         4
+        58: invokestatic  #100                // Method org/lwjgl/system/MemoryUtil.memByteBuffer:(Ljava/nio/IntBuffer;)Ljava/nio/ByteBuffer;
+        61: getstatic     #104                // Field net/minecraft/class_1011$class_1012.field_4997:Lnet/minecraft/class_1011$class_1012;
+        64: iconst_0
+        65: iconst_0
+        66: iload_1
+        67: iload_2
+        68: aload_0
+        69: getfield      #39                 // Field field_62146:Lnet/minecraft/class_391$class_393;
+        72: invokevirtual #51                 // Method net/minecraft/class_391$class_393.method_51675:()I
+        75: bipush        16
+        77: invokeinterface #110,  10         // InterfaceMethod com/mojang/blaze3d/systems/CommandEncoder.writeToTexture:(Lcom/mojang/blaze3d/textures/GpuTexture;Ljava/nio/ByteBuffer;Lnet/minecraft/class_1011$class_1012;IIIIII)V
+        82: aload         4
+        84: invokestatic  #114                // Method org/lwjgl/system/MemoryUtil.memFree:(Ljava/nio/Buffer;)V
+        87: return
+
+  public boolean method_2033();
+    Code:
+         0: iconst_1
+         1: ireturn
+}

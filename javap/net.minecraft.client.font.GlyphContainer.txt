@@ -1,0 +1,267 @@
+// net/minecraft/client/font/GlyphContainer = net/minecraft/class_8532
+Compiled from "class_8532.java"
+public class net.minecraft.class_8532<T> {
+  private static final int field_44749;
+
+  private static final int field_44750;
+
+  private static final int field_44751;
+
+  private static final int field_44752;
+
+  private static final int field_44753;
+
+  private final T[] field_44754;
+
+  private final T[][] field_44755;
+
+  private final java.util.function.IntFunction<T[]> field_44756;
+
+  public net.minecraft.class_8532(java.util.function.IntFunction<T[]>, java.util.function.IntFunction<T[][]>);
+    Code:
+         0: aload_0
+         1: invokespecial #47                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: sipush        256
+         9: invokeinterface #53,  2           // InterfaceMethod java/util/function/IntFunction.apply:(I)Ljava/lang/Object;
+        14: checkcast     #54                 // class "[Ljava/lang/Object;"
+        17: putfield      #56                 // Field field_44754:[Ljava/lang/Object;
+        20: aload_0
+        21: aload_2
+        22: sipush        4352
+        25: invokeinterface #53,  2           // InterfaceMethod java/util/function/IntFunction.apply:(I)Ljava/lang/Object;
+        30: checkcast     #57                 // class "[[Ljava/lang/Object;"
+        33: putfield      #59                 // Field field_44755:[[Ljava/lang/Object;
+        36: aload_0
+        37: getfield      #59                 // Field field_44755:[[Ljava/lang/Object;
+        40: aload_0
+        41: getfield      #56                 // Field field_44754:[Ljava/lang/Object;
+        44: invokestatic  #65                 // Method java/util/Arrays.fill:([Ljava/lang/Object;Ljava/lang/Object;)V
+        47: aload_0
+        48: aload_1
+        49: putfield      #67                 // Field field_44756:Ljava/util/function/IntFunction;
+        52: return
+
+  public void method_51597();
+    Code:
+         0: aload_0
+         1: getfield      #59                 // Field field_44755:[[Ljava/lang/Object;
+         4: aload_0
+         5: getfield      #56                 // Field field_44754:[Ljava/lang/Object;
+         8: invokestatic  #65                 // Method java/util/Arrays.fill:([Ljava/lang/Object;Ljava/lang/Object;)V
+        11: return
+
+  public T method_51598(int);
+    Code:
+         0: iload_1
+         1: bipush        8
+         3: ishr
+         4: istore_2
+         5: iload_1
+         6: sipush        255
+         9: iand
+        10: istore_3
+        11: aload_0
+        12: getfield      #59                 // Field field_44755:[[Ljava/lang/Object;
+        15: iload_2
+        16: aaload
+        17: iload_3
+        18: aaload
+        19: areturn
+
+  public T method_51599(int, T);
+    Code:
+         0: iload_1
+         1: bipush        8
+         3: ishr
+         4: istore_3
+         5: iload_1
+         6: sipush        255
+         9: iand
+        10: istore        4
+        12: aload_0
+        13: getfield      #59                 // Field field_44755:[[Ljava/lang/Object;
+        16: iload_3
+        17: aaload
+        18: astore        5
+        20: aload         5
+        22: aload_0
+        23: getfield      #56                 // Field field_44754:[Ljava/lang/Object;
+        26: if_acmpne     62
+        29: aload_0
+        30: getfield      #67                 // Field field_44756:Ljava/util/function/IntFunction;
+        33: sipush        256
+        36: invokeinterface #53,  2           // InterfaceMethod java/util/function/IntFunction.apply:(I)Ljava/lang/Object;
+        41: checkcast     #54                 // class "[Ljava/lang/Object;"
+        44: astore        5
+        46: aload_0
+        47: getfield      #59                 // Field field_44755:[[Ljava/lang/Object;
+        50: iload_3
+        51: aload         5
+        53: aastore
+        54: aload         5
+        56: iload         4
+        58: aload_2
+        59: aastore
+        60: aconst_null
+        61: areturn
+        62: aload         5
+        64: iload         4
+        66: aaload
+        67: astore        6
+        69: aload         5
+        71: iload         4
+        73: aload_2
+        74: aastore
+        75: aload         6
+        77: areturn
+
+  public T method_51600(int, java.util.function.IntFunction<T>);
+    Code:
+         0: iload_1
+         1: bipush        8
+         3: ishr
+         4: istore_3
+         5: iload_1
+         6: sipush        255
+         9: iand
+        10: istore        4
+        12: aload_0
+        13: getfield      #59                 // Field field_44755:[[Ljava/lang/Object;
+        16: iload_3
+        17: aaload
+        18: astore        5
+        20: aload         5
+        22: iload         4
+        24: aaload
+        25: astore        6
+        27: aload         6
+        29: ifnull        35
+        32: aload         6
+        34: areturn
+        35: aload         5
+        37: aload_0
+        38: getfield      #56                 // Field field_44754:[Ljava/lang/Object;
+        41: if_acmpne     69
+        44: aload_0
+        45: getfield      #67                 // Field field_44756:Ljava/util/function/IntFunction;
+        48: sipush        256
+        51: invokeinterface #53,  2           // InterfaceMethod java/util/function/IntFunction.apply:(I)Ljava/lang/Object;
+        56: checkcast     #54                 // class "[Ljava/lang/Object;"
+        59: astore        5
+        61: aload_0
+        62: getfield      #59                 // Field field_44755:[[Ljava/lang/Object;
+        65: iload_3
+        66: aload         5
+        68: aastore
+        69: aload_2
+        70: iload_1
+        71: invokeinterface #53,  2           // InterfaceMethod java/util/function/IntFunction.apply:(I)Ljava/lang/Object;
+        76: astore        7
+        78: aload         5
+        80: iload         4
+        82: aload         7
+        84: aastore
+        85: aload         7
+        87: areturn
+
+  public T method_51604(int);
+    Code:
+         0: iload_1
+         1: bipush        8
+         3: ishr
+         4: istore_2
+         5: iload_1
+         6: sipush        255
+         9: iand
+        10: istore_3
+        11: aload_0
+        12: getfield      #59                 // Field field_44755:[[Ljava/lang/Object;
+        15: iload_2
+        16: aaload
+        17: astore        4
+        19: aload         4
+        21: aload_0
+        22: getfield      #56                 // Field field_44754:[Ljava/lang/Object;
+        25: if_acmpne     30
+        28: aconst_null
+        29: areturn
+        30: aload         4
+        32: iload_3
+        33: aaload
+        34: astore        5
+        36: aload         4
+        38: iload_3
+        39: aconst_null
+        40: aastore
+        41: aload         5
+        43: areturn
+
+  public void method_51601(net.minecraft.class_8532$class_8533<T>);
+    Code:
+         0: iconst_0
+         1: istore_2
+         2: iload_2
+         3: aload_0
+         4: getfield      #59                 // Field field_44755:[[Ljava/lang/Object;
+         7: arraylength
+         8: if_icmpge     78
+        11: aload_0
+        12: getfield      #59                 // Field field_44755:[[Ljava/lang/Object;
+        15: iload_2
+        16: aaload
+        17: astore_3
+        18: aload_3
+        19: aload_0
+        20: getfield      #56                 // Field field_44754:[Ljava/lang/Object;
+        23: if_acmpeq     72
+        26: iconst_0
+        27: istore        4
+        29: iload         4
+        31: aload_3
+        32: arraylength
+        33: if_icmpge     72
+        36: aload_3
+        37: iload         4
+        39: aaload
+        40: astore        5
+        42: aload         5
+        44: ifnull        66
+        47: iload_2
+        48: bipush        8
+        50: ishl
+        51: iload         4
+        53: ior
+        54: istore        6
+        56: aload_1
+        57: iload         6
+        59: aload         5
+        61: invokeinterface #98,  3           // InterfaceMethod net/minecraft/class_8532$class_8533.accept:(ILjava/lang/Object;)V
+        66: iinc          4, 1
+        69: goto          29
+        72: iinc          2, 1
+        75: goto          2
+        78: return
+
+  public it.unimi.dsi.fastutil.ints.IntSet method_51603();
+    Code:
+         0: new           #104                // class it/unimi/dsi/fastutil/ints/IntOpenHashSet
+         3: dup
+         4: invokespecial #105                // Method it/unimi/dsi/fastutil/ints/IntOpenHashSet."<init>":()V
+         7: astore_1
+         8: aload_0
+         9: aload_1
+        10: invokedynamic #121,  0            // InvokeDynamic #0:accept:(Lit/unimi/dsi/fastutil/ints/IntOpenHashSet;)Lnet/minecraft/class_8532$class_8533;
+        15: invokevirtual #123                // Method method_51601:(Lnet/minecraft/class_8532$class_8533;)V
+        18: aload_1
+        19: areturn
+
+  private static void method_51602(it.unimi.dsi.fastutil.ints.IntOpenHashSet, int, java.lang.Object);
+    Code:
+         0: aload_0
+         1: iload_1
+         2: invokevirtual #129                // Method it/unimi/dsi/fastutil/ints/IntOpenHashSet.add:(I)Z
+         5: pop
+         6: return
+}

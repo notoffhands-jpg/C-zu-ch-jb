@@ -1,0 +1,242 @@
+// net/minecraft/client/render/model/BakedQuad = net/minecraft/class_777
+Compiled from "class_777.java"
+public final class net.minecraft.class_777 extends java.lang.Record {
+  private final org.joml.Vector3fc comp_5238;
+
+  private final org.joml.Vector3fc comp_5239;
+
+  private final org.joml.Vector3fc comp_5240;
+
+  private final org.joml.Vector3fc comp_5241;
+
+  private final long comp_5242;
+
+  private final long comp_5243;
+
+  private final long comp_5244;
+
+  private final long comp_5245;
+
+  private final int comp_3722;
+
+  private final net.minecraft.class_2350 comp_3723;
+
+  private final net.minecraft.class_1058 comp_3724;
+
+  private final boolean comp_3725;
+
+  private final int comp_3726;
+
+  public static final int field_64572;
+
+  public net.minecraft.class_777(org.joml.Vector3fc, org.joml.Vector3fc, org.joml.Vector3fc, org.joml.Vector3fc, long, long, long, long, int, net.minecraft.class_2350, net.minecraft.class_1058, boolean, int);
+    Code:
+         0: aload_0
+         1: invokespecial #53                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #55                 // Field comp_5238:Lorg/joml/Vector3fc;
+         9: aload_0
+        10: aload_2
+        11: putfield      #57                 // Field comp_5239:Lorg/joml/Vector3fc;
+        14: aload_0
+        15: aload_3
+        16: putfield      #59                 // Field comp_5240:Lorg/joml/Vector3fc;
+        19: aload_0
+        20: aload         4
+        22: putfield      #61                 // Field comp_5241:Lorg/joml/Vector3fc;
+        25: aload_0
+        26: lload         5
+        28: putfield      #63                 // Field comp_5242:J
+        31: aload_0
+        32: lload         7
+        34: putfield      #65                 // Field comp_5243:J
+        37: aload_0
+        38: lload         9
+        40: putfield      #67                 // Field comp_5244:J
+        43: aload_0
+        44: lload         11
+        46: putfield      #69                 // Field comp_5245:J
+        49: aload_0
+        50: iload         13
+        52: putfield      #71                 // Field comp_3722:I
+        55: aload_0
+        56: aload         14
+        58: putfield      #73                 // Field comp_3723:Lnet/minecraft/class_2350;
+        61: aload_0
+        62: aload         15
+        64: putfield      #75                 // Field comp_3724:Lnet/minecraft/class_1058;
+        67: aload_0
+        68: iload         16
+        70: putfield      #77                 // Field comp_3725:Z
+        73: aload_0
+        74: iload         17
+        76: putfield      #79                 // Field comp_3726:I
+        79: return
+
+  public boolean method_3360();
+    Code:
+         0: aload_0
+         1: getfield      #71                 // Field comp_3722:I
+         4: iconst_m1
+         5: if_icmpeq     12
+         8: iconst_1
+         9: goto          13
+        12: iconst_0
+        13: ireturn
+
+  public org.joml.Vector3fc method_76648(int);
+    Code:
+         0: iload_1
+         1: tableswitch   { // 0 to 3
+                       0: 32
+                       1: 39
+                       2: 46
+                       3: 53
+                 default: 60
+            }
+        32: aload_0
+        33: getfield      #55                 // Field comp_5238:Lorg/joml/Vector3fc;
+        36: goto          69
+        39: aload_0
+        40: getfield      #57                 // Field comp_5239:Lorg/joml/Vector3fc;
+        43: goto          69
+        46: aload_0
+        47: getfield      #59                 // Field comp_5240:Lorg/joml/Vector3fc;
+        50: goto          69
+        53: aload_0
+        54: getfield      #61                 // Field comp_5241:Lorg/joml/Vector3fc;
+        57: goto          69
+        60: new           #87                 // class java/lang/IndexOutOfBoundsException
+        63: dup
+        64: iload_1
+        65: invokespecial #90                 // Method java/lang/IndexOutOfBoundsException."<init>":(I)V
+        68: athrow
+        69: areturn
+
+  public long method_76649(int);
+    Code:
+         0: iload_1
+         1: tableswitch   { // 0 to 3
+                       0: 32
+                       1: 39
+                       2: 46
+                       3: 53
+                 default: 60
+            }
+        32: aload_0
+        33: getfield      #63                 // Field comp_5242:J
+        36: goto          69
+        39: aload_0
+        40: getfield      #65                 // Field comp_5243:J
+        43: goto          69
+        46: aload_0
+        47: getfield      #67                 // Field comp_5244:J
+        50: goto          69
+        53: aload_0
+        54: getfield      #69                 // Field comp_5245:J
+        57: goto          69
+        60: new           #87                 // class java/lang/IndexOutOfBoundsException
+        63: dup
+        64: iload_1
+        65: invokespecial #90                 // Method java/lang/IndexOutOfBoundsException."<init>":(I)V
+        68: athrow
+        69: lreturn
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #121,  0            // InvokeDynamic #0:toString:(Lnet/minecraft/class_777;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #126,  0            // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_777;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #132,  0            // InvokeDynamic #0:equals:(Lnet/minecraft/class_777;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public org.joml.Vector3fc comp_5238();
+    Code:
+         0: aload_0
+         1: getfield      #55                 // Field comp_5238:Lorg/joml/Vector3fc;
+         4: areturn
+
+  public org.joml.Vector3fc comp_5239();
+    Code:
+         0: aload_0
+         1: getfield      #57                 // Field comp_5239:Lorg/joml/Vector3fc;
+         4: areturn
+
+  public org.joml.Vector3fc comp_5240();
+    Code:
+         0: aload_0
+         1: getfield      #59                 // Field comp_5240:Lorg/joml/Vector3fc;
+         4: areturn
+
+  public org.joml.Vector3fc comp_5241();
+    Code:
+         0: aload_0
+         1: getfield      #61                 // Field comp_5241:Lorg/joml/Vector3fc;
+         4: areturn
+
+  public long comp_5242();
+    Code:
+         0: aload_0
+         1: getfield      #63                 // Field comp_5242:J
+         4: lreturn
+
+  public long comp_5243();
+    Code:
+         0: aload_0
+         1: getfield      #65                 // Field comp_5243:J
+         4: lreturn
+
+  public long comp_5244();
+    Code:
+         0: aload_0
+         1: getfield      #67                 // Field comp_5244:J
+         4: lreturn
+
+  public long comp_5245();
+    Code:
+         0: aload_0
+         1: getfield      #69                 // Field comp_5245:J
+         4: lreturn
+
+  public int comp_3722();
+    Code:
+         0: aload_0
+         1: getfield      #71                 // Field comp_3722:I
+         4: ireturn
+
+  public net.minecraft.class_2350 comp_3723();
+    Code:
+         0: aload_0
+         1: getfield      #73                 // Field comp_3723:Lnet/minecraft/class_2350;
+         4: areturn
+
+  public net.minecraft.class_1058 comp_3724();
+    Code:
+         0: aload_0
+         1: getfield      #75                 // Field comp_3724:Lnet/minecraft/class_1058;
+         4: areturn
+
+  public boolean comp_3725();
+    Code:
+         0: aload_0
+         1: getfield      #77                 // Field comp_3725:Z
+         4: ireturn
+
+  public int comp_3726();
+    Code:
+         0: aload_0
+         1: getfield      #79                 // Field comp_3726:I
+         4: ireturn
+}

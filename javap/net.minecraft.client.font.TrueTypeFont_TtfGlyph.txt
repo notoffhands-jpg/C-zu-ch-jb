@@ -1,0 +1,72 @@
+// net/minecraft/client/font/TrueTypeFont$TtfGlyph = net/minecraft/class_395$class_397
+Compiled from "class_395.java"
+class net.minecraft.class_395$class_397 implements net.minecraft.class_11759 {
+  final int field_2338;
+
+  final int field_2337;
+
+  final float field_2334;
+
+  final float field_2333;
+
+  private final net.minecraft.class_379 field_62081;
+
+  final int field_2335;
+
+  final net.minecraft.class_395 field_2336;
+
+  net.minecraft.class_395$class_397(net.minecraft.class_395, float, float, int, int, float, int);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: putfield      #41                 // Field field_2336:Lnet/minecraft/class_395;
+         5: aload_0
+         6: invokespecial #44                 // Method java/lang/Object."<init>":()V
+         9: aload_0
+        10: iload         4
+        12: putfield      #46                 // Field field_2338:I
+        15: aload_0
+        16: iload         5
+        18: putfield      #48                 // Field field_2337:I
+        21: aload_0
+        22: fload         6
+        24: aload_1
+        25: getfield      #51                 // Field net/minecraft/class_395.field_2321:F
+        28: fdiv
+        29: invokestatic  #57                 // InterfaceMethod net/minecraft/class_379.method_73329:(F)Lnet/minecraft/class_379;
+        32: putfield      #59                 // Field field_62081:Lnet/minecraft/class_379;
+        35: aload_0
+        36: fload_2
+        37: aload_1
+        38: getfield      #51                 // Field net/minecraft/class_395.field_2321:F
+        41: fdiv
+        42: putfield      #61                 // Field field_2334:F
+        45: aload_0
+        46: fload_3
+        47: aload_1
+        48: getfield      #51                 // Field net/minecraft/class_395.field_2321:F
+        51: fdiv
+        52: putfield      #63                 // Field field_2333:F
+        55: aload_0
+        56: iload         7
+        58: putfield      #65                 // Field field_2335:I
+        61: return
+
+  public net.minecraft.class_379 method_73331();
+    Code:
+         0: aload_0
+         1: getfield      #59                 // Field field_62081:Lnet/minecraft/class_379;
+         4: areturn
+
+  public net.minecraft.class_11768 method_73332(net.minecraft.class_11759$class_11760);
+    Code:
+         0: aload_1
+         1: aload_0
+         2: getfield      #59                 // Field field_62081:Lnet/minecraft/class_379;
+         5: new           #16                 // class net/minecraft/class_395$class_397$1
+         8: dup
+         9: aload_0
+        10: invokespecial #74                 // Method net/minecraft/class_395$class_397$1."<init>":(Lnet/minecraft/class_395$class_397;)V
+        13: invokeinterface #78,  3           // InterfaceMethod net/minecraft/class_11759$class_11760.method_73334:(Lnet/minecraft/class_379;Lnet/minecraft/class_383;)Lnet/minecraft/class_11768;
+        18: areturn
+}

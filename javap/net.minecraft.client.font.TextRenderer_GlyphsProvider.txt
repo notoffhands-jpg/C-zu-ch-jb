@@ -1,0 +1,7 @@
+// net/minecraft/client/font/TextRenderer$GlyphsProvider = net/minecraft/class_327$class_11602
+Compiled from "class_327.java"
+public interface net.minecraft.class_327$class_11602 {
+  public abstract net.minecraft.class_11603 method_72735(net.minecraft.class_11719);
+
+  public abstract net.minecraft.class_11769 method_73366();
+}

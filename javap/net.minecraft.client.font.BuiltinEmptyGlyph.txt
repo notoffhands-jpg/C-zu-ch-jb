@@ -1,0 +1,183 @@
+// net/minecraft/client/font/BuiltinEmptyGlyph = net/minecraft/class_7191
+Compiled from "class_7191.java"
+public final class net.minecraft.class_7191 extends java.lang.Enum<net.minecraft.class_7191> implements net.minecraft.class_379 {
+  public static final net.minecraft.class_7191 field_37898;
+
+  public static final net.minecraft.class_7191 field_37899;
+
+  final net.minecraft.class_1011 field_37900;
+
+  private static final net.minecraft.class_7191[] field_37901;
+
+  public static net.minecraft.class_7191[] values();
+    Code:
+         0: getstatic     #38                 // Field field_37901:[Lnet/minecraft/class_7191;
+         3: invokevirtual #43                 // Method "[Lnet/minecraft/class_7191;".clone:()Ljava/lang/Object;
+         6: checkcast     #39                 // class "[Lnet/minecraft/class_7191;"
+         9: areturn
+
+  public static net.minecraft.class_7191 valueOf(java.lang.String);
+    Code:
+         0: ldc           #2                  // class net/minecraft/class_7191
+         2: aload_0
+         3: invokestatic  #49                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+         6: checkcast     #2                  // class net/minecraft/class_7191
+         9: areturn
+
+  private static net.minecraft.class_1011 method_41834(int, int, net.minecraft.class_7191$class_7192);
+    Code:
+         0: new           #20                 // class net/minecraft/class_1011
+         3: dup
+         4: getstatic     #59                 // Field net/minecraft/class_1011$class_1012.field_4997:Lnet/minecraft/class_1011$class_1012;
+         7: iload_0
+         8: iload_1
+         9: iconst_0
+        10: invokespecial #63                 // Method net/minecraft/class_1011."<init>":(Lnet/minecraft/class_1011$class_1012;IIZ)V
+        13: astore_3
+        14: iconst_0
+        15: istore        4
+        17: iload         4
+        19: iload_1
+        20: if_icmpge     62
+        23: iconst_0
+        24: istore        5
+        26: iload         5
+        28: iload_0
+        29: if_icmpge     56
+        32: aload_3
+        33: iload         5
+        35: iload         4
+        37: aload_2
+        38: iload         5
+        40: iload         4
+        42: invokeinterface #67,  3           // InterfaceMethod net/minecraft/class_7191$class_7192.getColor:(II)I
+        47: invokevirtual #71                 // Method net/minecraft/class_1011.method_61941:(III)V
+        50: iinc          5, 1
+        53: goto          26
+        56: iinc          4, 1
+        59: goto          17
+        62: aload_3
+        63: invokevirtual #75                 // Method net/minecraft/class_1011.method_4302:()V
+        66: aload_3
+        67: areturn
+
+  private net.minecraft.class_7191(java.util.function.Supplier<net.minecraft.class_1011>);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: iload_2
+         3: invokespecial #86                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+         6: aload_0
+         7: aload_3
+         8: invokeinterface #91,  1           // InterfaceMethod java/util/function/Supplier.get:()Ljava/lang/Object;
+        13: checkcast     #20                 // class net/minecraft/class_1011
+        16: putfield      #93                 // Field field_37900:Lnet/minecraft/class_1011;
+        19: return
+
+  public float getAdvance();
+    Code:
+         0: aload_0
+         1: getfield      #93                 // Field field_37900:Lnet/minecraft/class_1011;
+         4: invokevirtual #102                // Method net/minecraft/class_1011.method_4307:()I
+         7: iconst_1
+         8: iadd
+         9: i2f
+        10: freturn
+
+  public net.minecraft.class_382 method_73407(net.minecraft.class_11642);
+    Code:
+         0: aload_1
+         1: aload_0
+         2: new           #16                 // class net/minecraft/class_7191$1
+         5: dup
+         6: aload_0
+         7: invokespecial #108                // Method net/minecraft/class_7191$1."<init>":(Lnet/minecraft/class_7191;)V
+        10: invokevirtual #114                // Method net/minecraft/class_11642.method_72797:(Lnet/minecraft/class_379;Lnet/minecraft/class_383;)Lnet/minecraft/class_382;
+        13: areturn
+
+  private static net.minecraft.class_1011 method_41836();
+    Code:
+         0: iconst_5
+         1: istore_0
+         2: bipush        8
+         4: istore_1
+         5: iconst_5
+         6: bipush        8
+         8: invokedynamic #132,  0            // InvokeDynamic #0:getColor:()Lnet/minecraft/class_7191$class_7192;
+        13: invokestatic  #134                // Method method_41834:(IILnet/minecraft/class_7191$class_7192;)Lnet/minecraft/class_1011;
+        16: areturn
+
+  private static int method_41833(int, int);
+    Code:
+         0: iload_0
+         1: ifeq          23
+         4: iload_0
+         5: iconst_1
+         6: iadd
+         7: iconst_5
+         8: if_icmpeq     23
+        11: iload_1
+        12: ifeq          23
+        15: iload_1
+        16: iconst_1
+        17: iadd
+        18: bipush        8
+        20: if_icmpne     27
+        23: iconst_1
+        24: goto          28
+        27: iconst_0
+        28: istore_2
+        29: iload_2
+        30: ifeq          37
+        33: iconst_m1
+        34: goto          38
+        37: iconst_0
+        38: ireturn
+
+  private static net.minecraft.class_1011 method_41837();
+    Code:
+         0: iconst_5
+         1: bipush        8
+         3: invokedynamic #142,  0            // InvokeDynamic #1:getColor:()Lnet/minecraft/class_7191$class_7192;
+         8: invokestatic  #134                // Method method_41834:(IILnet/minecraft/class_7191$class_7192;)Lnet/minecraft/class_1011;
+        11: areturn
+
+  private static int method_41835(int, int);
+    Code:
+         0: iconst_m1
+         1: ireturn
+
+  private static net.minecraft.class_7191[] method_41838();
+    Code:
+         0: iconst_2
+         1: anewarray     #2                  // class net/minecraft/class_7191
+         4: dup
+         5: iconst_0
+         6: getstatic     #145                // Field field_37898:Lnet/minecraft/class_7191;
+         9: aastore
+        10: dup
+        11: iconst_1
+        12: getstatic     #147                // Field field_37899:Lnet/minecraft/class_7191;
+        15: aastore
+        16: areturn
+
+  static {};
+    Code:
+         0: new           #2                  // class net/minecraft/class_7191
+         3: dup
+         4: ldc           #150                // String WHITE
+         6: iconst_0
+         7: invokedynamic #158,  0            // InvokeDynamic #2:get:()Ljava/util/function/Supplier;
+        12: invokespecial #160                // Method "<init>":(Ljava/lang/String;ILjava/util/function/Supplier;)V
+        15: putstatic     #145                // Field field_37898:Lnet/minecraft/class_7191;
+        18: new           #2                  // class net/minecraft/class_7191
+        21: dup
+        22: ldc           #162                // String MISSING
+        24: iconst_1
+        25: invokedynamic #166,  0            // InvokeDynamic #3:get:()Ljava/util/function/Supplier;
+        30: invokespecial #160                // Method "<init>":(Ljava/lang/String;ILjava/util/function/Supplier;)V
+        33: putstatic     #147                // Field field_37899:Lnet/minecraft/class_7191;
+        36: invokestatic  #168                // Method method_41838:()[Lnet/minecraft/class_7191;
+        39: putstatic     #38                 // Field field_37901:[Lnet/minecraft/class_7191;
+        42: return
+}

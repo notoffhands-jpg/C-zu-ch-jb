@@ -1,0 +1,27 @@
+// net/minecraft/client/font/TextDrawable$DrawnGlyphRect = net/minecraft/class_11767$class_12238
+Compiled from "class_11767.java"
+public interface net.minecraft.class_11767$class_12238 extends net.minecraft.class_12236,net.minecraft.class_11767 {
+  public default float method_75818();
+    Code:
+         0: aload_0
+         1: invokeinterface #19,  1           // InterfaceMethod method_71829:()F
+         6: freturn
+
+  public default float method_75819();
+    Code:
+         0: aload_0
+         1: invokeinterface #25,  1           // InterfaceMethod method_71830:()F
+         6: freturn
+
+  public default float method_75820();
+    Code:
+         0: aload_0
+         1: invokeinterface #29,  1           // InterfaceMethod method_71831:()F
+         6: freturn
+
+  public default float method_75821();
+    Code:
+         0: aload_0
+         1: invokeinterface #33,  1           // InterfaceMethod method_71832:()F
+         6: freturn
+}

@@ -1,0 +1,36 @@
+// net/minecraft/client/font/UnihexFont$UnicodeTextureGlyph$1 = net/minecraft/class_391$class_393$1
+Compiled from "class_391.java"
+class net.minecraft.class_391$class_393$1 implements net.minecraft.class_379 {
+  final net.minecraft.class_391$class_393 field_62145;
+
+  net.minecraft.class_391$class_393$1(net.minecraft.class_391$class_393);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: putfield      #26                 // Field field_62145:Lnet/minecraft/class_391$class_393;
+         5: aload_0
+         6: invokespecial #29                 // Method java/lang/Object."<init>":()V
+         9: return
+
+  public float getAdvance();
+    Code:
+         0: aload_0
+         1: getfield      #26                 // Field field_62145:Lnet/minecraft/class_391$class_393;
+         4: invokevirtual #37                 // Method net/minecraft/class_391$class_393.method_51675:()I
+         7: iconst_2
+         8: idiv
+         9: iconst_1
+        10: iadd
+        11: i2f
+        12: freturn
+
+  public float method_16800();
+    Code:
+         0: ldc           #39                 // float 0.5f
+         2: freturn
+
+  public float method_16799();
+    Code:
+         0: ldc           #39                 // float 0.5f
+         2: freturn
+}

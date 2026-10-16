@@ -1,0 +1,128 @@
+// net/minecraft/client/font/TextRenderLayerSet = net/minecraft/class_8538
+Compiled from "class_8538.java"
+public final class net.minecraft.class_8538 extends java.lang.Record {
+  private final net.minecraft.class_1921 comp_1501;
+
+  private final net.minecraft.class_1921 comp_1502;
+
+  private final net.minecraft.class_1921 comp_1503;
+
+  private final com.mojang.blaze3d.pipeline.RenderPipeline comp_4371;
+
+  public net.minecraft.class_8538(net.minecraft.class_1921, net.minecraft.class_1921, net.minecraft.class_1921, com.mojang.blaze3d.pipeline.RenderPipeline);
+    Code:
+         0: aload_0
+         1: invokespecial #36                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #38                 // Field comp_1501:Lnet/minecraft/class_1921;
+         9: aload_0
+        10: aload_2
+        11: putfield      #40                 // Field comp_1502:Lnet/minecraft/class_1921;
+        14: aload_0
+        15: aload_3
+        16: putfield      #42                 // Field comp_1503:Lnet/minecraft/class_1921;
+        19: aload_0
+        20: aload         4
+        22: putfield      #44                 // Field comp_4371:Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+        25: return
+
+  public static net.minecraft.class_8538 method_51641(net.minecraft.class_2960);
+    Code:
+         0: new           #2                  // class net/minecraft/class_8538
+         3: dup
+         4: aload_0
+         5: invokestatic  #54                 // Method net/minecraft/class_12249.method_76024:(Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+         8: aload_0
+         9: invokestatic  #57                 // Method net/minecraft/class_12249.method_76029:(Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+        12: aload_0
+        13: invokestatic  #60                 // Method net/minecraft/class_12249.method_76027:(Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+        16: getstatic     #65                 // Field net/minecraft/class_10799.field_61742:Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+        19: invokespecial #67                 // Method "<init>":(Lnet/minecraft/class_1921;Lnet/minecraft/class_1921;Lnet/minecraft/class_1921;Lcom/mojang/blaze3d/pipeline/RenderPipeline;)V
+        22: areturn
+
+  public static net.minecraft.class_8538 method_51643(net.minecraft.class_2960);
+    Code:
+         0: new           #2                  // class net/minecraft/class_8538
+         3: dup
+         4: aload_0
+         5: invokestatic  #72                 // Method net/minecraft/class_12249.method_76022:(Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+         8: aload_0
+         9: invokestatic  #75                 // Method net/minecraft/class_12249.method_76028:(Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+        12: aload_0
+        13: invokestatic  #78                 // Method net/minecraft/class_12249.method_76026:(Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+        16: getstatic     #81                 // Field net/minecraft/class_10799.field_61741:Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+        19: invokespecial #67                 // Method "<init>":(Lnet/minecraft/class_1921;Lnet/minecraft/class_1921;Lnet/minecraft/class_1921;Lcom/mojang/blaze3d/pipeline/RenderPipeline;)V
+        22: areturn
+
+  public net.minecraft.class_1921 method_51642(net.minecraft.class_327$class_6415);
+    Code:
+         0: getstatic     #87                 // Field net/minecraft/class_8538$1.field_34000:[I
+         3: aload_1
+         4: invokevirtual #91                 // Method net/minecraft/class_327$class_6415.ordinal:()I
+         7: iaload
+         8: tableswitch   { // 1 to 3
+                       1: 46
+                       2: 53
+                       3: 60
+                 default: 36
+            }
+        36: new           #93                 // class java/lang/MatchException
+        39: dup
+        40: aconst_null
+        41: aconst_null
+        42: invokespecial #96                 // Method java/lang/MatchException."<init>":(Ljava/lang/String;Ljava/lang/Throwable;)V
+        45: athrow
+        46: aload_0
+        47: getfield      #38                 // Field comp_1501:Lnet/minecraft/class_1921;
+        50: goto          64
+        53: aload_0
+        54: getfield      #40                 // Field comp_1502:Lnet/minecraft/class_1921;
+        57: goto          64
+        60: aload_0
+        61: getfield      #42                 // Field comp_1503:Lnet/minecraft/class_1921;
+        64: areturn
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #117,  0            // InvokeDynamic #0:toString:(Lnet/minecraft/class_8538;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #121,  0            // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_8538;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #127,  0            // InvokeDynamic #0:equals:(Lnet/minecraft/class_8538;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public net.minecraft.class_1921 comp_1501();
+    Code:
+         0: aload_0
+         1: getfield      #38                 // Field comp_1501:Lnet/minecraft/class_1921;
+         4: areturn
+
+  public net.minecraft.class_1921 comp_1502();
+    Code:
+         0: aload_0
+         1: getfield      #40                 // Field comp_1502:Lnet/minecraft/class_1921;
+         4: areturn
+
+  public net.minecraft.class_1921 comp_1503();
+    Code:
+         0: aload_0
+         1: getfield      #42                 // Field comp_1503:Lnet/minecraft/class_1921;
+         4: areturn
+
+  public com.mojang.blaze3d.pipeline.RenderPipeline comp_4371();
+    Code:
+         0: aload_0
+         1: getfield      #44                 // Field comp_4371:Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+         4: areturn
+}

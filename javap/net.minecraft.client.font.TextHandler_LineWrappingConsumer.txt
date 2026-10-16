@@ -1,0 +1,5 @@
+// net/minecraft/client/font/TextHandler$LineWrappingConsumer = net/minecraft/class_5225$class_5229
+Compiled from "class_5225.java"
+public interface net.minecraft.class_5225$class_5229 {
+  public abstract void accept(net.minecraft.class_2583, int, int);
+}

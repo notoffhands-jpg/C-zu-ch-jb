@@ -1,0 +1,260 @@
+// net/minecraft/client/font/UnihexFont$FontImage32x16 = net/minecraft/class_391$class_8543
+Compiled from "class_391.java"
+final class net.minecraft.class_391$class_8543 extends java.lang.Record implements net.minecraft.class_391$class_8544 {
+  private final int[] comp_1511;
+
+  private final int comp_1512;
+
+  private static final int field_44775;
+
+  private net.minecraft.class_391$class_8543(int[], int);
+    Code:
+         0: aload_0
+         1: invokespecial #33                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #35                 // Field comp_1511:[I
+         9: aload_0
+        10: iload_2
+        11: putfield      #37                 // Field comp_1512:I
+        14: return
+
+  public int method_51668(int);
+    Code:
+         0: aload_0
+         1: getfield      #35                 // Field comp_1511:[I
+         4: iload_1
+         5: iaload
+         6: ireturn
+
+  static net.minecraft.class_391$class_8544 method_51677(int, it.unimi.dsi.fastutil.bytes.ByteList);
+    Code:
+         0: bipush        16
+         2: newarray       int
+         4: astore_2
+         5: iconst_0
+         6: istore_3
+         7: iconst_0
+         8: istore        4
+        10: iconst_0
+        11: istore        5
+        13: iload         5
+        15: bipush        16
+        17: if_icmpge     145
+        20: iload_0
+        21: aload_1
+        22: iload         4
+        24: iinc          4, 1
+        27: invokestatic  #51                 // Method net/minecraft/class_391.method_51652:(ILit/unimi/dsi/fastutil/bytes/ByteList;I)I
+        30: istore        6
+        32: iload_0
+        33: aload_1
+        34: iload         4
+        36: iinc          4, 1
+        39: invokestatic  #51                 // Method net/minecraft/class_391.method_51652:(ILit/unimi/dsi/fastutil/bytes/ByteList;I)I
+        42: istore        7
+        44: iload_0
+        45: aload_1
+        46: iload         4
+        48: iinc          4, 1
+        51: invokestatic  #51                 // Method net/minecraft/class_391.method_51652:(ILit/unimi/dsi/fastutil/bytes/ByteList;I)I
+        54: istore        8
+        56: iload_0
+        57: aload_1
+        58: iload         4
+        60: iinc          4, 1
+        63: invokestatic  #51                 // Method net/minecraft/class_391.method_51652:(ILit/unimi/dsi/fastutil/bytes/ByteList;I)I
+        66: istore        9
+        68: iload_0
+        69: aload_1
+        70: iload         4
+        72: iinc          4, 1
+        75: invokestatic  #51                 // Method net/minecraft/class_391.method_51652:(ILit/unimi/dsi/fastutil/bytes/ByteList;I)I
+        78: istore        10
+        80: iload_0
+        81: aload_1
+        82: iload         4
+        84: iinc          4, 1
+        87: invokestatic  #51                 // Method net/minecraft/class_391.method_51652:(ILit/unimi/dsi/fastutil/bytes/ByteList;I)I
+        90: istore        11
+        92: iload         6
+        94: bipush        20
+        96: ishl
+        97: iload         7
+        99: bipush        16
+       101: ishl
+       102: ior
+       103: iload         8
+       105: bipush        12
+       107: ishl
+       108: ior
+       109: iload         9
+       111: bipush        8
+       113: ishl
+       114: ior
+       115: iload         10
+       117: iconst_4
+       118: ishl
+       119: ior
+       120: iload         11
+       122: ior
+       123: istore        12
+       125: aload_2
+       126: iload         5
+       128: iload         12
+       130: bipush        8
+       132: ishl
+       133: iastore
+       134: iload_3
+       135: iload         12
+       137: ior
+       138: istore_3
+       139: iinc          5, 1
+       142: goto          13
+       145: new           #2                  // class net/minecraft/class_391$class_8543
+       148: dup
+       149: aload_2
+       150: bipush        24
+       152: invokespecial #53                 // Method "<init>":([II)V
+       155: areturn
+
+  public static net.minecraft.class_391$class_8544 method_51676(int, it.unimi.dsi.fastutil.bytes.ByteList);
+    Code:
+         0: bipush        16
+         2: newarray       int
+         4: astore_2
+         5: iconst_0
+         6: istore_3
+         7: iconst_0
+         8: istore        4
+        10: iconst_0
+        11: istore        5
+        13: iload         5
+        15: bipush        16
+        17: if_icmpge     178
+        20: iload_0
+        21: aload_1
+        22: iload         4
+        24: iinc          4, 1
+        27: invokestatic  #51                 // Method net/minecraft/class_391.method_51652:(ILit/unimi/dsi/fastutil/bytes/ByteList;I)I
+        30: istore        6
+        32: iload_0
+        33: aload_1
+        34: iload         4
+        36: iinc          4, 1
+        39: invokestatic  #51                 // Method net/minecraft/class_391.method_51652:(ILit/unimi/dsi/fastutil/bytes/ByteList;I)I
+        42: istore        7
+        44: iload_0
+        45: aload_1
+        46: iload         4
+        48: iinc          4, 1
+        51: invokestatic  #51                 // Method net/minecraft/class_391.method_51652:(ILit/unimi/dsi/fastutil/bytes/ByteList;I)I
+        54: istore        8
+        56: iload_0
+        57: aload_1
+        58: iload         4
+        60: iinc          4, 1
+        63: invokestatic  #51                 // Method net/minecraft/class_391.method_51652:(ILit/unimi/dsi/fastutil/bytes/ByteList;I)I
+        66: istore        9
+        68: iload_0
+        69: aload_1
+        70: iload         4
+        72: iinc          4, 1
+        75: invokestatic  #51                 // Method net/minecraft/class_391.method_51652:(ILit/unimi/dsi/fastutil/bytes/ByteList;I)I
+        78: istore        10
+        80: iload_0
+        81: aload_1
+        82: iload         4
+        84: iinc          4, 1
+        87: invokestatic  #51                 // Method net/minecraft/class_391.method_51652:(ILit/unimi/dsi/fastutil/bytes/ByteList;I)I
+        90: istore        11
+        92: iload_0
+        93: aload_1
+        94: iload         4
+        96: iinc          4, 1
+        99: invokestatic  #51                 // Method net/minecraft/class_391.method_51652:(ILit/unimi/dsi/fastutil/bytes/ByteList;I)I
+       102: istore        12
+       104: iload_0
+       105: aload_1
+       106: iload         4
+       108: iinc          4, 1
+       111: invokestatic  #51                 // Method net/minecraft/class_391.method_51652:(ILit/unimi/dsi/fastutil/bytes/ByteList;I)I
+       114: istore        13
+       116: iload         6
+       118: bipush        28
+       120: ishl
+       121: iload         7
+       123: bipush        24
+       125: ishl
+       126: ior
+       127: iload         8
+       129: bipush        20
+       131: ishl
+       132: ior
+       133: iload         9
+       135: bipush        16
+       137: ishl
+       138: ior
+       139: iload         10
+       141: bipush        12
+       143: ishl
+       144: ior
+       145: iload         11
+       147: bipush        8
+       149: ishl
+       150: ior
+       151: iload         12
+       153: iconst_4
+       154: ishl
+       155: ior
+       156: iload         13
+       158: ior
+       159: istore        14
+       161: aload_2
+       162: iload         5
+       164: iload         14
+       166: iastore
+       167: iload_3
+       168: iload         14
+       170: ior
+       171: istore_3
+       172: iinc          5, 1
+       175: goto          13
+       178: new           #2                  // class net/minecraft/class_391$class_8543
+       181: dup
+       182: aload_2
+       183: bipush        32
+       185: invokespecial #53                 // Method "<init>":([II)V
+       188: areturn
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #83,  0             // InvokeDynamic #0:toString:(Lnet/minecraft/class_391$class_8543;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #88,  0             // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_391$class_8543;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #94,  0             // InvokeDynamic #0:equals:(Lnet/minecraft/class_391$class_8543;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public int[] comp_1511();
+    Code:
+         0: aload_0
+         1: getfield      #35                 // Field comp_1511:[I
+         4: areturn
+
+  public int comp_1512();
+    Code:
+         0: aload_0
+         1: getfield      #37                 // Field comp_1512:I
+         4: ireturn
+}

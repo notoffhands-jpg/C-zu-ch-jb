@@ -1,0 +1,181 @@
+// net/minecraft/client/render/command/FallingBlockCommandRenderer = net/minecraft/class_11681
+Compiled from "class_11681.java"
+public class net.minecraft.class_11681 {
+  private final net.minecraft.class_4587 field_61826;
+
+  public net.minecraft.class_11681();
+    Code:
+         0: aload_0
+         1: invokespecial #36                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: new           #26                 // class net/minecraft/class_4587
+         8: dup
+         9: invokespecial #37                 // Method net/minecraft/class_4587."<init>":()V
+        12: putfield      #39                 // Field field_61826:Lnet/minecraft/class_4587;
+        15: return
+
+  public void method_72998(net.minecraft.class_11788, net.minecraft.class_4597$class_4598, net.minecraft.class_776, net.minecraft.class_4618);
+    Code:
+         0: aload_1
+         1: invokevirtual #53                 // Method net/minecraft/class_11788.method_73519:()Ljava/util/List;
+         4: invokeinterface #59,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+         9: astore        5
+        11: aload         5
+        13: invokeinterface #65,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+        18: ifeq          128
+        21: aload         5
+        23: invokeinterface #69,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        28: checkcast     #11                 // class net/minecraft/class_11661$class_11790
+        31: astore        6
+        33: aload         6
+        35: invokevirtual #73                 // Method net/minecraft/class_11661$class_11790.comp_4653:()Lnet/minecraft/class_11791;
+        38: astore        7
+        40: aload         7
+        42: getfield      #79                 // Field net/minecraft/class_11791.field_62247:Lnet/minecraft/class_2680;
+        45: astore        8
+        47: aload_3
+        48: aload         8
+        50: invokevirtual #85                 // Method net/minecraft/class_776.method_3349:(Lnet/minecraft/class_2680;)Lnet/minecraft/class_1087;
+        53: aload         8
+        55: aload         7
+        57: getfield      #89                 // Field net/minecraft/class_11791.field_62245:Lnet/minecraft/class_2338;
+        60: invokevirtual #95                 // Method net/minecraft/class_2680.method_26190:(Lnet/minecraft/class_2338;)J
+        63: invokestatic  #101                // InterfaceMethod net/minecraft/class_5819.method_43049:(J)Lnet/minecraft/class_5819;
+        66: invokeinterface #107,  2          // InterfaceMethod net/minecraft/class_1087.method_68512:(Lnet/minecraft/class_5819;)Ljava/util/List;
+        71: astore        9
+        73: new           #26                 // class net/minecraft/class_4587
+        76: dup
+        77: invokespecial #37                 // Method net/minecraft/class_4587."<init>":()V
+        80: astore        10
+        82: aload         10
+        84: aload         6
+        86: invokevirtual #111                // Method net/minecraft/class_11661$class_11790.comp_4652:()Lorg/joml/Matrix4f;
+        89: invokevirtual #115                // Method net/minecraft/class_4587.method_34425:(Lorg/joml/Matrix4fc;)V
+        92: aload_3
+        93: invokevirtual #119                // Method net/minecraft/class_776.method_3350:()Lnet/minecraft/class_778;
+        96: aload         7
+        98: aload         9
+       100: aload         8
+       102: aload         7
+       104: getfield      #122                // Field net/minecraft/class_11791.field_62246:Lnet/minecraft/class_2338;
+       107: aload         10
+       109: aload_2
+       110: aload         8
+       112: invokestatic  #128                // Method net/minecraft/class_4696.method_29359:(Lnet/minecraft/class_2680;)Lnet/minecraft/class_1921;
+       115: invokevirtual #132                // Method net/minecraft/class_4597$class_4598.method_73477:(Lnet/minecraft/class_1921;)Lnet/minecraft/class_4588;
+       118: iconst_0
+       119: getstatic     #138                // Field net/minecraft/class_4608.field_21444:I
+       122: invokevirtual #144                // Method net/minecraft/class_778.method_3374:(Lnet/minecraft/class_1920;Ljava/util/List;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_4587;Lnet/minecraft/class_4588;ZI)V
+       125: goto          11
+       128: aload_1
+       129: invokevirtual #147                // Method net/minecraft/class_11788.method_73518:()Ljava/util/List;
+       132: invokeinterface #59,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+       137: astore        5
+       139: aload         5
+       141: invokeinterface #65,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+       146: ifeq          260
+       149: aload         5
+       151: invokeinterface #69,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+       156: checkcast     #21                 // class net/minecraft/class_11661$class_11663
+       159: astore        6
+       161: aload_0
+       162: getfield      #39                 // Field field_61826:Lnet/minecraft/class_4587;
+       165: invokevirtual #150                // Method net/minecraft/class_4587.method_22903:()V
+       168: aload_0
+       169: getfield      #39                 // Field field_61826:Lnet/minecraft/class_4587;
+       172: invokevirtual #154                // Method net/minecraft/class_4587.method_23760:()Lnet/minecraft/class_4587$class_4665;
+       175: aload         6
+       177: invokevirtual #157                // Method net/minecraft/class_11661$class_11663.comp_4484:()Lnet/minecraft/class_4587$class_4665;
+       180: invokevirtual #161                // Method net/minecraft/class_4587$class_4665.method_66521:(Lnet/minecraft/class_4587$class_4665;)V
+       183: aload_3
+       184: aload         6
+       186: invokevirtual #165                // Method net/minecraft/class_11661$class_11663.comp_4485:()Lnet/minecraft/class_2680;
+       189: aload_0
+       190: getfield      #39                 // Field field_61826:Lnet/minecraft/class_4587;
+       193: aload_2
+       194: aload         6
+       196: invokevirtual #169                // Method net/minecraft/class_11661$class_11663.comp_4486:()I
+       199: aload         6
+       201: invokevirtual #172                // Method net/minecraft/class_11661$class_11663.comp_4487:()I
+       204: invokevirtual #176                // Method net/minecraft/class_776.method_3353:(Lnet/minecraft/class_2680;Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;II)V
+       207: aload         6
+       209: invokevirtual #179                // Method net/minecraft/class_11661$class_11663.comp_4660:()I
+       212: ifeq          250
+       215: aload         4
+       217: aload         6
+       219: invokevirtual #179                // Method net/minecraft/class_11661$class_11663.comp_4660:()I
+       222: invokevirtual #185                // Method net/minecraft/class_4618.method_23286:(I)V
+       225: aload_3
+       226: aload         6
+       228: invokevirtual #165                // Method net/minecraft/class_11661$class_11663.comp_4485:()Lnet/minecraft/class_2680;
+       231: aload_0
+       232: getfield      #39                 // Field field_61826:Lnet/minecraft/class_4587;
+       235: aload         4
+       237: aload         6
+       239: invokevirtual #169                // Method net/minecraft/class_11661$class_11663.comp_4486:()I
+       242: aload         6
+       244: invokevirtual #172                // Method net/minecraft/class_11661$class_11663.comp_4487:()I
+       247: invokevirtual #176                // Method net/minecraft/class_776.method_3353:(Lnet/minecraft/class_2680;Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;II)V
+       250: aload_0
+       251: getfield      #39                 // Field field_61826:Lnet/minecraft/class_4587;
+       254: invokevirtual #188                // Method net/minecraft/class_4587.method_22909:()V
+       257: goto          139
+       260: aload_1
+       261: invokevirtual #191                // Method net/minecraft/class_11788.method_73520:()Ljava/util/List;
+       264: invokeinterface #59,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+       269: astore        5
+       271: aload         5
+       273: invokeinterface #65,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+       278: ifeq          409
+       281: aload         5
+       283: invokeinterface #69,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+       288: checkcast     #29                 // class net/minecraft/class_11661$class_11662
+       291: astore        6
+       293: aload         6
+       295: invokevirtual #194                // Method net/minecraft/class_11661$class_11662.comp_4476:()Lnet/minecraft/class_4587$class_4665;
+       298: aload_2
+       299: aload         6
+       301: invokevirtual #198                // Method net/minecraft/class_11661$class_11662.comp_4477:()Lnet/minecraft/class_1921;
+       304: invokevirtual #132                // Method net/minecraft/class_4597$class_4598.method_73477:(Lnet/minecraft/class_1921;)Lnet/minecraft/class_4588;
+       307: aload         6
+       309: invokevirtual #202                // Method net/minecraft/class_11661$class_11662.comp_4478:()Lnet/minecraft/class_1087;
+       312: aload         6
+       314: invokevirtual #206                // Method net/minecraft/class_11661$class_11662.comp_4479:()F
+       317: aload         6
+       319: invokevirtual #209                // Method net/minecraft/class_11661$class_11662.comp_4480:()F
+       322: aload         6
+       324: invokevirtual #212                // Method net/minecraft/class_11661$class_11662.comp_4481:()F
+       327: aload         6
+       329: invokevirtual #215                // Method net/minecraft/class_11661$class_11662.comp_4482:()I
+       332: aload         6
+       334: invokevirtual #218                // Method net/minecraft/class_11661$class_11662.comp_4483:()I
+       337: invokestatic  #222                // Method net/minecraft/class_778.method_3367:(Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;Lnet/minecraft/class_1087;FFFII)V
+       340: aload         6
+       342: invokevirtual #225                // Method net/minecraft/class_11661$class_11662.comp_4659:()I
+       345: ifeq          406
+       348: aload         4
+       350: aload         6
+       352: invokevirtual #225                // Method net/minecraft/class_11661$class_11662.comp_4659:()I
+       355: invokevirtual #185                // Method net/minecraft/class_4618.method_23286:(I)V
+       358: aload         6
+       360: invokevirtual #194                // Method net/minecraft/class_11661$class_11662.comp_4476:()Lnet/minecraft/class_4587$class_4665;
+       363: aload         4
+       365: aload         6
+       367: invokevirtual #198                // Method net/minecraft/class_11661$class_11662.comp_4477:()Lnet/minecraft/class_1921;
+       370: invokevirtual #226                // Method net/minecraft/class_4618.method_73477:(Lnet/minecraft/class_1921;)Lnet/minecraft/class_4588;
+       373: aload         6
+       375: invokevirtual #202                // Method net/minecraft/class_11661$class_11662.comp_4478:()Lnet/minecraft/class_1087;
+       378: aload         6
+       380: invokevirtual #206                // Method net/minecraft/class_11661$class_11662.comp_4479:()F
+       383: aload         6
+       385: invokevirtual #209                // Method net/minecraft/class_11661$class_11662.comp_4480:()F
+       388: aload         6
+       390: invokevirtual #212                // Method net/minecraft/class_11661$class_11662.comp_4481:()F
+       393: aload         6
+       395: invokevirtual #215                // Method net/minecraft/class_11661$class_11662.comp_4482:()I
+       398: aload         6
+       400: invokevirtual #218                // Method net/minecraft/class_11661$class_11662.comp_4483:()I
+       403: invokestatic  #222                // Method net/minecraft/class_778.method_3367:(Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;Lnet/minecraft/class_1087;FFFII)V
+       406: goto          271
+       409: return
+}

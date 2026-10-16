@@ -1,0 +1,184 @@
+// net/minecraft/client/font/FreeTypeUtil = net/minecraft/class_9111
+Compiled from "class_9111.java"
+public class net.minecraft.class_9111 {
+  private static final org.slf4j.Logger field_51484;
+
+  public static final java.lang.Object field_51483;
+
+  private static long field_48394;
+
+  public net.minecraft.class_9111();
+    Code:
+         0: aload_0
+         1: invokespecial #24                 // Method java/lang/Object."<init>":()V
+         4: return
+
+  public static long method_56143();
+    Code:
+         0: getstatic     #32                 // Field field_51483:Ljava/lang/Object;
+         3: dup
+         4: astore_0
+         5: monitorenter
+         6: getstatic     #34                 // Field field_48394:J
+         9: lconst_0
+        10: lcmp
+        11: ifne          71
+        14: invokestatic  #40                 // Method org/lwjgl/system/MemoryStack.stackPush:()Lorg/lwjgl/system/MemoryStack;
+        17: astore_1
+        18: aload_1
+        19: iconst_1
+        20: invokevirtual #44                 // Method org/lwjgl/system/MemoryStack.mallocPointer:(I)Lorg/lwjgl/PointerBuffer;
+        23: astore_2
+        24: aload_2
+        25: invokestatic  #50                 // Method org/lwjgl/util/freetype/FreeType.FT_Init_FreeType:(Lorg/lwjgl/PointerBuffer;)I
+        28: ldc           #52                 // String Initializing FreeType library
+        30: invokestatic  #56                 // Method method_59837:(ILjava/lang/String;)V
+        33: aload_2
+        34: invokevirtual #61                 // Method org/lwjgl/PointerBuffer.get:()J
+        37: putstatic     #34                 // Field field_48394:J
+        40: aload_1
+        41: ifnull        71
+        44: aload_1
+        45: invokevirtual #64                 // Method org/lwjgl/system/MemoryStack.close:()V
+        48: goto          71
+        51: astore_2
+        52: aload_1
+        53: ifnull        69
+        56: aload_1
+        57: invokevirtual #64                 // Method org/lwjgl/system/MemoryStack.close:()V
+        60: goto          69
+        63: astore_3
+        64: aload_2
+        65: aload_3
+        66: invokevirtual #68                 // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+        69: aload_2
+        70: athrow
+        71: getstatic     #34                 // Field field_48394:J
+        74: aload_0
+        75: monitorexit
+        76: lreturn
+        77: astore        4
+        79: aload_0
+        80: monitorexit
+        81: aload         4
+        83: athrow
+      Exception table:
+         from    to  target type
+            18    40    51   Class java/lang/Throwable
+            56    60    63   Class java/lang/Throwable
+             6    76    77   any
+            77    81    77   any
+
+  public static void method_59837(int, java.lang.String);
+    Code:
+         0: iload_0
+         1: ifeq          22
+         4: new           #76                 // class java/lang/IllegalStateException
+         7: dup
+         8: iload_0
+         9: invokestatic  #80                 // Method method_56144:(I)Ljava/lang/String;
+        12: aload_1
+        13: invokedynamic #92,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+        18: invokespecial #95                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+        21: athrow
+        22: return
+
+  public static boolean method_56145(int, java.lang.String);
+    Code:
+         0: iload_0
+         1: ifeq          21
+         4: getstatic     #101                // Field field_51484:Lorg/slf4j/Logger;
+         7: ldc           #103                // String FreeType error: {} ({})
+         9: iload_0
+        10: invokestatic  #80                 // Method method_56144:(I)Ljava/lang/String;
+        13: aload_1
+        14: invokeinterface #109,  4          // InterfaceMethod org/slf4j/Logger.error:(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+        19: iconst_1
+        20: ireturn
+        21: iconst_0
+        22: ireturn
+
+  private static java.lang.String method_56144(int);
+    Code:
+         0: iload_0
+         1: invokestatic  #112                // Method org/lwjgl/util/freetype/FreeType.FT_Error_String:(I)Ljava/lang/String;
+         4: astore_1
+         5: aload_1
+         6: ifnull        11
+         9: aload_1
+        10: areturn
+        11: iload_0
+        12: invokestatic  #117                // Method java/lang/Integer.toHexString:(I)Ljava/lang/String;
+        15: invokedynamic #122,  0            // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+        20: areturn
+
+  public static org.lwjgl.util.freetype.FT_Vector method_56147(org.lwjgl.util.freetype.FT_Vector, float, float);
+    Code:
+         0: fload_1
+         1: ldc           #128                // float 64.0f
+         3: fmul
+         4: invokestatic  #134                // Method java/lang/Math.round:(F)I
+         7: i2l
+         8: lstore_3
+         9: fload_2
+        10: ldc           #128                // float 64.0f
+        12: fmul
+        13: invokestatic  #134                // Method java/lang/Math.round:(F)I
+        16: i2l
+        17: lstore        5
+        19: aload_0
+        20: lload_3
+        21: lload         5
+        23: invokevirtual #140                // Method org/lwjgl/util/freetype/FT_Vector.set:(JJ)Lorg/lwjgl/util/freetype/FT_Vector;
+        26: areturn
+
+  public static float method_56146(org.lwjgl.util.freetype.FT_Vector);
+    Code:
+         0: aload_0
+         1: invokevirtual #149                // Method org/lwjgl/util/freetype/FT_Vector.x:()J
+         4: l2f
+         5: ldc           #128                // float 64.0f
+         7: fdiv
+         8: freturn
+
+  public static void method_56148();
+    Code:
+         0: getstatic     #32                 // Field field_51483:Ljava/lang/Object;
+         3: dup
+         4: astore_0
+         5: monitorenter
+         6: getstatic     #34                 // Field field_48394:J
+         9: lconst_0
+        10: lcmp
+        11: ifeq          25
+        14: getstatic     #34                 // Field field_48394:J
+        17: invokestatic  #154                // Method org/lwjgl/util/freetype/FreeType.FT_Done_Library:(J)I
+        20: pop
+        21: lconst_0
+        22: putstatic     #34                 // Field field_48394:J
+        25: aload_0
+        26: monitorexit
+        27: goto          35
+        30: astore_1
+        31: aload_0
+        32: monitorexit
+        33: aload_1
+        34: athrow
+        35: return
+      Exception table:
+         from    to  target type
+             6    27    30   any
+            30    33    30   any
+
+  static {};
+    Code:
+         0: invokestatic  #161                // Method com/mojang/logging/LogUtils.getLogger:()Lorg/slf4j/Logger;
+         3: putstatic     #101                // Field field_51484:Lorg/slf4j/Logger;
+         6: new           #4                  // class java/lang/Object
+         9: dup
+        10: invokespecial #24                 // Method java/lang/Object."<init>":()V
+        13: putstatic     #32                 // Field field_51483:Ljava/lang/Object;
+        16: lconst_0
+        17: putstatic     #34                 // Field field_48394:J
+        20: return
+}

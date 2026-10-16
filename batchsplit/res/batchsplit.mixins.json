@@ -1,0 +1,7 @@
+{
+  "required": true,
+  "package": "dev.batchsplit.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": ["SplitLargeBatchesMixin", "BufferBuilderAccess", "FastSortMixin", "FastVertexMixin", "WorldRenderFlagMixin", "EquipmentLodMixin", "ItemGlintLodMixin", "VulkanRgbFormatMixin", "BbsVulkanSizeMixin"],
+  "injectors": { "defaultRequire": 1 }
+}

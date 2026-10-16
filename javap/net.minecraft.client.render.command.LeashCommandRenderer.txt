@@ -1,0 +1,281 @@
+// net/minecraft/client/render/command/LeashCommandRenderer = net/minecraft/class_11688
+Compiled from "class_11688.java"
+public class net.minecraft.class_11688 {
+  private static final int field_61845;
+
+  private static final float field_61846;
+
+  public net.minecraft.class_11688();
+    Code:
+         0: aload_0
+         1: invokespecial #34                 // Method java/lang/Object."<init>":()V
+         4: return
+
+  public void method_73012(net.minecraft.class_11788, net.minecraft.class_4597$class_4598);
+    Code:
+         0: aload_1
+         1: invokevirtual #46                 // Method net/minecraft/class_11788.method_73517:()Ljava/util/List;
+         4: invokeinterface #52,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+         9: astore_3
+        10: aload_3
+        11: invokeinterface #58,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+        16: ifeq          47
+        19: aload_3
+        20: invokeinterface #62,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        25: checkcast     #11                 // class net/minecraft/class_11661$class_11669
+        28: astore        4
+        30: aload         4
+        32: invokevirtual #66                 // Method net/minecraft/class_11661$class_11669.comp_4502:()Lorg/joml/Matrix4f;
+        35: aload_2
+        36: aload         4
+        38: invokevirtual #70                 // Method net/minecraft/class_11661$class_11669.comp_4503:()Lnet/minecraft/class_10017$class_10018;
+        41: invokestatic  #74                 // Method method_73013:(Lorg/joml/Matrix4f;Lnet/minecraft/class_4597;Lnet/minecraft/class_10017$class_10018;)V
+        44: goto          10
+        47: return
+
+  private static void method_73013(org.joml.Matrix4f, net.minecraft.class_4597, net.minecraft.class_10017$class_10018);
+    Code:
+         0: aload_2
+         1: getfield      #83                 // Field net/minecraft/class_10017$class_10018.field_53341:Lnet/minecraft/class_243;
+         4: getfield      #89                 // Field net/minecraft/class_243.field_1352:D
+         7: aload_2
+         8: getfield      #92                 // Field net/minecraft/class_10017$class_10018.field_53340:Lnet/minecraft/class_243;
+        11: getfield      #89                 // Field net/minecraft/class_243.field_1352:D
+        14: dsub
+        15: d2f
+        16: fstore_3
+        17: aload_2
+        18: getfield      #83                 // Field net/minecraft/class_10017$class_10018.field_53341:Lnet/minecraft/class_243;
+        21: getfield      #95                 // Field net/minecraft/class_243.field_1351:D
+        24: aload_2
+        25: getfield      #92                 // Field net/minecraft/class_10017$class_10018.field_53340:Lnet/minecraft/class_243;
+        28: getfield      #95                 // Field net/minecraft/class_243.field_1351:D
+        31: dsub
+        32: d2f
+        33: fstore        4
+        35: aload_2
+        36: getfield      #83                 // Field net/minecraft/class_10017$class_10018.field_53341:Lnet/minecraft/class_243;
+        39: getfield      #98                 // Field net/minecraft/class_243.field_1350:D
+        42: aload_2
+        43: getfield      #92                 // Field net/minecraft/class_10017$class_10018.field_53340:Lnet/minecraft/class_243;
+        46: getfield      #98                 // Field net/minecraft/class_243.field_1350:D
+        49: dsub
+        50: d2f
+        51: fstore        5
+        53: fload_3
+        54: fload_3
+        55: fmul
+        56: fload         5
+        58: fload         5
+        60: fmul
+        61: fadd
+        62: invokestatic  #104                // Method net/minecraft/class_3532.method_48119:(F)F
+        65: ldc           #30                 // float 0.05f
+        67: fmul
+        68: fconst_2
+        69: fdiv
+        70: fstore        6
+        72: fload         5
+        74: fload         6
+        76: fmul
+        77: fstore        7
+        79: fload_3
+        80: fload         6
+        82: fmul
+        83: fstore        8
+        85: aload_0
+        86: aload_2
+        87: getfield      #107                // Field net/minecraft/class_10017$class_10018.field_53339:Lnet/minecraft/class_243;
+        90: getfield      #89                 // Field net/minecraft/class_243.field_1352:D
+        93: d2f
+        94: aload_2
+        95: getfield      #107                // Field net/minecraft/class_10017$class_10018.field_53339:Lnet/minecraft/class_243;
+        98: getfield      #95                 // Field net/minecraft/class_243.field_1351:D
+       101: d2f
+       102: aload_2
+       103: getfield      #107                // Field net/minecraft/class_10017$class_10018.field_53339:Lnet/minecraft/class_243;
+       106: getfield      #98                 // Field net/minecraft/class_243.field_1350:D
+       109: d2f
+       110: invokevirtual #113                // Method org/joml/Matrix4f.translate:(FFF)Lorg/joml/Matrix4f;
+       113: pop
+       114: aload_1
+       115: invokestatic  #119                // Method net/minecraft/class_12249.method_75981:()Lnet/minecraft/class_1921;
+       118: invokeinterface #123,  2          // InterfaceMethod net/minecraft/class_4597.method_73477:(Lnet/minecraft/class_1921;)Lnet/minecraft/class_4588;
+       123: astore        9
+       125: iconst_0
+       126: istore        10
+       128: iload         10
+       130: bipush        24
+       132: if_icmpgt     162
+       135: aload         9
+       137: aload_0
+       138: fload_3
+       139: fload         4
+       141: fload         5
+       143: ldc           #30                 // float 0.05f
+       145: fload         7
+       147: fload         8
+       149: iload         10
+       151: iconst_0
+       152: aload_2
+       153: invokestatic  #129                // Method method_73011:(Lnet/minecraft/class_4588;Lorg/joml/Matrix4f;FFFFFFIZLnet/minecraft/class_10017$class_10018;)V
+       156: iinc          10, 1
+       159: goto          128
+       162: bipush        24
+       164: istore        10
+       166: iload         10
+       168: iflt          197
+       171: aload         9
+       173: aload_0
+       174: fload_3
+       175: fload         4
+       177: fload         5
+       179: fconst_0
+       180: fload         7
+       182: fload         8
+       184: iload         10
+       186: iconst_1
+       187: aload_2
+       188: invokestatic  #129                // Method method_73011:(Lnet/minecraft/class_4588;Lorg/joml/Matrix4f;FFFFFFIZLnet/minecraft/class_10017$class_10018;)V
+       191: iinc          10, -1
+       194: goto          166
+       197: return
+
+  private static void method_73011(net.minecraft.class_4588, org.joml.Matrix4f, float, float, float, float, float, float, int, boolean, net.minecraft.class_10017$class_10018);
+    Code:
+         0: iload         8
+         2: i2f
+         3: ldc           #142                // float 24.0f
+         5: fdiv
+         6: fstore        11
+         8: fload         11
+        10: aload         10
+        12: getfield      #145                // Field net/minecraft/class_10017$class_10018.field_53342:I
+        15: i2f
+        16: aload         10
+        18: getfield      #148                // Field net/minecraft/class_10017$class_10018.field_53343:I
+        21: i2f
+        22: invokestatic  #152                // Method net/minecraft/class_3532.method_16439:(FFF)F
+        25: f2i
+        26: istore        12
+        28: fload         11
+        30: aload         10
+        32: getfield      #155                // Field net/minecraft/class_10017$class_10018.field_53344:I
+        35: i2f
+        36: aload         10
+        38: getfield      #158                // Field net/minecraft/class_10017$class_10018.field_53345:I
+        41: i2f
+        42: invokestatic  #152                // Method net/minecraft/class_3532.method_16439:(FFF)F
+        45: f2i
+        46: istore        13
+        48: iload         12
+        50: iload         13
+        52: invokestatic  #164                // Method net/minecraft/class_765.method_23687:(II)I
+        55: istore        14
+        57: iload         8
+        59: iconst_2
+        60: irem
+        61: iload         9
+        63: ifeq          70
+        66: iconst_1
+        67: goto          71
+        70: iconst_0
+        71: if_icmpne     79
+        74: ldc           #165                // float 0.7f
+        76: goto          80
+        79: fconst_1
+        80: fstore        15
+        82: ldc           #166                // float 0.5f
+        84: fload         15
+        86: fmul
+        87: fstore        16
+        89: ldc           #167                // float 0.4f
+        91: fload         15
+        93: fmul
+        94: fstore        17
+        96: ldc           #168                // float 0.3f
+        98: fload         15
+       100: fmul
+       101: fstore        18
+       103: fload_2
+       104: fload         11
+       106: fmul
+       107: fstore        19
+       109: aload         10
+       111: getfield      #172                // Field net/minecraft/class_10017$class_10018.field_60161:Z
+       114: ifeq          151
+       117: fload_3
+       118: fconst_0
+       119: fcmpl
+       120: ifle          133
+       123: fload_3
+       124: fload         11
+       126: fmul
+       127: fload         11
+       129: fmul
+       130: goto          146
+       133: fload_3
+       134: fload_3
+       135: fconst_1
+       136: fload         11
+       138: fsub
+       139: fmul
+       140: fconst_1
+       141: fload         11
+       143: fsub
+       144: fmul
+       145: fsub
+       146: fstore        20
+       148: goto          157
+       151: fload_3
+       152: fload         11
+       154: fmul
+       155: fstore        20
+       157: fload         4
+       159: fload         11
+       161: fmul
+       162: fstore        21
+       164: aload_0
+       165: aload_1
+       166: fload         19
+       168: fload         6
+       170: fsub
+       171: fload         20
+       173: fload         5
+       175: fadd
+       176: fload         21
+       178: fload         7
+       180: fadd
+       181: invokeinterface #176,  5          // InterfaceMethod net/minecraft/class_4588.method_22918:(Lorg/joml/Matrix4fc;FFF)Lnet/minecraft/class_4588;
+       186: fload         16
+       188: fload         17
+       190: fload         18
+       192: fconst_1
+       193: invokeinterface #180,  5          // InterfaceMethod net/minecraft/class_4588.method_22915:(FFFF)Lnet/minecraft/class_4588;
+       198: iload         14
+       200: invokeinterface #184,  2          // InterfaceMethod net/minecraft/class_4588.method_60803:(I)Lnet/minecraft/class_4588;
+       205: pop
+       206: aload_0
+       207: aload_1
+       208: fload         19
+       210: fload         6
+       212: fadd
+       213: fload         20
+       215: ldc           #30                 // float 0.05f
+       217: fadd
+       218: fload         5
+       220: fsub
+       221: fload         21
+       223: fload         7
+       225: fsub
+       226: invokeinterface #176,  5          // InterfaceMethod net/minecraft/class_4588.method_22918:(Lorg/joml/Matrix4fc;FFF)Lnet/minecraft/class_4588;
+       231: fload         16
+       233: fload         17
+       235: fload         18
+       237: fconst_1
+       238: invokeinterface #180,  5          // InterfaceMethod net/minecraft/class_4588.method_22915:(FFFF)Lnet/minecraft/class_4588;
+       243: iload         14
+       245: invokeinterface #184,  2          // InterfaceMethod net/minecraft/class_4588.method_60803:(I)Lnet/minecraft/class_4588;
+       250: pop
+       251: return
+}

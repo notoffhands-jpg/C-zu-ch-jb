@@ -1,0 +1,54 @@
+// net/minecraft/client/font/SpaceFont = net/minecraft/class_7166
+Compiled from "class_7166.java"
+public class net.minecraft.class_7166 implements net.minecraft.class_390 {
+  private final it.unimi.dsi.fastutil.ints.Int2ObjectMap<net.minecraft.class_384> field_37842;
+
+  public net.minecraft.class_7166(java.util.Map<java.lang.Integer, java.lang.Float>);
+    Code:
+         0: aload_0
+         1: invokespecial #29                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: new           #31                 // class it/unimi/dsi/fastutil/ints/Int2ObjectOpenHashMap
+         8: dup
+         9: aload_1
+        10: invokeinterface #37,  1           // InterfaceMethod java/util/Map.size:()I
+        15: invokespecial #40                 // Method it/unimi/dsi/fastutil/ints/Int2ObjectOpenHashMap."<init>":(I)V
+        18: putfield      #42                 // Field field_37842:Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+        21: aload_1
+        22: aload_0
+        23: invokedynamic #61,  0             // InvokeDynamic #0:accept:(Lnet/minecraft/class_7166;)Ljava/util/function/BiConsumer;
+        28: invokeinterface #65,  2           // InterfaceMethod java/util/Map.forEach:(Ljava/util/function/BiConsumer;)V
+        33: return
+
+  public net.minecraft.class_11759 method_2040(int);
+    Code:
+         0: aload_0
+         1: getfield      #42                 // Field field_37842:Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+         4: iload_1
+         5: invokeinterface #79,  2           // InterfaceMethod it/unimi/dsi/fastutil/ints/Int2ObjectMap.get:(I)Ljava/lang/Object;
+        10: checkcast     #81                 // class net/minecraft/class_11759
+        13: areturn
+
+  public it.unimi.dsi.fastutil.ints.IntSet method_27442();
+    Code:
+         0: aload_0
+         1: getfield      #42                 // Field field_37842:Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+         4: invokeinterface #87,  1           // InterfaceMethod it/unimi/dsi/fastutil/ints/Int2ObjectMap.keySet:()Lit/unimi/dsi/fastutil/ints/IntSet;
+         9: invokestatic  #93                 // Method it/unimi/dsi/fastutil/ints/IntSets.unmodifiable:(Lit/unimi/dsi/fastutil/ints/IntSet;)Lit/unimi/dsi/fastutil/ints/IntSet;
+        12: areturn
+
+  private void method_41716(java.lang.Integer, java.lang.Float);
+    Code:
+         0: aload_0
+         1: getfield      #42                 // Field field_37842:Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+         4: aload_1
+         5: invokevirtual #100                // Method java/lang/Integer.intValue:()I
+         8: new           #102                // class net/minecraft/class_384
+        11: dup
+        12: aload_2
+        13: invokevirtual #108                // Method java/lang/Float.floatValue:()F
+        16: invokespecial #111                // Method net/minecraft/class_384."<init>":(F)V
+        19: invokeinterface #115,  3          // InterfaceMethod it/unimi/dsi/fastutil/ints/Int2ObjectMap.put:(ILjava/lang/Object;)Ljava/lang/Object;
+        24: pop
+        25: return
+}

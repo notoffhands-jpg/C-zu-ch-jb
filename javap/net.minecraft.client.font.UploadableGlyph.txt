@@ -1,0 +1,63 @@
+// net/minecraft/client/font/UploadableGlyph = net/minecraft/class_383
+Compiled from "class_383.java"
+public interface net.minecraft.class_383 {
+  public abstract int method_2031();
+
+  public abstract int method_2032();
+
+  public abstract void method_2030(int, int, com.mojang.blaze3d.textures.GpuTexture);
+
+  public abstract boolean method_2033();
+
+  public abstract float method_2035();
+
+  public default float method_2034();
+    Code:
+         0: aload_0
+         1: invokeinterface #25,  1           // InterfaceMethod method_56129:()F
+         6: freturn
+
+  public default float method_2027();
+    Code:
+         0: aload_0
+         1: invokeinterface #30,  1           // InterfaceMethod method_2034:()F
+         6: aload_0
+         7: invokeinterface #32,  1           // InterfaceMethod method_2031:()I
+        12: i2f
+        13: aload_0
+        14: invokeinterface #34,  1           // InterfaceMethod method_2035:()F
+        19: fdiv
+        20: fadd
+        21: freturn
+
+  public default float method_2028();
+    Code:
+         0: ldc           #36                 // float 7.0f
+         2: aload_0
+         3: invokeinterface #39,  1           // InterfaceMethod method_56130:()F
+         8: fsub
+         9: freturn
+
+  public default float method_2029();
+    Code:
+         0: aload_0
+         1: invokeinterface #42,  1           // InterfaceMethod method_2028:()F
+         6: aload_0
+         7: invokeinterface #44,  1           // InterfaceMethod method_2032:()I
+        12: i2f
+        13: aload_0
+        14: invokeinterface #34,  1           // InterfaceMethod method_2035:()F
+        19: fdiv
+        20: fadd
+        21: freturn
+
+  public default float method_56129();
+    Code:
+         0: fconst_0
+         1: freturn
+
+  public default float method_56130();
+    Code:
+         0: ldc           #36                 // float 7.0f
+         2: freturn
+}

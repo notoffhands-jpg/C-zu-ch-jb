@@ -1,0 +1,50 @@
+// net/minecraft/client/font/FontManager$Fonts$Cached = net/minecraft/class_378$class_11638$class_11717
+Compiled from "class_378.java"
+final class net.minecraft.class_378$class_11638$class_11717 extends java.lang.Record {
+  final net.minecraft.class_11719 comp_4586;
+
+  final net.minecraft.class_11603 comp_4587;
+
+  net.minecraft.class_378$class_11638$class_11717(net.minecraft.class_11719, net.minecraft.class_11603);
+    Code:
+         0: aload_0
+         1: invokespecial #31                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #33                 // Field comp_4586:Lnet/minecraft/class_11719;
+         9: aload_0
+        10: aload_2
+        11: putfield      #35                 // Field comp_4587:Lnet/minecraft/class_11603;
+        14: return
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #53,  0             // InvokeDynamic #0:toString:(Lnet/minecraft/class_378$class_11638$class_11717;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #58,  0             // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_378$class_11638$class_11717;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #64,  0             // InvokeDynamic #0:equals:(Lnet/minecraft/class_378$class_11638$class_11717;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public net.minecraft.class_11719 comp_4586();
+    Code:
+         0: aload_0
+         1: getfield      #33                 // Field comp_4586:Lnet/minecraft/class_11719;
+         4: areturn
+
+  public net.minecraft.class_11603 comp_4587();
+    Code:
+         0: aload_0
+         1: getfield      #35                 // Field comp_4587:Lnet/minecraft/class_11603;
+         4: areturn
+}

@@ -1,0 +1,317 @@
+// net/minecraft/client/texture/Sprite = net/minecraft/class_1058
+Compiled from "class_1058.java"
+public class net.minecraft.class_1058 implements java.lang.AutoCloseable {
+  private final net.minecraft.class_2960 field_40552;
+
+  private final net.minecraft.class_7764 field_40553;
+
+  private final int field_5258;
+
+  private final int field_5256;
+
+  private final float field_5270;
+
+  private final float field_5269;
+
+  private final float field_5268;
+
+  private final float field_5267;
+
+  private final int field_64248;
+
+  protected net.minecraft.class_1058(net.minecraft.class_2960, net.minecraft.class_7764, int, int, int, int, int);
+    Code:
+         0: aload_0
+         1: invokespecial #46                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #48                 // Field field_40552:Lnet/minecraft/class_2960;
+         9: aload_0
+        10: aload_2
+        11: putfield      #50                 // Field field_40553:Lnet/minecraft/class_7764;
+        14: aload_0
+        15: iload         7
+        17: putfield      #52                 // Field field_64248:I
+        20: aload_0
+        21: iload         5
+        23: putfield      #54                 // Field field_5258:I
+        26: aload_0
+        27: iload         6
+        29: putfield      #56                 // Field field_5256:I
+        32: aload_0
+        33: iload         5
+        35: iload         7
+        37: iadd
+        38: i2f
+        39: iload_3
+        40: i2f
+        41: fdiv
+        42: putfield      #58                 // Field field_5270:F
+        45: aload_0
+        46: iload         5
+        48: iload         7
+        50: iadd
+        51: aload_2
+        52: invokevirtual #62                 // Method net/minecraft/class_7764.method_45807:()I
+        55: iadd
+        56: i2f
+        57: iload_3
+        58: i2f
+        59: fdiv
+        60: putfield      #64                 // Field field_5269:F
+        63: aload_0
+        64: iload         6
+        66: iload         7
+        68: iadd
+        69: i2f
+        70: iload         4
+        72: i2f
+        73: fdiv
+        74: putfield      #66                 // Field field_5268:F
+        77: aload_0
+        78: iload         6
+        80: iload         7
+        82: iadd
+        83: aload_2
+        84: invokevirtual #69                 // Method net/minecraft/class_7764.method_45815:()I
+        87: iadd
+        88: i2f
+        89: iload         4
+        91: i2f
+        92: fdiv
+        93: putfield      #71                 // Field field_5267:F
+        96: return
+
+  public int method_35806();
+    Code:
+         0: aload_0
+         1: getfield      #54                 // Field field_5258:I
+         4: ireturn
+
+  public int method_35807();
+    Code:
+         0: aload_0
+         1: getfield      #56                 // Field field_5256:I
+         4: ireturn
+
+  public float method_4594();
+    Code:
+         0: aload_0
+         1: getfield      #58                 // Field field_5270:F
+         4: freturn
+
+  public float method_4577();
+    Code:
+         0: aload_0
+         1: getfield      #64                 // Field field_5269:F
+         4: freturn
+
+  public net.minecraft.class_7764 method_45851();
+    Code:
+         0: aload_0
+         1: getfield      #50                 // Field field_40553:Lnet/minecraft/class_7764;
+         4: areturn
+
+  public net.minecraft.class_7764$class_12298 method_76319(com.mojang.blaze3d.buffers.GpuBufferSlice, int);
+    Code:
+         0: aload_0
+         1: getfield      #50                 // Field field_40553:Lnet/minecraft/class_7764;
+         4: aload_1
+         5: iload_2
+         6: invokevirtual #87                 // Method net/minecraft/class_7764.method_45818:(Lcom/mojang/blaze3d/buffers/GpuBufferSlice;I)Lnet/minecraft/class_7764$class_12298;
+         9: areturn
+
+  public float method_4580(float);
+    Code:
+         0: aload_0
+         1: getfield      #64                 // Field field_5269:F
+         4: aload_0
+         5: getfield      #58                 // Field field_5270:F
+         8: fsub
+         9: fstore_2
+        10: aload_0
+        11: getfield      #58                 // Field field_5270:F
+        14: fload_2
+        15: fload_1
+        16: fmul
+        17: fadd
+        18: freturn
+
+  public float method_4593();
+    Code:
+         0: aload_0
+         1: getfield      #66                 // Field field_5268:F
+         4: freturn
+
+  public float method_4575();
+    Code:
+         0: aload_0
+         1: getfield      #71                 // Field field_5267:F
+         4: freturn
+
+  public float method_4570(float);
+    Code:
+         0: aload_0
+         1: getfield      #71                 // Field field_5267:F
+         4: aload_0
+         5: getfield      #66                 // Field field_5268:F
+         8: fsub
+         9: fstore_2
+        10: aload_0
+        11: getfield      #66                 // Field field_5268:F
+        14: fload_2
+        15: fload_1
+        16: fmul
+        17: fadd
+        18: freturn
+
+  public net.minecraft.class_2960 method_45852();
+    Code:
+         0: aload_0
+         1: getfield      #48                 // Field field_40552:Lnet/minecraft/class_2960;
+         4: areturn
+
+  public java.lang.String toString();
+    Code:
+         0: aload_0
+         1: getfield      #50                 // Field field_40553:Lnet/minecraft/class_7764;
+         4: invokestatic  #105                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+         7: aload_0
+         8: getfield      #58                 // Field field_5270:F
+        11: aload_0
+        12: getfield      #64                 // Field field_5269:F
+        15: aload_0
+        16: getfield      #66                 // Field field_5268:F
+        19: aload_0
+        20: getfield      #71                 // Field field_5267:F
+        23: invokedynamic #117,  0            // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;FFFF)Ljava/lang/String;
+        28: areturn
+
+  public void method_4584(com.mojang.blaze3d.textures.GpuTexture, int);
+    Code:
+         0: aload_0
+         1: getfield      #50                 // Field field_40553:Lnet/minecraft/class_7764;
+         4: aload_1
+         5: iload_2
+         6: invokevirtual #123                // Method net/minecraft/class_7764.method_45809:(Lcom/mojang/blaze3d/textures/GpuTexture;I)V
+         9: return
+
+  public net.minecraft.class_4588 method_24108(net.minecraft.class_4588);
+    Code:
+         0: new           #128                // class net/minecraft/class_4723
+         3: dup
+         4: aload_1
+         5: aload_0
+         6: invokespecial #131                // Method net/minecraft/class_4723."<init>":(Lnet/minecraft/class_4588;Lnet/minecraft/class_1058;)V
+         9: areturn
+
+  boolean method_76321();
+    Code:
+         0: aload_0
+         1: getfield      #50                 // Field field_40553:Lnet/minecraft/class_7764;
+         4: invokevirtual #137                // Method net/minecraft/class_7764.method_73020:()Z
+         7: ireturn
+
+  public void method_76320(java.nio.ByteBuffer, int, int, int, int, int);
+    Code:
+         0: iconst_0
+         1: istore        7
+         3: iload         7
+         5: iload_3
+         6: if_icmpgt     168
+         9: aload_1
+        10: iload_2
+        11: iload         7
+        13: iload         6
+        15: imul
+        16: iadd
+        17: iload         6
+        19: invokestatic  #146                // Method org/lwjgl/system/MemoryUtil.memSlice:(Ljava/nio/ByteBuffer;II)Ljava/nio/ByteBuffer;
+        22: invokestatic  #152                // Method com/mojang/blaze3d/buffers/Std140Builder.intoBuffer:(Ljava/nio/ByteBuffer;)Lcom/mojang/blaze3d/buffers/Std140Builder;
+        25: new           #154                // class org/joml/Matrix4f
+        28: dup
+        29: invokespecial #155                // Method org/joml/Matrix4f."<init>":()V
+        32: fconst_0
+        33: iload         4
+        35: iload         7
+        37: ishr
+        38: i2f
+        39: fconst_0
+        40: iload         5
+        42: iload         7
+        44: ishr
+        45: i2f
+        46: invokevirtual #159                // Method org/joml/Matrix4f.ortho2D:(FFFF)Lorg/joml/Matrix4f;
+        49: invokevirtual #163                // Method com/mojang/blaze3d/buffers/Std140Builder.putMat4f:(Lorg/joml/Matrix4fc;)Lcom/mojang/blaze3d/buffers/Std140Builder;
+        52: new           #154                // class org/joml/Matrix4f
+        55: dup
+        56: invokespecial #155                // Method org/joml/Matrix4f."<init>":()V
+        59: aload_0
+        60: getfield      #54                 // Field field_5258:I
+        63: iload         7
+        65: ishr
+        66: i2f
+        67: aload_0
+        68: getfield      #56                 // Field field_5256:I
+        71: iload         7
+        73: ishr
+        74: i2f
+        75: fconst_0
+        76: invokevirtual #167                // Method org/joml/Matrix4f.translate:(FFF)Lorg/joml/Matrix4f;
+        79: aload_0
+        80: getfield      #50                 // Field field_40553:Lnet/minecraft/class_7764;
+        83: invokevirtual #62                 // Method net/minecraft/class_7764.method_45807:()I
+        86: aload_0
+        87: getfield      #52                 // Field field_64248:I
+        90: iconst_2
+        91: imul
+        92: iadd
+        93: iload         7
+        95: ishr
+        96: i2f
+        97: aload_0
+        98: getfield      #50                 // Field field_40553:Lnet/minecraft/class_7764;
+       101: invokevirtual #69                 // Method net/minecraft/class_7764.method_45815:()I
+       104: aload_0
+       105: getfield      #52                 // Field field_64248:I
+       108: iconst_2
+       109: imul
+       110: iadd
+       111: iload         7
+       113: ishr
+       114: i2f
+       115: fconst_1
+       116: invokevirtual #170                // Method org/joml/Matrix4f.scale:(FFF)Lorg/joml/Matrix4f;
+       119: invokevirtual #163                // Method com/mojang/blaze3d/buffers/Std140Builder.putMat4f:(Lorg/joml/Matrix4fc;)Lcom/mojang/blaze3d/buffers/Std140Builder;
+       122: aload_0
+       123: getfield      #52                 // Field field_64248:I
+       126: i2f
+       127: aload_0
+       128: getfield      #50                 // Field field_40553:Lnet/minecraft/class_7764;
+       131: invokevirtual #62                 // Method net/minecraft/class_7764.method_45807:()I
+       134: i2f
+       135: fdiv
+       136: invokevirtual #174                // Method com/mojang/blaze3d/buffers/Std140Builder.putFloat:(F)Lcom/mojang/blaze3d/buffers/Std140Builder;
+       139: aload_0
+       140: getfield      #52                 // Field field_64248:I
+       143: i2f
+       144: aload_0
+       145: getfield      #50                 // Field field_40553:Lnet/minecraft/class_7764;
+       148: invokevirtual #69                 // Method net/minecraft/class_7764.method_45815:()I
+       151: i2f
+       152: fdiv
+       153: invokevirtual #174                // Method com/mojang/blaze3d/buffers/Std140Builder.putFloat:(F)Lcom/mojang/blaze3d/buffers/Std140Builder;
+       156: iload         7
+       158: invokevirtual #178                // Method com/mojang/blaze3d/buffers/Std140Builder.putInt:(I)Lcom/mojang/blaze3d/buffers/Std140Builder;
+       161: pop
+       162: iinc          7, 1
+       165: goto          3
+       168: return
+
+  public void close();
+    Code:
+         0: aload_0
+         1: getfield      #50                 // Field field_40553:Lnet/minecraft/class_7764;
+         4: invokevirtual #183                // Method net/minecraft/class_7764.close:()V
+         7: return
+}

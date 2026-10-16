@@ -1,0 +1,50 @@
+// net/minecraft/client/render/entity/equipment/EquipmentRenderer$LayerTextureKey = net/minecraft/class_10197$class_10198
+Compiled from "class_10197.java"
+final class net.minecraft.class_10197$class_10198 extends java.lang.Record {
+  final net.minecraft.class_10186$class_10190 comp_3197;
+
+  final net.minecraft.class_10186$class_10189 comp_3198;
+
+  net.minecraft.class_10197$class_10198(net.minecraft.class_10186$class_10190, net.minecraft.class_10186$class_10189);
+    Code:
+         0: aload_0
+         1: invokespecial #36                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #38                 // Field comp_3197:Lnet/minecraft/class_10186$class_10190;
+         9: aload_0
+        10: aload_2
+        11: putfield      #40                 // Field comp_3198:Lnet/minecraft/class_10186$class_10189;
+        14: return
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #58,  0             // InvokeDynamic #0:toString:(Lnet/minecraft/class_10197$class_10198;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #63,  0             // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_10197$class_10198;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #69,  0             // InvokeDynamic #0:equals:(Lnet/minecraft/class_10197$class_10198;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public net.minecraft.class_10186$class_10190 comp_3197();
+    Code:
+         0: aload_0
+         1: getfield      #38                 // Field comp_3197:Lnet/minecraft/class_10186$class_10190;
+         4: areturn
+
+  public net.minecraft.class_10186$class_10189 comp_3198();
+    Code:
+         0: aload_0
+         1: getfield      #40                 // Field comp_3198:Lnet/minecraft/class_10186$class_10189;
+         4: areturn
+}

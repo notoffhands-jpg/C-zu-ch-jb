@@ -1,0 +1,7 @@
+// net/minecraft/client/font/Glyph = net/minecraft/class_11759
+Compiled from "class_11759.java"
+public interface net.minecraft.class_11759 {
+  public abstract net.minecraft.class_379 method_73331();
+
+  public abstract net.minecraft.class_11768 method_73332(net.minecraft.class_11759$class_11760);
+}

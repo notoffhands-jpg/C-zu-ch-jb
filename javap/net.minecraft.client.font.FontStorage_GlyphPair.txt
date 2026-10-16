@@ -1,0 +1,61 @@
+// net/minecraft/client/font/FontStorage$GlyphPair = net/minecraft/class_377$class_11640
+Compiled from "class_377.java"
+final class net.minecraft.class_377$class_11640 extends java.lang.Record {
+  private final java.util.function.Supplier<net.minecraft.class_11768> comp_4459;
+
+  private final java.util.function.Supplier<net.minecraft.class_11768> comp_4460;
+
+  net.minecraft.class_377$class_11640(java.util.function.Supplier<net.minecraft.class_11768>, java.util.function.Supplier<net.minecraft.class_11768>);
+    Code:
+         0: aload_0
+         1: invokespecial #29                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #31                 // Field comp_4459:Ljava/util/function/Supplier;
+         9: aload_0
+        10: aload_2
+        11: putfield      #33                 // Field comp_4460:Ljava/util/function/Supplier;
+        14: return
+
+  java.util.function.Supplier<net.minecraft.class_11768> method_72794(boolean);
+    Code:
+         0: iload_1
+         1: ifeq          11
+         4: aload_0
+         5: getfield      #33                 // Field comp_4460:Ljava/util/function/Supplier;
+         8: goto          15
+        11: aload_0
+        12: getfield      #31                 // Field comp_4459:Ljava/util/function/Supplier;
+        15: areturn
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #58,  0             // InvokeDynamic #0:toString:(Lnet/minecraft/class_377$class_11640;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #63,  0             // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_377$class_11640;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #69,  0             // InvokeDynamic #0:equals:(Lnet/minecraft/class_377$class_11640;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public java.util.function.Supplier<net.minecraft.class_11768> comp_4459();
+    Code:
+         0: aload_0
+         1: getfield      #31                 // Field comp_4459:Ljava/util/function/Supplier;
+         4: areturn
+
+  public java.util.function.Supplier<net.minecraft.class_11768> comp_4460();
+    Code:
+         0: aload_0
+         1: getfield      #33                 // Field comp_4460:Ljava/util/function/Supplier;
+         4: areturn
+}

@@ -1,0 +1,7 @@
+// net/minecraft/client/font/BakedGlyph = net/minecraft/class_11768
+Compiled from "class_11768.java"
+public interface net.minecraft.class_11768 {
+  public abstract net.minecraft.class_379 method_73398();
+
+  public abstract net.minecraft.class_11767$class_12238 method_73399(float, float, int, int, net.minecraft.class_2583, float, float);
+}

@@ -1,0 +1,7 @@
+// net/minecraft/client/font/TextRenderer$GlyphDrawable = net/minecraft/class_327$class_11465
+Compiled from "class_327.java"
+public interface net.minecraft.class_327$class_11465 {
+  public abstract void method_71801(net.minecraft.class_327$class_11464);
+
+  public abstract net.minecraft.class_8030 method_71800();
+}

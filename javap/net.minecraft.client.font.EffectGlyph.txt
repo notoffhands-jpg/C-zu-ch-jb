@@ -1,0 +1,5 @@
+// net/minecraft/client/font/EffectGlyph = net/minecraft/class_11769
+Compiled from "class_11769.java"
+public interface net.minecraft.class_11769 {
+  public abstract net.minecraft.class_11767 method_73406(float, float, float, float, float, int, int, float);
+}

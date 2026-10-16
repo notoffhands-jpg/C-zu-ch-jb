@@ -1,0 +1,363 @@
+// net/minecraft/client/model/ModelPartBuilder = net/minecraft/class_5606
+Compiled from "class_5606.java"
+public class net.minecraft.class_5606 {
+  private static final java.util.Set<net.minecraft.class_2350> field_42888;
+
+  private final java.util.List<net.minecraft.class_5604> field_27719;
+
+  private int field_27720;
+
+  private int field_27721;
+
+  private boolean field_27722;
+
+  public net.minecraft.class_5606();
+    Code:
+         0: aload_0
+         1: invokespecial #24                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: invokestatic  #30                 // Method com/google/common/collect/Lists.newArrayList:()Ljava/util/ArrayList;
+         8: putfield      #32                 // Field field_27719:Ljava/util/List;
+        11: return
+
+  public net.minecraft.class_5606 method_32101(int, int);
+    Code:
+         0: aload_0
+         1: iload_1
+         2: putfield      #40                 // Field field_27720:I
+         5: aload_0
+         6: iload_2
+         7: putfield      #42                 // Field field_27721:I
+        10: aload_0
+        11: areturn
+
+  public net.minecraft.class_5606 method_32096();
+    Code:
+         0: aload_0
+         1: iconst_1
+         2: invokevirtual #48                 // Method method_32106:(Z)Lnet/minecraft/class_5606;
+         5: areturn
+
+  public net.minecraft.class_5606 method_32106(boolean);
+    Code:
+         0: aload_0
+         1: iload_1
+         2: putfield      #51                 // Field field_27722:Z
+         5: aload_0
+         6: areturn
+
+  public net.minecraft.class_5606 method_32105(java.lang.String, float, float, float, int, int, int, net.minecraft.class_5605, int, int);
+    Code:
+         0: aload_0
+         1: iload         9
+         3: iload         10
+         5: invokevirtual #63                 // Method method_32101:(II)Lnet/minecraft/class_5606;
+         8: pop
+         9: aload_0
+        10: getfield      #32                 // Field field_27719:Ljava/util/List;
+        13: new           #65                 // class net/minecraft/class_5604
+        16: dup
+        17: aload_1
+        18: aload_0
+        19: getfield      #40                 // Field field_27720:I
+        22: i2f
+        23: aload_0
+        24: getfield      #42                 // Field field_27721:I
+        27: i2f
+        28: fload_2
+        29: fload_3
+        30: fload         4
+        32: iload         5
+        34: i2f
+        35: iload         6
+        37: i2f
+        38: iload         7
+        40: i2f
+        41: aload         8
+        43: aload_0
+        44: getfield      #51                 // Field field_27722:Z
+        47: fconst_1
+        48: fconst_1
+        49: getstatic     #67                 // Field field_42888:Ljava/util/Set;
+        52: invokespecial #70                 // Method net/minecraft/class_5604."<init>":(Ljava/lang/String;FFFFFFFFLnet/minecraft/class_5605;ZFFLjava/util/Set;)V
+        55: invokeinterface #76,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        60: pop
+        61: aload_0
+        62: areturn
+
+  public net.minecraft.class_5606 method_32104(java.lang.String, float, float, float, int, int, int, int, int);
+    Code:
+         0: aload_0
+         1: iload         8
+         3: iload         9
+         5: invokevirtual #63                 // Method method_32101:(II)Lnet/minecraft/class_5606;
+         8: pop
+         9: aload_0
+        10: getfield      #32                 // Field field_27719:Ljava/util/List;
+        13: new           #65                 // class net/minecraft/class_5604
+        16: dup
+        17: aload_1
+        18: aload_0
+        19: getfield      #40                 // Field field_27720:I
+        22: i2f
+        23: aload_0
+        24: getfield      #42                 // Field field_27721:I
+        27: i2f
+        28: fload_2
+        29: fload_3
+        30: fload         4
+        32: iload         5
+        34: i2f
+        35: iload         6
+        37: i2f
+        38: iload         7
+        40: i2f
+        41: getstatic     #86                 // Field net/minecraft/class_5605.field_27715:Lnet/minecraft/class_5605;
+        44: aload_0
+        45: getfield      #51                 // Field field_27722:Z
+        48: fconst_1
+        49: fconst_1
+        50: getstatic     #67                 // Field field_42888:Ljava/util/Set;
+        53: invokespecial #70                 // Method net/minecraft/class_5604."<init>":(Ljava/lang/String;FFFFFFFFLnet/minecraft/class_5605;ZFFLjava/util/Set;)V
+        56: invokeinterface #76,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        61: pop
+        62: aload_0
+        63: areturn
+
+  public net.minecraft.class_5606 method_32097(float, float, float, float, float, float);
+    Code:
+         0: aload_0
+         1: getfield      #32                 // Field field_27719:Ljava/util/List;
+         4: new           #65                 // class net/minecraft/class_5604
+         7: dup
+         8: aconst_null
+         9: aload_0
+        10: getfield      #40                 // Field field_27720:I
+        13: i2f
+        14: aload_0
+        15: getfield      #42                 // Field field_27721:I
+        18: i2f
+        19: fload_1
+        20: fload_2
+        21: fload_3
+        22: fload         4
+        24: fload         5
+        26: fload         6
+        28: getstatic     #86                 // Field net/minecraft/class_5605.field_27715:Lnet/minecraft/class_5605;
+        31: aload_0
+        32: getfield      #51                 // Field field_27722:Z
+        35: fconst_1
+        36: fconst_1
+        37: getstatic     #67                 // Field field_42888:Ljava/util/Set;
+        40: invokespecial #70                 // Method net/minecraft/class_5604."<init>":(Ljava/lang/String;FFFFFFFFLnet/minecraft/class_5605;ZFFLjava/util/Set;)V
+        43: invokeinterface #76,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        48: pop
+        49: aload_0
+        50: areturn
+
+  public net.minecraft.class_5606 method_49304(float, float, float, float, float, float, java.util.Set<net.minecraft.class_2350>);
+    Code:
+         0: aload_0
+         1: getfield      #32                 // Field field_27719:Ljava/util/List;
+         4: new           #65                 // class net/minecraft/class_5604
+         7: dup
+         8: aconst_null
+         9: aload_0
+        10: getfield      #40                 // Field field_27720:I
+        13: i2f
+        14: aload_0
+        15: getfield      #42                 // Field field_27721:I
+        18: i2f
+        19: fload_1
+        20: fload_2
+        21: fload_3
+        22: fload         4
+        24: fload         5
+        26: fload         6
+        28: getstatic     #86                 // Field net/minecraft/class_5605.field_27715:Lnet/minecraft/class_5605;
+        31: aload_0
+        32: getfield      #51                 // Field field_27722:Z
+        35: fconst_1
+        36: fconst_1
+        37: aload         7
+        39: invokespecial #70                 // Method net/minecraft/class_5604."<init>":(Ljava/lang/String;FFFFFFFFLnet/minecraft/class_5605;ZFFLjava/util/Set;)V
+        42: invokeinterface #76,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        47: pop
+        48: aload_0
+        49: areturn
+
+  public net.minecraft.class_5606 method_32102(java.lang.String, float, float, float, float, float, float);
+    Code:
+         0: aload_0
+         1: getfield      #32                 // Field field_27719:Ljava/util/List;
+         4: new           #65                 // class net/minecraft/class_5604
+         7: dup
+         8: aload_1
+         9: aload_0
+        10: getfield      #40                 // Field field_27720:I
+        13: i2f
+        14: aload_0
+        15: getfield      #42                 // Field field_27721:I
+        18: i2f
+        19: fload_2
+        20: fload_3
+        21: fload         4
+        23: fload         5
+        25: fload         6
+        27: fload         7
+        29: getstatic     #86                 // Field net/minecraft/class_5605.field_27715:Lnet/minecraft/class_5605;
+        32: aload_0
+        33: getfield      #51                 // Field field_27722:Z
+        36: fconst_1
+        37: fconst_1
+        38: getstatic     #67                 // Field field_42888:Ljava/util/Set;
+        41: invokespecial #70                 // Method net/minecraft/class_5604."<init>":(Ljava/lang/String;FFFFFFFFLnet/minecraft/class_5605;ZFFLjava/util/Set;)V
+        44: invokeinterface #76,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        49: pop
+        50: aload_0
+        51: areturn
+
+  public net.minecraft.class_5606 method_32103(java.lang.String, float, float, float, float, float, float, net.minecraft.class_5605);
+    Code:
+         0: aload_0
+         1: getfield      #32                 // Field field_27719:Ljava/util/List;
+         4: new           #65                 // class net/minecraft/class_5604
+         7: dup
+         8: aload_1
+         9: aload_0
+        10: getfield      #40                 // Field field_27720:I
+        13: i2f
+        14: aload_0
+        15: getfield      #42                 // Field field_27721:I
+        18: i2f
+        19: fload_2
+        20: fload_3
+        21: fload         4
+        23: fload         5
+        25: fload         6
+        27: fload         7
+        29: aload         8
+        31: aload_0
+        32: getfield      #51                 // Field field_27722:Z
+        35: fconst_1
+        36: fconst_1
+        37: getstatic     #67                 // Field field_42888:Ljava/util/Set;
+        40: invokespecial #70                 // Method net/minecraft/class_5604."<init>":(Ljava/lang/String;FFFFFFFFLnet/minecraft/class_5605;ZFFLjava/util/Set;)V
+        43: invokeinterface #76,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        48: pop
+        49: aload_0
+        50: areturn
+
+  public net.minecraft.class_5606 method_32100(float, float, float, float, float, float, boolean);
+    Code:
+         0: aload_0
+         1: getfield      #32                 // Field field_27719:Ljava/util/List;
+         4: new           #65                 // class net/minecraft/class_5604
+         7: dup
+         8: aconst_null
+         9: aload_0
+        10: getfield      #40                 // Field field_27720:I
+        13: i2f
+        14: aload_0
+        15: getfield      #42                 // Field field_27721:I
+        18: i2f
+        19: fload_1
+        20: fload_2
+        21: fload_3
+        22: fload         4
+        24: fload         5
+        26: fload         6
+        28: getstatic     #86                 // Field net/minecraft/class_5605.field_27715:Lnet/minecraft/class_5605;
+        31: iload         7
+        33: fconst_1
+        34: fconst_1
+        35: getstatic     #67                 // Field field_42888:Ljava/util/Set;
+        38: invokespecial #70                 // Method net/minecraft/class_5604."<init>":(Ljava/lang/String;FFFFFFFFLnet/minecraft/class_5605;ZFFLjava/util/Set;)V
+        41: invokeinterface #76,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        46: pop
+        47: aload_0
+        48: areturn
+
+  public net.minecraft.class_5606 method_32099(float, float, float, float, float, float, net.minecraft.class_5605, float, float);
+    Code:
+         0: aload_0
+         1: getfield      #32                 // Field field_27719:Ljava/util/List;
+         4: new           #65                 // class net/minecraft/class_5604
+         7: dup
+         8: aconst_null
+         9: aload_0
+        10: getfield      #40                 // Field field_27720:I
+        13: i2f
+        14: aload_0
+        15: getfield      #42                 // Field field_27721:I
+        18: i2f
+        19: fload_1
+        20: fload_2
+        21: fload_3
+        22: fload         4
+        24: fload         5
+        26: fload         6
+        28: aload         7
+        30: aload_0
+        31: getfield      #51                 // Field field_27722:Z
+        34: fload         8
+        36: fload         9
+        38: getstatic     #67                 // Field field_42888:Ljava/util/Set;
+        41: invokespecial #70                 // Method net/minecraft/class_5604."<init>":(Ljava/lang/String;FFFFFFFFLnet/minecraft/class_5605;ZFFLjava/util/Set;)V
+        44: invokeinterface #76,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        49: pop
+        50: aload_0
+        51: areturn
+
+  public net.minecraft.class_5606 method_32098(float, float, float, float, float, float, net.minecraft.class_5605);
+    Code:
+         0: aload_0
+         1: getfield      #32                 // Field field_27719:Ljava/util/List;
+         4: new           #65                 // class net/minecraft/class_5604
+         7: dup
+         8: aconst_null
+         9: aload_0
+        10: getfield      #40                 // Field field_27720:I
+        13: i2f
+        14: aload_0
+        15: getfield      #42                 // Field field_27721:I
+        18: i2f
+        19: fload_1
+        20: fload_2
+        21: fload_3
+        22: fload         4
+        24: fload         5
+        26: fload         6
+        28: aload         7
+        30: aload_0
+        31: getfield      #51                 // Field field_27722:Z
+        34: fconst_1
+        35: fconst_1
+        36: getstatic     #67                 // Field field_42888:Ljava/util/Set;
+        39: invokespecial #70                 // Method net/minecraft/class_5604."<init>":(Ljava/lang/String;FFFFFFFFLnet/minecraft/class_5605;ZFFLjava/util/Set;)V
+        42: invokeinterface #76,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        47: pop
+        48: aload_0
+        49: areturn
+
+  public java.util.List<net.minecraft.class_5604> method_32107();
+    Code:
+         0: aload_0
+         1: getfield      #32                 // Field field_27719:Ljava/util/List;
+         4: invokestatic  #111                // Method com/google/common/collect/ImmutableList.copyOf:(Ljava/util/Collection;)Lcom/google/common/collect/ImmutableList;
+         7: areturn
+
+  public static net.minecraft.class_5606 method_32108();
+    Code:
+         0: new           #2                  // class net/minecraft/class_5606
+         3: dup
+         4: invokespecial #113                // Method "<init>":()V
+         7: areturn
+
+  static {};
+    Code:
+         0: ldc           #116                // class net/minecraft/class_2350
+         2: invokestatic  #122                // Method java/util/EnumSet.allOf:(Ljava/lang/Class;)Ljava/util/EnumSet;
+         5: putstatic     #67                 // Field field_42888:Ljava/util/Set;
+         8: return
+}

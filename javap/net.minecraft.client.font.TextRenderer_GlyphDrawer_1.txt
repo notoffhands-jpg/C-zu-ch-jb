@@ -1,0 +1,63 @@
+// net/minecraft/client/font/TextRenderer$GlyphDrawer$1 = net/minecraft/class_327$class_11464$1
+Compiled from "class_327.java"
+class net.minecraft.class_327$class_11464$1 implements net.minecraft.class_327$class_11464 {
+  final net.minecraft.class_4597 field_60695;
+
+  final net.minecraft.class_327$class_6415 field_60696;
+
+  final org.joml.Matrix4f field_60697;
+
+  final int field_60698;
+
+  net.minecraft.class_327$class_11464$1();
+    Code:
+         0: aload_0
+         1: aload_1
+         2: putfield      #42                 // Field field_60695:Lnet/minecraft/class_4597;
+         5: aload_0
+         6: aload_2
+         7: putfield      #44                 // Field field_60696:Lnet/minecraft/class_327$class_6415;
+        10: aload_0
+        11: aload_3
+        12: putfield      #46                 // Field field_60697:Lorg/joml/Matrix4f;
+        15: aload_0
+        16: iload         4
+        18: putfield      #48                 // Field field_60698:I
+        21: aload_0
+        22: invokespecial #50                 // Method java/lang/Object."<init>":()V
+        25: return
+
+  public void method_71797(net.minecraft.class_11767$class_12238);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokevirtual #58                 // Method method_73365:(Lnet/minecraft/class_11767;)V
+         5: return
+
+  public void method_71798(net.minecraft.class_11767);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokevirtual #58                 // Method method_73365:(Lnet/minecraft/class_11767;)V
+         5: return
+
+  private void method_73365(net.minecraft.class_11767);
+    Code:
+         0: aload_0
+         1: getfield      #42                 // Field field_60695:Lnet/minecraft/class_4597;
+         4: aload_1
+         5: aload_0
+         6: getfield      #44                 // Field field_60696:Lnet/minecraft/class_327$class_6415;
+         9: invokeinterface #65,  2           // InterfaceMethod net/minecraft/class_11767.method_73401:(Lnet/minecraft/class_327$class_6415;)Lnet/minecraft/class_1921;
+        14: invokeinterface #71,  2           // InterfaceMethod net/minecraft/class_4597.method_73477:(Lnet/minecraft/class_1921;)Lnet/minecraft/class_4588;
+        19: astore_2
+        20: aload_1
+        21: aload_0
+        22: getfield      #46                 // Field field_60697:Lorg/joml/Matrix4f;
+        25: aload_2
+        26: aload_0
+        27: getfield      #48                 // Field field_60698:I
+        30: iconst_0
+        31: invokeinterface #75,  5           // InterfaceMethod net/minecraft/class_11767.method_73403:(Lorg/joml/Matrix4f;Lnet/minecraft/class_4588;IZ)V
+        36: return
+}

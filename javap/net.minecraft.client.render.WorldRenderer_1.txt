@@ -1,0 +1,29 @@
+// net/minecraft/client/render/WorldRenderer$1 = net/minecraft/class_761$1
+Compiled from "class_761.java"
+class net.minecraft.class_761$1 implements net.minecraft.class_9909$class_9912 {
+  final net.minecraft.class_3695 field_53082;
+
+  net.minecraft.class_761$1();
+    Code:
+         0: aload_0
+         1: aload_2
+         2: putfield      #28                 // Field field_53082:Lnet/minecraft/class_3695;
+         5: aload_0
+         6: invokespecial #30                 // Method java/lang/Object."<init>":()V
+         9: return
+
+  public void method_61920(java.lang.String);
+    Code:
+         0: aload_0
+         1: getfield      #28                 // Field field_53082:Lnet/minecraft/class_3695;
+         4: aload_1
+         5: invokeinterface #41,  2           // InterfaceMethod net/minecraft/class_3695.method_15396:(Ljava/lang/String;)V
+        10: return
+
+  public void method_61921(java.lang.String);
+    Code:
+         0: aload_0
+         1: getfield      #28                 // Field field_53082:Lnet/minecraft/class_3695;
+         4: invokeinterface #46,  1           // InterfaceMethod net/minecraft/class_3695.method_15407:()V
+         9: return
+}

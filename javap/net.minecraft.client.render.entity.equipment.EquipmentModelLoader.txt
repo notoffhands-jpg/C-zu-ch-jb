@@ -1,0 +1,75 @@
+// net/minecraft/client/render/entity/equipment/EquipmentModelLoader = net/minecraft/class_10201
+Compiled from "class_10201.java"
+public class net.minecraft.class_10201 extends net.minecraft.class_4309<net.minecraft.class_10186> {
+  public static final net.minecraft.class_10186 field_54189;
+
+  private static final net.minecraft.class_7654 field_55459;
+
+  private java.util.Map<net.minecraft.class_5321<net.minecraft.class_10394>, net.minecraft.class_10186> field_54190;
+
+  public net.minecraft.class_10201();
+    Code:
+         0: aload_0
+         1: getstatic     #35                 // Field net/minecraft/class_10186.field_54120:Lcom/mojang/serialization/Codec;
+         4: getstatic     #37                 // Field field_55459:Lnet/minecraft/class_7654;
+         7: invokespecial #40                 // Method net/minecraft/class_4309."<init>":(Lcom/mojang/serialization/Codec;Lnet/minecraft/class_7654;)V
+        10: aload_0
+        11: invokestatic  #44                 // InterfaceMethod java/util/Map.of:()Ljava/util/Map;
+        14: putfield      #46                 // Field field_54190:Ljava/util/Map;
+        17: return
+
+  protected void method_64088(java.util.Map<net.minecraft.class_2960, net.minecraft.class_10186>, net.minecraft.class_3300, net.minecraft.class_3695);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokeinterface #58,  1           // InterfaceMethod java/util/Map.entrySet:()Ljava/util/Set;
+         7: invokeinterface #64,  1           // InterfaceMethod java/util/Set.stream:()Ljava/util/stream/Stream;
+        12: invokedynamic #83,  0             // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+        17: invokedynamic #91,  0             // InvokeDynamic #1:apply:()Ljava/util/function/Function;
+        22: invokestatic  #97                 // Method java/util/stream/Collectors.toUnmodifiableMap:(Ljava/util/function/Function;Ljava/util/function/Function;)Ljava/util/stream/Collector;
+        25: invokeinterface #103,  2          // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+        30: checkcast     #14                 // class java/util/Map
+        33: putfield      #46                 // Field field_54190:Ljava/util/Map;
+        36: return
+
+  public net.minecraft.class_10186 method_64087(net.minecraft.class_5321<net.minecraft.class_10394>);
+    Code:
+         0: aload_0
+         1: getfield      #46                 // Field field_54190:Ljava/util/Map;
+         4: aload_1
+         5: getstatic     #111                // Field field_54189:Lnet/minecraft/class_10186;
+         8: invokeinterface #115,  3          // InterfaceMethod java/util/Map.getOrDefault:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        13: checkcast     #31                 // class net/minecraft/class_10186
+        16: areturn
+
+  protected void method_18788(java.lang.Object, net.minecraft.class_3300, net.minecraft.class_3695);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: checkcast     #14                 // class java/util/Map
+         5: aload_2
+         6: aload_3
+         7: invokevirtual #122                // Method method_64088:(Ljava/util/Map;Lnet/minecraft/class_3300;Lnet/minecraft/class_3695;)V
+        10: return
+
+  private static net.minecraft.class_5321 method_65724(java.util.Map$Entry);
+    Code:
+         0: getstatic     #129                // Field net/minecraft/class_10191.field_55214:Lnet/minecraft/class_5321;
+         3: aload_0
+         4: invokeinterface #132,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+         9: checkcast     #134                // class net/minecraft/class_2960
+        12: invokestatic  #140                // Method net/minecraft/class_5321.method_29179:(Lnet/minecraft/class_5321;Lnet/minecraft/class_2960;)Lnet/minecraft/class_5321;
+        15: areturn
+
+  static {};
+    Code:
+         0: new           #31                 // class net/minecraft/class_10186
+         3: dup
+         4: invokestatic  #44                 // InterfaceMethod java/util/Map.of:()Ljava/util/Map;
+         7: invokespecial #145                // Method net/minecraft/class_10186."<init>":(Ljava/util/Map;)V
+        10: putstatic     #111                // Field field_54189:Lnet/minecraft/class_10186;
+        13: ldc           #147                // String equipment
+        15: invokestatic  #153                // Method net/minecraft/class_7654.method_45114:(Ljava/lang/String;)Lnet/minecraft/class_7654;
+        18: putstatic     #37                 // Field field_55459:Lnet/minecraft/class_7654;
+        21: return
+}

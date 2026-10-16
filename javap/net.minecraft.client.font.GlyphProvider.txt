@@ -1,0 +1,7 @@
+// net/minecraft/client/font/GlyphProvider = net/minecraft/class_11603
+Compiled from "class_11603.java"
+public interface net.minecraft.class_11603 {
+  public abstract net.minecraft.class_11768 method_72736(int);
+
+  public abstract net.minecraft.class_11768 method_72737(net.minecraft.class_5819, int);
+}

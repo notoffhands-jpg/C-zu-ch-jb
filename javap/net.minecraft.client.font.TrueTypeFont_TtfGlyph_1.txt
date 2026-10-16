@@ -1,0 +1,117 @@
+// net/minecraft/client/font/TrueTypeFont$TtfGlyph$1 = net/minecraft/class_395$class_397$1
+Compiled from "class_395.java"
+class net.minecraft.class_395$class_397$1 implements net.minecraft.class_383 {
+  final net.minecraft.class_395$class_397 field_37843;
+
+  net.minecraft.class_395$class_397$1(net.minecraft.class_395$class_397);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: putfield      #36                 // Field field_37843:Lnet/minecraft/class_395$class_397;
+         5: aload_0
+         6: invokespecial #39                 // Method java/lang/Object."<init>":()V
+         9: return
+
+  public int method_2031();
+    Code:
+         0: aload_0
+         1: getfield      #36                 // Field field_37843:Lnet/minecraft/class_395$class_397;
+         4: getfield      #47                 // Field net/minecraft/class_395$class_397.field_2338:I
+         7: ireturn
+
+  public int method_2032();
+    Code:
+         0: aload_0
+         1: getfield      #36                 // Field field_37843:Lnet/minecraft/class_395$class_397;
+         4: getfield      #51                 // Field net/minecraft/class_395$class_397.field_2337:I
+         7: ireturn
+
+  public float method_2035();
+    Code:
+         0: aload_0
+         1: getfield      #36                 // Field field_37843:Lnet/minecraft/class_395$class_397;
+         4: getfield      #57                 // Field net/minecraft/class_395$class_397.field_2336:Lnet/minecraft/class_395;
+         7: getfield      #61                 // Field net/minecraft/class_395.field_2321:F
+        10: freturn
+
+  public float method_56129();
+    Code:
+         0: aload_0
+         1: getfield      #36                 // Field field_37843:Lnet/minecraft/class_395$class_397;
+         4: getfield      #65                 // Field net/minecraft/class_395$class_397.field_2334:F
+         7: freturn
+
+  public float method_56130();
+    Code:
+         0: aload_0
+         1: getfield      #36                 // Field field_37843:Lnet/minecraft/class_395$class_397;
+         4: getfield      #69                 // Field net/minecraft/class_395$class_397.field_2333:F
+         7: freturn
+
+  public void method_2030(int, int, com.mojang.blaze3d.textures.GpuTexture);
+    Code:
+         0: aload_0
+         1: getfield      #36                 // Field field_37843:Lnet/minecraft/class_395$class_397;
+         4: getfield      #57                 // Field net/minecraft/class_395$class_397.field_2336:Lnet/minecraft/class_395;
+         7: invokevirtual #80                 // Method net/minecraft/class_395.method_51884:()Lorg/lwjgl/util/freetype/FT_Face;
+        10: astore        4
+        12: new           #23                 // class net/minecraft/class_1011
+        15: dup
+        16: getstatic     #84                 // Field net/minecraft/class_1011$class_1012.field_4998:Lnet/minecraft/class_1011$class_1012;
+        19: aload_0
+        20: getfield      #36                 // Field field_37843:Lnet/minecraft/class_395$class_397;
+        23: getfield      #47                 // Field net/minecraft/class_395$class_397.field_2338:I
+        26: aload_0
+        27: getfield      #36                 // Field field_37843:Lnet/minecraft/class_395$class_397;
+        30: getfield      #51                 // Field net/minecraft/class_395$class_397.field_2337:I
+        33: iconst_0
+        34: invokespecial #87                 // Method net/minecraft/class_1011."<init>":(Lnet/minecraft/class_1011$class_1012;IIZ)V
+        37: astore        5
+        39: aload         5
+        41: aload         4
+        43: aload_0
+        44: getfield      #36                 // Field field_37843:Lnet/minecraft/class_395$class_397;
+        47: getfield      #90                 // Field net/minecraft/class_395$class_397.field_2335:I
+        50: invokevirtual #94                 // Method net/minecraft/class_1011.method_4316:(Lorg/lwjgl/util/freetype/FT_Face;I)Z
+        53: ifeq          92
+        56: invokestatic  #100                // Method com/mojang/blaze3d/systems/RenderSystem.getDevice:()Lcom/mojang/blaze3d/systems/GpuDevice;
+        59: invokeinterface #106,  1          // InterfaceMethod com/mojang/blaze3d/systems/GpuDevice.createCommandEncoder:()Lcom/mojang/blaze3d/systems/CommandEncoder;
+        64: aload_3
+        65: aload         5
+        67: iconst_0
+        68: iconst_0
+        69: iload_1
+        70: iload_2
+        71: aload_0
+        72: getfield      #36                 // Field field_37843:Lnet/minecraft/class_395$class_397;
+        75: getfield      #47                 // Field net/minecraft/class_395$class_397.field_2338:I
+        78: aload_0
+        79: getfield      #36                 // Field field_37843:Lnet/minecraft/class_395$class_397;
+        82: getfield      #51                 // Field net/minecraft/class_395$class_397.field_2337:I
+        85: iconst_0
+        86: iconst_0
+        87: invokeinterface #112,  11         // InterfaceMethod com/mojang/blaze3d/systems/CommandEncoder.writeToTexture:(Lcom/mojang/blaze3d/textures/GpuTexture;Lnet/minecraft/class_1011;IIIIIIII)V
+        92: aload         5
+        94: invokevirtual #115                // Method net/minecraft/class_1011.close:()V
+        97: goto          122
+       100: astore        6
+       102: aload         5
+       104: invokevirtual #115                // Method net/minecraft/class_1011.close:()V
+       107: goto          119
+       110: astore        7
+       112: aload         6
+       114: aload         7
+       116: invokevirtual #119                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+       119: aload         6
+       121: athrow
+       122: return
+      Exception table:
+         from    to  target type
+            39    92   100   Class java/lang/Throwable
+           102   107   110   Class java/lang/Throwable
+
+  public boolean method_2033();
+    Code:
+         0: iconst_0
+         1: ireturn
+}

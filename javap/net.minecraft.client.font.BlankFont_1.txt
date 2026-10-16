@@ -1,0 +1,20 @@
+// net/minecraft/client/font/BlankFont$1 = net/minecraft/class_376$1
+Compiled from "class_376.java"
+class net.minecraft.class_376$1 implements net.minecraft.class_11759 {
+  net.minecraft.class_376$1();
+    Code:
+         0: aload_0
+         1: invokespecial #20                 // Method java/lang/Object."<init>":()V
+         4: return
+
+  public net.minecraft.class_379 method_73331();
+    Code:
+         0: getstatic     #30                 // Field net/minecraft/class_7191.field_37899:Lnet/minecraft/class_7191;
+         3: areturn
+
+  public net.minecraft.class_11768 method_73332(net.minecraft.class_11759$class_11760);
+    Code:
+         0: aload_1
+         1: invokeinterface #37,  1           // InterfaceMethod net/minecraft/class_11759$class_11760.method_73333:()Lnet/minecraft/class_11768;
+         6: areturn
+}

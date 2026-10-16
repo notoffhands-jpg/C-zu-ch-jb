@@ -1,0 +1,101 @@
+// net/minecraft/client/render/entity/state/PlayerEntityRenderState = net/minecraft/class_10055
+Compiled from "class_10055.java"
+public class net.minecraft.class_10055 extends net.minecraft.class_10034 {
+  public net.minecraft.class_8685 field_53520;
+
+  public float field_53536;
+
+  public float field_53537;
+
+  public float field_53538;
+
+  public int field_53539;
+
+  public int field_53540;
+
+  public boolean field_53542;
+
+  public boolean field_53543;
+
+  public boolean field_53544;
+
+  public boolean field_53545;
+
+  public boolean field_53546;
+
+  public boolean field_53530;
+
+  public boolean field_53531;
+
+  public boolean field_53532;
+
+  public float field_53534;
+
+  public boolean field_53535;
+
+  public float field_53521;
+
+  public net.minecraft.class_2561 field_53525;
+
+  public net.minecraft.class_1453$class_7989 field_53526;
+
+  public net.minecraft.class_1453$class_7989 field_53527;
+
+  public int field_53528;
+
+  public boolean field_62758;
+
+  public final net.minecraft.class_10444 field_55317;
+
+  public net.minecraft.class_10055();
+    Code:
+         0: aload_0
+         1: invokespecial #49                 // Method net/minecraft/class_10034."<init>":()V
+         4: aload_0
+         5: invokestatic  #55                 // Method net/minecraft/class_1068.method_62620:()Lnet/minecraft/class_8685;
+         8: putfield      #57                 // Field field_53520:Lnet/minecraft/class_8685;
+        11: aload_0
+        12: iconst_1
+        13: putfield      #59                 // Field field_53543:Z
+        16: aload_0
+        17: iconst_1
+        18: putfield      #61                 // Field field_53544:Z
+        21: aload_0
+        22: iconst_1
+        23: putfield      #63                 // Field field_53545:Z
+        26: aload_0
+        27: iconst_1
+        28: putfield      #65                 // Field field_53546:Z
+        31: aload_0
+        32: iconst_1
+        33: putfield      #67                 // Field field_53530:Z
+        36: aload_0
+        37: iconst_1
+        38: putfield      #69                 // Field field_53531:Z
+        41: aload_0
+        42: iconst_1
+        43: putfield      #71                 // Field field_53532:Z
+        46: aload_0
+        47: iconst_0
+        48: putfield      #73                 // Field field_62758:Z
+        51: aload_0
+        52: new           #75                 // class net/minecraft/class_10444
+        55: dup
+        56: invokespecial #76                 // Method net/minecraft/class_10444."<init>":()V
+        59: putfield      #78                 // Field field_55317:Lnet/minecraft/class_10444;
+        62: return
+
+  public float method_64259();
+    Code:
+         0: aload_0
+         1: getfield      #84                 // Field field_53534:F
+         4: aload_0
+         5: getfield      #84                 // Field field_53534:F
+         8: fmul
+         9: ldc           #85                 // float 100.0f
+        11: fdiv
+        12: fconst_0
+        13: fconst_1
+        14: invokestatic  #91                 // Method net/minecraft/class_3532.method_15363:(FFF)F
+        17: freturn
+}

@@ -1,0 +1,41 @@
+// net/minecraft/client/font/FontStorage$Glyphs = net/minecraft/class_377$class_11641
+Compiled from "class_377.java"
+public class net.minecraft.class_377$class_11641 implements net.minecraft.class_11603 {
+  private final boolean field_61620;
+
+  final net.minecraft.class_377 field_61619;
+
+  public net.minecraft.class_377$class_11641(net.minecraft.class_377, boolean);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: putfield      #27                 // Field field_61619:Lnet/minecraft/class_377;
+         5: aload_0
+         6: invokespecial #30                 // Method java/lang/Object."<init>":()V
+         9: aload_0
+        10: iload_2
+        11: putfield      #32                 // Field field_61620:Z
+        14: return
+
+  public net.minecraft.class_11768 method_72736(int);
+    Code:
+         0: aload_0
+         1: getfield      #27                 // Field field_61619:Lnet/minecraft/class_377;
+         4: iload_1
+         5: invokevirtual #41                 // Method net/minecraft/class_377.method_2014:(I)Lnet/minecraft/class_377$class_11640;
+         8: aload_0
+         9: getfield      #32                 // Field field_61620:Z
+        12: invokevirtual #45                 // Method net/minecraft/class_377$class_11640.method_72794:(Z)Ljava/util/function/Supplier;
+        15: invokeinterface #51,  1           // InterfaceMethod java/util/function/Supplier.get:()Ljava/lang/Object;
+        20: checkcast     #53                 // class net/minecraft/class_11768
+        23: areturn
+
+  public net.minecraft.class_11768 method_72737(net.minecraft.class_5819, int);
+    Code:
+         0: aload_0
+         1: getfield      #27                 // Field field_61619:Lnet/minecraft/class_377;
+         4: aload_1
+         5: iload_2
+         6: invokevirtual #59                 // Method net/minecraft/class_377.method_2013:(Lnet/minecraft/class_5819;I)Lnet/minecraft/class_11768;
+         9: areturn
+}

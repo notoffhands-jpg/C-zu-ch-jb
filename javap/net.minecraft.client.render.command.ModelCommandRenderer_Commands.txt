@@ -1,0 +1,136 @@
+// net/minecraft/client/render/command/ModelCommandRenderer$Commands = net/minecraft/class_11683$class_12048
+Compiled from "class_11683.java"
+public class net.minecraft.class_11683$class_12048 {
+  final java.util.Map<net.minecraft.class_1921, java.util.List<net.minecraft.class_11661$class_11670<?>>> field_62982;
+
+  final java.util.List<net.minecraft.class_11661$class_11744<?>> field_62983;
+
+  private final java.util.Set<net.minecraft.class_1921> field_62984;
+
+  public net.minecraft.class_11683$class_12048();
+    Code:
+         0: aload_0
+         1: invokespecial #48                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: new           #50                 // class java/util/HashMap
+         8: dup
+         9: invokespecial #51                 // Method java/util/HashMap."<init>":()V
+        12: putfield      #53                 // Field field_62982:Ljava/util/Map;
+        15: aload_0
+        16: new           #55                 // class java/util/ArrayList
+        19: dup
+        20: invokespecial #56                 // Method java/util/ArrayList."<init>":()V
+        23: putfield      #58                 // Field field_62983:Ljava/util/List;
+        26: aload_0
+        27: new           #60                 // class it/unimi/dsi/fastutil/objects/ObjectOpenHashSet
+        30: dup
+        31: invokespecial #61                 // Method it/unimi/dsi/fastutil/objects/ObjectOpenHashSet."<init>":()V
+        34: putfield      #63                 // Field field_62984:Ljava/util/Set;
+        37: return
+
+  public void method_74820(net.minecraft.class_1921, net.minecraft.class_11661$class_11670<?>);
+    Code:
+         0: aload_1
+         1: invokevirtual #76                 // Method net/minecraft/class_1921.method_73243:()Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+         4: invokevirtual #82                 // Method com/mojang/blaze3d/pipeline/RenderPipeline.getBlendFunction:()Ljava/util/Optional;
+         7: invokevirtual #88                 // Method java/util/Optional.isEmpty:()Z
+        10: ifeq          41
+        13: aload_0
+        14: getfield      #53                 // Field field_62982:Ljava/util/Map;
+        17: aload_1
+        18: invokedynamic #107,  0            // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+        23: invokeinterface #111,  3          // InterfaceMethod java/util/Map.computeIfAbsent:(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;
+        28: checkcast     #113                // class java/util/List
+        31: aload_2
+        32: invokeinterface #117,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        37: pop
+        38: goto          79
+        41: aload_2
+        42: invokevirtual #121                // Method net/minecraft/class_11661$class_11670.comp_4504:()Lnet/minecraft/class_4587$class_4665;
+        45: invokevirtual #125                // Method net/minecraft/class_4587$class_4665.method_23761:()Lorg/joml/Matrix4f;
+        48: new           #127                // class org/joml/Vector3f
+        51: dup
+        52: invokespecial #128                // Method org/joml/Vector3f."<init>":()V
+        55: invokevirtual #134                // Method org/joml/Matrix4f.transformPosition:(Lorg/joml/Vector3f;)Lorg/joml/Vector3f;
+        58: astore_3
+        59: aload_0
+        60: getfield      #58                 // Field field_62983:Ljava/util/List;
+        63: new           #24                 // class net/minecraft/class_11661$class_11744
+        66: dup
+        67: aload_2
+        68: aload_1
+        69: aload_3
+        70: invokespecial #137                // Method net/minecraft/class_11661$class_11744."<init>":(Lnet/minecraft/class_11661$class_11670;Lnet/minecraft/class_1921;Lorg/joml/Vector3f;)V
+        73: invokeinterface #117,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        78: pop
+        79: return
+
+  public void method_74818();
+    Code:
+         0: aload_0
+         1: getfield      #58                 // Field field_62983:Ljava/util/List;
+         4: invokeinterface #146,  1          // InterfaceMethod java/util/List.clear:()V
+         9: aload_0
+        10: getfield      #53                 // Field field_62982:Ljava/util/Map;
+        13: invokeinterface #150,  1          // InterfaceMethod java/util/Map.entrySet:()Ljava/util/Set;
+        18: invokeinterface #156,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+        23: astore_1
+        24: aload_1
+        25: invokeinterface #161,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+        30: ifeq          90
+        33: aload_1
+        34: invokeinterface #165,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        39: checkcast     #27                 // class java/util/Map$Entry
+        42: astore_2
+        43: aload_2
+        44: invokeinterface #168,  1          // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+        49: checkcast     #113                // class java/util/List
+        52: astore_3
+        53: aload_3
+        54: invokeinterface #169,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+        59: ifne          87
+        62: aload_0
+        63: getfield      #63                 // Field field_62984:Ljava/util/Set;
+        66: aload_2
+        67: invokeinterface #172,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+        72: checkcast     #72                 // class net/minecraft/class_1921
+        75: invokeinterface #173,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+        80: pop
+        81: aload_3
+        82: invokeinterface #146,  1          // InterfaceMethod java/util/List.clear:()V
+        87: goto          24
+        90: return
+
+  public void method_74821();
+    Code:
+         0: aload_0
+         1: getfield      #53                 // Field field_62982:Ljava/util/Map;
+         4: invokeinterface #182,  1          // InterfaceMethod java/util/Map.keySet:()Ljava/util/Set;
+         9: aload_0
+        10: invokedynamic #193,  0            // InvokeDynamic #1:test:(Lnet/minecraft/class_11683$class_12048;)Ljava/util/function/Predicate;
+        15: invokeinterface #197,  2          // InterfaceMethod java/util/Set.removeIf:(Ljava/util/function/Predicate;)Z
+        20: pop
+        21: aload_0
+        22: getfield      #63                 // Field field_62984:Ljava/util/Set;
+        25: invokeinterface #198,  1          // InterfaceMethod java/util/Set.clear:()V
+        30: return
+
+  private boolean method_74819(net.minecraft.class_1921);
+    Code:
+         0: aload_0
+         1: getfield      #63                 // Field field_62984:Ljava/util/Set;
+         4: aload_1
+         5: invokeinterface #201,  2          // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+        10: ifne          17
+        13: iconst_1
+        14: goto          18
+        17: iconst_0
+        18: ireturn
+
+  private static java.util.List method_74822(net.minecraft.class_1921);
+    Code:
+         0: new           #55                 // class java/util/ArrayList
+         3: dup
+         4: invokespecial #56                 // Method java/util/ArrayList."<init>":()V
+         7: areturn
+}

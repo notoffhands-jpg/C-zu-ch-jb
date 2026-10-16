@@ -1,0 +1,13 @@
+// net/minecraft/client/font/GlyphRect = net/minecraft/class_12236
+Compiled from "class_12236.java"
+public interface net.minecraft.class_12236 {
+  public abstract net.minecraft.class_2583 comp_3317();
+
+  public abstract float method_75818();
+
+  public abstract float method_75819();
+
+  public abstract float method_75820();
+
+  public abstract float method_75821();
+}

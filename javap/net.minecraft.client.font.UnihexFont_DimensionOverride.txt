@@ -1,0 +1,122 @@
+// net/minecraft/client/font/UnihexFont$DimensionOverride = net/minecraft/class_391$class_8545
+Compiled from "class_391.java"
+final class net.minecraft.class_391$class_8545 extends java.lang.Record {
+  final int comp_1513;
+
+  final int comp_1514;
+
+  final net.minecraft.class_391$class_8542 comp_1515;
+
+  private static final com.mojang.serialization.Codec<net.minecraft.class_391$class_8545> field_44777;
+
+  public static final com.mojang.serialization.Codec<net.minecraft.class_391$class_8545> field_44776;
+
+  private net.minecraft.class_391$class_8545(int, int, net.minecraft.class_391$class_8542);
+    Code:
+         0: aload_0
+         1: invokespecial #47                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: iload_1
+         6: putfield      #49                 // Field comp_1513:I
+         9: aload_0
+        10: iload_2
+        11: putfield      #51                 // Field comp_1514:I
+        14: aload_0
+        15: aload_3
+        16: putfield      #53                 // Field comp_1515:Lnet/minecraft/class_391$class_8542;
+        19: return
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #72,  0             // InvokeDynamic #0:toString:(Lnet/minecraft/class_391$class_8545;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #77,  0             // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_391$class_8545;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #83,  0             // InvokeDynamic #0:equals:(Lnet/minecraft/class_391$class_8545;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public int comp_1513();
+    Code:
+         0: aload_0
+         1: getfield      #49                 // Field comp_1513:I
+         4: ireturn
+
+  public int comp_1514();
+    Code:
+         0: aload_0
+         1: getfield      #51                 // Field comp_1514:I
+         4: ireturn
+
+  public net.minecraft.class_391$class_8542 comp_1515();
+    Code:
+         0: aload_0
+         1: getfield      #53                 // Field comp_1515:Lnet/minecraft/class_391$class_8542;
+         4: areturn
+
+  private static com.mojang.serialization.DataResult method_51681(net.minecraft.class_391$class_8545);
+    Code:
+         0: aload_0
+         1: getfield      #49                 // Field comp_1513:I
+         4: aload_0
+         5: getfield      #51                 // Field comp_1514:I
+         8: if_icmplt     21
+        11: aload_0
+        12: invokedynamic #105,  0            // InvokeDynamic #1:get:(Lnet/minecraft/class_391$class_8545;)Ljava/util/function/Supplier;
+        17: invokestatic  #111                // InterfaceMethod com/mojang/serialization/DataResult.error:(Ljava/util/function/Supplier;)Lcom/mojang/serialization/DataResult;
+        20: areturn
+        21: aload_0
+        22: invokestatic  #115                // InterfaceMethod com/mojang/serialization/DataResult.success:(Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
+        25: areturn
+
+  private static java.lang.String method_51682(net.minecraft.class_391$class_8545);
+    Code:
+         0: aload_0
+         1: getfield      #49                 // Field comp_1513:I
+         4: aload_0
+         5: getfield      #51                 // Field comp_1514:I
+         8: invokedynamic #127,  0            // InvokeDynamic #2:makeConcatWithConstants:(II)Ljava/lang/String;
+        13: areturn
+
+  private static com.mojang.datafixers.kinds.App method_51680(com.mojang.serialization.codecs.RecordCodecBuilder$Instance);
+    Code:
+         0: aload_0
+         1: getstatic     #135                // Field net/minecraft/class_5699.field_44703:Lcom/mojang/serialization/Codec;
+         4: ldc           #137                // String from
+         6: invokeinterface #143,  2          // InterfaceMethod com/mojang/serialization/Codec.fieldOf:(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;
+        11: invokedynamic #154,  0            // InvokeDynamic #3:apply:()Ljava/util/function/Function;
+        16: invokevirtual #160                // Method com/mojang/serialization/MapCodec.forGetter:(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;
+        19: getstatic     #135                // Field net/minecraft/class_5699.field_44703:Lcom/mojang/serialization/Codec;
+        22: ldc           #162                // String to
+        24: invokeinterface #143,  2          // InterfaceMethod com/mojang/serialization/Codec.fieldOf:(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;
+        29: invokedynamic #166,  0            // InvokeDynamic #4:apply:()Ljava/util/function/Function;
+        34: invokevirtual #160                // Method com/mojang/serialization/MapCodec.forGetter:(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;
+        37: getstatic     #170                // Field net/minecraft/class_391$class_8542.field_44773:Lcom/mojang/serialization/MapCodec;
+        40: invokedynamic #176,  0            // InvokeDynamic #5:apply:()Ljava/util/function/Function;
+        45: invokevirtual #160                // Method com/mojang/serialization/MapCodec.forGetter:(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;
+        48: invokevirtual #180                // Method com/mojang/serialization/codecs/RecordCodecBuilder$Instance.group:(Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;)Lcom/mojang/datafixers/Products$P3;
+        51: aload_0
+        52: invokedynamic #190,  0            // InvokeDynamic #6:apply:()Lcom/mojang/datafixers/util/Function3;
+        57: invokevirtual #193                // Method com/mojang/datafixers/Products$P3.apply:(Lcom/mojang/datafixers/kinds/Applicative;Lcom/mojang/datafixers/util/Function3;)Lcom/mojang/datafixers/kinds/App;
+        60: areturn
+
+  static {};
+    Code:
+         0: invokedynamic #200,  0            // InvokeDynamic #7:apply:()Ljava/util/function/Function;
+         5: invokestatic  #204                // Method com/mojang/serialization/codecs/RecordCodecBuilder.create:(Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;
+         8: putstatic     #206                // Field field_44777:Lcom/mojang/serialization/Codec;
+        11: getstatic     #206                // Field field_44777:Lcom/mojang/serialization/Codec;
+        14: invokedynamic #211,  0            // InvokeDynamic #8:apply:()Ljava/util/function/Function;
+        19: invokeinterface #214,  2          // InterfaceMethod com/mojang/serialization/Codec.validate:(Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;
+        24: putstatic     #216                // Field field_44776:Lcom/mojang/serialization/Codec;
+        27: return
+}

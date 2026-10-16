@@ -1,0 +1,5 @@
+// net/minecraft/client/font/UnihexFont$BitmapGlyphConsumer = net/minecraft/class_391$class_8546
+Compiled from "class_391.java"
+public interface net.minecraft.class_391$class_8546 {
+  public abstract void accept(int, net.minecraft.class_391$class_8544);
+}

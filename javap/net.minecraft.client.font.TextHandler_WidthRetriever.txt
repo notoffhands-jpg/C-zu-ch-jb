@@ -1,0 +1,5 @@
+// net/minecraft/client/font/TextHandler$WidthRetriever = net/minecraft/class_5225$class_5231
+Compiled from "class_5225.java"
+public interface net.minecraft.class_5225$class_5231 {
+  public abstract float getWidth(int, net.minecraft.class_2583);
+}

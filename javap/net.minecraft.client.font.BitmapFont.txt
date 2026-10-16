@@ -1,0 +1,51 @@
+// net/minecraft/client/font/BitmapFont = net/minecraft/class_386
+Compiled from "class_386.java"
+public class net.minecraft.class_386 implements net.minecraft.class_390 {
+  static final org.slf4j.Logger field_2286;
+
+  private final net.minecraft.class_1011 field_2285;
+
+  private final net.minecraft.class_8532<net.minecraft.class_386$class_388> field_2284;
+
+  net.minecraft.class_386(net.minecraft.class_1011, net.minecraft.class_8532<net.minecraft.class_386$class_388>);
+    Code:
+         0: aload_0
+         1: invokespecial #34                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #36                 // Field field_2285:Lnet/minecraft/class_1011;
+         9: aload_0
+        10: aload_2
+        11: putfield      #38                 // Field field_2284:Lnet/minecraft/class_8532;
+        14: return
+
+  public void close();
+    Code:
+         0: aload_0
+         1: getfield      #36                 // Field field_2285:Lnet/minecraft/class_1011;
+         4: invokevirtual #45                 // Method net/minecraft/class_1011.close:()V
+         7: return
+
+  public net.minecraft.class_11759 method_2040(int);
+    Code:
+         0: aload_0
+         1: getfield      #38                 // Field field_2284:Lnet/minecraft/class_8532;
+         4: iload_1
+         5: invokevirtual #55                 // Method net/minecraft/class_8532.method_51598:(I)Ljava/lang/Object;
+         8: checkcast     #57                 // class net/minecraft/class_11759
+        11: areturn
+
+  public it.unimi.dsi.fastutil.ints.IntSet method_27442();
+    Code:
+         0: aload_0
+         1: getfield      #38                 // Field field_2284:Lnet/minecraft/class_8532;
+         4: invokevirtual #63                 // Method net/minecraft/class_8532.method_51603:()Lit/unimi/dsi/fastutil/ints/IntSet;
+         7: invokestatic  #69                 // Method it/unimi/dsi/fastutil/ints/IntSets.unmodifiable:(Lit/unimi/dsi/fastutil/ints/IntSet;)Lit/unimi/dsi/fastutil/ints/IntSet;
+        10: areturn
+
+  static {};
+    Code:
+         0: invokestatic  #76                 // Method com/mojang/logging/LogUtils.getLogger:()Lorg/slf4j/Logger;
+         3: putstatic     #78                 // Field field_2286:Lorg/slf4j/Logger;
+         6: return
+}

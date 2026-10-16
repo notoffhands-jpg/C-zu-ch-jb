@@ -1,0 +1,50 @@
+// net/minecraft/client/render/command/ModelCommandRenderer$CrumblingOverlayCommand = net/minecraft/class_11683$class_11792
+Compiled from "class_11683.java"
+public final class net.minecraft.class_11683$class_11792 extends java.lang.Record {
+  private final int comp_4656;
+
+  private final net.minecraft.class_4587$class_4665 comp_4657;
+
+  public net.minecraft.class_11683$class_11792(int, net.minecraft.class_4587$class_4665);
+    Code:
+         0: aload_0
+         1: invokespecial #33                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: iload_1
+         6: putfield      #35                 // Field comp_4656:I
+         9: aload_0
+        10: aload_2
+        11: putfield      #37                 // Field comp_4657:Lnet/minecraft/class_4587$class_4665;
+        14: return
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #55,  0             // InvokeDynamic #0:toString:(Lnet/minecraft/class_11683$class_11792;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #60,  0             // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_11683$class_11792;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #66,  0             // InvokeDynamic #0:equals:(Lnet/minecraft/class_11683$class_11792;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public int comp_4656();
+    Code:
+         0: aload_0
+         1: getfield      #35                 // Field comp_4656:I
+         4: ireturn
+
+  public net.minecraft.class_4587$class_4665 comp_4657();
+    Code:
+         0: aload_0
+         1: getfield      #37                 // Field comp_4657:Lnet/minecraft/class_4587$class_4665;
+         4: areturn
+}

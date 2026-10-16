@@ -1,0 +1,16 @@
+// net/minecraft/client/font/Font = net/minecraft/class_390
+Compiled from "class_390.java"
+public interface net.minecraft.class_390 extends java.lang.AutoCloseable {
+  public static final float field_48382;
+
+  public default void close();
+    Code:
+         0: return
+
+  public default net.minecraft.class_11759 method_2040(int);
+    Code:
+         0: aconst_null
+         1: areturn
+
+  public abstract it.unimi.dsi.fastutil.ints.IntSet method_27442();
+}

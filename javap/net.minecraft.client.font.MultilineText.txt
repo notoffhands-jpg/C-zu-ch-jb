@@ -1,0 +1,67 @@
+// net/minecraft/client/font/MultilineText = net/minecraft/class_5489
+Compiled from "class_5489.java"
+public interface net.minecraft.class_5489 {
+  public static final net.minecraft.class_5489 field_26528;
+
+  public static net.minecraft.class_5489 method_30892(net.minecraft.class_327, net.minecraft.class_2561...);
+    Code:
+         0: aload_0
+         1: ldc           #23                 // int 2147483647
+         3: ldc           #23                 // int 2147483647
+         5: aload_1
+         6: invokestatic  #27                 // InterfaceMethod method_61132:(Lnet/minecraft/class_327;II[Lnet/minecraft/class_2561;)Lnet/minecraft/class_5489;
+         9: areturn
+
+  public static net.minecraft.class_5489 method_61133(net.minecraft.class_327, int, net.minecraft.class_2561...);
+    Code:
+         0: aload_0
+         1: iload_1
+         2: ldc           #23                 // int 2147483647
+         4: aload_2
+         5: invokestatic  #27                 // InterfaceMethod method_61132:(Lnet/minecraft/class_327;II[Lnet/minecraft/class_2561;)Lnet/minecraft/class_5489;
+         8: areturn
+
+  public static net.minecraft.class_5489 method_30890(net.minecraft.class_327, net.minecraft.class_2561, int);
+    Code:
+         0: aload_0
+         1: iload_2
+         2: ldc           #23                 // int 2147483647
+         4: iconst_1
+         5: anewarray     #38                 // class net/minecraft/class_2561
+         8: dup
+         9: iconst_0
+        10: aload_1
+        11: aastore
+        12: invokestatic  #27                 // InterfaceMethod method_61132:(Lnet/minecraft/class_327;II[Lnet/minecraft/class_2561;)Lnet/minecraft/class_5489;
+        15: areturn
+
+  public static net.minecraft.class_5489 method_61132(net.minecraft.class_327, int, int, net.minecraft.class_2561...);
+    Code:
+         0: aload_3
+         1: arraylength
+         2: ifne          9
+         5: getstatic     #42                 // Field field_26528:Lnet/minecraft/class_5489;
+         8: areturn
+         9: new           #13                 // class net/minecraft/class_5489$2
+        12: dup
+        13: aload_3
+        14: aload_0
+        15: iload_1
+        16: iload_2
+        17: invokespecial #46                 // Method net/minecraft/class_5489$2."<init>":([Lnet/minecraft/class_2561;Lnet/minecraft/class_327;II)V
+        20: areturn
+
+  public abstract int method_75816(net.minecraft.class_11735, int, int, int, net.minecraft.class_12225);
+
+  public abstract int method_30887();
+
+  public abstract int method_44048();
+
+  static {};
+    Code:
+         0: new           #15                 // class net/minecraft/class_5489$1
+         3: dup
+         4: invokespecial #56                 // Method net/minecraft/class_5489$1."<init>":()V
+         7: putstatic     #42                 // Field field_26528:Lnet/minecraft/class_5489;
+        10: return
+}

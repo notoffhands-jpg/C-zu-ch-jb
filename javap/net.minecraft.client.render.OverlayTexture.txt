@@ -1,0 +1,135 @@
+// net/minecraft/client/render/OverlayTexture = net/minecraft/class_4608
+Compiled from "class_4608.java"
+public class net.minecraft.class_4608 implements java.lang.AutoCloseable {
+  private static final int field_32956;
+
+  public static final int field_32953;
+
+  public static final int field_32954;
+
+  public static final int field_32955;
+
+  public static final int field_21444;
+
+  private final net.minecraft.class_1043 field_21013;
+
+  public net.minecraft.class_4608();
+    Code:
+         0: aload_0
+         1: invokespecial #27                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: new           #29                 // class net/minecraft/class_1043
+         8: dup
+         9: ldc           #31                 // String Entity Color Overlay
+        11: bipush        16
+        13: bipush        16
+        15: iconst_0
+        16: invokespecial #34                 // Method net/minecraft/class_1043."<init>":(Ljava/lang/String;IIZ)V
+        19: putfield      #36                 // Field field_21013:Lnet/minecraft/class_1043;
+        22: aload_0
+        23: getfield      #36                 // Field field_21013:Lnet/minecraft/class_1043;
+        26: invokevirtual #40                 // Method net/minecraft/class_1043.method_4525:()Lnet/minecraft/class_1011;
+        29: astore_1
+        30: iconst_0
+        31: istore_2
+        32: iload_2
+        33: bipush        16
+        35: if_icmpge     102
+        38: iconst_0
+        39: istore_3
+        40: iload_3
+        41: bipush        16
+        43: if_icmpge     96
+        46: iload_2
+        47: bipush        8
+        49: if_icmpge     63
+        52: aload_1
+        53: iload_3
+        54: iload_2
+        55: ldc           #43                 // int -1291911168
+        57: invokevirtual #47                 // Method net/minecraft/class_1011.method_61941:(III)V
+        60: goto          90
+        63: fconst_1
+        64: iload_3
+        65: i2f
+        66: ldc           #48                 // float 15.0f
+        68: fdiv
+        69: ldc           #49                 // float 0.75f
+        71: fmul
+        72: fsub
+        73: ldc           #50                 // float 255.0f
+        75: fmul
+        76: f2i
+        77: istore        4
+        79: aload_1
+        80: iload_3
+        81: iload_2
+        82: iload         4
+        84: invokestatic  #56                 // Method net/minecraft/class_9848.method_75612:(I)I
+        87: invokevirtual #47                 // Method net/minecraft/class_1011.method_61941:(III)V
+        90: iinc          3, 1
+        93: goto          40
+        96: iinc          2, 1
+        99: goto          32
+       102: aload_0
+       103: getfield      #36                 // Field field_21013:Lnet/minecraft/class_1043;
+       106: invokevirtual #59                 // Method net/minecraft/class_1043.method_4524:()V
+       109: return
+
+  public void close();
+    Code:
+         0: aload_0
+         1: getfield      #36                 // Field field_21013:Lnet/minecraft/class_1043;
+         4: invokevirtual #69                 // Method net/minecraft/class_1043.close:()V
+         7: return
+
+  public static int method_23210(float);
+    Code:
+         0: fload_0
+         1: ldc           #48                 // float 15.0f
+         3: fmul
+         4: f2i
+         5: ireturn
+
+  public static int method_23212(boolean);
+    Code:
+         0: iload_0
+         1: ifeq          8
+         4: iconst_3
+         5: goto          10
+         8: bipush        10
+        10: ireturn
+
+  public static int method_23625(int, int);
+    Code:
+         0: iload_0
+         1: iload_1
+         2: bipush        16
+         4: ishl
+         5: ior
+         6: ireturn
+
+  public static int method_23624(float, boolean);
+    Code:
+         0: fload_0
+         1: invokestatic  #83                 // Method method_23210:(F)I
+         4: iload_1
+         5: invokestatic  #85                 // Method method_23212:(Z)I
+         8: invokestatic  #87                 // Method method_23625:(II)I
+        11: ireturn
+
+  public com.mojang.blaze3d.textures.GpuTextureView method_76037();
+    Code:
+         0: aload_0
+         1: getfield      #36                 // Field field_21013:Lnet/minecraft/class_1043;
+         4: invokevirtual #92                 // Method net/minecraft/class_1043.method_71659:()Lcom/mojang/blaze3d/textures/GpuTextureView;
+         7: areturn
+
+  static {};
+    Code:
+         0: iconst_0
+         1: bipush        10
+         3: invokestatic  #87                 // Method method_23625:(II)I
+         6: putstatic     #95                 // Field field_21444:I
+         9: return
+}

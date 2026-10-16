@@ -1,0 +1,135 @@
+// net/minecraft/client/font/FontManager$Builder = net/minecraft/class_378$class_8535
+Compiled from "class_378.java"
+final class net.minecraft.class_378$class_8535 extends java.lang.Record {
+  private final net.minecraft.class_378$class_8534 comp_1494;
+
+  private final net.minecraft.class_9243$class_9244 comp_2350;
+
+  final com.mojang.datafixers.util.Either<java.util.concurrent.CompletableFuture<java.util.Optional<net.minecraft.class_390>>, net.minecraft.class_2960> comp_1495;
+
+  net.minecraft.class_378$class_8535(net.minecraft.class_378$class_8534, net.minecraft.class_9243$class_9244, com.mojang.datafixers.util.Either<java.util.concurrent.CompletableFuture<java.util.Optional<net.minecraft.class_390>>, net.minecraft.class_2960>);
+    Code:
+         0: aload_0
+         1: invokespecial #46                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #48                 // Field comp_1494:Lnet/minecraft/class_378$class_8534;
+         9: aload_0
+        10: aload_2
+        11: putfield      #50                 // Field comp_2350:Lnet/minecraft/class_9243$class_9244;
+        14: aload_0
+        15: aload_3
+        16: putfield      #52                 // Field comp_1495:Lcom/mojang/datafixers/util/Either;
+        19: return
+
+  public java.util.Optional<java.util.List<net.minecraft.class_390$class_9241>> method_51629(java.util.function.Function<net.minecraft.class_2960, java.util.List<net.minecraft.class_390$class_9241>>);
+    Code:
+         0: aload_0
+         1: getfield      #52                 // Field comp_1495:Lcom/mojang/datafixers/util/Either;
+         4: aload_0
+         5: invokedynamic #78,  0             // InvokeDynamic #0:apply:(Lnet/minecraft/class_378$class_8535;)Ljava/util/function/Function;
+        10: aload_0
+        11: aload_1
+        12: invokedynamic #88,  0             // InvokeDynamic #1:apply:(Lnet/minecraft/class_378$class_8535;Ljava/util/function/Function;)Ljava/util/function/Function;
+        17: invokevirtual #94                 // Method com/mojang/datafixers/util/Either.map:(Ljava/util/function/Function;Ljava/util/function/Function;)Ljava/lang/Object;
+        20: checkcast     #96                 // class java/util/Optional
+        23: areturn
+
+  private net.minecraft.class_390$class_9241 method_57028(net.minecraft.class_390$class_9241);
+    Code:
+         0: new           #22                 // class net/minecraft/class_390$class_9241
+         3: dup
+         4: aload_1
+         5: invokevirtual #104                // Method net/minecraft/class_390$class_9241.comp_2348:()Lnet/minecraft/class_390;
+         8: aload_0
+         9: getfield      #50                 // Field comp_2350:Lnet/minecraft/class_9243$class_9244;
+        12: aload_1
+        13: invokevirtual #108                // Method net/minecraft/class_390$class_9241.comp_2349:()Lnet/minecraft/class_9243$class_9244;
+        16: invokevirtual #112                // Method net/minecraft/class_9243$class_9244.method_57031:(Lnet/minecraft/class_9243$class_9244;)Lnet/minecraft/class_9243$class_9244;
+        19: invokespecial #115                // Method net/minecraft/class_390$class_9241."<init>":(Lnet/minecraft/class_390;Lnet/minecraft/class_9243$class_9244;)V
+        22: areturn
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #133,  0            // InvokeDynamic #2:toString:(Lnet/minecraft/class_378$class_8535;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #138,  0            // InvokeDynamic #2:hashCode:(Lnet/minecraft/class_378$class_8535;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #144,  0            // InvokeDynamic #2:equals:(Lnet/minecraft/class_378$class_8535;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public net.minecraft.class_378$class_8534 comp_1494();
+    Code:
+         0: aload_0
+         1: getfield      #48                 // Field comp_1494:Lnet/minecraft/class_378$class_8534;
+         4: areturn
+
+  public net.minecraft.class_9243$class_9244 comp_2350();
+    Code:
+         0: aload_0
+         1: getfield      #50                 // Field comp_2350:Lnet/minecraft/class_9243$class_9244;
+         4: areturn
+
+  public com.mojang.datafixers.util.Either<java.util.concurrent.CompletableFuture<java.util.Optional<net.minecraft.class_390>>, net.minecraft.class_2960> comp_1495();
+    Code:
+         0: aload_0
+         1: getfield      #52                 // Field comp_1495:Lcom/mojang/datafixers/util/Either;
+         4: areturn
+
+  private java.util.Optional method_51630(java.util.function.Function, net.minecraft.class_2960);
+    Code:
+         0: aload_1
+         1: aload_2
+         2: invokeinterface #152,  2          // InterfaceMethod java/util/function/Function.apply:(Ljava/lang/Object;)Ljava/lang/Object;
+         7: checkcast     #154                // class java/util/List
+        10: astore_3
+        11: aload_3
+        12: ifnonnull     34
+        15: getstatic     #158                // Field net/minecraft/class_378.field_2261:Lorg/slf4j/Logger;
+        18: ldc           #160                // String Can\'t find font {} referenced by builder {}, either because it\'s missing, failed to load or is part of loading cycle
+        20: aload_2
+        21: aload_0
+        22: getfield      #48                 // Field comp_1494:Lnet/minecraft/class_378$class_8534;
+        25: invokeinterface #166,  4          // InterfaceMethod org/slf4j/Logger.warn:(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+        30: invokestatic  #170                // Method java/util/Optional.empty:()Ljava/util/Optional;
+        33: areturn
+        34: aload_3
+        35: invokeinterface #174,  1          // InterfaceMethod java/util/List.stream:()Ljava/util/stream/Stream;
+        40: aload_0
+        41: invokedynamic #179,  0            // InvokeDynamic #3:apply:(Lnet/minecraft/class_378$class_8535;)Ljava/util/function/Function;
+        46: invokeinterface #184,  2          // InterfaceMethod java/util/stream/Stream.map:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+        51: invokeinterface #188,  1          // InterfaceMethod java/util/stream/Stream.toList:()Ljava/util/List;
+        56: invokestatic  #192                // Method java/util/Optional.of:(Ljava/lang/Object;)Ljava/util/Optional;
+        59: areturn
+
+  private java.util.Optional method_51628(java.util.concurrent.CompletableFuture);
+    Code:
+         0: aload_1
+         1: invokevirtual #203                // Method java/util/concurrent/CompletableFuture.join:()Ljava/lang/Object;
+         4: checkcast     #96                 // class java/util/Optional
+         7: aload_0
+         8: invokedynamic #210,  0            // InvokeDynamic #4:apply:(Lnet/minecraft/class_378$class_8535;)Ljava/util/function/Function;
+        13: invokevirtual #212                // Method java/util/Optional.map:(Ljava/util/function/Function;)Ljava/util/Optional;
+        16: areturn
+
+  private java.util.List method_57029(net.minecraft.class_390);
+    Code:
+         0: new           #22                 // class net/minecraft/class_390$class_9241
+         3: dup
+         4: aload_1
+         5: aload_0
+         6: getfield      #50                 // Field comp_2350:Lnet/minecraft/class_9243$class_9244;
+         9: invokespecial #115                // Method net/minecraft/class_390$class_9241."<init>":(Lnet/minecraft/class_390;Lnet/minecraft/class_9243$class_9244;)V
+        12: invokestatic  #216                // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+        15: areturn
+}

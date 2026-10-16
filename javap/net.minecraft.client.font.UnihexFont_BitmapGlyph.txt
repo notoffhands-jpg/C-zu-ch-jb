@@ -1,0 +1,57 @@
+// net/minecraft/client/font/UnihexFont$BitmapGlyph = net/minecraft/class_391$class_8544
+Compiled from "class_391.java"
+public interface net.minecraft.class_391$class_8544 {
+  public abstract int method_51668(int);
+
+  public abstract int comp_1512();
+
+  public default int method_51678();
+    Code:
+         0: iconst_0
+         1: istore_1
+         2: iconst_0
+         3: istore_2
+         4: iload_2
+         5: bipush        16
+         7: if_icmpge     26
+        10: iload_1
+        11: aload_0
+        12: iload_2
+        13: invokeinterface #23,  2           // InterfaceMethod method_51668:(I)I
+        18: ior
+        19: istore_1
+        20: iinc          2, 1
+        23: goto          4
+        26: iload_1
+        27: ireturn
+
+  public default int method_51679();
+    Code:
+         0: aload_0
+         1: invokeinterface #30,  1           // InterfaceMethod method_51678:()I
+         6: istore_1
+         7: aload_0
+         8: invokeinterface #32,  1           // InterfaceMethod comp_1512:()I
+        13: istore_2
+        14: iload_1
+        15: ifne          26
+        18: iconst_0
+        19: istore_3
+        20: iload_2
+        21: istore        4
+        23: goto          42
+        26: iload_1
+        27: invokestatic  #37                 // Method java/lang/Integer.numberOfLeadingZeros:(I)I
+        30: istore_3
+        31: bipush        32
+        33: iload_1
+        34: invokestatic  #40                 // Method java/lang/Integer.numberOfTrailingZeros:(I)I
+        37: isub
+        38: iconst_1
+        39: isub
+        40: istore        4
+        42: iload_3
+        43: iload         4
+        45: invokestatic  #44                 // Method net/minecraft/class_391$class_8542.method_51672:(II)I
+        48: ireturn
+}

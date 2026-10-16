@@ -1,0 +1,167 @@
+// net/minecraft/client/font/DrawnTextConsumer$Transformation = net/minecraft/class_12225$class_12227
+Compiled from "class_12225.java"
+public final class net.minecraft.class_12225$class_12227 extends java.lang.Record {
+  private final org.joml.Matrix3x2fc comp_5151;
+
+  private final float comp_5152;
+
+  private final net.minecraft.class_8030 comp_5153;
+
+  public net.minecraft.class_12225$class_12227(org.joml.Matrix3x2fc);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: fconst_1
+         3: aconst_null
+         4: invokespecial #30                 // Method "<init>":(Lorg/joml/Matrix3x2fc;FLnet/minecraft/class_8030;)V
+         7: return
+
+  public net.minecraft.class_12225$class_12227(org.joml.Matrix3x2fc, float, net.minecraft.class_8030);
+    Code:
+         0: aload_0
+         1: invokespecial #37                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #39                 // Field comp_5151:Lorg/joml/Matrix3x2fc;
+         9: aload_0
+        10: fload_2
+        11: putfield      #41                 // Field comp_5152:F
+        14: aload_0
+        15: aload_3
+        16: putfield      #43                 // Field comp_5153:Lnet/minecraft/class_8030;
+        19: return
+
+  public net.minecraft.class_12225$class_12227 method_75781(org.joml.Matrix3x2fc);
+    Code:
+         0: new           #2                  // class net/minecraft/class_12225$class_12227
+         3: dup
+         4: aload_1
+         5: aload_0
+         6: getfield      #41                 // Field comp_5152:F
+         9: aload_0
+        10: getfield      #43                 // Field comp_5153:Lnet/minecraft/class_8030;
+        13: invokespecial #30                 // Method "<init>":(Lorg/joml/Matrix3x2fc;FLnet/minecraft/class_8030;)V
+        16: areturn
+
+  public net.minecraft.class_12225$class_12227 method_75778(float);
+    Code:
+         0: aload_0
+         1: aload_0
+         2: getfield      #39                 // Field comp_5151:Lorg/joml/Matrix3x2fc;
+         5: fload_1
+         6: fload_1
+         7: new           #49                 // class org/joml/Matrix3x2f
+        10: dup
+        11: invokespecial #50                 // Method org/joml/Matrix3x2f."<init>":()V
+        14: invokeinterface #56,  4           // InterfaceMethod org/joml/Matrix3x2fc.scale:(FFLorg/joml/Matrix3x2f;)Lorg/joml/Matrix3x2f;
+        19: invokevirtual #58                 // Method method_75781:(Lorg/joml/Matrix3x2fc;)Lnet/minecraft/class_12225$class_12227;
+        22: areturn
+
+  public net.minecraft.class_12225$class_12227 method_75782(float);
+    Code:
+         0: aload_0
+         1: getfield      #41                 // Field comp_5152:F
+         4: fload_1
+         5: fcmpl
+         6: ifne          11
+         9: aload_0
+        10: areturn
+        11: new           #2                  // class net/minecraft/class_12225$class_12227
+        14: dup
+        15: aload_0
+        16: getfield      #39                 // Field comp_5151:Lorg/joml/Matrix3x2fc;
+        19: fload_1
+        20: aload_0
+        21: getfield      #43                 // Field comp_5153:Lnet/minecraft/class_8030;
+        24: invokespecial #30                 // Method "<init>":(Lorg/joml/Matrix3x2fc;FLnet/minecraft/class_8030;)V
+        27: areturn
+
+  public net.minecraft.class_12225$class_12227 method_75780(net.minecraft.class_8030);
+    Code:
+         0: aload_1
+         1: aload_0
+         2: getfield      #43                 // Field comp_5153:Lnet/minecraft/class_8030;
+         5: invokevirtual #67                 // Method net/minecraft/class_8030.equals:(Ljava/lang/Object;)Z
+         8: ifeq          13
+        11: aload_0
+        12: areturn
+        13: new           #2                  // class net/minecraft/class_12225$class_12227
+        16: dup
+        17: aload_0
+        18: getfield      #39                 // Field comp_5151:Lorg/joml/Matrix3x2fc;
+        21: aload_0
+        22: getfield      #41                 // Field comp_5152:F
+        25: aload_1
+        26: invokespecial #30                 // Method "<init>":(Lorg/joml/Matrix3x2fc;FLnet/minecraft/class_8030;)V
+        29: areturn
+
+  public net.minecraft.class_12225$class_12227 method_75779(int, int, int, int);
+    Code:
+         0: new           #63                 // class net/minecraft/class_8030
+         3: dup
+         4: iload_1
+         5: iload_3
+         6: iload_2
+         7: iload_1
+         8: isub
+         9: iload         4
+        11: iload_3
+        12: isub
+        13: invokespecial #76                 // Method net/minecraft/class_8030."<init>":(IIII)V
+        16: aload_0
+        17: getfield      #39                 // Field comp_5151:Lorg/joml/Matrix3x2fc;
+        20: invokevirtual #80                 // Method net/minecraft/class_8030.method_65185:(Lorg/joml/Matrix3x2fc;)Lnet/minecraft/class_8030;
+        23: astore        5
+        25: aload_0
+        26: getfield      #43                 // Field comp_5153:Lnet/minecraft/class_8030;
+        29: ifnull        52
+        32: aload_0
+        33: getfield      #43                 // Field comp_5153:Lnet/minecraft/class_8030;
+        36: aload         5
+        38: invokevirtual #84                 // Method net/minecraft/class_8030.method_49701:(Lnet/minecraft/class_8030;)Lnet/minecraft/class_8030;
+        41: invokestatic  #88                 // Method net/minecraft/class_8030.method_48248:()Lnet/minecraft/class_8030;
+        44: invokestatic  #94                 // Method java/util/Objects.requireNonNullElse:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        47: checkcast     #63                 // class net/minecraft/class_8030
+        50: astore        5
+        52: aload_0
+        53: aload         5
+        55: invokevirtual #96                 // Method method_75780:(Lnet/minecraft/class_8030;)Lnet/minecraft/class_12225$class_12227;
+        58: areturn
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #115,  0            // InvokeDynamic #0:toString:(Lnet/minecraft/class_12225$class_12227;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #120,  0            // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_12225$class_12227;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #124,  0            // InvokeDynamic #0:equals:(Lnet/minecraft/class_12225$class_12227;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public org.joml.Matrix3x2fc comp_5151();
+    Code:
+         0: aload_0
+         1: getfield      #39                 // Field comp_5151:Lorg/joml/Matrix3x2fc;
+         4: areturn
+
+  public float comp_5152();
+    Code:
+         0: aload_0
+         1: getfield      #41                 // Field comp_5152:F
+         4: freturn
+
+  public net.minecraft.class_8030 comp_5153();
+    Code:
+         0: aload_0
+         1: getfield      #43                 // Field comp_5153:Lnet/minecraft/class_8030;
+         4: areturn
+}

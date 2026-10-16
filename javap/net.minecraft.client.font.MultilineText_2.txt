@@ -1,0 +1,252 @@
+// net/minecraft/client/font/MultilineText$2 = net/minecraft/class_5489$2
+Compiled from "class_5489.java"
+class net.minecraft.class_5489$2 implements net.minecraft.class_5489 {
+  private java.util.List<net.minecraft.class_5489$class_5490> field_52298;
+
+  private net.minecraft.class_2477 field_52299;
+
+  final net.minecraft.class_2561[] field_52295;
+
+  final net.minecraft.class_327 field_26529;
+
+  final int field_52296;
+
+  final int field_52297;
+
+  net.minecraft.class_5489$2();
+    Code:
+         0: aload_0
+         1: aload_1
+         2: putfield      #44                 // Field field_52295:[Lnet/minecraft/class_2561;
+         5: aload_0
+         6: aload_2
+         7: putfield      #46                 // Field field_26529:Lnet/minecraft/class_327;
+        10: aload_0
+        11: iload_3
+        12: putfield      #48                 // Field field_52296:I
+        15: aload_0
+        16: iload         4
+        18: putfield      #50                 // Field field_52297:I
+        21: aload_0
+        22: invokespecial #52                 // Method java/lang/Object."<init>":()V
+        25: return
+
+  public int method_75816(net.minecraft.class_11735, int, int, int, net.minecraft.class_12225);
+    Code:
+         0: iload_3
+         1: istore        6
+         3: aload_0
+         4: invokevirtual #62                 // Method method_61134:()Ljava/util/List;
+         7: invokeinterface #68,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+        12: astore        7
+        14: aload         7
+        16: invokeinterface #78,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+        21: ifeq          74
+        24: aload         7
+        26: invokeinterface #82,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        31: checkcast     #16                 // class net/minecraft/class_5489$class_5490
+        34: astore        8
+        36: aload_1
+        37: iload_2
+        38: aload         8
+        40: getfield      #85                 // Field net/minecraft/class_5489$class_5490.comp_2878:I
+        43: invokevirtual #89                 // Method net/minecraft/class_11735.method_73214:(II)I
+        46: istore        9
+        48: aload         5
+        50: iload         9
+        52: iload         6
+        54: aload         8
+        56: getfield      #93                 // Field net/minecraft/class_5489$class_5490.comp_2877:Lnet/minecraft/class_5481;
+        59: invokeinterface #97,  4           // InterfaceMethod net/minecraft/class_12225.method_75762:(IILnet/minecraft/class_5481;)V
+        64: iload         6
+        66: iload         4
+        68: iadd
+        69: istore        6
+        71: goto          14
+        74: iload         6
+        76: ireturn
+
+  private java.util.List<net.minecraft.class_5489$class_5490> method_61134();
+    Code:
+         0: invokestatic  #110                // Method net/minecraft/class_2477.method_10517:()Lnet/minecraft/class_2477;
+         3: astore_1
+         4: aload_0
+         5: getfield      #112                // Field field_52298:Ljava/util/List;
+         8: ifnull        24
+        11: aload_1
+        12: aload_0
+        13: getfield      #114                // Field field_52299:Lnet/minecraft/class_2477;
+        16: if_acmpne     24
+        19: aload_0
+        20: getfield      #112                // Field field_52298:Ljava/util/List;
+        23: areturn
+        24: aload_0
+        25: aload_1
+        26: putfield      #114                // Field field_52299:Lnet/minecraft/class_2477;
+        29: new           #116                // class java/util/ArrayList
+        32: dup
+        33: invokespecial #117                // Method java/util/ArrayList."<init>":()V
+        36: astore_2
+        37: aload_0
+        38: getfield      #44                 // Field field_52295:[Lnet/minecraft/class_2561;
+        41: astore_3
+        42: aload_3
+        43: arraylength
+        44: istore        4
+        46: iconst_0
+        47: istore        5
+        49: iload         5
+        51: iload         4
+        53: if_icmpge     88
+        56: aload_3
+        57: iload         5
+        59: aaload
+        60: astore        6
+        62: aload_2
+        63: aload_0
+        64: getfield      #46                 // Field field_26529:Lnet/minecraft/class_327;
+        67: aload         6
+        69: aload_0
+        70: getfield      #48                 // Field field_52296:I
+        73: invokevirtual #124                // Method net/minecraft/class_327.method_72101:(Lnet/minecraft/class_5348;I)Ljava/util/List;
+        76: invokeinterface #128,  2          // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+        81: pop
+        82: iinc          5, 1
+        85: goto          49
+        88: aload_0
+        89: new           #116                // class java/util/ArrayList
+        92: dup
+        93: invokespecial #117                // Method java/util/ArrayList."<init>":()V
+        96: putfield      #112                // Field field_52298:Ljava/util/List;
+        99: aload_2
+       100: invokeinterface #132,  1          // InterfaceMethod java/util/List.size:()I
+       105: aload_0
+       106: getfield      #50                 // Field field_52297:I
+       109: invokestatic  #137                // Method java/lang/Math.min:(II)I
+       112: istore_3
+       113: aload_2
+       114: iconst_0
+       115: iload_3
+       116: invokeinterface #141,  3          // InterfaceMethod java/util/List.subList:(II)Ljava/util/List;
+       121: astore        4
+       123: iconst_0
+       124: istore        5
+       126: iload         5
+       128: aload         4
+       130: invokeinterface #132,  1          // InterfaceMethod java/util/List.size:()I
+       135: if_icmpge     341
+       138: aload         4
+       140: iload         5
+       142: invokeinterface #145,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+       147: checkcast     #147                // class net/minecraft/class_5348
+       150: astore        6
+       152: invokestatic  #110                // Method net/minecraft/class_2477.method_10517:()Lnet/minecraft/class_2477;
+       155: aload         6
+       157: invokevirtual #151                // Method net/minecraft/class_2477.method_30934:(Lnet/minecraft/class_5348;)Lnet/minecraft/class_5481;
+       160: astore        7
+       162: iload         5
+       164: aload         4
+       166: invokeinterface #132,  1          // InterfaceMethod java/util/List.size:()I
+       171: iconst_1
+       172: isub
+       173: if_icmpne     307
+       176: iload_3
+       177: aload_0
+       178: getfield      #50                 // Field field_52297:I
+       181: if_icmpne     307
+       184: iload_3
+       185: aload_2
+       186: invokeinterface #132,  1          // InterfaceMethod java/util/List.size:()I
+       191: if_icmpeq     307
+       194: aload_0
+       195: getfield      #46                 // Field field_26529:Lnet/minecraft/class_327;
+       198: aload         6
+       200: aload_0
+       201: getfield      #46                 // Field field_26529:Lnet/minecraft/class_327;
+       204: aload         6
+       206: invokevirtual #155                // Method net/minecraft/class_327.method_27525:(Lnet/minecraft/class_5348;)I
+       209: aload_0
+       210: getfield      #46                 // Field field_26529:Lnet/minecraft/class_327;
+       213: getstatic     #161                // Field net/minecraft/class_5244.field_39678:Lnet/minecraft/class_2561;
+       216: invokevirtual #155                // Method net/minecraft/class_327.method_27525:(Lnet/minecraft/class_5348;)I
+       219: isub
+       220: invokevirtual #165                // Method net/minecraft/class_327.method_1714:(Lnet/minecraft/class_5348;I)Lnet/minecraft/class_5348;
+       223: astore        8
+       225: iconst_2
+       226: anewarray     #147                // class net/minecraft/class_5348
+       229: dup
+       230: iconst_0
+       231: aload         8
+       233: aastore
+       234: dup
+       235: iconst_1
+       236: getstatic     #161                // Field net/minecraft/class_5244.field_39678:Lnet/minecraft/class_2561;
+       239: invokeinterface #171,  1          // InterfaceMethod net/minecraft/class_2561.method_27661:()Lnet/minecraft/class_5250;
+       244: aload_0
+       245: getfield      #44                 // Field field_52295:[Lnet/minecraft/class_2561;
+       248: aload_0
+       249: getfield      #44                 // Field field_52295:[Lnet/minecraft/class_2561;
+       252: arraylength
+       253: iconst_1
+       254: isub
+       255: aaload
+       256: invokeinterface #175,  1          // InterfaceMethod net/minecraft/class_2561.method_10866:()Lnet/minecraft/class_2583;
+       261: invokevirtual #181                // Method net/minecraft/class_5250.method_27696:(Lnet/minecraft/class_2583;)Lnet/minecraft/class_5250;
+       264: aastore
+       265: invokestatic  #185                // InterfaceMethod net/minecraft/class_5348.method_29433:([Lnet/minecraft/class_5348;)Lnet/minecraft/class_5348;
+       268: astore        9
+       270: aload_0
+       271: getfield      #112                // Field field_52298:Ljava/util/List;
+       274: new           #16                 // class net/minecraft/class_5489$class_5490
+       277: dup
+       278: invokestatic  #110                // Method net/minecraft/class_2477.method_10517:()Lnet/minecraft/class_2477;
+       281: aload         9
+       283: invokevirtual #151                // Method net/minecraft/class_2477.method_30934:(Lnet/minecraft/class_5348;)Lnet/minecraft/class_5481;
+       286: aload_0
+       287: getfield      #46                 // Field field_26529:Lnet/minecraft/class_327;
+       290: aload         9
+       292: invokevirtual #155                // Method net/minecraft/class_327.method_27525:(Lnet/minecraft/class_5348;)I
+       295: invokespecial #188                // Method net/minecraft/class_5489$class_5490."<init>":(Lnet/minecraft/class_5481;I)V
+       298: invokeinterface #192,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+       303: pop
+       304: goto          335
+       307: aload_0
+       308: getfield      #112                // Field field_52298:Ljava/util/List;
+       311: new           #16                 // class net/minecraft/class_5489$class_5490
+       314: dup
+       315: aload         7
+       317: aload_0
+       318: getfield      #46                 // Field field_26529:Lnet/minecraft/class_327;
+       321: aload         7
+       323: invokevirtual #198                // Method net/minecraft/class_327.method_30880:(Lnet/minecraft/class_5481;)I
+       326: invokespecial #188                // Method net/minecraft/class_5489$class_5490."<init>":(Lnet/minecraft/class_5481;I)V
+       329: invokeinterface #192,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+       334: pop
+       335: iinc          5, 1
+       338: goto          126
+       341: aload_0
+       342: getfield      #112                // Field field_52298:Ljava/util/List;
+       345: areturn
+
+  public int method_30887();
+    Code:
+         0: aload_0
+         1: invokevirtual #62                 // Method method_61134:()Ljava/util/List;
+         4: invokeinterface #132,  1          // InterfaceMethod java/util/List.size:()I
+         9: ireturn
+
+  public int method_44048();
+    Code:
+         0: aload_0
+         1: getfield      #48                 // Field field_52296:I
+         4: aload_0
+         5: invokevirtual #62                 // Method method_61134:()Ljava/util/List;
+         8: invokeinterface #213,  1          // InterfaceMethod java/util/List.stream:()Ljava/util/stream/Stream;
+        13: invokedynamic #231,  0            // InvokeDynamic #0:applyAsInt:()Ljava/util/function/ToIntFunction;
+        18: invokeinterface #237,  2          // InterfaceMethod java/util/stream/Stream.mapToInt:(Ljava/util/function/ToIntFunction;)Ljava/util/stream/IntStream;
+        23: invokeinterface #243,  1          // InterfaceMethod java/util/stream/IntStream.max:()Ljava/util/OptionalInt;
+        28: iconst_0
+        29: invokevirtual #249                // Method java/util/OptionalInt.orElse:(I)I
+        32: invokestatic  #137                // Method java/lang/Math.min:(II)I
+        35: ireturn
+}

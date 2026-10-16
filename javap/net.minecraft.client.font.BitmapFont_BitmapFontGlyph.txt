@@ -1,0 +1,136 @@
+// net/minecraft/client/font/BitmapFont$BitmapFontGlyph = net/minecraft/class_386$class_388
+Compiled from "class_386.java"
+final class net.minecraft.class_386$class_388 extends java.lang.Record implements net.minecraft.class_11759 {
+  final float comp_603;
+
+  final net.minecraft.class_1011 comp_604;
+
+  final int comp_605;
+
+  final int comp_606;
+
+  final int comp_607;
+
+  final int comp_608;
+
+  private final int comp_609;
+
+  final int comp_610;
+
+  net.minecraft.class_386$class_388(float, net.minecraft.class_1011, int, int, int, int, int, int);
+    Code:
+         0: aload_0
+         1: invokespecial #48                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: fload_1
+         6: putfield      #50                 // Field comp_603:F
+         9: aload_0
+        10: aload_2
+        11: putfield      #52                 // Field comp_604:Lnet/minecraft/class_1011;
+        14: aload_0
+        15: iload_3
+        16: putfield      #54                 // Field comp_605:I
+        19: aload_0
+        20: iload         4
+        22: putfield      #56                 // Field comp_606:I
+        25: aload_0
+        26: iload         5
+        28: putfield      #58                 // Field comp_607:I
+        31: aload_0
+        32: iload         6
+        34: putfield      #60                 // Field comp_608:I
+        37: aload_0
+        38: iload         7
+        40: putfield      #62                 // Field comp_609:I
+        43: aload_0
+        44: iload         8
+        46: putfield      #64                 // Field comp_610:I
+        49: return
+
+  public net.minecraft.class_379 method_73331();
+    Code:
+         0: aload_0
+         1: getfield      #62                 // Field comp_609:I
+         4: i2f
+         5: invokestatic  #74                 // InterfaceMethod net/minecraft/class_379.method_73329:(F)Lnet/minecraft/class_379;
+         8: areturn
+
+  public net.minecraft.class_11768 method_73332(net.minecraft.class_11759$class_11760);
+    Code:
+         0: aload_1
+         1: aload_0
+         2: invokevirtual #78                 // Method method_73331:()Lnet/minecraft/class_379;
+         5: new           #16                 // class net/minecraft/class_386$class_388$1
+         8: dup
+         9: aload_0
+        10: invokespecial #81                 // Method net/minecraft/class_386$class_388$1."<init>":(Lnet/minecraft/class_386$class_388;)V
+        13: invokeinterface #85,  3           // InterfaceMethod net/minecraft/class_11759$class_11760.method_73334:(Lnet/minecraft/class_379;Lnet/minecraft/class_383;)Lnet/minecraft/class_11768;
+        18: areturn
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #108,  0            // InvokeDynamic #0:toString:(Lnet/minecraft/class_386$class_388;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #113,  0            // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_386$class_388;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #119,  0            // InvokeDynamic #0:equals:(Lnet/minecraft/class_386$class_388;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public float comp_603();
+    Code:
+         0: aload_0
+         1: getfield      #50                 // Field comp_603:F
+         4: freturn
+
+  public net.minecraft.class_1011 comp_604();
+    Code:
+         0: aload_0
+         1: getfield      #52                 // Field comp_604:Lnet/minecraft/class_1011;
+         4: areturn
+
+  public int comp_605();
+    Code:
+         0: aload_0
+         1: getfield      #54                 // Field comp_605:I
+         4: ireturn
+
+  public int comp_606();
+    Code:
+         0: aload_0
+         1: getfield      #56                 // Field comp_606:I
+         4: ireturn
+
+  public int comp_607();
+    Code:
+         0: aload_0
+         1: getfield      #58                 // Field comp_607:I
+         4: ireturn
+
+  public int comp_608();
+    Code:
+         0: aload_0
+         1: getfield      #60                 // Field comp_608:I
+         4: ireturn
+
+  public int comp_609();
+    Code:
+         0: aload_0
+         1: getfield      #62                 // Field comp_609:I
+         4: ireturn
+
+  public int comp_610();
+    Code:
+         0: aload_0
+         1: getfield      #64                 // Field comp_610:I
+         4: ireturn
+}

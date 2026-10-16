@@ -1,0 +1,351 @@
+// net/minecraft/client/render/VertexConsumer = net/minecraft/class_4588
+Compiled from "class_4588.java"
+public interface net.minecraft.class_4588 {
+  public abstract net.minecraft.class_4588 method_22912(float, float, float);
+
+  public abstract net.minecraft.class_4588 method_1336(int, int, int, int);
+
+  public abstract net.minecraft.class_4588 method_39415(int);
+
+  public abstract net.minecraft.class_4588 method_22913(float, float);
+
+  public abstract net.minecraft.class_4588 method_60796(int, int);
+
+  public abstract net.minecraft.class_4588 method_22921(int, int);
+
+  public abstract net.minecraft.class_4588 method_22914(float, float, float);
+
+  public abstract net.minecraft.class_4588 method_75298(float);
+
+  public default void method_23919(float, float, float, int, float, float, int, int, float, float, float);
+    Code:
+         0: aload_0
+         1: fload_1
+         2: fload_2
+         3: fload_3
+         4: invokeinterface #43,  4           // InterfaceMethod method_22912:(FFF)Lnet/minecraft/class_4588;
+         9: pop
+        10: aload_0
+        11: iload         4
+        13: invokeinterface #45,  2           // InterfaceMethod method_39415:(I)Lnet/minecraft/class_4588;
+        18: pop
+        19: aload_0
+        20: fload         5
+        22: fload         6
+        24: invokeinterface #47,  3           // InterfaceMethod method_22913:(FF)Lnet/minecraft/class_4588;
+        29: pop
+        30: aload_0
+        31: iload         7
+        33: invokeinterface #50,  2           // InterfaceMethod method_22922:(I)Lnet/minecraft/class_4588;
+        38: pop
+        39: aload_0
+        40: iload         8
+        42: invokeinterface #53,  2           // InterfaceMethod method_60803:(I)Lnet/minecraft/class_4588;
+        47: pop
+        48: aload_0
+        49: fload         9
+        51: fload         10
+        53: fload         11
+        55: invokeinterface #55,  4           // InterfaceMethod method_22914:(FFF)Lnet/minecraft/class_4588;
+        60: pop
+        61: return
+
+  public default net.minecraft.class_4588 method_22915(float, float, float, float);
+    Code:
+         0: aload_0
+         1: fload_1
+         2: ldc           #62                 // float 255.0f
+         4: fmul
+         5: f2i
+         6: fload_2
+         7: ldc           #62                 // float 255.0f
+         9: fmul
+        10: f2i
+        11: fload_3
+        12: ldc           #62                 // float 255.0f
+        14: fmul
+        15: f2i
+        16: fload         4
+        18: ldc           #62                 // float 255.0f
+        20: fmul
+        21: f2i
+        22: invokeinterface #64,  5           // InterfaceMethod method_1336:(IIII)Lnet/minecraft/class_4588;
+        27: areturn
+
+  public default net.minecraft.class_4588 method_60803(int);
+    Code:
+         0: aload_0
+         1: iload_1
+         2: ldc           #65                 // int 65535
+         4: iand
+         5: iload_1
+         6: bipush        16
+         8: ishr
+         9: ldc           #65                 // int 65535
+        11: iand
+        12: invokeinterface #67,  3           // InterfaceMethod method_22921:(II)Lnet/minecraft/class_4588;
+        17: areturn
+
+  public default net.minecraft.class_4588 method_22922(int);
+    Code:
+         0: aload_0
+         1: iload_1
+         2: ldc           #65                 // int 65535
+         4: iand
+         5: iload_1
+         6: bipush        16
+         8: ishr
+         9: ldc           #65                 // int 65535
+        11: iand
+        12: invokeinterface #69,  3           // InterfaceMethod method_60796:(II)Lnet/minecraft/class_4588;
+        17: areturn
+
+  public default void method_22919(net.minecraft.class_4587$class_4665, net.minecraft.class_777, float, float, float, float, int, int);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: iconst_4
+         4: newarray       float
+         6: dup
+         7: iconst_0
+         8: fconst_1
+         9: fastore
+        10: dup
+        11: iconst_1
+        12: fconst_1
+        13: fastore
+        14: dup
+        15: iconst_2
+        16: fconst_1
+        17: fastore
+        18: dup
+        19: iconst_3
+        20: fconst_1
+        21: fastore
+        22: fload_3
+        23: fload         4
+        25: fload         5
+        27: fload         6
+        29: iconst_4
+        30: newarray       int
+        32: dup
+        33: iconst_0
+        34: iload         7
+        36: iastore
+        37: dup
+        38: iconst_1
+        39: iload         7
+        41: iastore
+        42: dup
+        43: iconst_2
+        44: iload         7
+        46: iastore
+        47: dup
+        48: iconst_3
+        49: iload         7
+        51: iastore
+        52: iload         8
+        54: invokeinterface #77,  10          // InterfaceMethod method_22920:(Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_777;[FFFFF[II)V
+        59: return
+
+  public default void method_22920(net.minecraft.class_4587$class_4665, net.minecraft.class_777, float[], float, float, float, float, int[], int);
+    Code:
+         0: aload_2
+         1: invokevirtual #87                 // Method net/minecraft/class_777.comp_3723:()Lnet/minecraft/class_2350;
+         4: invokevirtual #93                 // Method net/minecraft/class_2350.method_68072:()Lorg/joml/Vector3fc;
+         7: astore        10
+         9: aload_1
+        10: invokevirtual #97                 // Method net/minecraft/class_4587$class_4665.method_23761:()Lorg/joml/Matrix4f;
+        13: astore        11
+        15: aload_1
+        16: aload         10
+        18: new           #99                 // class org/joml/Vector3f
+        21: dup
+        22: invokespecial #103                // Method org/joml/Vector3f."<init>":()V
+        25: invokevirtual #107                // Method net/minecraft/class_4587$class_4665.method_56821:(Lorg/joml/Vector3fc;Lorg/joml/Vector3f;)Lorg/joml/Vector3f;
+        28: astore        12
+        30: aload_2
+        31: invokevirtual #111                // Method net/minecraft/class_777.comp_3726:()I
+        34: istore        13
+        36: iconst_0
+        37: istore        14
+        39: iload         14
+        41: iconst_4
+        42: if_icmpge     183
+        45: aload_2
+        46: iload         14
+        48: invokevirtual #121                // Method net/minecraft/class_777.method_76648:(I)Lorg/joml/Vector3fc;
+        51: astore        15
+        53: aload_2
+        54: iload         14
+        56: invokevirtual #125                // Method net/minecraft/class_777.method_76649:(I)J
+        59: lstore        16
+        61: aload_3
+        62: iload         14
+        64: faload
+        65: fstore        18
+        67: fload         7
+        69: fload         18
+        71: fload         4
+        73: fmul
+        74: fload         18
+        76: fload         5
+        78: fmul
+        79: fload         18
+        81: fload         6
+        83: fmul
+        84: invokestatic  #131                // Method net/minecraft/class_9848.method_61318:(FFFF)I
+        87: istore        19
+        89: aload         8
+        91: iload         14
+        93: iaload
+        94: iload         13
+        96: invokestatic  #137                // Method net/minecraft/class_765.method_62228:(II)I
+        99: istore        20
+       101: aload         11
+       103: aload         15
+       105: new           #99                 // class org/joml/Vector3f
+       108: dup
+       109: invokespecial #103                // Method org/joml/Vector3f."<init>":()V
+       112: invokevirtual #140                // Method org/joml/Matrix4f.transformPosition:(Lorg/joml/Vector3fc;Lorg/joml/Vector3f;)Lorg/joml/Vector3f;
+       115: astore        21
+       117: lload         16
+       119: invokestatic  #146                // Method net/minecraft/class_5611.method_76641:(J)F
+       122: fstore        22
+       124: lload         16
+       126: invokestatic  #149                // Method net/minecraft/class_5611.method_76642:(J)F
+       129: fstore        23
+       131: aload_0
+       132: aload         21
+       134: invokevirtual #153                // Method org/joml/Vector3f.x:()F
+       137: aload         21
+       139: invokevirtual #156                // Method org/joml/Vector3f.y:()F
+       142: aload         21
+       144: invokevirtual #159                // Method org/joml/Vector3f.z:()F
+       147: iload         19
+       149: fload         22
+       151: fload         23
+       153: iload         9
+       155: iload         20
+       157: aload         12
+       159: invokevirtual #153                // Method org/joml/Vector3f.x:()F
+       162: aload         12
+       164: invokevirtual #156                // Method org/joml/Vector3f.y:()F
+       167: aload         12
+       169: invokevirtual #159                // Method org/joml/Vector3f.z:()F
+       172: invokeinterface #161,  12         // InterfaceMethod method_23919:(FFFIFFIIFFF)V
+       177: iinc          14, 1
+       180: goto          39
+       183: return
+
+  public default net.minecraft.class_4588 method_60830(org.joml.Vector3fc);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokeinterface #177,  1          // InterfaceMethod org/joml/Vector3fc.x:()F
+         7: aload_1
+         8: invokeinterface #178,  1          // InterfaceMethod org/joml/Vector3fc.y:()F
+        13: aload_1
+        14: invokeinterface #179,  1          // InterfaceMethod org/joml/Vector3fc.z:()F
+        19: invokeinterface #43,  4           // InterfaceMethod method_22912:(FFF)Lnet/minecraft/class_4588;
+        24: areturn
+
+  public default net.minecraft.class_4588 method_61032(net.minecraft.class_4587$class_4665, org.joml.Vector3f);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: invokevirtual #153                // Method org/joml/Vector3f.x:()F
+         6: aload_2
+         7: invokevirtual #156                // Method org/joml/Vector3f.y:()F
+        10: aload_2
+        11: invokevirtual #159                // Method org/joml/Vector3f.z:()F
+        14: invokeinterface #185,  5          // InterfaceMethod method_56824:(Lnet/minecraft/class_4587$class_4665;FFF)Lnet/minecraft/class_4588;
+        19: areturn
+
+  public default net.minecraft.class_4588 method_56824(net.minecraft.class_4587$class_4665, float, float, float);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokevirtual #97                 // Method net/minecraft/class_4587$class_4665.method_23761:()Lorg/joml/Matrix4f;
+         5: fload_2
+         6: fload_3
+         7: fload         4
+         9: invokeinterface #189,  5          // InterfaceMethod method_22918:(Lorg/joml/Matrix4fc;FFF)Lnet/minecraft/class_4588;
+        14: areturn
+
+  public default net.minecraft.class_4588 method_22918(org.joml.Matrix4fc, float, float, float);
+    Code:
+         0: aload_1
+         1: fload_2
+         2: fload_3
+         3: fload         4
+         5: new           #99                 // class org/joml/Vector3f
+         8: dup
+         9: invokespecial #103                // Method org/joml/Vector3f."<init>":()V
+        12: invokeinterface #195,  5          // InterfaceMethod org/joml/Matrix4fc.transformPosition:(FFFLorg/joml/Vector3f;)Lorg/joml/Vector3f;
+        17: astore        5
+        19: aload_0
+        20: aload         5
+        22: invokevirtual #153                // Method org/joml/Vector3f.x:()F
+        25: aload         5
+        27: invokevirtual #156                // Method org/joml/Vector3f.y:()F
+        30: aload         5
+        32: invokevirtual #159                // Method org/joml/Vector3f.z:()F
+        35: invokeinterface #43,  4           // InterfaceMethod method_22912:(FFF)Lnet/minecraft/class_4588;
+        40: areturn
+
+  public default net.minecraft.class_4588 method_70815(org.joml.Matrix3x2fc, float, float);
+    Code:
+         0: aload_1
+         1: fload_2
+         2: fload_3
+         3: new           #201                // class org/joml/Vector2f
+         6: dup
+         7: invokespecial #202                // Method org/joml/Vector2f."<init>":()V
+        10: invokeinterface #207,  4          // InterfaceMethod org/joml/Matrix3x2fc.transformPosition:(FFLorg/joml/Vector2f;)Lorg/joml/Vector2f;
+        15: astore        4
+        17: aload_0
+        18: aload         4
+        20: invokevirtual #208                // Method org/joml/Vector2f.x:()F
+        23: aload         4
+        25: invokevirtual #209                // Method org/joml/Vector2f.y:()F
+        28: fconst_0
+        29: invokeinterface #43,  4           // InterfaceMethod method_22912:(FFF)Lnet/minecraft/class_4588;
+        34: areturn
+
+  public default net.minecraft.class_4588 method_60831(net.minecraft.class_4587$class_4665, float, float, float);
+    Code:
+         0: aload_1
+         1: fload_2
+         2: fload_3
+         3: fload         4
+         5: new           #99                 // class org/joml/Vector3f
+         8: dup
+         9: invokespecial #103                // Method org/joml/Vector3f."<init>":()V
+        12: invokevirtual #216                // Method net/minecraft/class_4587$class_4665.method_56820:(FFFLorg/joml/Vector3f;)Lorg/joml/Vector3f;
+        15: astore        5
+        17: aload_0
+        18: aload         5
+        20: invokevirtual #153                // Method org/joml/Vector3f.x:()F
+        23: aload         5
+        25: invokevirtual #156                // Method org/joml/Vector3f.y:()F
+        28: aload         5
+        30: invokevirtual #159                // Method org/joml/Vector3f.z:()F
+        33: invokeinterface #55,  4           // InterfaceMethod method_22914:(FFF)Lnet/minecraft/class_4588;
+        38: areturn
+
+  public default net.minecraft.class_4588 method_61959(net.minecraft.class_4587$class_4665, org.joml.Vector3f);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: invokevirtual #153                // Method org/joml/Vector3f.x:()F
+         6: aload_2
+         7: invokevirtual #156                // Method org/joml/Vector3f.y:()F
+        10: aload_2
+        11: invokevirtual #159                // Method org/joml/Vector3f.z:()F
+        14: invokeinterface #219,  5          // InterfaceMethod method_60831:(Lnet/minecraft/class_4587$class_4665;FFF)Lnet/minecraft/class_4588;
+        19: areturn
+}

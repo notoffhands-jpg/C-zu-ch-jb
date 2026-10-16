@@ -1,0 +1,92 @@
+// net/minecraft/client/render/entity/state/BipedEntityRenderState = net/minecraft/class_10034
+Compiled from "class_10034.java"
+public class net.minecraft.class_10034 extends net.minecraft.class_10426 {
+  public float field_53403;
+
+  public float field_53405;
+
+  public float field_53406;
+
+  public float field_53407;
+
+  public net.minecraft.class_1306 field_53408;
+
+  public net.minecraft.class_1268 field_53409;
+
+  public boolean field_53410;
+
+  public boolean field_53411;
+
+  public boolean field_53412;
+
+  public boolean field_53413;
+
+  public boolean field_53414;
+
+  public float field_53415;
+
+  public float field_53416;
+
+  public float field_53417;
+
+  public net.minecraft.class_1799 field_55309;
+
+  public net.minecraft.class_1799 field_53418;
+
+  public net.minecraft.class_1799 field_53419;
+
+  public net.minecraft.class_1799 field_53420;
+
+  public net.minecraft.class_10034();
+    Code:
+         0: aload_0
+         1: invokespecial #36                 // Method net/minecraft/class_10426."<init>":()V
+         4: aload_0
+         5: fconst_1
+         6: putfield      #38                 // Field field_53405:F
+         9: aload_0
+        10: getstatic     #43                 // Field net/minecraft/class_1306.field_6183:Lnet/minecraft/class_1306;
+        13: putfield      #45                 // Field field_53408:Lnet/minecraft/class_1306;
+        16: aload_0
+        17: getstatic     #50                 // Field net/minecraft/class_1268.field_5808:Lnet/minecraft/class_1268;
+        20: putfield      #52                 // Field field_53409:Lnet/minecraft/class_1268;
+        23: aload_0
+        24: getstatic     #57                 // Field net/minecraft/class_1799.field_8037:Lnet/minecraft/class_1799;
+        27: putfield      #59                 // Field field_55309:Lnet/minecraft/class_1799;
+        30: aload_0
+        31: getstatic     #57                 // Field net/minecraft/class_1799.field_8037:Lnet/minecraft/class_1799;
+        34: putfield      #61                 // Field field_53418:Lnet/minecraft/class_1799;
+        37: aload_0
+        38: getstatic     #57                 // Field net/minecraft/class_1799.field_8037:Lnet/minecraft/class_1799;
+        41: putfield      #63                 // Field field_53419:Lnet/minecraft/class_1799;
+        44: aload_0
+        45: getstatic     #57                 // Field net/minecraft/class_1799.field_8037:Lnet/minecraft/class_1799;
+        48: putfield      #65                 // Field field_53420:Lnet/minecraft/class_1799;
+        51: return
+
+  public float method_75468(net.minecraft.class_1306);
+    Code:
+         0: aload_0
+         1: getfield      #72                 // Field field_53414:Z
+         4: ifeq          43
+         7: aload_0
+         8: getfield      #52                 // Field field_53409:Lnet/minecraft/class_1268;
+        11: getstatic     #50                 // Field net/minecraft/class_1268.field_5808:Lnet/minecraft/class_1268;
+        14: if_acmpne     21
+        17: iconst_1
+        18: goto          22
+        21: iconst_0
+        22: aload_1
+        23: aload_0
+        24: getfield      #75                 // Field field_55303:Lnet/minecraft/class_1306;
+        27: if_acmpne     34
+        30: iconst_1
+        31: goto          35
+        34: iconst_0
+        35: if_icmpne     43
+        38: aload_0
+        39: getfield      #77                 // Field field_53407:F
+        42: freturn
+        43: fconst_0
+        44: freturn
+}

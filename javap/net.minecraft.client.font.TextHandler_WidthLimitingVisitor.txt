@@ -1,0 +1,63 @@
+// net/minecraft/client/font/TextHandler$WidthLimitingVisitor = net/minecraft/class_5225$class_5230
+Compiled from "class_5225.java"
+class net.minecraft.class_5225$class_5230 implements net.minecraft.class_5224 {
+  private float field_24235;
+
+  private int field_24236;
+
+  final net.minecraft.class_5225 field_24234;
+
+  public net.minecraft.class_5225$class_5230(net.minecraft.class_5225, float);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: putfield      #29                 // Field field_24234:Lnet/minecraft/class_5225;
+         5: aload_0
+         6: invokespecial #32                 // Method java/lang/Object."<init>":()V
+         9: aload_0
+        10: fload_2
+        11: putfield      #34                 // Field field_24235:F
+        14: return
+
+  public boolean accept(int, net.minecraft.class_2583, int);
+    Code:
+         0: aload_0
+         1: dup
+         2: getfield      #34                 // Field field_24235:F
+         5: aload_0
+         6: getfield      #29                 // Field field_24234:Lnet/minecraft/class_5225;
+         9: getfield      #44                 // Field net/minecraft/class_5225.field_24216:Lnet/minecraft/class_5225$class_5231;
+        12: iload_3
+        13: aload_2
+        14: invokeinterface #48,  3           // InterfaceMethod net/minecraft/class_5225$class_5231.getWidth:(ILnet/minecraft/class_2583;)F
+        19: fsub
+        20: putfield      #34                 // Field field_24235:F
+        23: aload_0
+        24: getfield      #34                 // Field field_24235:F
+        27: fconst_0
+        28: fcmpl
+        29: iflt          44
+        32: aload_0
+        33: iload_1
+        34: iload_3
+        35: invokestatic  #54                 // Method java/lang/Character.charCount:(I)I
+        38: iadd
+        39: putfield      #56                 // Field field_24236:I
+        42: iconst_1
+        43: ireturn
+        44: iconst_0
+        45: ireturn
+
+  public int method_27513();
+    Code:
+         0: aload_0
+         1: getfield      #56                 // Field field_24236:I
+         4: ireturn
+
+  public void method_27514();
+    Code:
+         0: aload_0
+         1: iconst_0
+         2: putfield      #56                 // Field field_24236:I
+         5: return
+}

@@ -1,0 +1,96 @@
+// net/minecraft/client/render/command/RenderCommandQueue = net/minecraft/class_11785
+Compiled from "class_11785.java"
+public interface net.minecraft.class_11785 {
+  public abstract void method_73479(net.minecraft.class_4587, float, java.util.List<net.minecraft.class_10017$class_11680>);
+
+  public abstract void method_73482(net.minecraft.class_4587, net.minecraft.class_243, int, net.minecraft.class_2561, boolean, int, double, net.minecraft.class_12075);
+
+  public abstract void method_73478(net.minecraft.class_4587, float, float, net.minecraft.class_5481, boolean, net.minecraft.class_327$class_6415, int, int, int, int);
+
+  public abstract void method_73488(net.minecraft.class_4587, net.minecraft.class_10017, org.joml.Quaternionf);
+
+  public abstract void method_73486(net.minecraft.class_4587, net.minecraft.class_10017$class_10018);
+
+  public abstract <S> void method_73490(net.minecraft.class_3879<? super S>, S, net.minecraft.class_4587, net.minecraft.class_1921, int, int, int, net.minecraft.class_1058, int, net.minecraft.class_11683$class_11792);
+
+  public default <S> void method_73489(net.minecraft.class_3879<? super S>, S, net.minecraft.class_4587, net.minecraft.class_1921, int, int, int, net.minecraft.class_11683$class_11792);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: aload_3
+         4: aload         4
+         6: iload         5
+         8: iload         6
+        10: iconst_m1
+        11: aconst_null
+        12: iload         7
+        14: aload         8
+        16: invokeinterface #76,  11          // InterfaceMethod method_73490:(Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IIILnet/minecraft/class_1058;ILnet/minecraft/class_11683$class_11792;)V
+        21: return
+
+  public default void method_73491(net.minecraft.class_630, net.minecraft.class_4587, net.minecraft.class_1921, int, int, net.minecraft.class_1058);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: aload_3
+         4: iload         4
+         6: iload         5
+         8: aload         6
+        10: iconst_0
+        11: iconst_0
+        12: iconst_m1
+        13: aconst_null
+        14: iconst_0
+        15: invokeinterface #92,  12          // InterfaceMethod method_73494:(Lnet/minecraft/class_630;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IILnet/minecraft/class_1058;ZZILnet/minecraft/class_11683$class_11792;I)V
+        20: return
+
+  public default void method_73492(net.minecraft.class_630, net.minecraft.class_4587, net.minecraft.class_1921, int, int, net.minecraft.class_1058, int, net.minecraft.class_11683$class_11792);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: aload_3
+         4: iload         4
+         6: iload         5
+         8: aload         6
+        10: iconst_0
+        11: iconst_0
+        12: iload         7
+        14: aload         8
+        16: iconst_0
+        17: invokeinterface #92,  12          // InterfaceMethod method_73494:(Lnet/minecraft/class_630;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IILnet/minecraft/class_1058;ZZILnet/minecraft/class_11683$class_11792;I)V
+        22: return
+
+  public default void method_73493(net.minecraft.class_630, net.minecraft.class_4587, net.minecraft.class_1921, int, int, net.minecraft.class_1058, boolean, boolean);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: aload_3
+         4: iload         4
+         6: iload         5
+         8: aload         6
+        10: iload         7
+        12: iload         8
+        14: iconst_m1
+        15: aconst_null
+        16: iconst_0
+        17: invokeinterface #92,  12          // InterfaceMethod method_73494:(Lnet/minecraft/class_630;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IILnet/minecraft/class_1058;ZZILnet/minecraft/class_11683$class_11792;I)V
+        22: return
+
+  public abstract void method_73494(net.minecraft.class_630, net.minecraft.class_4587, net.minecraft.class_1921, int, int, net.minecraft.class_1058, boolean, boolean, int, net.minecraft.class_11683$class_11792, int);
+
+  public abstract void method_73481(net.minecraft.class_4587, net.minecraft.class_2680, int, int, int);
+
+  public abstract void method_73485(net.minecraft.class_4587, net.minecraft.class_11791);
+
+  public abstract void method_73484(net.minecraft.class_4587, net.minecraft.class_1921, net.minecraft.class_1087, float, float, float, int, int, int);
+
+  public abstract void method_73480(net.minecraft.class_4587, net.minecraft.class_811, int, int, int, int[], java.util.List<net.minecraft.class_777>, net.minecraft.class_1921, net.minecraft.class_10444$class_10445);
+
+  public abstract void method_73483(net.minecraft.class_4587, net.minecraft.class_1921, net.minecraft.class_11659$class_11660);
+
+  public abstract void method_74315(net.minecraft.class_11659$class_11947);
+}

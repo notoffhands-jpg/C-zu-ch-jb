@@ -1,0 +1,61 @@
+// net/minecraft/client/render/command/OrderedRenderCommandQueueImpl$ShadowPiecesCommand = net/minecraft/class_11661$class_11673
+Compiled from "class_11661.java"
+public final class net.minecraft.class_11661$class_11673 extends java.lang.Record {
+  private final org.joml.Matrix4f comp_4522;
+
+  private final float comp_4523;
+
+  private final java.util.List<net.minecraft.class_10017$class_11680> comp_4524;
+
+  public net.minecraft.class_11661$class_11673(org.joml.Matrix4f, float, java.util.List<net.minecraft.class_10017$class_11680>);
+    Code:
+         0: aload_0
+         1: invokespecial #38                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #40                 // Field comp_4522:Lorg/joml/Matrix4f;
+         9: aload_0
+        10: fload_2
+        11: putfield      #42                 // Field comp_4523:F
+        14: aload_0
+        15: aload_3
+        16: putfield      #44                 // Field comp_4524:Ljava/util/List;
+        19: return
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #63,  0             // InvokeDynamic #0:toString:(Lnet/minecraft/class_11661$class_11673;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #68,  0             // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_11661$class_11673;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #74,  0             // InvokeDynamic #0:equals:(Lnet/minecraft/class_11661$class_11673;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public org.joml.Matrix4f comp_4522();
+    Code:
+         0: aload_0
+         1: getfield      #40                 // Field comp_4522:Lorg/joml/Matrix4f;
+         4: areturn
+
+  public float comp_4523();
+    Code:
+         0: aload_0
+         1: getfield      #42                 // Field comp_4523:F
+         4: freturn
+
+  public java.util.List<net.minecraft.class_10017$class_11680> comp_4524();
+    Code:
+         0: aload_0
+         1: getfield      #44                 // Field comp_4524:Ljava/util/List;
+         4: areturn
+}

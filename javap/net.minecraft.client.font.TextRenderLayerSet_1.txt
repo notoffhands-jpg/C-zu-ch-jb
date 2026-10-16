@@ -1,0 +1,39 @@
+// net/minecraft/client/font/TextRenderLayerSet$1 = net/minecraft/class_8538$1
+Compiled from "class_8538.java"
+class net.minecraft.class_8538$1 {
+  static final int[] field_34000;
+
+  static {};
+    Code:
+         0: invokestatic  #26                 // Method net/minecraft/class_327$class_6415.values:()[Lnet/minecraft/class_327$class_6415;
+         3: arraylength
+         4: newarray       int
+         6: putstatic     #28                 // Field field_34000:[I
+         9: getstatic     #28                 // Field field_34000:[I
+        12: getstatic     #32                 // Field net/minecraft/class_327$class_6415.field_33993:Lnet/minecraft/class_327$class_6415;
+        15: invokevirtual #36                 // Method net/minecraft/class_327$class_6415.ordinal:()I
+        18: iconst_1
+        19: iastore
+        20: goto          24
+        23: astore_0
+        24: getstatic     #28                 // Field field_34000:[I
+        27: getstatic     #39                 // Field net/minecraft/class_327$class_6415.field_33994:Lnet/minecraft/class_327$class_6415;
+        30: invokevirtual #36                 // Method net/minecraft/class_327$class_6415.ordinal:()I
+        33: iconst_2
+        34: iastore
+        35: goto          39
+        38: astore_0
+        39: getstatic     #28                 // Field field_34000:[I
+        42: getstatic     #42                 // Field net/minecraft/class_327$class_6415.field_33995:Lnet/minecraft/class_327$class_6415;
+        45: invokevirtual #36                 // Method net/minecraft/class_327$class_6415.ordinal:()I
+        48: iconst_3
+        49: iastore
+        50: goto          54
+        53: astore_0
+        54: return
+      Exception table:
+         from    to  target type
+             9    20    23   Class java/lang/NoSuchFieldError
+            24    35    38   Class java/lang/NoSuchFieldError
+            39    50    53   Class java/lang/NoSuchFieldError
+}

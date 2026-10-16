@@ -1,0 +1,39 @@
+// net/minecraft/client/font/GlyphMetrics = net/minecraft/class_379
+Compiled from "class_379.java"
+public interface net.minecraft.class_379 {
+  public abstract float getAdvance();
+
+  public default float method_16798(boolean);
+    Code:
+         0: aload_0
+         1: invokeinterface #21,  1           // InterfaceMethod getAdvance:()F
+         6: iload_1
+         7: ifeq          19
+        10: aload_0
+        11: invokeinterface #24,  1           // InterfaceMethod method_16799:()F
+        16: goto          20
+        19: fconst_0
+        20: fadd
+        21: freturn
+
+  public default float method_16799();
+    Code:
+         0: fconst_1
+         1: freturn
+
+  public default float method_16800();
+    Code:
+         0: fconst_1
+         1: freturn
+
+  public static net.minecraft.class_379 method_73329(float);
+    Code:
+         0: fload_0
+         1: invokedynamic #46,  0             // InvokeDynamic #0:getAdvance:(F)Lnet/minecraft/class_379;
+         6: areturn
+
+  private static float method_73330(float);
+    Code:
+         0: fload_0
+         1: freturn
+}

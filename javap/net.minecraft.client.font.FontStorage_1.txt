@@ -1,0 +1,19 @@
+// net/minecraft/client/font/FontStorage$1 = net/minecraft/class_377$1
+Compiled from "class_377.java"
+class net.minecraft.class_377$1 implements net.minecraft.class_11768 {
+  net.minecraft.class_377$1();
+    Code:
+         0: aload_0
+         1: invokespecial #22                 // Method java/lang/Object."<init>":()V
+         4: return
+
+  public net.minecraft.class_379 method_73398();
+    Code:
+         0: getstatic     #32                 // Field net/minecraft/class_7191.field_37899:Lnet/minecraft/class_7191;
+         3: areturn
+
+  public net.minecraft.class_11767$class_12238 method_73399(float, float, int, int, net.minecraft.class_2583, float, float);
+    Code:
+         0: aconst_null
+         1: areturn
+}

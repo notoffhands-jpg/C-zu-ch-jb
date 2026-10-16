@@ -1,0 +1,332 @@
+// net/minecraft/client/font/UnihexFont = net/minecraft/class_391
+Compiled from "class_391.java"
+public class net.minecraft.class_391 implements net.minecraft.class_390 {
+  static final org.slf4j.Logger field_2303;
+
+  private static final int field_44764;
+
+  private static final int field_44765;
+
+  private static final int field_44766;
+
+  private static final int field_44767;
+
+  private static final int field_44768;
+
+  private static final int field_44769;
+
+  private final net.minecraft.class_8532<net.minecraft.class_391$class_393> field_44770;
+
+  net.minecraft.class_391(net.minecraft.class_8532<net.minecraft.class_391$class_393>);
+    Code:
+         0: aload_0
+         1: invokespecial #72                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #74                 // Field field_44770:Lnet/minecraft/class_8532;
+         9: return
+
+  public net.minecraft.class_11759 method_2040(int);
+    Code:
+         0: aload_0
+         1: getfield      #74                 // Field field_44770:Lnet/minecraft/class_8532;
+         4: iload_1
+         5: invokevirtual #86                 // Method net/minecraft/class_8532.method_51598:(I)Ljava/lang/Object;
+         8: checkcast     #88                 // class net/minecraft/class_11759
+        11: areturn
+
+  public it.unimi.dsi.fastutil.ints.IntSet method_27442();
+    Code:
+         0: aload_0
+         1: getfield      #74                 // Field field_44770:Lnet/minecraft/class_8532;
+         4: invokevirtual #93                 // Method net/minecraft/class_8532.method_51603:()Lit/unimi/dsi/fastutil/ints/IntSet;
+         7: areturn
+
+  static void method_51655(java.nio.IntBuffer, int, int, int);
+    Code:
+         0: bipush        32
+         2: iload_2
+         3: isub
+         4: iconst_1
+         5: isub
+         6: istore        4
+         8: bipush        32
+        10: iload_3
+        11: isub
+        12: iconst_1
+        13: isub
+        14: istore        5
+        16: iload         4
+        18: istore        6
+        20: iload         6
+        22: iload         5
+        24: if_icmplt     85
+        27: iload         6
+        29: bipush        32
+        31: if_icmpge     39
+        34: iload         6
+        36: ifge          48
+        39: aload_0
+        40: iconst_0
+        41: invokevirtual #105                // Method java/nio/IntBuffer.put:(I)Ljava/nio/IntBuffer;
+        44: pop
+        45: goto          79
+        48: iload_1
+        49: iload         6
+        51: ishr
+        52: iconst_1
+        53: iand
+        54: ifeq          61
+        57: iconst_1
+        58: goto          62
+        61: iconst_0
+        62: istore        7
+        64: aload_0
+        65: iload         7
+        67: ifeq          74
+        70: iconst_m1
+        71: goto          75
+        74: iconst_0
+        75: invokevirtual #105                // Method java/nio/IntBuffer.put:(I)Ljava/nio/IntBuffer;
+        78: pop
+        79: iinc          6, -1
+        82: goto          20
+        85: return
+
+  static void method_51656(java.nio.IntBuffer, net.minecraft.class_391$class_8544, int, int);
+    Code:
+         0: iconst_0
+         1: istore        4
+         3: iload         4
+         5: bipush        16
+         7: if_icmpge     34
+        10: aload_1
+        11: iload         4
+        13: invokeinterface #117,  2          // InterfaceMethod net/minecraft/class_391$class_8544.method_51668:(I)I
+        18: istore        5
+        20: aload_0
+        21: iload         5
+        23: iload_2
+        24: iload_3
+        25: invokestatic  #119                // Method method_51655:(Ljava/nio/IntBuffer;III)V
+        28: iinc          4, 1
+        31: goto          3
+        34: return
+
+  static void method_51653(java.io.InputStream, net.minecraft.class_391$class_8546) throws java.io.IOException;
+    Code:
+         0: iconst_0
+         1: istore_2
+         2: new           #127                // class it/unimi/dsi/fastutil/bytes/ByteArrayList
+         5: dup
+         6: sipush        128
+         9: invokespecial #130                // Method it/unimi/dsi/fastutil/bytes/ByteArrayList."<init>":(I)V
+        12: astore_3
+        13: aload_0
+        14: aload_3
+        15: bipush        58
+        17: invokestatic  #134                // Method method_51654:(Ljava/io/InputStream;Lit/unimi/dsi/fastutil/bytes/ByteList;I)Z
+        20: istore        4
+        22: aload_3
+        23: invokeinterface #140,  1          // InterfaceMethod it/unimi/dsi/fastutil/bytes/ByteList.size:()I
+        28: istore        5
+        30: iload         5
+        32: ifne          43
+        35: iload         4
+        37: ifne          43
+        40: goto          254
+        43: iload         4
+        45: ifeq          67
+        48: iload         5
+        50: iconst_4
+        51: if_icmpeq     81
+        54: iload         5
+        56: iconst_5
+        57: if_icmpeq     81
+        60: iload         5
+        62: bipush        6
+        64: if_icmpeq     81
+        67: new           #142                // class java/lang/IllegalArgumentException
+        70: dup
+        71: iload_2
+        72: invokedynamic #154,  0            // InvokeDynamic #0:makeConcatWithConstants:(I)Ljava/lang/String;
+        77: invokespecial #157                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+        80: athrow
+        81: iconst_0
+        82: istore        6
+        84: iconst_0
+        85: istore        7
+        87: iload         7
+        89: iload         5
+        91: if_icmpge     119
+        94: iload         6
+        96: iconst_4
+        97: ishl
+        98: iload_2
+        99: aload_3
+       100: iload         7
+       102: invokeinterface #163,  2          // InterfaceMethod it/unimi/dsi/fastutil/bytes/ByteList.getByte:(I)B
+       107: invokestatic  #167                // Method method_51651:(IB)I
+       110: ior
+       111: istore        6
+       113: iinc          7, 1
+       116: goto          87
+       119: aload_3
+       120: invokeinterface #170,  1          // InterfaceMethod it/unimi/dsi/fastutil/bytes/ByteList.clear:()V
+       125: aload_0
+       126: aload_3
+       127: bipush        10
+       129: invokestatic  #134                // Method method_51654:(Ljava/io/InputStream;Lit/unimi/dsi/fastutil/bytes/ByteList;I)Z
+       132: pop
+       133: aload_3
+       134: invokeinterface #140,  1          // InterfaceMethod it/unimi/dsi/fastutil/bytes/ByteList.size:()I
+       139: istore        7
+       141: iload         7
+       143: lookupswitch  { // 4
+                      32: 184
+                      64: 192
+                      96: 200
+                     128: 208
+                 default: 216
+            }
+       184: iload_2
+       185: aload_3
+       186: invokestatic  #174                // Method net/minecraft/class_391$class_7736.method_51669:(ILit/unimi/dsi/fastutil/bytes/ByteList;)Lnet/minecraft/class_391$class_8544;
+       189: goto          230
+       192: iload_2
+       193: aload_3
+       194: invokestatic  #177                // Method net/minecraft/class_391$class_8547.method_51683:(ILit/unimi/dsi/fastutil/bytes/ByteList;)Lnet/minecraft/class_391$class_8544;
+       197: goto          230
+       200: iload_2
+       201: aload_3
+       202: invokestatic  #180                // Method net/minecraft/class_391$class_8543.method_51677:(ILit/unimi/dsi/fastutil/bytes/ByteList;)Lnet/minecraft/class_391$class_8544;
+       205: goto          230
+       208: iload_2
+       209: aload_3
+       210: invokestatic  #183                // Method net/minecraft/class_391$class_8543.method_51676:(ILit/unimi/dsi/fastutil/bytes/ByteList;)Lnet/minecraft/class_391$class_8544;
+       213: goto          230
+       216: new           #142                // class java/lang/IllegalArgumentException
+       219: dup
+       220: iload_2
+       221: invokedynamic #186,  0            // InvokeDynamic #1:makeConcatWithConstants:(I)Ljava/lang/String;
+       226: invokespecial #157                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+       229: athrow
+       230: astore        8
+       232: aload_1
+       233: iload         6
+       235: aload         8
+       237: invokeinterface #190,  3          // InterfaceMethod net/minecraft/class_391$class_8546.accept:(ILnet/minecraft/class_391$class_8544;)V
+       242: iinc          2, 1
+       245: aload_3
+       246: invokeinterface #170,  1          // InterfaceMethod it/unimi/dsi/fastutil/bytes/ByteList.clear:()V
+       251: goto          13
+       254: return
+
+  static int method_51652(int, it.unimi.dsi.fastutil.bytes.ByteList, int);
+    Code:
+         0: iload_0
+         1: aload_1
+         2: iload_2
+         3: invokeinterface #163,  2          // InterfaceMethod it/unimi/dsi/fastutil/bytes/ByteList.getByte:(I)B
+         8: invokestatic  #167                // Method method_51651:(IB)I
+        11: ireturn
+
+  private static int method_51651(int, byte);
+    Code:
+         0: iload_1
+         1: tableswitch   { // 48 to 70
+                      48: 108
+                      49: 112
+                      50: 116
+                      51: 120
+                      52: 124
+                      53: 128
+                      54: 132
+                      55: 137
+                      56: 142
+                      57: 147
+                      58: 182
+                      59: 182
+                      60: 182
+                      61: 182
+                      62: 182
+                      63: 182
+                      64: 182
+                      65: 152
+                      66: 157
+                      67: 162
+                      68: 167
+                      69: 172
+                      70: 177
+                 default: 182
+            }
+       108: iconst_0
+       109: goto          198
+       112: iconst_1
+       113: goto          198
+       116: iconst_2
+       117: goto          198
+       120: iconst_3
+       121: goto          198
+       124: iconst_4
+       125: goto          198
+       128: iconst_5
+       129: goto          198
+       132: bipush        6
+       134: goto          198
+       137: bipush        7
+       139: goto          198
+       142: bipush        8
+       144: goto          198
+       147: bipush        9
+       149: goto          198
+       152: bipush        10
+       154: goto          198
+       157: bipush        11
+       159: goto          198
+       162: bipush        12
+       164: goto          198
+       167: bipush        13
+       169: goto          198
+       172: bipush        14
+       174: goto          198
+       177: bipush        15
+       179: goto          198
+       182: new           #142                // class java/lang/IllegalArgumentException
+       185: dup
+       186: iload_0
+       187: iload_1
+       188: i2c
+       189: invokedynamic #203,  0            // InvokeDynamic #2:makeConcatWithConstants:(IC)Ljava/lang/String;
+       194: invokespecial #157                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+       197: athrow
+       198: ireturn
+
+  private static boolean method_51654(java.io.InputStream, it.unimi.dsi.fastutil.bytes.ByteList, int) throws java.io.IOException;
+    Code:
+         0: aload_0
+         1: invokevirtual #207                // Method java/io/InputStream.read:()I
+         4: istore_3
+         5: iload_3
+         6: iconst_m1
+         7: if_icmpne     12
+        10: iconst_0
+        11: ireturn
+        12: iload_3
+        13: iload_2
+        14: if_icmpne     19
+        17: iconst_1
+        18: ireturn
+        19: aload_1
+        20: iload_3
+        21: i2b
+        22: invokeinterface #211,  2          // InterfaceMethod it/unimi/dsi/fastutil/bytes/ByteList.add:(B)Z
+        27: pop
+        28: goto          0
+
+  static {};
+    Code:
+         0: invokestatic  #218                // Method com/mojang/logging/LogUtils.getLogger:()Lorg/slf4j/Logger;
+         3: putstatic     #220                // Field field_2303:Lorg/slf4j/Logger;
+         6: return
+}

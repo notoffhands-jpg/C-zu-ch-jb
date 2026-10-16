@@ -1,0 +1,41 @@
+// net/minecraft/client/font/PlayerHeadGlyphs$1$1 = net/minecraft/class_11879$1$1
+Compiled from "class_11879.java"
+class net.minecraft.class_11879$1$1 implements net.minecraft.class_11768 {
+  final java.util.function.Supplier field_62474;
+
+  final boolean field_62475;
+
+  net.minecraft.class_11879$1$1();
+    Code:
+         0: aload_0
+         1: aload_2
+         2: putfield      #43                 // Field field_62474:Ljava/util/function/Supplier;
+         5: aload_0
+         6: iload_3
+         7: putfield      #45                 // Field field_62475:Z
+        10: aload_0
+        11: invokespecial #47                 // Method java/lang/Object."<init>":()V
+        14: return
+
+  public net.minecraft.class_379 method_73398();
+    Code:
+         0: getstatic     #56                 // Field net/minecraft/class_11879.field_62470:Lnet/minecraft/class_379;
+         3: areturn
+
+  public net.minecraft.class_11767$class_12238 method_73399(float, float, int, int, net.minecraft.class_2583, float, float);
+    Code:
+         0: new           #20                 // class net/minecraft/class_11879$class_11880
+         3: dup
+         4: aload_0
+         5: getfield      #43                 // Field field_62474:Ljava/util/function/Supplier;
+         8: aload_0
+         9: getfield      #45                 // Field field_62475:Z
+        12: fload_1
+        13: fload_2
+        14: iload_3
+        15: iload         4
+        17: fload         7
+        19: aload         5
+        21: invokespecial #67                 // Method net/minecraft/class_11879$class_11880."<init>":(Ljava/util/function/Supplier;ZFFIIFLnet/minecraft/class_2583;)V
+        24: areturn
+}

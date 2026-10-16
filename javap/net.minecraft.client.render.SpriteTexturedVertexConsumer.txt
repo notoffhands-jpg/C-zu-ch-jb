@@ -1,0 +1,125 @@
+// net/minecraft/client/render/SpriteTexturedVertexConsumer = net/minecraft/class_4723
+Compiled from "class_4723.java"
+public class net.minecraft.class_4723 implements net.minecraft.class_4588 {
+  private final net.minecraft.class_4588 field_21730;
+
+  private final net.minecraft.class_1058 field_21731;
+
+  public net.minecraft.class_4723(net.minecraft.class_4588, net.minecraft.class_1058);
+    Code:
+         0: aload_0
+         1: invokespecial #22                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #24                 // Field field_21730:Lnet/minecraft/class_4588;
+         9: aload_0
+        10: aload_2
+        11: putfield      #26                 // Field field_21731:Lnet/minecraft/class_1058;
+        14: return
+
+  public net.minecraft.class_4588 method_22912(float, float, float);
+    Code:
+         0: aload_0
+         1: getfield      #24                 // Field field_21730:Lnet/minecraft/class_4588;
+         4: fload_1
+         5: fload_2
+         6: fload_3
+         7: invokeinterface #35,  4           // InterfaceMethod net/minecraft/class_4588.method_22912:(FFF)Lnet/minecraft/class_4588;
+        12: areturn
+
+  public net.minecraft.class_4588 method_1336(int, int, int, int);
+    Code:
+         0: aload_0
+         1: getfield      #24                 // Field field_21730:Lnet/minecraft/class_4588;
+         4: iload_1
+         5: iload_2
+         6: iload_3
+         7: iload         4
+         9: invokeinterface #44,  5           // InterfaceMethod net/minecraft/class_4588.method_1336:(IIII)Lnet/minecraft/class_4588;
+        14: areturn
+
+  public net.minecraft.class_4588 method_39415(int);
+    Code:
+         0: aload_0
+         1: getfield      #24                 // Field field_21730:Lnet/minecraft/class_4588;
+         4: iload_1
+         5: invokeinterface #49,  2           // InterfaceMethod net/minecraft/class_4588.method_39415:(I)Lnet/minecraft/class_4588;
+        10: areturn
+
+  public net.minecraft.class_4588 method_22913(float, float);
+    Code:
+         0: aload_0
+         1: getfield      #24                 // Field field_21730:Lnet/minecraft/class_4588;
+         4: aload_0
+         5: getfield      #26                 // Field field_21731:Lnet/minecraft/class_1058;
+         8: fload_1
+         9: invokevirtual #57                 // Method net/minecraft/class_1058.method_4580:(F)F
+        12: aload_0
+        13: getfield      #26                 // Field field_21731:Lnet/minecraft/class_1058;
+        16: fload_2
+        17: invokevirtual #60                 // Method net/minecraft/class_1058.method_4570:(F)F
+        20: invokeinterface #62,  3           // InterfaceMethod net/minecraft/class_4588.method_22913:(FF)Lnet/minecraft/class_4588;
+        25: areturn
+
+  public net.minecraft.class_4588 method_60796(int, int);
+    Code:
+         0: aload_0
+         1: getfield      #24                 // Field field_21730:Lnet/minecraft/class_4588;
+         4: iload_1
+         5: iload_2
+         6: invokeinterface #66,  3           // InterfaceMethod net/minecraft/class_4588.method_60796:(II)Lnet/minecraft/class_4588;
+        11: areturn
+
+  public net.minecraft.class_4588 method_22921(int, int);
+    Code:
+         0: aload_0
+         1: getfield      #24                 // Field field_21730:Lnet/minecraft/class_4588;
+         4: iload_1
+         5: iload_2
+         6: invokeinterface #69,  3           // InterfaceMethod net/minecraft/class_4588.method_22921:(II)Lnet/minecraft/class_4588;
+        11: areturn
+
+  public net.minecraft.class_4588 method_22914(float, float, float);
+    Code:
+         0: aload_0
+         1: getfield      #24                 // Field field_21730:Lnet/minecraft/class_4588;
+         4: fload_1
+         5: fload_2
+         6: fload_3
+         7: invokeinterface #72,  4           // InterfaceMethod net/minecraft/class_4588.method_22914:(FFF)Lnet/minecraft/class_4588;
+        12: areturn
+
+  public net.minecraft.class_4588 method_75298(float);
+    Code:
+         0: aload_0
+         1: getfield      #24                 // Field field_21730:Lnet/minecraft/class_4588;
+         4: fload_1
+         5: invokeinterface #76,  2           // InterfaceMethod net/minecraft/class_4588.method_75298:(F)Lnet/minecraft/class_4588;
+        10: pop
+        11: aload_0
+        12: areturn
+
+  public void method_23919(float, float, float, int, float, float, int, int, float, float, float);
+    Code:
+         0: aload_0
+         1: getfield      #24                 // Field field_21730:Lnet/minecraft/class_4588;
+         4: fload_1
+         5: fload_2
+         6: fload_3
+         7: iload         4
+         9: aload_0
+        10: getfield      #26                 // Field field_21731:Lnet/minecraft/class_1058;
+        13: fload         5
+        15: invokevirtual #57                 // Method net/minecraft/class_1058.method_4580:(F)F
+        18: aload_0
+        19: getfield      #26                 // Field field_21731:Lnet/minecraft/class_1058;
+        22: fload         6
+        24: invokevirtual #60                 // Method net/minecraft/class_1058.method_4570:(F)F
+        27: iload         7
+        29: iload         8
+        31: fload         9
+        33: fload         10
+        35: fload         11
+        37: invokeinterface #84,  12          // InterfaceMethod net/minecraft/class_4588.method_23919:(FFFIFFIIFFF)V
+        42: return
+}

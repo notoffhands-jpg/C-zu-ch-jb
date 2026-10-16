@@ -1,0 +1,7 @@
+// net/minecraft/client/font/Glyph$AbstractGlyphBaker = net/minecraft/class_11759$class_11760
+Compiled from "class_11759.java"
+public interface net.minecraft.class_11759$class_11760 {
+  public abstract net.minecraft.class_11768 method_73334(net.minecraft.class_379, net.minecraft.class_383);
+
+  public abstract net.minecraft.class_11768 method_73333();
+}

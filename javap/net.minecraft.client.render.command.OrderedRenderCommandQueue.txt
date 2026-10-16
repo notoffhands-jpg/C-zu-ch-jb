@@ -1,0 +1,5 @@
+// net/minecraft/client/render/command/OrderedRenderCommandQueue = net/minecraft/class_11659
+Compiled from "class_11659.java"
+public interface net.minecraft.class_11659 extends net.minecraft.class_11785 {
+  public abstract net.minecraft.class_11785 method_73529(int);
+}

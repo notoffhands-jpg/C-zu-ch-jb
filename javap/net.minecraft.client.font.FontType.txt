@@ -1,0 +1,137 @@
+// net/minecraft/client/font/FontType = net/minecraft/class_394
+Compiled from "class_394.java"
+public final class net.minecraft.class_394 extends java.lang.Enum<net.minecraft.class_394> implements net.minecraft.class_3542 {
+  public static final net.minecraft.class_394 field_2312;
+
+  public static final net.minecraft.class_394 field_2317;
+
+  public static final net.minecraft.class_394 field_37904;
+
+  public static final net.minecraft.class_394 field_2313;
+
+  public static final net.minecraft.class_394 field_44761;
+
+  public static final com.mojang.serialization.Codec<net.minecraft.class_394> field_44802;
+
+  private final java.lang.String field_2314;
+
+  private final com.mojang.serialization.MapCodec<? extends net.minecraft.class_389> field_44803;
+
+  private static final net.minecraft.class_394[] field_2316;
+
+  public static net.minecraft.class_394[] values();
+    Code:
+         0: getstatic     #55                 // Field field_2316:[Lnet/minecraft/class_394;
+         3: invokevirtual #60                 // Method "[Lnet/minecraft/class_394;".clone:()Ljava/lang/Object;
+         6: checkcast     #56                 // class "[Lnet/minecraft/class_394;"
+         9: areturn
+
+  public static net.minecraft.class_394 valueOf(java.lang.String);
+    Code:
+         0: ldc           #2                  // class net/minecraft/class_394
+         2: aload_0
+         3: invokestatic  #66                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+         6: checkcast     #2                  // class net/minecraft/class_394
+         9: areturn
+
+  private net.minecraft.class_394(java.lang.String, com.mojang.serialization.MapCodec<? extends net.minecraft.class_389>);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: iload_2
+         3: invokespecial #75                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+         6: aload_0
+         7: aload_3
+         8: putfield      #77                 // Field field_2314:Ljava/lang/String;
+        11: aload_0
+        12: aload         4
+        14: putfield      #79                 // Field field_44803:Lcom/mojang/serialization/MapCodec;
+        17: return
+
+  public java.lang.String method_15434();
+    Code:
+         0: aload_0
+         1: getfield      #77                 // Field field_2314:Ljava/lang/String;
+         4: areturn
+
+  public com.mojang.serialization.MapCodec<? extends net.minecraft.class_389> method_51758();
+    Code:
+         0: aload_0
+         1: getfield      #79                 // Field field_44803:Lcom/mojang/serialization/MapCodec;
+         4: areturn
+
+  private static net.minecraft.class_394[] method_36876();
+    Code:
+         0: iconst_5
+         1: anewarray     #2                  // class net/minecraft/class_394
+         4: dup
+         5: iconst_0
+         6: getstatic     #89                 // Field field_2312:Lnet/minecraft/class_394;
+         9: aastore
+        10: dup
+        11: iconst_1
+        12: getstatic     #91                 // Field field_2317:Lnet/minecraft/class_394;
+        15: aastore
+        16: dup
+        17: iconst_2
+        18: getstatic     #93                 // Field field_37904:Lnet/minecraft/class_394;
+        21: aastore
+        22: dup
+        23: iconst_3
+        24: getstatic     #95                 // Field field_2313:Lnet/minecraft/class_394;
+        27: aastore
+        28: dup
+        29: iconst_4
+        30: getstatic     #97                 // Field field_44761:Lnet/minecraft/class_394;
+        33: aastore
+        34: areturn
+
+  static {};
+    Code:
+         0: new           #2                  // class net/minecraft/class_394
+         3: dup
+         4: ldc           #101                // String BITMAP
+         6: iconst_0
+         7: ldc           #103                // String bitmap
+         9: getstatic     #106                // Field net/minecraft/class_386$class_387.field_44799:Lcom/mojang/serialization/MapCodec;
+        12: invokespecial #108                // Method "<init>":(Ljava/lang/String;ILjava/lang/String;Lcom/mojang/serialization/MapCodec;)V
+        15: putstatic     #89                 // Field field_2312:Lnet/minecraft/class_394;
+        18: new           #2                  // class net/minecraft/class_394
+        21: dup
+        22: ldc           #110                // String TTF
+        24: iconst_1
+        25: ldc           #112                // String ttf
+        27: getstatic     #117                // Field net/minecraft/class_8557.field_44804:Lcom/mojang/serialization/MapCodec;
+        30: invokespecial #108                // Method "<init>":(Ljava/lang/String;ILjava/lang/String;Lcom/mojang/serialization/MapCodec;)V
+        33: putstatic     #91                 // Field field_2317:Lnet/minecraft/class_394;
+        36: new           #2                  // class net/minecraft/class_394
+        39: dup
+        40: ldc           #119                // String SPACE
+        42: iconst_2
+        43: ldc           #121                // String space
+        45: getstatic     #124                // Field net/minecraft/class_7166$class_8554.field_44791:Lcom/mojang/serialization/MapCodec;
+        48: invokespecial #108                // Method "<init>":(Ljava/lang/String;ILjava/lang/String;Lcom/mojang/serialization/MapCodec;)V
+        51: putstatic     #93                 // Field field_37904:Lnet/minecraft/class_394;
+        54: new           #2                  // class net/minecraft/class_394
+        57: dup
+        58: ldc           #126                // String UNIHEX
+        60: iconst_3
+        61: ldc           #128                // String unihex
+        63: getstatic     #131                // Field net/minecraft/class_391$class_392.field_44771:Lcom/mojang/serialization/MapCodec;
+        66: invokespecial #108                // Method "<init>":(Ljava/lang/String;ILjava/lang/String;Lcom/mojang/serialization/MapCodec;)V
+        69: putstatic     #95                 // Field field_2313:Lnet/minecraft/class_394;
+        72: new           #2                  // class net/minecraft/class_394
+        75: dup
+        76: ldc           #133                // String REFERENCE
+        78: iconst_4
+        79: ldc           #135                // String reference
+        81: getstatic     #140                // Field net/minecraft/class_8541.field_44762:Lcom/mojang/serialization/MapCodec;
+        84: invokespecial #108                // Method "<init>":(Ljava/lang/String;ILjava/lang/String;Lcom/mojang/serialization/MapCodec;)V
+        87: putstatic     #97                 // Field field_44761:Lnet/minecraft/class_394;
+        90: invokestatic  #142                // Method method_36876:()[Lnet/minecraft/class_394;
+        93: putstatic     #55                 // Field field_2316:[Lnet/minecraft/class_394;
+        96: invokedynamic #158,  0            // InvokeDynamic #0:get:()Ljava/util/function/Supplier;
+       101: invokestatic  #162                // InterfaceMethod net/minecraft/class_3542.method_28140:(Ljava/util/function/Supplier;)Lnet/minecraft/class_3542$class_7292;
+       104: putstatic     #164                // Field field_44802:Lcom/mojang/serialization/Codec;
+       107: return
+}

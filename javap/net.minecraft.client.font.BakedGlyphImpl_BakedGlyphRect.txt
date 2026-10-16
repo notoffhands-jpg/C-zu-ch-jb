@@ -1,0 +1,208 @@
+// net/minecraft/client/font/BakedGlyphImpl$BakedGlyphRect = net/minecraft/class_382$class_10364
+Compiled from "class_382.java"
+final class net.minecraft.class_382$class_10364 extends java.lang.Record implements net.minecraft.class_11767$class_12238 {
+  final float comp_3313;
+
+  final float comp_3314;
+
+  private final int comp_3315;
+
+  private final int comp_3338;
+
+  private final net.minecraft.class_382 comp_3316;
+
+  final net.minecraft.class_2583 comp_3317;
+
+  private final float comp_3318;
+
+  final float comp_3339;
+
+  net.minecraft.class_382$class_10364(float, float, int, int, net.minecraft.class_382, net.minecraft.class_2583, float, float);
+    Code:
+         0: aload_0
+         1: invokespecial #52                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: fload_1
+         6: putfield      #54                 // Field comp_3313:F
+         9: aload_0
+        10: fload_2
+        11: putfield      #56                 // Field comp_3314:F
+        14: aload_0
+        15: iload_3
+        16: putfield      #58                 // Field comp_3315:I
+        19: aload_0
+        20: iload         4
+        22: putfield      #60                 // Field comp_3338:I
+        25: aload_0
+        26: aload         5
+        28: putfield      #62                 // Field comp_3316:Lnet/minecraft/class_382;
+        31: aload_0
+        32: aload         6
+        34: putfield      #64                 // Field comp_3317:Lnet/minecraft/class_2583;
+        37: aload_0
+        38: fload         7
+        40: putfield      #66                 // Field comp_3318:F
+        43: aload_0
+        44: fload         8
+        46: putfield      #68                 // Field comp_3339:F
+        49: return
+
+  public float method_71829();
+    Code:
+         0: aload_0
+         1: getfield      #62                 // Field comp_3316:Lnet/minecraft/class_382;
+         4: aload_0
+         5: invokevirtual #76                 // Method net/minecraft/class_382.method_71821:(Lnet/minecraft/class_382$class_10364;)F
+         8: freturn
+
+  public float method_71830();
+    Code:
+         0: aload_0
+         1: getfield      #62                 // Field comp_3316:Lnet/minecraft/class_382;
+         4: aload_0
+         5: invokevirtual #80                 // Method net/minecraft/class_382.method_71824:(Lnet/minecraft/class_382$class_10364;)F
+         8: freturn
+
+  public float method_71831();
+    Code:
+         0: aload_0
+         1: getfield      #62                 // Field comp_3316:Lnet/minecraft/class_382;
+         4: aload_0
+         5: invokevirtual #84                 // Method net/minecraft/class_382.method_71826:(Lnet/minecraft/class_382$class_10364;)F
+         8: freturn
+
+  public float method_75820();
+    Code:
+         0: aload_0
+         1: getfield      #54                 // Field comp_3313:F
+         4: aload_0
+         5: getfield      #62                 // Field comp_3316:Lnet/minecraft/class_382;
+         8: getfield      #89                 // Field net/minecraft/class_382.field_62142:Lnet/minecraft/class_379;
+        11: aload_0
+        12: getfield      #64                 // Field comp_3317:Lnet/minecraft/class_2583;
+        15: invokevirtual #95                 // Method net/minecraft/class_2583.method_10984:()Z
+        18: invokeinterface #101,  2          // InterfaceMethod net/minecraft/class_379.method_16798:(Z)F
+        23: fadd
+        24: freturn
+
+  public float method_71832();
+    Code:
+         0: aload_0
+         1: getfield      #62                 // Field comp_3316:Lnet/minecraft/class_382;
+         4: aload_0
+         5: invokevirtual #105                // Method net/minecraft/class_382.method_71828:(Lnet/minecraft/class_382$class_10364;)F
+         8: freturn
+
+  boolean method_65184();
+    Code:
+         0: aload_0
+         1: invokevirtual #109                // Method comp_3338:()I
+         4: ifeq          11
+         7: iconst_1
+         8: goto          12
+        11: iconst_0
+        12: ireturn
+
+  public void method_73403(org.joml.Matrix4f, net.minecraft.class_4588, int, boolean);
+    Code:
+         0: aload_0
+         1: getfield      #62                 // Field comp_3316:Lnet/minecraft/class_382;
+         4: aload_0
+         5: aload_1
+         6: aload_2
+         7: iload_3
+         8: iload         4
+        10: invokevirtual #117                // Method net/minecraft/class_382.method_65025:(Lnet/minecraft/class_382$class_10364;Lorg/joml/Matrix4f;Lnet/minecraft/class_4588;IZ)V
+        13: return
+
+  public net.minecraft.class_1921 method_73401(net.minecraft.class_327$class_6415);
+    Code:
+         0: aload_0
+         1: getfield      #62                 // Field comp_3316:Lnet/minecraft/class_382;
+         4: getfield      #126                // Field net/minecraft/class_382.field_44760:Lnet/minecraft/class_8538;
+         7: aload_1
+         8: invokevirtual #131                // Method net/minecraft/class_8538.method_51642:(Lnet/minecraft/class_327$class_6415;)Lnet/minecraft/class_1921;
+        11: areturn
+
+  public com.mojang.blaze3d.textures.GpuTextureView comp_4629();
+    Code:
+         0: aload_0
+         1: getfield      #62                 // Field comp_3316:Lnet/minecraft/class_382;
+         4: getfield      #138                // Field net/minecraft/class_382.field_60569:Lcom/mojang/blaze3d/textures/GpuTextureView;
+         7: areturn
+
+  public com.mojang.blaze3d.pipeline.RenderPipeline method_73400();
+    Code:
+         0: aload_0
+         1: getfield      #62                 // Field comp_3316:Lnet/minecraft/class_382;
+         4: getfield      #126                // Field net/minecraft/class_382.field_44760:Lnet/minecraft/class_8538;
+         7: invokevirtual #143                // Method net/minecraft/class_8538.comp_4371:()Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+        10: areturn
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #165,  0            // InvokeDynamic #0:toString:(Lnet/minecraft/class_382$class_10364;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #169,  0            // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_382$class_10364;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #175,  0            // InvokeDynamic #0:equals:(Lnet/minecraft/class_382$class_10364;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public float comp_3313();
+    Code:
+         0: aload_0
+         1: getfield      #54                 // Field comp_3313:F
+         4: freturn
+
+  public float comp_3314();
+    Code:
+         0: aload_0
+         1: getfield      #56                 // Field comp_3314:F
+         4: freturn
+
+  public int comp_3315();
+    Code:
+         0: aload_0
+         1: getfield      #58                 // Field comp_3315:I
+         4: ireturn
+
+  public int comp_3338();
+    Code:
+         0: aload_0
+         1: getfield      #60                 // Field comp_3338:I
+         4: ireturn
+
+  public net.minecraft.class_382 comp_3316();
+    Code:
+         0: aload_0
+         1: getfield      #62                 // Field comp_3316:Lnet/minecraft/class_382;
+         4: areturn
+
+  public net.minecraft.class_2583 comp_3317();
+    Code:
+         0: aload_0
+         1: getfield      #64                 // Field comp_3317:Lnet/minecraft/class_2583;
+         4: areturn
+
+  public float comp_3318();
+    Code:
+         0: aload_0
+         1: getfield      #66                 // Field comp_3318:F
+         4: freturn
+
+  public float comp_3339();
+    Code:
+         0: aload_0
+         1: getfield      #68                 // Field comp_3339:F
+         4: freturn
+}

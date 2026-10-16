@@ -1,0 +1,188 @@
+// net/minecraft/client/model/ModelPart$Quad = net/minecraft/class_630$class_593
+Compiled from "class_630.java"
+public final class net.minecraft.class_630$class_593 extends java.lang.Record {
+  final net.minecraft.class_630$class_618[] comp_3184;
+
+  final org.joml.Vector3fc comp_3185;
+
+  public net.minecraft.class_630$class_593(net.minecraft.class_630$class_618[], float, float, float, float, float, float, boolean, net.minecraft.class_2350);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: iload         8
+         4: ifeq          15
+         7: aload         9
+         9: invokestatic  #44                 // Method method_74249:(Lnet/minecraft/class_2350;)Lnet/minecraft/class_2350;
+        12: goto          17
+        15: aload         9
+        17: invokevirtual #49                 // Method net/minecraft/class_2350.method_68072:()Lorg/joml/Vector3fc;
+        20: invokespecial #52                 // Method "<init>":([Lnet/minecraft/class_630$class_618;Lorg/joml/Vector3fc;)V
+        23: fconst_0
+        24: fload         6
+        26: fdiv
+        27: fstore        10
+        29: fconst_0
+        30: fload         7
+        32: fdiv
+        33: fstore        11
+        35: aload_1
+        36: iconst_0
+        37: aload_1
+        38: iconst_0
+        39: aaload
+        40: fload         4
+        42: fload         6
+        44: fdiv
+        45: fload         10
+        47: fsub
+        48: fload_3
+        49: fload         7
+        51: fdiv
+        52: fload         11
+        54: fadd
+        55: invokevirtual #56                 // Method net/minecraft/class_630$class_618.method_2837:(FF)Lnet/minecraft/class_630$class_618;
+        58: aastore
+        59: aload_1
+        60: iconst_1
+        61: aload_1
+        62: iconst_1
+        63: aaload
+        64: fload_2
+        65: fload         6
+        67: fdiv
+        68: fload         10
+        70: fadd
+        71: fload_3
+        72: fload         7
+        74: fdiv
+        75: fload         11
+        77: fadd
+        78: invokevirtual #56                 // Method net/minecraft/class_630$class_618.method_2837:(FF)Lnet/minecraft/class_630$class_618;
+        81: aastore
+        82: aload_1
+        83: iconst_2
+        84: aload_1
+        85: iconst_2
+        86: aaload
+        87: fload_2
+        88: fload         6
+        90: fdiv
+        91: fload         10
+        93: fadd
+        94: fload         5
+        96: fload         7
+        98: fdiv
+        99: fload         11
+       101: fsub
+       102: invokevirtual #56                 // Method net/minecraft/class_630$class_618.method_2837:(FF)Lnet/minecraft/class_630$class_618;
+       105: aastore
+       106: aload_1
+       107: iconst_3
+       108: aload_1
+       109: iconst_3
+       110: aaload
+       111: fload         4
+       113: fload         6
+       115: fdiv
+       116: fload         10
+       118: fsub
+       119: fload         5
+       121: fload         7
+       123: fdiv
+       124: fload         11
+       126: fsub
+       127: invokevirtual #56                 // Method net/minecraft/class_630$class_618.method_2837:(FF)Lnet/minecraft/class_630$class_618;
+       130: aastore
+       131: iload         8
+       133: ifeq          188
+       136: aload_1
+       137: arraylength
+       138: istore        12
+       140: iconst_0
+       141: istore        13
+       143: iload         13
+       145: iload         12
+       147: iconst_2
+       148: idiv
+       149: if_icmpge     188
+       152: aload_1
+       153: iload         13
+       155: aaload
+       156: astore        14
+       158: aload_1
+       159: iload         13
+       161: aload_1
+       162: iload         12
+       164: iconst_1
+       165: isub
+       166: iload         13
+       168: isub
+       169: aaload
+       170: aastore
+       171: aload_1
+       172: iload         12
+       174: iconst_1
+       175: isub
+       176: iload         13
+       178: isub
+       179: aload         14
+       181: aastore
+       182: iinc          13, 1
+       185: goto          143
+       188: return
+
+  public net.minecraft.class_630$class_593(net.minecraft.class_630$class_618[], org.joml.Vector3fc);
+    Code:
+         0: aload_0
+         1: invokespecial #72                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #74                 // Field comp_3184:[Lnet/minecraft/class_630$class_618;
+         9: aload_0
+        10: aload_2
+        11: putfield      #76                 // Field comp_3185:Lorg/joml/Vector3fc;
+        14: return
+
+  private static net.minecraft.class_2350 method_74249(net.minecraft.class_2350);
+    Code:
+         0: aload_0
+         1: invokevirtual #80                 // Method net/minecraft/class_2350.method_10166:()Lnet/minecraft/class_2350$class_2351;
+         4: getstatic     #84                 // Field net/minecraft/class_2350$class_2351.field_11048:Lnet/minecraft/class_2350$class_2351;
+         7: if_acmpne     17
+        10: aload_0
+        11: invokevirtual #88                 // Method net/minecraft/class_2350.method_10153:()Lnet/minecraft/class_2350;
+        14: goto          18
+        17: aload_0
+        18: areturn
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #104,  0            // InvokeDynamic #0:toString:(Lnet/minecraft/class_630$class_593;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #109,  0            // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_630$class_593;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #115,  0            // InvokeDynamic #0:equals:(Lnet/minecraft/class_630$class_593;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public net.minecraft.class_630$class_618[] comp_3184();
+    Code:
+         0: aload_0
+         1: getfield      #74                 // Field comp_3184:[Lnet/minecraft/class_630$class_618;
+         4: areturn
+
+  public org.joml.Vector3fc comp_3185();
+    Code:
+         0: aload_0
+         1: getfield      #76                 // Field comp_3185:Lorg/joml/Vector3fc;
+         4: areturn
+}

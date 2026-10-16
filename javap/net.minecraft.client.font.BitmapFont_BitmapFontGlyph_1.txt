@@ -1,0 +1,86 @@
+// net/minecraft/client/font/BitmapFont$BitmapFontGlyph$1 = net/minecraft/class_386$class_388$1
+Compiled from "class_386.java"
+class net.minecraft.class_386$class_388$1 implements net.minecraft.class_383 {
+  final net.minecraft.class_386$class_388 field_37903;
+
+  net.minecraft.class_386$class_388$1(net.minecraft.class_386$class_388);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: putfield      #36                 // Field field_37903:Lnet/minecraft/class_386$class_388;
+         5: aload_0
+         6: invokespecial #39                 // Method java/lang/Object."<init>":()V
+         9: return
+
+  public float method_2035();
+    Code:
+         0: fconst_1
+         1: aload_0
+         2: getfield      #36                 // Field field_37903:Lnet/minecraft/class_386$class_388;
+         5: getfield      #47                 // Field net/minecraft/class_386$class_388.comp_603:F
+         8: fdiv
+         9: freturn
+
+  public int method_2031();
+    Code:
+         0: aload_0
+         1: getfield      #36                 // Field field_37903:Lnet/minecraft/class_386$class_388;
+         4: getfield      #53                 // Field net/minecraft/class_386$class_388.comp_607:I
+         7: ireturn
+
+  public int method_2032();
+    Code:
+         0: aload_0
+         1: getfield      #36                 // Field field_37903:Lnet/minecraft/class_386$class_388;
+         4: getfield      #57                 // Field net/minecraft/class_386$class_388.comp_608:I
+         7: ireturn
+
+  public float method_56130();
+    Code:
+         0: aload_0
+         1: getfield      #36                 // Field field_37903:Lnet/minecraft/class_386$class_388;
+         4: getfield      #61                 // Field net/minecraft/class_386$class_388.comp_610:I
+         7: i2f
+         8: freturn
+
+  public void method_2030(int, int, com.mojang.blaze3d.textures.GpuTexture);
+    Code:
+         0: invokestatic  #72                 // Method com/mojang/blaze3d/systems/RenderSystem.getDevice:()Lcom/mojang/blaze3d/systems/GpuDevice;
+         3: invokeinterface #78,  1           // InterfaceMethod com/mojang/blaze3d/systems/GpuDevice.createCommandEncoder:()Lcom/mojang/blaze3d/systems/CommandEncoder;
+         8: aload_3
+         9: aload_0
+        10: getfield      #36                 // Field field_37903:Lnet/minecraft/class_386$class_388;
+        13: getfield      #82                 // Field net/minecraft/class_386$class_388.comp_604:Lnet/minecraft/class_1011;
+        16: iconst_0
+        17: iconst_0
+        18: iload_1
+        19: iload_2
+        20: aload_0
+        21: getfield      #36                 // Field field_37903:Lnet/minecraft/class_386$class_388;
+        24: getfield      #53                 // Field net/minecraft/class_386$class_388.comp_607:I
+        27: aload_0
+        28: getfield      #36                 // Field field_37903:Lnet/minecraft/class_386$class_388;
+        31: getfield      #57                 // Field net/minecraft/class_386$class_388.comp_608:I
+        34: aload_0
+        35: getfield      #36                 // Field field_37903:Lnet/minecraft/class_386$class_388;
+        38: getfield      #85                 // Field net/minecraft/class_386$class_388.comp_605:I
+        41: aload_0
+        42: getfield      #36                 // Field field_37903:Lnet/minecraft/class_386$class_388;
+        45: getfield      #88                 // Field net/minecraft/class_386$class_388.comp_606:I
+        48: invokeinterface #94,  11          // InterfaceMethod com/mojang/blaze3d/systems/CommandEncoder.writeToTexture:(Lcom/mojang/blaze3d/textures/GpuTexture;Lnet/minecraft/class_1011;IIIIIIII)V
+        53: return
+
+  public boolean method_2033();
+    Code:
+         0: aload_0
+         1: getfield      #36                 // Field field_37903:Lnet/minecraft/class_386$class_388;
+         4: getfield      #82                 // Field net/minecraft/class_386$class_388.comp_604:Lnet/minecraft/class_1011;
+         7: invokevirtual #101                // Method net/minecraft/class_1011.method_4318:()Lnet/minecraft/class_1011$class_1012;
+        10: invokevirtual #104                // Method net/minecraft/class_1011$class_1012.method_4335:()I
+        13: iconst_1
+        14: if_icmple     21
+        17: iconst_1
+        18: goto          22
+        21: iconst_0
+        22: ireturn
+}

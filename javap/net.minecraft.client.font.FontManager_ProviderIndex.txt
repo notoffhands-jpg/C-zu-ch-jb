@@ -1,0 +1,50 @@
+// net/minecraft/client/font/FontManager$ProviderIndex = net/minecraft/class_378$class_8536
+Compiled from "class_378.java"
+final class net.minecraft.class_378$class_8536 extends java.lang.Record {
+  private final java.util.Map<net.minecraft.class_2960, java.util.List<net.minecraft.class_390$class_9241>> comp_2351;
+
+  final java.util.List<net.minecraft.class_390> comp_1497;
+
+  net.minecraft.class_378$class_8536(java.util.Map<net.minecraft.class_2960, java.util.List<net.minecraft.class_390$class_9241>>, java.util.List<net.minecraft.class_390>);
+    Code:
+         0: aload_0
+         1: invokespecial #36                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #38                 // Field comp_2351:Ljava/util/Map;
+         9: aload_0
+        10: aload_2
+        11: putfield      #40                 // Field comp_1497:Ljava/util/List;
+        14: return
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #58,  0             // InvokeDynamic #0:toString:(Lnet/minecraft/class_378$class_8536;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #63,  0             // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_378$class_8536;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #69,  0             // InvokeDynamic #0:equals:(Lnet/minecraft/class_378$class_8536;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public java.util.Map<net.minecraft.class_2960, java.util.List<net.minecraft.class_390$class_9241>> comp_2351();
+    Code:
+         0: aload_0
+         1: getfield      #38                 // Field comp_2351:Ljava/util/Map;
+         4: areturn
+
+  public java.util.List<net.minecraft.class_390> comp_1497();
+    Code:
+         0: aload_0
+         1: getfield      #40                 // Field comp_1497:Ljava/util/List;
+         4: areturn
+}

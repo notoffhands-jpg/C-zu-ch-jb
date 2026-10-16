@@ -1,0 +1,107 @@
+// net/minecraft/client/render/entity/equipment/EquipmentModel$Builder = net/minecraft/class_10186$class_10187
+Compiled from "class_10186.java"
+public class net.minecraft.class_10186$class_10187 {
+  private final java.util.Map<net.minecraft.class_10186$class_10190, java.util.List<net.minecraft.class_10186$class_10189>> field_54122;
+
+  net.minecraft.class_10186$class_10187();
+    Code:
+         0: aload_0
+         1: invokespecial #35                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: new           #37                 // class java/util/EnumMap
+         8: dup
+         9: ldc           #13                 // class net/minecraft/class_10186$class_10190
+        11: invokespecial #40                 // Method java/util/EnumMap."<init>":(Ljava/lang/Class;)V
+        14: putfield      #42                 // Field field_54122:Ljava/util/Map;
+        17: return
+
+  public net.minecraft.class_10186$class_10187 method_63998(net.minecraft.class_2960);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: iconst_0
+         3: invokevirtual #51                 // Method method_63999:(Lnet/minecraft/class_2960;Z)Lnet/minecraft/class_10186$class_10187;
+         6: areturn
+
+  public net.minecraft.class_10186$class_10187 method_63999(net.minecraft.class_2960, boolean);
+    Code:
+         0: aload_0
+         1: getstatic     #57                 // Field net/minecraft/class_10186$class_10190.field_54126:Lnet/minecraft/class_10186$class_10190;
+         4: iconst_1
+         5: anewarray     #17                 // class net/minecraft/class_10186$class_10189
+         8: dup
+         9: iconst_0
+        10: aload_1
+        11: iload_2
+        12: invokestatic  #61                 // Method net/minecraft/class_10186$class_10189.method_64005:(Lnet/minecraft/class_2960;Z)Lnet/minecraft/class_10186$class_10189;
+        15: aastore
+        16: invokevirtual #65                 // Method method_64001:(Lnet/minecraft/class_10186$class_10190;[Lnet/minecraft/class_10186$class_10189;)Lnet/minecraft/class_10186$class_10187;
+        19: pop
+        20: aload_0
+        21: aload_1
+        22: iload_2
+        23: invokevirtual #68                 // Method method_64003:(Lnet/minecraft/class_2960;Z)Lnet/minecraft/class_10186$class_10187;
+        26: pop
+        27: aload_0
+        28: areturn
+
+  public net.minecraft.class_10186$class_10187 method_64003(net.minecraft.class_2960, boolean);
+    Code:
+         0: aload_0
+         1: getstatic     #72                 // Field net/minecraft/class_10186$class_10190.field_54125:Lnet/minecraft/class_10186$class_10190;
+         4: iconst_1
+         5: anewarray     #17                 // class net/minecraft/class_10186$class_10189
+         8: dup
+         9: iconst_0
+        10: aload_1
+        11: iload_2
+        12: invokestatic  #61                 // Method net/minecraft/class_10186$class_10189.method_64005:(Lnet/minecraft/class_2960;Z)Lnet/minecraft/class_10186$class_10189;
+        15: aastore
+        16: invokevirtual #65                 // Method method_64001:(Lnet/minecraft/class_10186$class_10190;[Lnet/minecraft/class_10186$class_10189;)Lnet/minecraft/class_10186$class_10187;
+        19: areturn
+
+  public net.minecraft.class_10186$class_10187 method_64001(net.minecraft.class_10186$class_10190, net.minecraft.class_10186$class_10189...);
+    Code:
+         0: aload_0
+         1: getfield      #42                 // Field field_54122:Ljava/util/Map;
+         4: aload_1
+         5: invokedynamic #92,  0             // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+        10: invokeinterface #96,  3           // InterfaceMethod java/util/Map.computeIfAbsent:(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;
+        15: checkcast     #98                 // class java/util/Collection
+        18: aload_2
+        19: invokestatic  #104                // Method java/util/Collections.addAll:(Ljava/util/Collection;[Ljava/lang/Object;)Z
+        22: pop
+        23: aload_0
+        24: areturn
+
+  public net.minecraft.class_10186 method_63997();
+    Code:
+         0: new           #7                  // class net/minecraft/class_10186
+         3: dup
+         4: aload_0
+         5: getfield      #42                 // Field field_54122:Ljava/util/Map;
+         8: invokeinterface #111,  1          // InterfaceMethod java/util/Map.entrySet:()Ljava/util/Set;
+        13: invokeinterface #117,  1          // InterfaceMethod java/util/Set.stream:()Ljava/util/stream/Stream;
+        18: invokedynamic #125,  0            // InvokeDynamic #1:apply:()Ljava/util/function/Function;
+        23: invokedynamic #132,  0            // InvokeDynamic #2:apply:()Ljava/util/function/Function;
+        28: invokestatic  #138                // Method com/google/common/collect/ImmutableMap.toImmutableMap:(Ljava/util/function/Function;Ljava/util/function/Function;)Ljava/util/stream/Collector;
+        31: invokeinterface #144,  2          // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+        36: checkcast     #22                 // class java/util/Map
+        39: invokespecial #147                // Method net/minecraft/class_10186."<init>":(Ljava/util/Map;)V
+        42: areturn
+
+  private static java.util.List method_64002(java.util.Map$Entry);
+    Code:
+         0: aload_0
+         1: invokeinterface #151,  1          // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+         6: checkcast     #98                 // class java/util/Collection
+         9: invokestatic  #157                // InterfaceMethod java/util/List.copyOf:(Ljava/util/Collection;)Ljava/util/List;
+        12: areturn
+
+  private static java.util.List method_64000(net.minecraft.class_10186$class_10190);
+    Code:
+         0: new           #160                // class java/util/ArrayList
+         3: dup
+         4: invokespecial #161                // Method java/util/ArrayList."<init>":()V
+         7: areturn
+}

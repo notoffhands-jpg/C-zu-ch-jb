@@ -1,0 +1,39 @@
+// net/minecraft/client/font/TextHandler$StyledString = net/minecraft/class_5225$class_5345
+Compiled from "class_5225.java"
+class net.minecraft.class_5225$class_5345 implements net.minecraft.class_5348 {
+  final java.lang.String field_25261;
+
+  final net.minecraft.class_2583 field_25262;
+
+  public net.minecraft.class_5225$class_5345(java.lang.String, net.minecraft.class_2583);
+    Code:
+         0: aload_0
+         1: invokespecial #31                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #33                 // Field field_25261:Ljava/lang/String;
+         9: aload_0
+        10: aload_2
+        11: putfield      #35                 // Field field_25262:Lnet/minecraft/class_2583;
+        14: return
+
+  public <T> java.util.Optional<T> method_27657(net.minecraft.class_5348$class_5245<T>);
+    Code:
+         0: aload_1
+         1: aload_0
+         2: getfield      #33                 // Field field_25261:Ljava/lang/String;
+         5: invokeinterface #44,  2           // InterfaceMethod net/minecraft/class_5348$class_5245.accept:(Ljava/lang/String;)Ljava/util/Optional;
+        10: areturn
+
+  public <T> java.util.Optional<T> method_27658(net.minecraft.class_5348$class_5246<T>, net.minecraft.class_2583);
+    Code:
+         0: aload_1
+         1: aload_0
+         2: getfield      #35                 // Field field_25262:Lnet/minecraft/class_2583;
+         5: aload_2
+         6: invokevirtual #56                 // Method net/minecraft/class_2583.method_27702:(Lnet/minecraft/class_2583;)Lnet/minecraft/class_2583;
+         9: aload_0
+        10: getfield      #33                 // Field field_25261:Ljava/lang/String;
+        13: invokeinterface #59,  3           // InterfaceMethod net/minecraft/class_5348$class_5246.accept:(Lnet/minecraft/class_2583;Ljava/lang/String;)Ljava/util/Optional;
+        18: areturn
+}

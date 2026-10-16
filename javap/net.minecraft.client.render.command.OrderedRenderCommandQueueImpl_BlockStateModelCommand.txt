@@ -1,0 +1,127 @@
+// net/minecraft/client/render/command/OrderedRenderCommandQueueImpl$BlockStateModelCommand = net/minecraft/class_11661$class_11662
+Compiled from "class_11661.java"
+public final class net.minecraft.class_11661$class_11662 extends java.lang.Record {
+  private final net.minecraft.class_4587$class_4665 comp_4476;
+
+  private final net.minecraft.class_1921 comp_4477;
+
+  private final net.minecraft.class_1087 comp_4478;
+
+  private final float comp_4479;
+
+  private final float comp_4480;
+
+  private final float comp_4481;
+
+  private final int comp_4482;
+
+  private final int comp_4483;
+
+  private final int comp_4659;
+
+  public net.minecraft.class_11661$class_11662(net.minecraft.class_4587$class_4665, net.minecraft.class_1921, net.minecraft.class_1087, float, float, float, int, int, int);
+    Code:
+         0: aload_0
+         1: invokespecial #50                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #52                 // Field comp_4476:Lnet/minecraft/class_4587$class_4665;
+         9: aload_0
+        10: aload_2
+        11: putfield      #54                 // Field comp_4477:Lnet/minecraft/class_1921;
+        14: aload_0
+        15: aload_3
+        16: putfield      #56                 // Field comp_4478:Lnet/minecraft/class_1087;
+        19: aload_0
+        20: fload         4
+        22: putfield      #58                 // Field comp_4479:F
+        25: aload_0
+        26: fload         5
+        28: putfield      #60                 // Field comp_4480:F
+        31: aload_0
+        32: fload         6
+        34: putfield      #62                 // Field comp_4481:F
+        37: aload_0
+        38: iload         7
+        40: putfield      #64                 // Field comp_4482:I
+        43: aload_0
+        44: iload         8
+        46: putfield      #66                 // Field comp_4483:I
+        49: aload_0
+        50: iload         9
+        52: putfield      #68                 // Field comp_4659:I
+        55: return
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #93,  0             // InvokeDynamic #0:toString:(Lnet/minecraft/class_11661$class_11662;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #98,  0             // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_11661$class_11662;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #104,  0            // InvokeDynamic #0:equals:(Lnet/minecraft/class_11661$class_11662;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public net.minecraft.class_4587$class_4665 comp_4476();
+    Code:
+         0: aload_0
+         1: getfield      #52                 // Field comp_4476:Lnet/minecraft/class_4587$class_4665;
+         4: areturn
+
+  public net.minecraft.class_1921 comp_4477();
+    Code:
+         0: aload_0
+         1: getfield      #54                 // Field comp_4477:Lnet/minecraft/class_1921;
+         4: areturn
+
+  public net.minecraft.class_1087 comp_4478();
+    Code:
+         0: aload_0
+         1: getfield      #56                 // Field comp_4478:Lnet/minecraft/class_1087;
+         4: areturn
+
+  public float comp_4479();
+    Code:
+         0: aload_0
+         1: getfield      #58                 // Field comp_4479:F
+         4: freturn
+
+  public float comp_4480();
+    Code:
+         0: aload_0
+         1: getfield      #60                 // Field comp_4480:F
+         4: freturn
+
+  public float comp_4481();
+    Code:
+         0: aload_0
+         1: getfield      #62                 // Field comp_4481:F
+         4: freturn
+
+  public int comp_4482();
+    Code:
+         0: aload_0
+         1: getfield      #64                 // Field comp_4482:I
+         4: ireturn
+
+  public int comp_4483();
+    Code:
+         0: aload_0
+         1: getfield      #66                 // Field comp_4483:I
+         4: ireturn
+
+  public int comp_4659();
+    Code:
+         0: aload_0
+         1: getfield      #68                 // Field comp_4659:I
+         4: ireturn
+}

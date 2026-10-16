@@ -1,0 +1,23 @@
+// net/minecraft/client/render/entity/model/BipedEntityModel$ArmPose$1 = net/minecraft/class_572$class_573$1
+Compiled from "class_572.java"
+final class net.minecraft.class_572$class_573$1 extends net.minecraft.class_572$class_573 {
+  net.minecraft.class_572$class_573$1(java.lang.String, int, boolean, boolean);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: iload_2
+         3: iload_3
+         4: iload         4
+         6: invokespecial #20                 // Method net/minecraft/class_572$class_573."<init>":(Ljava/lang/String;IZZ)V
+         9: return
+
+  public <S extends net.minecraft.class_10426> void method_75382(S, net.minecraft.class_4587, float, net.minecraft.class_1306, net.minecraft.class_1799);
+    Code:
+         0: aload_1
+         1: aload_2
+         2: fload_3
+         3: aload         4
+         5: aload         5
+         7: invokestatic  #38                 // Method net/minecraft/class_12152.method_75392:(Lnet/minecraft/class_10426;Lnet/minecraft/class_4587;FLnet/minecraft/class_1306;Lnet/minecraft/class_1799;)V
+        10: return
+}

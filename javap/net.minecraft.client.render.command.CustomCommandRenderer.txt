@@ -1,0 +1,54 @@
+// net/minecraft/client/render/command/CustomCommandRenderer = net/minecraft/class_11682
+Compiled from "class_11682.java"
+public class net.minecraft.class_11682 {
+  public net.minecraft.class_11682();
+    Code:
+         0: aload_0
+         1: invokespecial #41                 // Method java/lang/Object."<init>":()V
+         4: return
+
+  public void method_72999(net.minecraft.class_11788, net.minecraft.class_4597$class_4598);
+    Code:
+         0: aload_1
+         1: invokevirtual #53                 // Method net/minecraft/class_11788.method_73525:()Lnet/minecraft/class_11682$class_12047;
+         4: astore_3
+         5: aload_3
+         6: getfield      #57                 // Field net/minecraft/class_11682$class_12047.field_62980:Ljava/util/Map;
+         9: invokeinterface #61,  1           // InterfaceMethod java/util/Map.entrySet:()Ljava/util/Set;
+        14: invokeinterface #67,  1           // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+        19: astore        4
+        21: aload         4
+        23: invokeinterface #73,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+        28: ifeq          121
+        31: aload         4
+        33: invokeinterface #77,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        38: checkcast     #14                 // class java/util/Map$Entry
+        41: astore        5
+        43: aload_2
+        44: aload         5
+        46: invokeinterface #80,  1           // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+        51: checkcast     #82                 // class net/minecraft/class_1921
+        54: invokevirtual #86                 // Method net/minecraft/class_4597$class_4598.method_73477:(Lnet/minecraft/class_1921;)Lnet/minecraft/class_4588;
+        57: astore        6
+        59: aload         5
+        61: invokeinterface #89,  1           // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+        66: checkcast     #91                 // class java/util/List
+        69: invokeinterface #92,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+        74: astore        7
+        76: aload         7
+        78: invokeinterface #73,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+        83: ifeq          118
+        86: aload         7
+        88: invokeinterface #77,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        93: checkcast     #24                 // class net/minecraft/class_11661$class_11664
+        96: astore        8
+        98: aload         8
+       100: invokevirtual #98                 // Method net/minecraft/class_11661$class_11664.comp_4489:()Lnet/minecraft/class_11659$class_11660;
+       103: aload         8
+       105: invokevirtual #102                // Method net/minecraft/class_11661$class_11664.comp_4488:()Lnet/minecraft/class_4587$class_4665;
+       108: aload         6
+       110: invokeinterface #106,  3          // InterfaceMethod net/minecraft/class_11659$class_11660.render:(Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;)V
+       115: goto          76
+       118: goto          21
+       121: return
+}

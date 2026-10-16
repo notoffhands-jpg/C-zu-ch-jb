@@ -1,0 +1,50 @@
+// net/minecraft/client/render/command/OrderedRenderCommandQueueImpl$CustomCommand = net/minecraft/class_11661$class_11664
+Compiled from "class_11661.java"
+public final class net.minecraft.class_11661$class_11664 extends java.lang.Record {
+  private final net.minecraft.class_4587$class_4665 comp_4488;
+
+  private final net.minecraft.class_11659$class_11660 comp_4489;
+
+  public net.minecraft.class_11661$class_11664(net.minecraft.class_4587$class_4665, net.minecraft.class_11659$class_11660);
+    Code:
+         0: aload_0
+         1: invokespecial #38                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #40                 // Field comp_4488:Lnet/minecraft/class_4587$class_4665;
+         9: aload_0
+        10: aload_2
+        11: putfield      #42                 // Field comp_4489:Lnet/minecraft/class_11659$class_11660;
+        14: return
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #60,  0             // InvokeDynamic #0:toString:(Lnet/minecraft/class_11661$class_11664;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #65,  0             // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_11661$class_11664;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #71,  0             // InvokeDynamic #0:equals:(Lnet/minecraft/class_11661$class_11664;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public net.minecraft.class_4587$class_4665 comp_4488();
+    Code:
+         0: aload_0
+         1: getfield      #40                 // Field comp_4488:Lnet/minecraft/class_4587$class_4665;
+         4: areturn
+
+  public net.minecraft.class_11659$class_11660 comp_4489();
+    Code:
+         0: aload_0
+         1: getfield      #42                 // Field comp_4489:Lnet/minecraft/class_11659$class_11660;
+         4: areturn
+}

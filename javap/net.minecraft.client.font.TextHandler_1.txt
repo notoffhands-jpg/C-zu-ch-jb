@@ -1,0 +1,65 @@
+// net/minecraft/client/font/TextHandler$1 = net/minecraft/class_5225$1
+Compiled from "class_5225.java"
+class net.minecraft.class_5225$1 implements net.minecraft.class_5348$class_5246<net.minecraft.class_5348> {
+  private final net.minecraft.class_5222 field_24219;
+
+  final net.minecraft.class_5225$class_5230 field_24217;
+
+  net.minecraft.class_5225$1();
+    Code:
+         0: aload_0
+         1: aload_2
+         2: putfield      #34                 // Field field_24217:Lnet/minecraft/class_5225$class_5230;
+         5: aload_0
+         6: invokespecial #36                 // Method java/lang/Object."<init>":()V
+         9: aload_0
+        10: new           #38                 // class net/minecraft/class_5222
+        13: dup
+        14: invokespecial #39                 // Method net/minecraft/class_5222."<init>":()V
+        17: putfield      #41                 // Field field_24219:Lnet/minecraft/class_5222;
+        20: return
+
+  public java.util.Optional<net.minecraft.class_5348> accept(net.minecraft.class_2583, java.lang.String);
+    Code:
+         0: aload_0
+         1: getfield      #34                 // Field field_24217:Lnet/minecraft/class_5225$class_5230;
+         4: invokevirtual #51                 // Method net/minecraft/class_5225$class_5230.method_27514:()V
+         7: aload_2
+         8: aload_1
+         9: aload_0
+        10: getfield      #34                 // Field field_24217:Lnet/minecraft/class_5225$class_5230;
+        13: invokestatic  #57                 // Method net/minecraft/class_5223.method_27479:(Ljava/lang/String;Lnet/minecraft/class_2583;Lnet/minecraft/class_5224;)Z
+        16: ifne          62
+        19: aload_2
+        20: iconst_0
+        21: aload_0
+        22: getfield      #34                 // Field field_24217:Lnet/minecraft/class_5225$class_5230;
+        25: invokevirtual #61                 // Method net/minecraft/class_5225$class_5230.method_27513:()I
+        28: invokevirtual #67                 // Method java/lang/String.substring:(II)Ljava/lang/String;
+        31: astore_3
+        32: aload_3
+        33: invokevirtual #71                 // Method java/lang/String.isEmpty:()Z
+        36: ifne          51
+        39: aload_0
+        40: getfield      #41                 // Field field_24219:Lnet/minecraft/class_5222;
+        43: aload_3
+        44: aload_1
+        45: invokestatic  #75                 // InterfaceMethod net/minecraft/class_5348.method_29431:(Ljava/lang/String;Lnet/minecraft/class_2583;)Lnet/minecraft/class_5348;
+        48: invokevirtual #79                 // Method net/minecraft/class_5222.method_27462:(Lnet/minecraft/class_5348;)V
+        51: aload_0
+        52: getfield      #41                 // Field field_24219:Lnet/minecraft/class_5222;
+        55: invokevirtual #83                 // Method net/minecraft/class_5222.method_27463:()Lnet/minecraft/class_5348;
+        58: invokestatic  #89                 // Method java/util/Optional.of:(Ljava/lang/Object;)Ljava/util/Optional;
+        61: areturn
+        62: aload_2
+        63: invokevirtual #71                 // Method java/lang/String.isEmpty:()Z
+        66: ifne          81
+        69: aload_0
+        70: getfield      #41                 // Field field_24219:Lnet/minecraft/class_5222;
+        73: aload_2
+        74: aload_1
+        75: invokestatic  #75                 // InterfaceMethod net/minecraft/class_5348.method_29431:(Ljava/lang/String;Lnet/minecraft/class_2583;)Lnet/minecraft/class_5348;
+        78: invokevirtual #79                 // Method net/minecraft/class_5222.method_27462:(Lnet/minecraft/class_5348;)V
+        81: invokestatic  #95                 // Method java/util/Optional.empty:()Ljava/util/Optional;
+        84: areturn
+}

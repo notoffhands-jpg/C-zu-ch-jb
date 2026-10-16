@@ -1,0 +1,49 @@
+// net/minecraft/client/render/entity/state/EntityRenderState$LeashData = net/minecraft/class_10017$class_10018
+Compiled from "class_10017.java"
+public class net.minecraft.class_10017$class_10018 {
+  public net.minecraft.class_243 field_53339;
+
+  public net.minecraft.class_243 field_53340;
+
+  public net.minecraft.class_243 field_53341;
+
+  public int field_53342;
+
+  public int field_53343;
+
+  public int field_53344;
+
+  public int field_53345;
+
+  public boolean field_60161;
+
+  public net.minecraft.class_10017$class_10018();
+    Code:
+         0: aload_0
+         1: invokespecial #27                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: getstatic     #32                 // Field net/minecraft/class_243.field_1353:Lnet/minecraft/class_243;
+         8: putfield      #34                 // Field field_53339:Lnet/minecraft/class_243;
+        11: aload_0
+        12: getstatic     #32                 // Field net/minecraft/class_243.field_1353:Lnet/minecraft/class_243;
+        15: putfield      #36                 // Field field_53340:Lnet/minecraft/class_243;
+        18: aload_0
+        19: getstatic     #32                 // Field net/minecraft/class_243.field_1353:Lnet/minecraft/class_243;
+        22: putfield      #38                 // Field field_53341:Lnet/minecraft/class_243;
+        25: aload_0
+        26: iconst_0
+        27: putfield      #40                 // Field field_53342:I
+        30: aload_0
+        31: iconst_0
+        32: putfield      #42                 // Field field_53343:I
+        35: aload_0
+        36: bipush        15
+        38: putfield      #44                 // Field field_53344:I
+        41: aload_0
+        42: bipush        15
+        44: putfield      #46                 // Field field_53345:I
+        47: aload_0
+        48: iconst_1
+        49: putfield      #48                 // Field field_60161:Z
+        52: return
+}

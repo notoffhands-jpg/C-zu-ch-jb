@@ -1,0 +1,187 @@
+// net/minecraft/client/render/VertexConsumerProvider$Immediate = net/minecraft/class_4597$class_4598
+Compiled from "class_4597.java"
+public class net.minecraft.class_4597$class_4598 implements net.minecraft.class_4597 {
+  protected final net.minecraft.class_9799 field_52156;
+
+  protected final java.util.SequencedMap<net.minecraft.class_1921, net.minecraft.class_9799> field_20953;
+
+  protected final java.util.Map<net.minecraft.class_1921, net.minecraft.class_287> field_52157;
+
+  protected net.minecraft.class_1921 field_52158;
+
+  protected net.minecraft.class_4597$class_4598(net.minecraft.class_9799, java.util.SequencedMap<net.minecraft.class_1921, net.minecraft.class_9799>);
+    Code:
+         0: aload_0
+         1: invokespecial #41                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: new           #43                 // class java/util/HashMap
+         8: dup
+         9: invokespecial #44                 // Method java/util/HashMap."<init>":()V
+        12: putfield      #46                 // Field field_52157:Ljava/util/Map;
+        15: aload_0
+        16: aload_1
+        17: putfield      #48                 // Field field_52156:Lnet/minecraft/class_9799;
+        20: aload_0
+        21: aload_2
+        22: putfield      #50                 // Field field_20953:Ljava/util/SequencedMap;
+        25: return
+
+  public net.minecraft.class_4588 method_73477(net.minecraft.class_1921);
+    Code:
+         0: aload_0
+         1: getfield      #46                 // Field field_52157:Ljava/util/Map;
+         4: aload_1
+         5: invokeinterface #60,  2           // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        10: checkcast     #62                 // class net/minecraft/class_287
+        13: astore_2
+        14: aload_2
+        15: ifnull        33
+        18: aload_1
+        19: invokevirtual #68                 // Method net/minecraft/class_1921.method_43332:()Z
+        22: ifne          33
+        25: aload_0
+        26: aload_1
+        27: aload_2
+        28: invokevirtual #72                 // Method method_60893:(Lnet/minecraft/class_1921;Lnet/minecraft/class_287;)V
+        31: aconst_null
+        32: astore_2
+        33: aload_2
+        34: ifnull        39
+        37: aload_2
+        38: areturn
+        39: aload_0
+        40: getfield      #50                 // Field field_20953:Ljava/util/SequencedMap;
+        43: aload_1
+        44: invokeinterface #75,  2           // InterfaceMethod java/util/SequencedMap.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        49: checkcast     #77                 // class net/minecraft/class_9799
+        52: astore_3
+        53: aload_3
+        54: ifnull        77
+        57: new           #62                 // class net/minecraft/class_287
+        60: dup
+        61: aload_3
+        62: aload_1
+        63: invokevirtual #81                 // Method net/minecraft/class_1921.method_23033:()Lcom/mojang/blaze3d/vertex/VertexFormat$class_5596;
+        66: aload_1
+        67: invokevirtual #85                 // Method net/minecraft/class_1921.method_23031:()Lcom/mojang/blaze3d/vertex/VertexFormat;
+        70: invokespecial #88                 // Method net/minecraft/class_287."<init>":(Lnet/minecraft/class_9799;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5596;Lcom/mojang/blaze3d/vertex/VertexFormat;)V
+        73: astore_2
+        74: goto          117
+        77: aload_0
+        78: getfield      #90                 // Field field_52158:Lnet/minecraft/class_1921;
+        81: ifnull        92
+        84: aload_0
+        85: aload_0
+        86: getfield      #90                 // Field field_52158:Lnet/minecraft/class_1921;
+        89: invokevirtual #94                 // Method method_22994:(Lnet/minecraft/class_1921;)V
+        92: new           #62                 // class net/minecraft/class_287
+        95: dup
+        96: aload_0
+        97: getfield      #48                 // Field field_52156:Lnet/minecraft/class_9799;
+       100: aload_1
+       101: invokevirtual #81                 // Method net/minecraft/class_1921.method_23033:()Lcom/mojang/blaze3d/vertex/VertexFormat$class_5596;
+       104: aload_1
+       105: invokevirtual #85                 // Method net/minecraft/class_1921.method_23031:()Lcom/mojang/blaze3d/vertex/VertexFormat;
+       108: invokespecial #88                 // Method net/minecraft/class_287."<init>":(Lnet/minecraft/class_9799;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5596;Lcom/mojang/blaze3d/vertex/VertexFormat;)V
+       111: astore_2
+       112: aload_0
+       113: aload_1
+       114: putfield      #90                 // Field field_52158:Lnet/minecraft/class_1921;
+       117: aload_0
+       118: getfield      #46                 // Field field_52157:Ljava/util/Map;
+       121: aload_1
+       122: aload_2
+       123: invokeinterface #98,  3           // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       128: pop
+       129: aload_2
+       130: areturn
+
+  public void method_37104();
+    Code:
+         0: aload_0
+         1: getfield      #90                 // Field field_52158:Lnet/minecraft/class_1921;
+         4: ifnull        20
+         7: aload_0
+         8: aload_0
+         9: getfield      #90                 // Field field_52158:Lnet/minecraft/class_1921;
+        12: invokevirtual #94                 // Method method_22994:(Lnet/minecraft/class_1921;)V
+        15: aload_0
+        16: aconst_null
+        17: putfield      #90                 // Field field_52158:Lnet/minecraft/class_1921;
+        20: return
+
+  public void method_22993();
+    Code:
+         0: aload_0
+         1: invokevirtual #105                // Method method_37104:()V
+         4: aload_0
+         5: getfield      #50                 // Field field_20953:Ljava/util/SequencedMap;
+         8: invokeinterface #109,  1          // InterfaceMethod java/util/SequencedMap.keySet:()Ljava/util/Set;
+        13: invokeinterface #115,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+        18: astore_1
+        19: aload_1
+        20: invokeinterface #120,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+        25: ifeq          46
+        28: aload_1
+        29: invokeinterface #124,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        34: checkcast     #64                 // class net/minecraft/class_1921
+        37: astore_2
+        38: aload_0
+        39: aload_2
+        40: invokevirtual #94                 // Method method_22994:(Lnet/minecraft/class_1921;)V
+        43: goto          19
+        46: return
+
+  public void method_22994(net.minecraft.class_1921);
+    Code:
+         0: aload_0
+         1: getfield      #46                 // Field field_52157:Ljava/util/Map;
+         4: aload_1
+         5: invokeinterface #127,  2          // InterfaceMethod java/util/Map.remove:(Ljava/lang/Object;)Ljava/lang/Object;
+        10: checkcast     #62                 // class net/minecraft/class_287
+        13: astore_2
+        14: aload_2
+        15: ifnull        24
+        18: aload_0
+        19: aload_1
+        20: aload_2
+        21: invokevirtual #72                 // Method method_60893:(Lnet/minecraft/class_1921;Lnet/minecraft/class_287;)V
+        24: return
+
+  private void method_60893(net.minecraft.class_1921, net.minecraft.class_287);
+    Code:
+         0: aload_2
+         1: invokevirtual #132                // Method net/minecraft/class_287.method_60794:()Lnet/minecraft/class_9801;
+         4: astore_3
+         5: aload_3
+         6: ifnull        53
+         9: aload_1
+        10: invokevirtual #135                // Method net/minecraft/class_1921.method_60894:()Z
+        13: ifeq          48
+        16: aload_0
+        17: getfield      #50                 // Field field_20953:Ljava/util/SequencedMap;
+        20: aload_1
+        21: aload_0
+        22: getfield      #48                 // Field field_52156:Lnet/minecraft/class_9799;
+        25: invokeinterface #138,  3          // InterfaceMethod java/util/SequencedMap.getOrDefault:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        30: checkcast     #77                 // class net/minecraft/class_9799
+        33: astore        4
+        35: aload_3
+        36: aload         4
+        38: invokestatic  #144                // Method com/mojang/blaze3d/systems/RenderSystem.getProjectionType:()Lnet/minecraft/class_10366;
+        41: invokevirtual #150                // Method net/minecraft/class_10366.method_65045:()Lnet/minecraft/class_8251;
+        44: invokevirtual #154                // Method net/minecraft/class_9801.method_60819:(Lnet/minecraft/class_9799;Lnet/minecraft/class_8251;)Lnet/minecraft/class_9801$class_9802;
+        47: pop
+        48: aload_1
+        49: aload_3
+        50: invokevirtual #158                // Method net/minecraft/class_1921.method_60895:(Lnet/minecraft/class_9801;)V
+        53: aload_1
+        54: aload_0
+        55: getfield      #90                 // Field field_52158:Lnet/minecraft/class_1921;
+        58: invokevirtual #162                // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+        61: ifeq          69
+        64: aload_0
+        65: aconst_null
+        66: putfield      #90                 // Field field_52158:Lnet/minecraft/class_1921;
+        69: return
+}

@@ -1,0 +1,24 @@
+// net/minecraft/client/font/MultilineText$1 = net/minecraft/class_5489$1
+Compiled from "class_5489.java"
+class net.minecraft.class_5489$1 implements net.minecraft.class_5489 {
+  net.minecraft.class_5489$1();
+    Code:
+         0: aload_0
+         1: invokespecial #15                 // Method java/lang/Object."<init>":()V
+         4: return
+
+  public int method_75816(net.minecraft.class_11735, int, int, int, net.minecraft.class_12225);
+    Code:
+         0: iload_3
+         1: ireturn
+
+  public int method_30887();
+    Code:
+         0: iconst_0
+         1: ireturn
+
+  public int method_44048();
+    Code:
+         0: iconst_0
+         1: ireturn
+}

@@ -1,0 +1,44 @@
+// net/minecraft/client/font/FontStorage$LazyBakedGlyph = net/minecraft/class_377$class_11766
+Compiled from "class_377.java"
+class net.minecraft.class_377$class_11766 implements java.util.function.Supplier<net.minecraft.class_11768> {
+  final net.minecraft.class_11759 field_62140;
+
+  private net.minecraft.class_11768 field_62141;
+
+  final net.minecraft.class_377 field_62139;
+
+  net.minecraft.class_377$class_11766(net.minecraft.class_377, net.minecraft.class_11759);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: putfield      #33                 // Field field_62139:Lnet/minecraft/class_377;
+         5: aload_0
+         6: invokespecial #36                 // Method java/lang/Object."<init>":()V
+         9: aload_0
+        10: aload_2
+        11: putfield      #38                 // Field field_62140:Lnet/minecraft/class_11759;
+        14: return
+
+  public net.minecraft.class_11768 method_73405();
+    Code:
+         0: aload_0
+         1: getfield      #44                 // Field field_62141:Lnet/minecraft/class_11768;
+         4: ifnonnull     27
+         7: aload_0
+         8: aload_0
+         9: getfield      #38                 // Field field_62140:Lnet/minecraft/class_11759;
+        12: aload_0
+        13: getfield      #33                 // Field field_62139:Lnet/minecraft/class_377;
+        16: getfield      #48                 // Field net/minecraft/class_377.field_62136:Lnet/minecraft/class_11759$class_11760;
+        19: invokeinterface #52,  2           // InterfaceMethod net/minecraft/class_11759.method_73332:(Lnet/minecraft/class_11759$class_11760;)Lnet/minecraft/class_11768;
+        24: putfield      #44                 // Field field_62141:Lnet/minecraft/class_11768;
+        27: aload_0
+        28: getfield      #44                 // Field field_62141:Lnet/minecraft/class_11768;
+        31: areturn
+
+  public java.lang.Object get();
+    Code:
+         0: aload_0
+         1: invokevirtual #56                 // Method method_73405:()Lnet/minecraft/class_11768;
+         4: areturn
+}

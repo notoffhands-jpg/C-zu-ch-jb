@@ -1,0 +1,16 @@
+// net/minecraft/client/font/TrueTypeFont$LazyGlyph = net/minecraft/class_395$class_9908
+Compiled from "class_395.java"
+class net.minecraft.class_395$class_9908 {
+  final int field_52696;
+
+  volatile net.minecraft.class_11759 field_52697;
+
+  net.minecraft.class_395$class_9908(int);
+    Code:
+         0: aload_0
+         1: invokespecial #23                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: iload_1
+         6: putfield      #25                 // Field field_52696:I
+         9: return
+}

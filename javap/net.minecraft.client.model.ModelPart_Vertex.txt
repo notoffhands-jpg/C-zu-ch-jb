@@ -1,0 +1,124 @@
+// net/minecraft/client/model/ModelPart$Vertex = net/minecraft/class_630$class_618
+Compiled from "class_630.java"
+public final class net.minecraft.class_630$class_618 extends java.lang.Record {
+  private final float comp_4804;
+
+  private final float comp_4805;
+
+  private final float comp_4806;
+
+  final float comp_3187;
+
+  final float comp_3188;
+
+  public static final float field_62594;
+
+  public net.minecraft.class_630$class_618(float, float, float, float, float);
+    Code:
+         0: aload_0
+         1: invokespecial #35                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: fload_1
+         6: putfield      #37                 // Field comp_4804:F
+         9: aload_0
+        10: fload_2
+        11: putfield      #39                 // Field comp_4805:F
+        14: aload_0
+        15: fload_3
+        16: putfield      #41                 // Field comp_4806:F
+        19: aload_0
+        20: fload         4
+        22: putfield      #43                 // Field comp_3187:F
+        25: aload_0
+        26: fload         5
+        28: putfield      #45                 // Field comp_3188:F
+        31: return
+
+  public net.minecraft.class_630$class_618 method_2837(float, float);
+    Code:
+         0: new           #2                  // class net/minecraft/class_630$class_618
+         3: dup
+         4: aload_0
+         5: getfield      #37                 // Field comp_4804:F
+         8: aload_0
+         9: getfield      #39                 // Field comp_4805:F
+        12: aload_0
+        13: getfield      #41                 // Field comp_4806:F
+        16: fload_1
+        17: fload_2
+        18: invokespecial #51                 // Method "<init>":(FFFFF)V
+        21: areturn
+
+  public float method_74250();
+    Code:
+         0: aload_0
+         1: getfield      #37                 // Field comp_4804:F
+         4: ldc           #25                 // float 16.0f
+         6: fdiv
+         7: freturn
+
+  public float method_74251();
+    Code:
+         0: aload_0
+         1: getfield      #39                 // Field comp_4805:F
+         4: ldc           #25                 // float 16.0f
+         6: fdiv
+         7: freturn
+
+  public float method_74252();
+    Code:
+         0: aload_0
+         1: getfield      #41                 // Field comp_4806:F
+         4: ldc           #25                 // float 16.0f
+         6: fdiv
+         7: freturn
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #74,  0             // InvokeDynamic #0:toString:(Lnet/minecraft/class_630$class_618;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #79,  0             // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_630$class_618;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #85,  0             // InvokeDynamic #0:equals:(Lnet/minecraft/class_630$class_618;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public float comp_4804();
+    Code:
+         0: aload_0
+         1: getfield      #37                 // Field comp_4804:F
+         4: freturn
+
+  public float comp_4805();
+    Code:
+         0: aload_0
+         1: getfield      #39                 // Field comp_4805:F
+         4: freturn
+
+  public float comp_4806();
+    Code:
+         0: aload_0
+         1: getfield      #41                 // Field comp_4806:F
+         4: freturn
+
+  public float comp_3187();
+    Code:
+         0: aload_0
+         1: getfield      #43                 // Field comp_3187:F
+         4: freturn
+
+  public float comp_3188();
+    Code:
+         0: aload_0
+         1: getfield      #45                 // Field comp_3188:F
+         4: freturn
+}

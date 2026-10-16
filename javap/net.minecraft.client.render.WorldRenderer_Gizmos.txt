@@ -1,0 +1,50 @@
+// net/minecraft/client/render/WorldRenderer$Gizmos = net/minecraft/class_761$class_12351
+Compiled from "class_761.java"
+final class net.minecraft.class_761$class_12351 extends java.lang.Record {
+  private final net.minecraft.class_12160 comp_5236;
+
+  private final net.minecraft.class_12160 comp_5237;
+
+  net.minecraft.class_761$class_12351(net.minecraft.class_12160, net.minecraft.class_12160);
+    Code:
+         0: aload_0
+         1: invokespecial #27                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #29                 // Field comp_5236:Lnet/minecraft/class_12160;
+         9: aload_0
+        10: aload_2
+        11: putfield      #31                 // Field comp_5237:Lnet/minecraft/class_12160;
+        14: return
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #49,  0             // InvokeDynamic #0:toString:(Lnet/minecraft/class_761$class_12351;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #54,  0             // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_761$class_12351;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #60,  0             // InvokeDynamic #0:equals:(Lnet/minecraft/class_761$class_12351;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public net.minecraft.class_12160 comp_5236();
+    Code:
+         0: aload_0
+         1: getfield      #29                 // Field comp_5236:Lnet/minecraft/class_12160;
+         4: areturn
+
+  public net.minecraft.class_12160 comp_5237();
+    Code:
+         0: aload_0
+         1: getfield      #31                 // Field comp_5237:Lnet/minecraft/class_12160;
+         4: areturn
+}

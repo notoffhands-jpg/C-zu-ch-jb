@@ -1,0 +1,355 @@
+// net/minecraft/client/font/TrueTypeFont = net/minecraft/class_395
+Compiled from "class_395.java"
+public class net.minecraft.class_395 implements net.minecraft.class_390 {
+  private java.nio.ByteBuffer field_21839;
+
+  private org.lwjgl.util.freetype.FT_Face field_48383;
+
+  final float field_2321;
+
+  private final net.minecraft.class_8532<net.minecraft.class_395$class_9908> field_52695;
+
+  public net.minecraft.class_395(java.nio.ByteBuffer, org.lwjgl.util.freetype.FT_Face, float, float, float, float, java.lang.String);
+    Code:
+         0: aload_0
+         1: invokespecial #48                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: new           #50                 // class net/minecraft/class_8532
+         8: dup
+         9: invokedynamic #69,  0             // InvokeDynamic #0:apply:()Ljava/util/function/IntFunction;
+        14: invokedynamic #76,  0             // InvokeDynamic #1:apply:()Ljava/util/function/IntFunction;
+        19: invokespecial #79                 // Method net/minecraft/class_8532."<init>":(Ljava/util/function/IntFunction;Ljava/util/function/IntFunction;)V
+        22: putfield      #81                 // Field field_52695:Lnet/minecraft/class_8532;
+        25: aload_0
+        26: aload_1
+        27: putfield      #83                 // Field field_21839:Ljava/nio/ByteBuffer;
+        30: aload_0
+        31: aload_2
+        32: putfield      #85                 // Field field_48383:Lorg/lwjgl/util/freetype/FT_Face;
+        35: aload_0
+        36: fload         4
+        38: putfield      #87                 // Field field_2321:F
+        41: new           #89                 // class it/unimi/dsi/fastutil/ints/IntArraySet
+        44: dup
+        45: invokespecial #90                 // Method it/unimi/dsi/fastutil/ints/IntArraySet."<init>":()V
+        48: astore        8
+        50: aload         7
+        52: invokevirtual #96                 // Method java/lang/String.codePoints:()Ljava/util/stream/IntStream;
+        55: aload         8
+        57: dup
+        58: invokestatic  #102                // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+        61: pop
+        62: invokedynamic #115,  0            // InvokeDynamic #2:accept:(Lit/unimi/dsi/fastutil/ints/IntSet;)Ljava/util/function/IntConsumer;
+        67: invokeinterface #121,  2          // InterfaceMethod java/util/stream/IntStream.forEach:(Ljava/util/function/IntConsumer;)V
+        72: fload_3
+        73: fload         4
+        75: fmul
+        76: invokestatic  #127                // Method java/lang/Math.round:(F)I
+        79: istore        9
+        81: aload_2
+        82: iload         9
+        84: iload         9
+        86: invokestatic  #133                // Method org/lwjgl/util/freetype/FreeType.FT_Set_Pixel_Sizes:(Lorg/lwjgl/util/freetype/FT_Face;II)I
+        89: pop
+        90: fload         5
+        92: fload         4
+        94: fmul
+        95: fstore        10
+        97: fload         6
+        99: fneg
+       100: fload         4
+       102: fmul
+       103: fstore        11
+       105: invokestatic  #139                // Method org/lwjgl/system/MemoryStack.stackPush:()Lorg/lwjgl/system/MemoryStack;
+       108: astore        12
+       110: aload         12
+       112: invokestatic  #145                // Method org/lwjgl/util/freetype/FT_Vector.malloc:(Lorg/lwjgl/system/MemoryStack;)Lorg/lwjgl/util/freetype/FT_Vector;
+       115: fload         10
+       117: fload         11
+       119: invokestatic  #151                // Method net/minecraft/class_9111.method_56147:(Lorg/lwjgl/util/freetype/FT_Vector;FF)Lorg/lwjgl/util/freetype/FT_Vector;
+       122: astore        13
+       124: aload_2
+       125: aconst_null
+       126: aload         13
+       128: invokestatic  #155                // Method org/lwjgl/util/freetype/FreeType.FT_Set_Transform:(Lorg/lwjgl/util/freetype/FT_Face;Lorg/lwjgl/util/freetype/FT_Matrix;Lorg/lwjgl/util/freetype/FT_Vector;)V
+       131: aload         12
+       133: iconst_1
+       134: invokevirtual #159                // Method org/lwjgl/system/MemoryStack.mallocInt:(I)Ljava/nio/IntBuffer;
+       137: astore        14
+       139: aload_2
+       140: aload         14
+       142: invokestatic  #163                // Method org/lwjgl/util/freetype/FreeType.FT_Get_First_Char:(Lorg/lwjgl/util/freetype/FT_Face;Ljava/nio/IntBuffer;)J
+       145: l2i
+       146: istore        15
+       148: aload         14
+       150: iconst_0
+       151: invokevirtual #171                // Method java/nio/IntBuffer.get:(I)I
+       154: istore        16
+       156: iload         16
+       158: ifne          164
+       161: goto          210
+       164: aload         8
+       166: iload         15
+       168: invokeinterface #176,  2          // InterfaceMethod it/unimi/dsi/fastutil/ints/IntSet.contains:(I)Z
+       173: ifne          195
+       176: aload_0
+       177: getfield      #81                 // Field field_52695:Lnet/minecraft/class_8532;
+       180: iload         15
+       182: new           #17                 // class net/minecraft/class_395$class_9908
+       185: dup
+       186: iload         16
+       188: invokespecial #178                // Method net/minecraft/class_395$class_9908."<init>":(I)V
+       191: invokevirtual #182                // Method net/minecraft/class_8532.method_51599:(ILjava/lang/Object;)Ljava/lang/Object;
+       194: pop
+       195: aload_2
+       196: iload         15
+       198: i2l
+       199: aload         14
+       201: invokestatic  #186                // Method org/lwjgl/util/freetype/FreeType.FT_Get_Next_Char:(Lorg/lwjgl/util/freetype/FT_Face;JLjava/nio/IntBuffer;)J
+       204: l2i
+       205: istore        15
+       207: goto          148
+       210: aload         12
+       212: ifnull        250
+       215: aload         12
+       217: invokevirtual #189                // Method org/lwjgl/system/MemoryStack.close:()V
+       220: goto          250
+       223: astore        13
+       225: aload         12
+       227: ifnull        247
+       230: aload         12
+       232: invokevirtual #189                // Method org/lwjgl/system/MemoryStack.close:()V
+       235: goto          247
+       238: astore        14
+       240: aload         13
+       242: aload         14
+       244: invokevirtual #193                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+       247: aload         13
+       249: athrow
+       250: return
+      Exception table:
+         from    to  target type
+           110   210   223   Class java/lang/Throwable
+           230   235   238   Class java/lang/Throwable
+
+  public net.minecraft.class_11759 method_2040(int);
+    Code:
+         0: aload_0
+         1: getfield      #81                 // Field field_52695:Lnet/minecraft/class_8532;
+         4: iload_1
+         5: invokevirtual #215                // Method net/minecraft/class_8532.method_51598:(I)Ljava/lang/Object;
+         8: checkcast     #17                 // class net/minecraft/class_395$class_9908
+        11: astore_2
+        12: aload_2
+        13: ifnull        25
+        16: aload_0
+        17: iload_1
+        18: aload_2
+        19: invokevirtual #219                // Method method_61901:(ILnet/minecraft/class_395$class_9908;)Lnet/minecraft/class_11759;
+        22: goto          26
+        25: aconst_null
+        26: areturn
+
+  private net.minecraft.class_11759 method_61901(int, net.minecraft.class_395$class_9908);
+    Code:
+         0: aload_2
+         1: getfield      #228                // Field net/minecraft/class_395$class_9908.field_52697:Lnet/minecraft/class_11759;
+         4: astore_3
+         5: aload_3
+         6: ifnonnull     61
+         9: aload_0
+        10: invokevirtual #232                // Method method_51884:()Lorg/lwjgl/util/freetype/FT_Face;
+        13: astore        4
+        15: aload         4
+        17: dup
+        18: astore        5
+        20: monitorenter
+        21: aload_2
+        22: getfield      #228                // Field net/minecraft/class_395$class_9908.field_52697:Lnet/minecraft/class_11759;
+        25: astore_3
+        26: aload_3
+        27: ifnonnull     47
+        30: aload_0
+        31: iload_1
+        32: aload         4
+        34: aload_2
+        35: getfield      #235                // Field net/minecraft/class_395$class_9908.field_52696:I
+        38: invokevirtual #239                // Method method_61902:(ILorg/lwjgl/util/freetype/FT_Face;I)Lnet/minecraft/class_11759;
+        41: astore_3
+        42: aload_2
+        43: aload_3
+        44: putfield      #228                // Field net/minecraft/class_395$class_9908.field_52697:Lnet/minecraft/class_11759;
+        47: aload         5
+        49: monitorexit
+        50: goto          61
+        53: astore        6
+        55: aload         5
+        57: monitorexit
+        58: aload         6
+        60: athrow
+        61: aload_3
+        62: areturn
+      Exception table:
+         from    to  target type
+            21    50    53   any
+            53    58    53   any
+
+  private net.minecraft.class_11759 method_61902(int, org.lwjgl.util.freetype.FT_Face, int);
+    Code:
+         0: aload_2
+         1: iload_3
+         2: ldc           #240                // int 4194312
+         4: invokestatic  #243                // Method org/lwjgl/util/freetype/FreeType.FT_Load_Glyph:(Lorg/lwjgl/util/freetype/FT_Face;II)I
+         7: istore        4
+         9: iload         4
+        11: ifeq          38
+        14: iload         4
+        16: getstatic     #249                // Field java/util/Locale.ROOT:Ljava/util/Locale;
+        19: ldc           #251                // String Loading glyph U+%06X
+        21: iconst_1
+        22: anewarray     #4                  // class java/lang/Object
+        25: dup
+        26: iconst_0
+        27: iload_1
+        28: invokestatic  #257                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        31: aastore
+        32: invokestatic  #261                // Method java/lang/String.format:(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+        35: invokestatic  #265                // Method net/minecraft/class_9111.method_59837:(ILjava/lang/String;)V
+        38: aload_2
+        39: invokevirtual #269                // Method org/lwjgl/util/freetype/FT_Face.glyph:()Lorg/lwjgl/util/freetype/FT_GlyphSlot;
+        42: astore        5
+        44: aload         5
+        46: ifnonnull     77
+        49: new           #271                // class java/lang/NullPointerException
+        52: dup
+        53: getstatic     #249                // Field java/util/Locale.ROOT:Ljava/util/Locale;
+        56: ldc_w         #273                // String Glyph U+%06X not initialized
+        59: iconst_1
+        60: anewarray     #4                  // class java/lang/Object
+        63: dup
+        64: iconst_0
+        65: iload_1
+        66: invokestatic  #257                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        69: aastore
+        70: invokestatic  #261                // Method java/lang/String.format:(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+        73: invokespecial #276                // Method java/lang/NullPointerException."<init>":(Ljava/lang/String;)V
+        76: athrow
+        77: aload         5
+        79: invokevirtual #282                // Method org/lwjgl/util/freetype/FT_GlyphSlot.advance:()Lorg/lwjgl/util/freetype/FT_Vector;
+        82: invokestatic  #286                // Method net/minecraft/class_9111.method_56146:(Lorg/lwjgl/util/freetype/FT_Vector;)F
+        85: fstore        6
+        87: aload         5
+        89: invokevirtual #290                // Method org/lwjgl/util/freetype/FT_GlyphSlot.bitmap:()Lorg/lwjgl/util/freetype/FT_Bitmap;
+        92: astore        7
+        94: aload         5
+        96: invokevirtual #294                // Method org/lwjgl/util/freetype/FT_GlyphSlot.bitmap_left:()I
+        99: istore        8
+       101: aload         5
+       103: invokevirtual #297                // Method org/lwjgl/util/freetype/FT_GlyphSlot.bitmap_top:()I
+       106: istore        9
+       108: aload         7
+       110: invokevirtual #302                // Method org/lwjgl/util/freetype/FT_Bitmap.width:()I
+       113: istore        10
+       115: aload         7
+       117: invokevirtual #305                // Method org/lwjgl/util/freetype/FT_Bitmap.rows:()I
+       120: istore        11
+       122: iload         10
+       124: ifle          132
+       127: iload         11
+       129: ifgt          147
+       132: new           #307                // class net/minecraft/class_384
+       135: dup
+       136: fload         6
+       138: aload_0
+       139: getfield      #87                 // Field field_2321:F
+       142: fdiv
+       143: invokespecial #310                // Method net/minecraft/class_384."<init>":(F)V
+       146: areturn
+       147: new           #13                 // class net/minecraft/class_395$class_397
+       150: dup
+       151: aload_0
+       152: iload         8
+       154: i2f
+       155: iload         9
+       157: i2f
+       158: iload         10
+       160: iload         11
+       162: fload         6
+       164: iload_3
+       165: invokespecial #313                // Method net/minecraft/class_395$class_397."<init>":(Lnet/minecraft/class_395;FFIIFI)V
+       168: areturn
+
+  org.lwjgl.util.freetype.FT_Face method_51884();
+    Code:
+         0: aload_0
+         1: getfield      #83                 // Field field_21839:Ljava/nio/ByteBuffer;
+         4: ifnull        14
+         7: aload_0
+         8: getfield      #85                 // Field field_48383:Lorg/lwjgl/util/freetype/FT_Face;
+        11: ifnonnull     25
+        14: new           #320                // class java/lang/IllegalStateException
+        17: dup
+        18: ldc_w         #322                // String Provider already closed
+        21: invokespecial #323                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+        24: athrow
+        25: aload_0
+        26: getfield      #85                 // Field field_48383:Lorg/lwjgl/util/freetype/FT_Face;
+        29: areturn
+
+  public void close();
+    Code:
+         0: aload_0
+         1: getfield      #85                 // Field field_48383:Lorg/lwjgl/util/freetype/FT_Face;
+         4: ifnull        42
+         7: getstatic     #327                // Field net/minecraft/class_9111.field_51483:Ljava/lang/Object;
+        10: dup
+        11: astore_1
+        12: monitorenter
+        13: aload_0
+        14: getfield      #85                 // Field field_48383:Lorg/lwjgl/util/freetype/FT_Face;
+        17: invokestatic  #331                // Method org/lwjgl/util/freetype/FreeType.FT_Done_Face:(Lorg/lwjgl/util/freetype/FT_Face;)I
+        20: ldc_w         #333                // String Deleting face
+        23: invokestatic  #337                // Method net/minecraft/class_9111.method_56145:(ILjava/lang/String;)Z
+        26: pop
+        27: aload_1
+        28: monitorexit
+        29: goto          37
+        32: astore_2
+        33: aload_1
+        34: monitorexit
+        35: aload_2
+        36: athrow
+        37: aload_0
+        38: aconst_null
+        39: putfield      #85                 // Field field_48383:Lorg/lwjgl/util/freetype/FT_Face;
+        42: aload_0
+        43: getfield      #83                 // Field field_21839:Ljava/nio/ByteBuffer;
+        46: invokestatic  #343                // Method org/lwjgl/system/MemoryUtil.memFree:(Ljava/nio/Buffer;)V
+        49: aload_0
+        50: aconst_null
+        51: putfield      #83                 // Field field_21839:Ljava/nio/ByteBuffer;
+        54: return
+      Exception table:
+         from    to  target type
+            13    29    32   any
+            32    35    32   any
+
+  public it.unimi.dsi.fastutil.ints.IntSet method_27442();
+    Code:
+         0: aload_0
+         1: getfield      #81                 // Field field_52695:Lnet/minecraft/class_8532;
+         4: invokevirtual #348                // Method net/minecraft/class_8532.method_51603:()Lit/unimi/dsi/fastutil/ints/IntSet;
+         7: areturn
+
+  private static net.minecraft.class_395$class_9908[][] method_61903(int);
+    Code:
+         0: iload_0
+         1: anewarray     #350                // class "[Lnet/minecraft/class_395$class_9908;"
+         4: areturn
+
+  private static net.minecraft.class_395$class_9908[] method_61904(int);
+    Code:
+         0: iload_0
+         1: anewarray     #17                 // class net/minecraft/class_395$class_9908
+         4: areturn
+}

@@ -1,0 +1,50 @@
+// net/minecraft/client/render/command/OrderedRenderCommandQueueImpl$MovingBlockCommand = net/minecraft/class_11661$class_11790
+Compiled from "class_11661.java"
+public final class net.minecraft.class_11661$class_11790 extends java.lang.Record {
+  private final org.joml.Matrix4f comp_4652;
+
+  private final net.minecraft.class_11791 comp_4653;
+
+  public net.minecraft.class_11661$class_11790(org.joml.Matrix4f, net.minecraft.class_11791);
+    Code:
+         0: aload_0
+         1: invokespecial #28                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #30                 // Field comp_4652:Lorg/joml/Matrix4f;
+         9: aload_0
+        10: aload_2
+        11: putfield      #32                 // Field comp_4653:Lnet/minecraft/class_11791;
+        14: return
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #50,  0             // InvokeDynamic #0:toString:(Lnet/minecraft/class_11661$class_11790;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #55,  0             // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_11661$class_11790;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #61,  0             // InvokeDynamic #0:equals:(Lnet/minecraft/class_11661$class_11790;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public org.joml.Matrix4f comp_4652();
+    Code:
+         0: aload_0
+         1: getfield      #30                 // Field comp_4652:Lorg/joml/Matrix4f;
+         4: areturn
+
+  public net.minecraft.class_11791 comp_4653();
+    Code:
+         0: aload_0
+         1: getfield      #32                 // Field comp_4653:Lnet/minecraft/class_11791;
+         4: areturn
+}

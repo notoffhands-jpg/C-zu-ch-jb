@@ -1,0 +1,78 @@
+// net/minecraft/client/render/entity/state/LivingEntityRenderState = net/minecraft/class_10042
+Compiled from "class_10042.java"
+public class net.minecraft.class_10042 extends net.minecraft.class_10017 {
+  public float field_53446;
+
+  public float field_53447;
+
+  public float field_53448;
+
+  public float field_53449;
+
+  public float field_53450;
+
+  public float field_53451;
+
+  public float field_53453;
+
+  public float field_53454;
+
+  public float field_64688;
+
+  public boolean field_53455;
+
+  public boolean field_53456;
+
+  public boolean field_53457;
+
+  public boolean field_53458;
+
+  public boolean field_53459;
+
+  public boolean field_53460;
+
+  public boolean field_53461;
+
+  public net.minecraft.class_2350 field_53463;
+
+  public net.minecraft.class_4050 field_53465;
+
+  public final net.minecraft.class_10444 field_53467;
+
+  public float field_53452;
+
+  public net.minecraft.class_2484$class_2485 field_55315;
+
+  public net.minecraft.class_9296 field_55316;
+
+  public net.minecraft.class_10042();
+    Code:
+         0: aload_0
+         1: invokespecial #48                 // Method net/minecraft/class_10017."<init>":()V
+         4: aload_0
+         5: fconst_1
+         6: putfield      #50                 // Field field_53453:F
+         9: aload_0
+        10: fconst_1
+        11: putfield      #52                 // Field field_53454:F
+        14: aload_0
+        15: getstatic     #57                 // Field net/minecraft/class_4050.field_18076:Lnet/minecraft/class_4050;
+        18: putfield      #59                 // Field field_53465:Lnet/minecraft/class_4050;
+        21: aload_0
+        22: new           #61                 // class net/minecraft/class_10444
+        25: dup
+        26: invokespecial #62                 // Method net/minecraft/class_10444."<init>":()V
+        29: putfield      #64                 // Field field_53467:Lnet/minecraft/class_10444;
+        32: return
+
+  public boolean method_62613(net.minecraft.class_4050);
+    Code:
+         0: aload_0
+         1: getfield      #59                 // Field field_53465:Lnet/minecraft/class_4050;
+         4: aload_1
+         5: if_acmpne     12
+         8: iconst_1
+         9: goto          13
+        12: iconst_0
+        13: ireturn
+}

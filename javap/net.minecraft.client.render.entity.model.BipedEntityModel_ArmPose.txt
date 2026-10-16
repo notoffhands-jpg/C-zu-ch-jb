@@ -1,0 +1,220 @@
+// net/minecraft/client/render/entity/model/BipedEntityModel$ArmPose = net/minecraft/class_572$class_573
+Compiled from "class_572.java"
+public class net.minecraft.class_572$class_573 extends java.lang.Enum<net.minecraft.class_572$class_573> {
+  public static final net.minecraft.class_572$class_573 field_3409;
+
+  public static final net.minecraft.class_572$class_573 field_3410;
+
+  public static final net.minecraft.class_572$class_573 field_3406;
+
+  public static final net.minecraft.class_572$class_573 field_3403;
+
+  public static final net.minecraft.class_572$class_573 field_63542;
+
+  public static final net.minecraft.class_572$class_573 field_3405;
+
+  public static final net.minecraft.class_572$class_573 field_3408;
+
+  public static final net.minecraft.class_572$class_573 field_27434;
+
+  public static final net.minecraft.class_572$class_573 field_39071;
+
+  public static final net.minecraft.class_572$class_573 field_42877;
+
+  public static final net.minecraft.class_572$class_573 field_63543;
+
+  private final boolean field_25722;
+
+  private final boolean field_64557;
+
+  private static final net.minecraft.class_572$class_573[] field_3404;
+
+  public static net.minecraft.class_572$class_573[] values();
+    Code:
+         0: getstatic     #36                 // Field field_3404:[Lnet/minecraft/class_572$class_573;
+         3: invokevirtual #41                 // Method "[Lnet/minecraft/class_572$class_573;".clone:()Ljava/lang/Object;
+         6: checkcast     #37                 // class "[Lnet/minecraft/class_572$class_573;"
+         9: areturn
+
+  public static net.minecraft.class_572$class_573 valueOf(java.lang.String);
+    Code:
+         0: ldc           #2                  // class net/minecraft/class_572$class_573
+         2: aload_0
+         3: invokestatic  #47                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+         6: checkcast     #2                  // class net/minecraft/class_572$class_573
+         9: areturn
+
+  net.minecraft.class_572$class_573(boolean, boolean);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: iload_2
+         3: invokespecial #57                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+         6: aload_0
+         7: iload_3
+         8: putfield      #59                 // Field field_25722:Z
+        11: aload_0
+        12: iload         4
+        14: putfield      #61                 // Field field_64557:Z
+        17: return
+
+  public boolean method_30156();
+    Code:
+         0: aload_0
+         1: getfield      #59                 // Field field_25722:Z
+         4: ireturn
+
+  public boolean method_76639();
+    Code:
+         0: aload_0
+         1: getfield      #61                 // Field field_64557:Z
+         4: ireturn
+
+  public <S extends net.minecraft.class_10426> void method_75382(S, net.minecraft.class_4587, float, net.minecraft.class_1306, net.minecraft.class_1799);
+    Code:
+         0: return
+
+  private static net.minecraft.class_572$class_573[] method_36892();
+    Code:
+         0: bipush        11
+         2: anewarray     #2                  // class net/minecraft/class_572$class_573
+         5: dup
+         6: iconst_0
+         7: getstatic     #83                 // Field field_3409:Lnet/minecraft/class_572$class_573;
+        10: aastore
+        11: dup
+        12: iconst_1
+        13: getstatic     #85                 // Field field_3410:Lnet/minecraft/class_572$class_573;
+        16: aastore
+        17: dup
+        18: iconst_2
+        19: getstatic     #87                 // Field field_3406:Lnet/minecraft/class_572$class_573;
+        22: aastore
+        23: dup
+        24: iconst_3
+        25: getstatic     #89                 // Field field_3403:Lnet/minecraft/class_572$class_573;
+        28: aastore
+        29: dup
+        30: iconst_4
+        31: getstatic     #91                 // Field field_63542:Lnet/minecraft/class_572$class_573;
+        34: aastore
+        35: dup
+        36: iconst_5
+        37: getstatic     #93                 // Field field_3405:Lnet/minecraft/class_572$class_573;
+        40: aastore
+        41: dup
+        42: bipush        6
+        44: getstatic     #95                 // Field field_3408:Lnet/minecraft/class_572$class_573;
+        47: aastore
+        48: dup
+        49: bipush        7
+        51: getstatic     #97                 // Field field_27434:Lnet/minecraft/class_572$class_573;
+        54: aastore
+        55: dup
+        56: bipush        8
+        58: getstatic     #99                 // Field field_39071:Lnet/minecraft/class_572$class_573;
+        61: aastore
+        62: dup
+        63: bipush        9
+        65: getstatic     #101                // Field field_42877:Lnet/minecraft/class_572$class_573;
+        68: aastore
+        69: dup
+        70: bipush        10
+        72: getstatic     #103                // Field field_63543:Lnet/minecraft/class_572$class_573;
+        75: aastore
+        76: areturn
+
+  static {};
+    Code:
+         0: new           #2                  // class net/minecraft/class_572$class_573
+         3: dup
+         4: ldc           #107                // String EMPTY
+         6: iconst_0
+         7: iconst_0
+         8: iconst_0
+         9: invokespecial #109                // Method "<init>":(Ljava/lang/String;IZZ)V
+        12: putstatic     #83                 // Field field_3409:Lnet/minecraft/class_572$class_573;
+        15: new           #2                  // class net/minecraft/class_572$class_573
+        18: dup
+        19: ldc           #111                // String ITEM
+        21: iconst_1
+        22: iconst_0
+        23: iconst_0
+        24: invokespecial #109                // Method "<init>":(Ljava/lang/String;IZZ)V
+        27: putstatic     #85                 // Field field_3410:Lnet/minecraft/class_572$class_573;
+        30: new           #2                  // class net/minecraft/class_572$class_573
+        33: dup
+        34: ldc           #113                // String BLOCK
+        36: iconst_2
+        37: iconst_0
+        38: iconst_0
+        39: invokespecial #109                // Method "<init>":(Ljava/lang/String;IZZ)V
+        42: putstatic     #87                 // Field field_3406:Lnet/minecraft/class_572$class_573;
+        45: new           #2                  // class net/minecraft/class_572$class_573
+        48: dup
+        49: ldc           #115                // String BOW_AND_ARROW
+        51: iconst_3
+        52: iconst_1
+        53: iconst_1
+        54: invokespecial #109                // Method "<init>":(Ljava/lang/String;IZZ)V
+        57: putstatic     #89                 // Field field_3403:Lnet/minecraft/class_572$class_573;
+        60: new           #2                  // class net/minecraft/class_572$class_573
+        63: dup
+        64: ldc           #117                // String THROW_TRIDENT
+        66: iconst_4
+        67: iconst_0
+        68: iconst_1
+        69: invokespecial #109                // Method "<init>":(Ljava/lang/String;IZZ)V
+        72: putstatic     #91                 // Field field_63542:Lnet/minecraft/class_572$class_573;
+        75: new           #2                  // class net/minecraft/class_572$class_573
+        78: dup
+        79: ldc           #119                // String CROSSBOW_CHARGE
+        81: iconst_5
+        82: iconst_1
+        83: iconst_1
+        84: invokespecial #109                // Method "<init>":(Ljava/lang/String;IZZ)V
+        87: putstatic     #93                 // Field field_3405:Lnet/minecraft/class_572$class_573;
+        90: new           #2                  // class net/minecraft/class_572$class_573
+        93: dup
+        94: ldc           #121                // String CROSSBOW_HOLD
+        96: bipush        6
+        98: iconst_1
+        99: iconst_1
+       100: invokespecial #109                // Method "<init>":(Ljava/lang/String;IZZ)V
+       103: putstatic     #95                 // Field field_3408:Lnet/minecraft/class_572$class_573;
+       106: new           #2                  // class net/minecraft/class_572$class_573
+       109: dup
+       110: ldc           #123                // String SPYGLASS
+       112: bipush        7
+       114: iconst_0
+       115: iconst_0
+       116: invokespecial #109                // Method "<init>":(Ljava/lang/String;IZZ)V
+       119: putstatic     #97                 // Field field_27434:Lnet/minecraft/class_572$class_573;
+       122: new           #2                  // class net/minecraft/class_572$class_573
+       125: dup
+       126: ldc           #125                // String TOOT_HORN
+       128: bipush        8
+       130: iconst_0
+       131: iconst_0
+       132: invokespecial #109                // Method "<init>":(Ljava/lang/String;IZZ)V
+       135: putstatic     #99                 // Field field_39071:Lnet/minecraft/class_572$class_573;
+       138: new           #2                  // class net/minecraft/class_572$class_573
+       141: dup
+       142: ldc           #127                // String BRUSH
+       144: bipush        9
+       146: iconst_0
+       147: iconst_0
+       148: invokespecial #109                // Method "<init>":(Ljava/lang/String;IZZ)V
+       151: putstatic     #101                // Field field_42877:Lnet/minecraft/class_572$class_573;
+       154: new           #14                 // class net/minecraft/class_572$class_573$1
+       157: dup
+       158: ldc           #129                // String SPEAR
+       160: bipush        10
+       162: iconst_0
+       163: iconst_1
+       164: invokespecial #130                // Method net/minecraft/class_572$class_573$1."<init>":(Ljava/lang/String;IZZ)V
+       167: putstatic     #103                // Field field_63543:Lnet/minecraft/class_572$class_573;
+       170: invokestatic  #132                // Method method_36892:()[Lnet/minecraft/class_572$class_573;
+       173: putstatic     #36                 // Field field_3404:[Lnet/minecraft/class_572$class_573;
+       176: return
+}

@@ -1,0 +1,133 @@
+// net/minecraft/client/font/EmptyGlyphRect = net/minecraft/class_12237
+Compiled from "class_12237.java"
+public final class net.minecraft.class_12237 extends java.lang.Record implements net.minecraft.class_12236 {
+  private final float comp_5154;
+
+  private final float comp_5155;
+
+  private final float comp_5156;
+
+  private final float comp_5157;
+
+  private final float comp_5158;
+
+  private final net.minecraft.class_2583 comp_3317;
+
+  public static final float field_63886;
+
+  public static final float field_63887;
+
+  public net.minecraft.class_12237(float, float, float, float, float, net.minecraft.class_2583);
+    Code:
+         0: aload_0
+         1: invokespecial #39                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: fload_1
+         6: putfield      #41                 // Field comp_5154:F
+         9: aload_0
+        10: fload_2
+        11: putfield      #43                 // Field comp_5155:F
+        14: aload_0
+        15: fload_3
+        16: putfield      #45                 // Field comp_5156:F
+        19: aload_0
+        20: fload         4
+        22: putfield      #47                 // Field comp_5157:F
+        25: aload_0
+        26: fload         5
+        28: putfield      #49                 // Field comp_5158:F
+        31: aload_0
+        32: aload         6
+        34: putfield      #51                 // Field comp_3317:Lnet/minecraft/class_2583;
+        37: return
+
+  public float method_75818();
+    Code:
+         0: aload_0
+         1: getfield      #41                 // Field comp_5154:F
+         4: freturn
+
+  public float method_75819();
+    Code:
+         0: aload_0
+         1: getfield      #43                 // Field comp_5155:F
+         4: ldc           #28                 // float 7.0f
+         6: fadd
+         7: aload_0
+         8: getfield      #47                 // Field comp_5157:F
+        11: fsub
+        12: freturn
+
+  public float method_75820();
+    Code:
+         0: aload_0
+         1: getfield      #41                 // Field comp_5154:F
+         4: aload_0
+         5: getfield      #45                 // Field comp_5156:F
+         8: fadd
+         9: freturn
+
+  public float method_75821();
+    Code:
+         0: aload_0
+         1: invokevirtual #60                 // Method method_75819:()F
+         4: aload_0
+         5: getfield      #49                 // Field comp_5158:F
+         8: fadd
+         9: freturn
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #80,  0             // InvokeDynamic #0:toString:(Lnet/minecraft/class_12237;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #85,  0             // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_12237;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #91,  0             // InvokeDynamic #0:equals:(Lnet/minecraft/class_12237;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public float comp_5154();
+    Code:
+         0: aload_0
+         1: getfield      #41                 // Field comp_5154:F
+         4: freturn
+
+  public float comp_5155();
+    Code:
+         0: aload_0
+         1: getfield      #43                 // Field comp_5155:F
+         4: freturn
+
+  public float comp_5156();
+    Code:
+         0: aload_0
+         1: getfield      #45                 // Field comp_5156:F
+         4: freturn
+
+  public float comp_5157();
+    Code:
+         0: aload_0
+         1: getfield      #47                 // Field comp_5157:F
+         4: freturn
+
+  public float comp_5158();
+    Code:
+         0: aload_0
+         1: getfield      #49                 // Field comp_5158:F
+         4: freturn
+
+  public net.minecraft.class_2583 comp_3317();
+    Code:
+         0: aload_0
+         1: getfield      #51                 // Field comp_3317:Lnet/minecraft/class_2583;
+         4: areturn
+}

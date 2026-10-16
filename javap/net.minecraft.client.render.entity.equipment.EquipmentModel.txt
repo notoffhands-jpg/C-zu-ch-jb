@@ -1,0 +1,88 @@
+// net/minecraft/client/render/entity/equipment/EquipmentModel = net/minecraft/class_10186
+Compiled from "class_10186.java"
+public final class net.minecraft.class_10186 extends java.lang.Record {
+  private final java.util.Map<net.minecraft.class_10186$class_10190, java.util.List<net.minecraft.class_10186$class_10189>> comp_3169;
+
+  private static final com.mojang.serialization.Codec<java.util.List<net.minecraft.class_10186$class_10189>> field_54121;
+
+  public static final com.mojang.serialization.Codec<net.minecraft.class_10186> field_54120;
+
+  public net.minecraft.class_10186(java.util.Map<net.minecraft.class_10186$class_10190, java.util.List<net.minecraft.class_10186$class_10189>>);
+    Code:
+         0: aload_0
+         1: invokespecial #51                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #53                 // Field comp_3169:Ljava/util/Map;
+         9: return
+
+  public static net.minecraft.class_10186$class_10187 method_63994();
+    Code:
+         0: new           #13                 // class net/minecraft/class_10186$class_10187
+         3: dup
+         4: invokespecial #58                 // Method net/minecraft/class_10186$class_10187."<init>":()V
+         7: areturn
+
+  public java.util.List<net.minecraft.class_10186$class_10189> method_63996(net.minecraft.class_10186$class_10190);
+    Code:
+         0: aload_0
+         1: getfield      #53                 // Field comp_3169:Ljava/util/Map;
+         4: aload_1
+         5: invokestatic  #68                 // InterfaceMethod java/util/List.of:()Ljava/util/List;
+         8: invokeinterface #74,  3           // InterfaceMethod java/util/Map.getOrDefault:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        13: checkcast     #64                 // class java/util/List
+        16: areturn
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #90,  0             // InvokeDynamic #0:toString:(Lnet/minecraft/class_10186;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #95,  0             // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_10186;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #101,  0            // InvokeDynamic #0:equals:(Lnet/minecraft/class_10186;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public java.util.Map<net.minecraft.class_10186$class_10190, java.util.List<net.minecraft.class_10186$class_10189>> comp_3169();
+    Code:
+         0: aload_0
+         1: getfield      #53                 // Field comp_3169:Ljava/util/Map;
+         4: areturn
+
+  private static com.mojang.datafixers.kinds.App method_63995(com.mojang.serialization.codecs.RecordCodecBuilder$Instance);
+    Code:
+         0: aload_0
+         1: getstatic     #110                // Field net/minecraft/class_10186$class_10190.field_54131:Lcom/mojang/serialization/Codec;
+         4: getstatic     #112                // Field field_54121:Lcom/mojang/serialization/Codec;
+         7: invokestatic  #118                // InterfaceMethod com/mojang/serialization/Codec.unboundedMap:(Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/codecs/UnboundedMapCodec;
+        10: invokestatic  #124                // Method net/minecraft/class_5699.method_63572:(Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
+        13: ldc           #79                 // String layers
+        15: invokeinterface #128,  2          // InterfaceMethod com/mojang/serialization/Codec.fieldOf:(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;
+        20: invokedynamic #146,  0            // InvokeDynamic #1:apply:()Ljava/util/function/Function;
+        25: invokevirtual #152                // Method com/mojang/serialization/MapCodec.forGetter:(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;
+        28: invokevirtual #156                // Method com/mojang/serialization/codecs/RecordCodecBuilder$Instance.group:(Lcom/mojang/datafixers/kinds/App;)Lcom/mojang/datafixers/Products$P1;
+        31: aload_0
+        32: invokedynamic #162,  0            // InvokeDynamic #2:apply:()Ljava/util/function/Function;
+        37: invokevirtual #165                // Method com/mojang/datafixers/Products$P1.apply:(Lcom/mojang/datafixers/kinds/Applicative;Ljava/util/function/Function;)Lcom/mojang/datafixers/kinds/App;
+        40: areturn
+
+  static {};
+    Code:
+         0: getstatic     #170                // Field net/minecraft/class_10186$class_10189.field_54124:Lcom/mojang/serialization/Codec;
+         3: invokeinterface #174,  1          // InterfaceMethod com/mojang/serialization/Codec.listOf:()Lcom/mojang/serialization/Codec;
+         8: invokestatic  #177                // Method net/minecraft/class_5699.method_36973:(Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
+        11: putstatic     #112                // Field field_54121:Lcom/mojang/serialization/Codec;
+        14: invokedynamic #182,  0            // InvokeDynamic #3:apply:()Ljava/util/function/Function;
+        19: invokestatic  #186                // Method com/mojang/serialization/codecs/RecordCodecBuilder.create:(Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;
+        22: putstatic     #188                // Field field_54120:Lcom/mojang/serialization/Codec;
+        25: return
+}

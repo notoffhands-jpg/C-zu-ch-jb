@@ -1,0 +1,5 @@
+// net/minecraft/client/font/GlyphContainer$GlyphConsumer = net/minecraft/class_8532$class_8533
+Compiled from "class_8532.java"
+public interface net.minecraft.class_8532$class_8533<T> {
+  public abstract void accept(int, T);
+}

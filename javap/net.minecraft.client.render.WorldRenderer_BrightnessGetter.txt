@@ -1,0 +1,30 @@
+// net/minecraft/client/render/WorldRenderer$BrightnessGetter = net/minecraft/class_761$class_10948
+Compiled from "class_761.java"
+public interface net.minecraft.class_761$class_10948 {
+  public static final net.minecraft.class_761$class_10948 field_58200;
+
+  public abstract int packedBrightness(net.minecraft.class_1920, net.minecraft.class_2338);
+
+  private static int method_68890(net.minecraft.class_1920, net.minecraft.class_2338);
+    Code:
+         0: aload_0
+         1: getstatic     #31                 // Field net/minecraft/class_1944.field_9284:Lnet/minecraft/class_1944;
+         4: aload_1
+         5: invokeinterface #37,  3           // InterfaceMethod net/minecraft/class_1920.method_8314:(Lnet/minecraft/class_1944;Lnet/minecraft/class_2338;)I
+        10: istore_2
+        11: aload_0
+        12: getstatic     #40                 // Field net/minecraft/class_1944.field_9282:Lnet/minecraft/class_1944;
+        15: aload_1
+        16: invokeinterface #37,  3           // InterfaceMethod net/minecraft/class_1920.method_8314:(Lnet/minecraft/class_1944;Lnet/minecraft/class_2338;)I
+        21: istore_3
+        22: iload_3
+        23: iload_2
+        24: invokestatic  #46                 // Method net/minecraft/class_8104.method_68888:(II)I
+        27: ireturn
+
+  static {};
+    Code:
+         0: invokedynamic #67,  0             // InvokeDynamic #0:packedBrightness:()Lnet/minecraft/class_761$class_10948;
+         5: putstatic     #69                 // Field field_58200:Lnet/minecraft/class_761$class_10948;
+         8: return
+}

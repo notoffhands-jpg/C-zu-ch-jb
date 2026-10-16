@@ -1,0 +1,138 @@
+// net/minecraft/client/render/command/OrderedRenderCommandQueueImpl$ModelPartCommand = net/minecraft/class_11661$class_11789
+Compiled from "class_11661.java"
+public final class net.minecraft.class_11661$class_11789 extends java.lang.Record {
+  private final net.minecraft.class_4587$class_4665 comp_4643;
+
+  private final net.minecraft.class_630 comp_4644;
+
+  private final int comp_4645;
+
+  private final int comp_4646;
+
+  private final net.minecraft.class_1058 comp_4647;
+
+  private final boolean comp_4648;
+
+  private final boolean comp_4649;
+
+  private final int comp_4650;
+
+  private final net.minecraft.class_11683$class_11792 comp_4760;
+
+  private final int comp_4940;
+
+  public net.minecraft.class_11661$class_11789(net.minecraft.class_4587$class_4665, net.minecraft.class_630, int, int, net.minecraft.class_1058, boolean, boolean, int, net.minecraft.class_11683$class_11792, int);
+    Code:
+         0: aload_0
+         1: invokespecial #59                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #61                 // Field comp_4643:Lnet/minecraft/class_4587$class_4665;
+         9: aload_0
+        10: aload_2
+        11: putfield      #63                 // Field comp_4644:Lnet/minecraft/class_630;
+        14: aload_0
+        15: iload_3
+        16: putfield      #65                 // Field comp_4645:I
+        19: aload_0
+        20: iload         4
+        22: putfield      #67                 // Field comp_4646:I
+        25: aload_0
+        26: aload         5
+        28: putfield      #69                 // Field comp_4647:Lnet/minecraft/class_1058;
+        31: aload_0
+        32: iload         6
+        34: putfield      #71                 // Field comp_4648:Z
+        37: aload_0
+        38: iload         7
+        40: putfield      #73                 // Field comp_4649:Z
+        43: aload_0
+        44: iload         8
+        46: putfield      #75                 // Field comp_4650:I
+        49: aload_0
+        50: aload         9
+        52: putfield      #77                 // Field comp_4760:Lnet/minecraft/class_11683$class_11792;
+        55: aload_0
+        56: iload         10
+        58: putfield      #79                 // Field comp_4940:I
+        61: return
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #105,  0            // InvokeDynamic #0:toString:(Lnet/minecraft/class_11661$class_11789;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #110,  0            // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_11661$class_11789;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #116,  0            // InvokeDynamic #0:equals:(Lnet/minecraft/class_11661$class_11789;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public net.minecraft.class_4587$class_4665 comp_4643();
+    Code:
+         0: aload_0
+         1: getfield      #61                 // Field comp_4643:Lnet/minecraft/class_4587$class_4665;
+         4: areturn
+
+  public net.minecraft.class_630 comp_4644();
+    Code:
+         0: aload_0
+         1: getfield      #63                 // Field comp_4644:Lnet/minecraft/class_630;
+         4: areturn
+
+  public int comp_4645();
+    Code:
+         0: aload_0
+         1: getfield      #65                 // Field comp_4645:I
+         4: ireturn
+
+  public int comp_4646();
+    Code:
+         0: aload_0
+         1: getfield      #67                 // Field comp_4646:I
+         4: ireturn
+
+  public net.minecraft.class_1058 comp_4647();
+    Code:
+         0: aload_0
+         1: getfield      #69                 // Field comp_4647:Lnet/minecraft/class_1058;
+         4: areturn
+
+  public boolean comp_4648();
+    Code:
+         0: aload_0
+         1: getfield      #71                 // Field comp_4648:Z
+         4: ireturn
+
+  public boolean comp_4649();
+    Code:
+         0: aload_0
+         1: getfield      #73                 // Field comp_4649:Z
+         4: ireturn
+
+  public int comp_4650();
+    Code:
+         0: aload_0
+         1: getfield      #75                 // Field comp_4650:I
+         4: ireturn
+
+  public net.minecraft.class_11683$class_11792 comp_4760();
+    Code:
+         0: aload_0
+         1: getfield      #77                 // Field comp_4760:Lnet/minecraft/class_11683$class_11792;
+         4: areturn
+
+  public int comp_4940();
+    Code:
+         0: aload_0
+         1: getfield      #79                 // Field comp_4940:I
+         4: ireturn
+}

@@ -1,0 +1,277 @@
+// net/minecraft/client/font/UnihexFont$Loader = net/minecraft/class_391$class_392
+Compiled from "class_391.java"
+public class net.minecraft.class_391$class_392 implements net.minecraft.class_389 {
+  public static final com.mojang.serialization.MapCodec<net.minecraft.class_391$class_392> field_44771;
+
+  private final net.minecraft.class_2960 field_2304;
+
+  private final java.util.List<net.minecraft.class_391$class_8545> field_44772;
+
+  private net.minecraft.class_391$class_392(net.minecraft.class_2960, java.util.List<net.minecraft.class_391$class_8545>);
+    Code:
+         0: aload_0
+         1: invokespecial #71                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #73                 // Field field_2304:Lnet/minecraft/class_2960;
+         9: aload_0
+        10: aload_2
+        11: putfield      #75                 // Field field_44772:Ljava/util/List;
+        14: return
+
+  public net.minecraft.class_394 method_51731();
+    Code:
+         0: getstatic     #85                 // Field net/minecraft/class_394.field_2313:Lnet/minecraft/class_394;
+         3: areturn
+
+  public com.mojang.datafixers.util.Either<net.minecraft.class_389$class_8539, net.minecraft.class_389$class_8540> method_51734();
+    Code:
+         0: aload_0
+         1: invokedynamic #105,  0            // InvokeDynamic #0:load:(Lnet/minecraft/class_391$class_392;)Lnet/minecraft/class_389$class_8539;
+         6: invokestatic  #111                // Method com/mojang/datafixers/util/Either.left:(Ljava/lang/Object;)Lcom/mojang/datafixers/util/Either;
+         9: areturn
+
+  private net.minecraft.class_390 method_51658(net.minecraft.class_3300) throws java.io.IOException;
+    Code:
+         0: aload_1
+         1: aload_0
+         2: getfield      #73                 // Field field_2304:Lnet/minecraft/class_2960;
+         5: invokeinterface #121,  2          // InterfaceMethod net/minecraft/class_3300.open:(Lnet/minecraft/class_2960;)Ljava/io/InputStream;
+        10: astore_2
+        11: aload_0
+        12: aload_2
+        13: invokevirtual #125                // Method method_51662:(Ljava/io/InputStream;)Lnet/minecraft/class_391;
+        16: astore_3
+        17: aload_2
+        18: ifnull        25
+        21: aload_2
+        22: invokevirtual #130                // Method java/io/InputStream.close:()V
+        25: aload_3
+        26: areturn
+        27: astore_3
+        28: aload_2
+        29: ifnull        47
+        32: aload_2
+        33: invokevirtual #130                // Method java/io/InputStream.close:()V
+        36: goto          47
+        39: astore        4
+        41: aload_3
+        42: aload         4
+        44: invokevirtual #134                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+        47: aload_3
+        48: athrow
+      Exception table:
+         from    to  target type
+            11    17    27   Class java/lang/Throwable
+            32    36    39   Class java/lang/Throwable
+
+  private net.minecraft.class_391 method_51662(java.io.InputStream) throws java.io.IOException;
+    Code:
+         0: new           #36                 // class net/minecraft/class_8532
+         3: dup
+         4: invokedynamic #149,  0            // InvokeDynamic #1:apply:()Ljava/util/function/IntFunction;
+         9: invokedynamic #156,  0            // InvokeDynamic #2:apply:()Ljava/util/function/IntFunction;
+        14: invokespecial #159                // Method net/minecraft/class_8532."<init>":(Ljava/util/function/IntFunction;Ljava/util/function/IntFunction;)V
+        17: astore_2
+        18: aload_2
+        19: dup
+        20: invokestatic  #165                // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+        23: pop
+        24: invokedynamic #176,  0            // InvokeDynamic #3:accept:(Lnet/minecraft/class_8532;)Lnet/minecraft/class_391$class_8546;
+        29: astore_3
+        30: new           #178                // class java/util/zip/ZipInputStream
+        33: dup
+        34: aload_1
+        35: invokespecial #181                // Method java/util/zip/ZipInputStream."<init>":(Ljava/io/InputStream;)V
+        38: astore        4
+        40: aload         4
+        42: invokevirtual #185                // Method java/util/zip/ZipInputStream.getNextEntry:()Ljava/util/zip/ZipEntry;
+        45: dup
+        46: astore        5
+        48: ifnull        96
+        51: aload         5
+        53: invokevirtual #191                // Method java/util/zip/ZipEntry.getName:()Ljava/lang/String;
+        56: astore        6
+        58: aload         6
+        60: ldc           #193                // String .hex
+        62: invokevirtual #199                // Method java/lang/String.endsWith:(Ljava/lang/String;)Z
+        65: ifeq          93
+        68: getstatic     #203                // Field net/minecraft/class_391.field_2303:Lorg/slf4j/Logger;
+        71: ldc           #205                // String Found {}, loading
+        73: aload         6
+        75: invokeinterface #211,  3          // InterfaceMethod org/slf4j/Logger.info:(Ljava/lang/String;Ljava/lang/Object;)V
+        80: new           #213                // class net/minecraft/class_6826
+        83: dup
+        84: aload         4
+        86: invokespecial #214                // Method net/minecraft/class_6826."<init>":(Ljava/io/InputStream;)V
+        89: aload_3
+        90: invokestatic  #218                // Method net/minecraft/class_391.method_51653:(Ljava/io/InputStream;Lnet/minecraft/class_391$class_8546;)V
+        93: goto          40
+        96: new           #36                 // class net/minecraft/class_8532
+        99: dup
+       100: invokedynamic #225,  0            // InvokeDynamic #4:apply:()Ljava/util/function/IntFunction;
+       105: invokedynamic #232,  0            // InvokeDynamic #5:apply:()Ljava/util/function/IntFunction;
+       110: invokespecial #159                // Method net/minecraft/class_8532."<init>":(Ljava/util/function/IntFunction;Ljava/util/function/IntFunction;)V
+       113: astore        6
+       115: aload_0
+       116: getfield      #75                 // Field field_44772:Ljava/util/List;
+       119: invokeinterface #238,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+       124: astore        7
+       126: aload         7
+       128: invokeinterface #244,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+       133: ifeq          232
+       136: aload         7
+       138: invokeinterface #248,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+       143: checkcast     #22                 // class net/minecraft/class_391$class_8545
+       146: astore        8
+       148: aload         8
+       150: getfield      #252                // Field net/minecraft/class_391$class_8545.comp_1513:I
+       153: istore        9
+       155: aload         8
+       157: getfield      #255                // Field net/minecraft/class_391$class_8545.comp_1514:I
+       160: istore        10
+       162: aload         8
+       164: getfield      #259                // Field net/minecraft/class_391$class_8545.comp_1515:Lnet/minecraft/class_391$class_8542;
+       167: astore        11
+       169: iload         9
+       171: istore        12
+       173: iload         12
+       175: iload         10
+       177: if_icmpgt     229
+       180: aload_2
+       181: iload         12
+       183: invokevirtual #262                // Method net/minecraft/class_8532.method_51604:(I)Ljava/lang/Object;
+       186: checkcast     #28                 // class net/minecraft/class_391$class_8544
+       189: astore        13
+       191: aload         13
+       193: ifnull        223
+       196: aload         6
+       198: iload         12
+       200: new           #31                 // class net/minecraft/class_391$class_393
+       203: dup
+       204: aload         13
+       206: aload         11
+       208: getfield      #265                // Field net/minecraft/class_391$class_8542.comp_1506:I
+       211: aload         11
+       213: getfield      #268                // Field net/minecraft/class_391$class_8542.comp_1507:I
+       216: invokespecial #271                // Method net/minecraft/class_391$class_393."<init>":(Lnet/minecraft/class_391$class_8544;II)V
+       219: invokevirtual #171                // Method net/minecraft/class_8532.method_51599:(ILjava/lang/Object;)Ljava/lang/Object;
+       222: pop
+       223: iinc          12, 1
+       226: goto          173
+       229: goto          126
+       232: aload_2
+       233: aload         6
+       235: invokedynamic #281,  0            // InvokeDynamic #6:accept:(Lnet/minecraft/class_8532;)Lnet/minecraft/class_8532$class_8533;
+       240: invokevirtual #285                // Method net/minecraft/class_8532.method_51601:(Lnet/minecraft/class_8532$class_8533;)V
+       243: new           #9                  // class net/minecraft/class_391
+       246: dup
+       247: aload         6
+       249: invokespecial #288                // Method net/minecraft/class_391."<init>":(Lnet/minecraft/class_8532;)V
+       252: astore        7
+       254: aload         4
+       256: invokevirtual #289                // Method java/util/zip/ZipInputStream.close:()V
+       259: aload         7
+       261: areturn
+       262: astore        5
+       264: aload         4
+       266: invokevirtual #289                // Method java/util/zip/ZipInputStream.close:()V
+       269: goto          281
+       272: astore        6
+       274: aload         5
+       276: aload         6
+       278: invokevirtual #134                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+       281: aload         5
+       283: athrow
+      Exception table:
+         from    to  target type
+            40   254   262   Class java/lang/Throwable
+           264   269   272   Class java/lang/Throwable
+
+  private static void method_51660(net.minecraft.class_8532, int, net.minecraft.class_391$class_8544);
+    Code:
+         0: aload_2
+         1: invokeinterface #315,  1          // InterfaceMethod net/minecraft/class_391$class_8544.method_51679:()I
+         6: istore_3
+         7: iload_3
+         8: invokestatic  #319                // Method net/minecraft/class_391$class_8542.method_51671:(I)I
+        11: istore        4
+        13: iload_3
+        14: invokestatic  #322                // Method net/minecraft/class_391$class_8542.method_51674:(I)I
+        17: istore        5
+        19: aload_0
+        20: iload_1
+        21: new           #31                 // class net/minecraft/class_391$class_393
+        24: dup
+        25: aload_2
+        26: iload         4
+        28: iload         5
+        30: invokespecial #271                // Method net/minecraft/class_391$class_393."<init>":(Lnet/minecraft/class_391$class_8544;II)V
+        33: invokevirtual #171                // Method net/minecraft/class_8532.method_51599:(ILjava/lang/Object;)Ljava/lang/Object;
+        36: pop
+        37: return
+
+  private static net.minecraft.class_391$class_393[][] method_51657(int);
+    Code:
+         0: iload_0
+         1: anewarray     #325                // class "[Lnet/minecraft/class_391$class_393;"
+         4: areturn
+
+  private static net.minecraft.class_391$class_393[] method_51664(int);
+    Code:
+         0: iload_0
+         1: anewarray     #31                 // class net/minecraft/class_391$class_393
+         4: areturn
+
+  private static net.minecraft.class_391$class_8544[][] method_51666(int);
+    Code:
+         0: iload_0
+         1: anewarray     #327                // class "[Lnet/minecraft/class_391$class_8544;"
+         4: areturn
+
+  private static net.minecraft.class_391$class_8544[] method_51667(int);
+    Code:
+         0: iload_0
+         1: anewarray     #28                 // class net/minecraft/class_391$class_8544
+         4: areturn
+
+  private static com.mojang.datafixers.kinds.App method_51659(com.mojang.serialization.codecs.RecordCodecBuilder$Instance);
+    Code:
+         0: aload_0
+         1: getstatic     #336                // Field net/minecraft/class_2960.field_25139:Lcom/mojang/serialization/Codec;
+         4: ldc_w         #338                // String hex_file
+         7: invokeinterface #344,  2          // InterfaceMethod com/mojang/serialization/Codec.fieldOf:(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;
+        12: invokedynamic #354,  0            // InvokeDynamic #7:apply:()Ljava/util/function/Function;
+        17: invokevirtual #360                // Method com/mojang/serialization/MapCodec.forGetter:(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;
+        20: getstatic     #363                // Field net/minecraft/class_391$class_8545.field_44776:Lcom/mojang/serialization/Codec;
+        23: invokeinterface #367,  1          // InterfaceMethod com/mojang/serialization/Codec.listOf:()Lcom/mojang/serialization/Codec;
+        28: ldc_w         #369                // String size_overrides
+        31: invokestatic  #373                // InterfaceMethod java/util/List.of:()Ljava/util/List;
+        34: invokeinterface #377,  3          // InterfaceMethod com/mojang/serialization/Codec.optionalFieldOf:(Ljava/lang/String;Ljava/lang/Object;)Lcom/mojang/serialization/MapCodec;
+        39: invokedynamic #384,  0            // InvokeDynamic #8:apply:()Ljava/util/function/Function;
+        44: invokevirtual #360                // Method com/mojang/serialization/MapCodec.forGetter:(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;
+        47: invokevirtual #388                // Method com/mojang/serialization/codecs/RecordCodecBuilder$Instance.group:(Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;)Lcom/mojang/datafixers/Products$P2;
+        50: aload_0
+        51: invokedynamic #398,  0            // InvokeDynamic #9:apply:()Ljava/util/function/BiFunction;
+        56: invokevirtual #401                // Method com/mojang/datafixers/Products$P2.apply:(Lcom/mojang/datafixers/kinds/Applicative;Ljava/util/function/BiFunction;)Lcom/mojang/datafixers/kinds/App;
+        59: areturn
+
+  private static java.util.List method_51661(net.minecraft.class_391$class_392);
+    Code:
+         0: aload_0
+         1: getfield      #75                 // Field field_44772:Ljava/util/List;
+         4: areturn
+
+  private static net.minecraft.class_2960 method_51665(net.minecraft.class_391$class_392);
+    Code:
+         0: aload_0
+         1: getfield      #73                 // Field field_2304:Lnet/minecraft/class_2960;
+         4: areturn
+
+  static {};
+    Code:
+         0: invokedynamic #408,  0            // InvokeDynamic #10:apply:()Ljava/util/function/Function;
+         5: invokestatic  #412                // Method com/mojang/serialization/codecs/RecordCodecBuilder.mapCodec:(Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;
+         8: putstatic     #414                // Field field_44771:Lcom/mojang/serialization/MapCodec;
+        11: return
+}

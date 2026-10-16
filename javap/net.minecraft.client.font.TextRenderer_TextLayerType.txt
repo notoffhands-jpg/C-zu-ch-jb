@@ -1,0 +1,76 @@
+// net/minecraft/client/font/TextRenderer$TextLayerType = net/minecraft/class_327$class_6415
+Compiled from "class_327.java"
+public final class net.minecraft.class_327$class_6415 extends java.lang.Enum<net.minecraft.class_327$class_6415> {
+  public static final net.minecraft.class_327$class_6415 field_33993;
+
+  public static final net.minecraft.class_327$class_6415 field_33994;
+
+  public static final net.minecraft.class_327$class_6415 field_33995;
+
+  private static final net.minecraft.class_327$class_6415[] field_33996;
+
+  public static net.minecraft.class_327$class_6415[] values();
+    Code:
+         0: getstatic     #23                 // Field field_33996:[Lnet/minecraft/class_327$class_6415;
+         3: invokevirtual #28                 // Method "[Lnet/minecraft/class_327$class_6415;".clone:()Ljava/lang/Object;
+         6: checkcast     #24                 // class "[Lnet/minecraft/class_327$class_6415;"
+         9: areturn
+
+  public static net.minecraft.class_327$class_6415 valueOf(java.lang.String);
+    Code:
+         0: ldc           #2                  // class net/minecraft/class_327$class_6415
+         2: aload_0
+         3: invokestatic  #34                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+         6: checkcast     #2                  // class net/minecraft/class_327$class_6415
+         9: areturn
+
+  private net.minecraft.class_327$class_6415();
+    Code:
+         0: aload_0
+         1: aload_1
+         2: iload_2
+         3: invokespecial #41                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+         6: return
+
+  private static net.minecraft.class_327$class_6415[] method_37344();
+    Code:
+         0: iconst_3
+         1: anewarray     #2                  // class net/minecraft/class_327$class_6415
+         4: dup
+         5: iconst_0
+         6: getstatic     #46                 // Field field_33993:Lnet/minecraft/class_327$class_6415;
+         9: aastore
+        10: dup
+        11: iconst_1
+        12: getstatic     #48                 // Field field_33994:Lnet/minecraft/class_327$class_6415;
+        15: aastore
+        16: dup
+        17: iconst_2
+        18: getstatic     #50                 // Field field_33995:Lnet/minecraft/class_327$class_6415;
+        21: aastore
+        22: areturn
+
+  static {};
+    Code:
+         0: new           #2                  // class net/minecraft/class_327$class_6415
+         3: dup
+         4: ldc           #53                 // String NORMAL
+         6: iconst_0
+         7: invokespecial #54                 // Method "<init>":(Ljava/lang/String;I)V
+        10: putstatic     #46                 // Field field_33993:Lnet/minecraft/class_327$class_6415;
+        13: new           #2                  // class net/minecraft/class_327$class_6415
+        16: dup
+        17: ldc           #56                 // String SEE_THROUGH
+        19: iconst_1
+        20: invokespecial #54                 // Method "<init>":(Ljava/lang/String;I)V
+        23: putstatic     #48                 // Field field_33994:Lnet/minecraft/class_327$class_6415;
+        26: new           #2                  // class net/minecraft/class_327$class_6415
+        29: dup
+        30: ldc           #58                 // String POLYGON_OFFSET
+        32: iconst_2
+        33: invokespecial #54                 // Method "<init>":(Ljava/lang/String;I)V
+        36: putstatic     #50                 // Field field_33995:Lnet/minecraft/class_327$class_6415;
+        39: invokestatic  #60                 // Method method_37344:()[Lnet/minecraft/class_327$class_6415;
+        42: putstatic     #23                 // Field field_33996:[Lnet/minecraft/class_327$class_6415;
+        45: return
+}

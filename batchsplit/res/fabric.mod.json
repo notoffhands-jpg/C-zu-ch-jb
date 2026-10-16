@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "batchsplit",
+  "version": "1.3.2",
+  "name": "BatchSplit",
+  "description": "Splits huge entity draw calls (hundreds of bots: shield patterns, shared skins) below 65536 vertices so VulkanMod draws them correctly, and sorts translucent geometry with an identical but much faster radix sort.",
+  "environment": "client",
+  "mixins": ["batchsplit.mixins.json"],
+  "depends": { "fabricloader": ">=0.16.0", "minecraft": "~1.21.11" }
+}

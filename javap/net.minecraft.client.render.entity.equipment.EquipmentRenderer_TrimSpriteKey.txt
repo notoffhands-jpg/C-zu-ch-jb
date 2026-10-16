@@ -1,0 +1,73 @@
+// net/minecraft/client/render/entity/equipment/EquipmentRenderer$TrimSpriteKey = net/minecraft/class_10197$class_10199
+Compiled from "class_10197.java"
+final class net.minecraft.class_10197$class_10199 extends java.lang.Record {
+  private final net.minecraft.class_8053 comp_3199;
+
+  private final net.minecraft.class_10186$class_10190 comp_3200;
+
+  private final net.minecraft.class_5321<net.minecraft.class_10394> comp_3201;
+
+  net.minecraft.class_10197$class_10199(net.minecraft.class_8053, net.minecraft.class_10186$class_10190, net.minecraft.class_5321<net.minecraft.class_10394>);
+    Code:
+         0: aload_0
+         1: invokespecial #38                 // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #40                 // Field comp_3199:Lnet/minecraft/class_8053;
+         9: aload_0
+        10: aload_2
+        11: putfield      #42                 // Field comp_3200:Lnet/minecraft/class_10186$class_10190;
+        14: aload_0
+        15: aload_3
+        16: putfield      #44                 // Field comp_3201:Lnet/minecraft/class_5321;
+        19: return
+
+  public net.minecraft.class_2960 method_65573();
+    Code:
+         0: aload_0
+         1: getfield      #40                 // Field comp_3199:Lnet/minecraft/class_8053;
+         4: aload_0
+         5: getfield      #42                 // Field comp_3200:Lnet/minecraft/class_10186$class_10190;
+         8: invokevirtual #52                 // Method net/minecraft/class_10186$class_10190.method_67293:()Ljava/lang/String;
+        11: aload_0
+        12: getfield      #44                 // Field comp_3201:Lnet/minecraft/class_5321;
+        15: invokevirtual #58                 // Method net/minecraft/class_8053.method_67225:(Ljava/lang/String;Lnet/minecraft/class_5321;)Lnet/minecraft/class_2960;
+        18: areturn
+
+  public final java.lang.String toString();
+    Code:
+         0: aload_0
+         1: invokedynamic #74,  0             // InvokeDynamic #0:toString:(Lnet/minecraft/class_10197$class_10199;)Ljava/lang/String;
+         6: areturn
+
+  public final int hashCode();
+    Code:
+         0: aload_0
+         1: invokedynamic #79,  0             // InvokeDynamic #0:hashCode:(Lnet/minecraft/class_10197$class_10199;)I
+         6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #85,  0             // InvokeDynamic #0:equals:(Lnet/minecraft/class_10197$class_10199;Ljava/lang/Object;)Z
+         7: ireturn
+
+  public net.minecraft.class_8053 comp_3199();
+    Code:
+         0: aload_0
+         1: getfield      #40                 // Field comp_3199:Lnet/minecraft/class_8053;
+         4: areturn
+
+  public net.minecraft.class_10186$class_10190 comp_3200();
+    Code:
+         0: aload_0
+         1: getfield      #42                 // Field comp_3200:Lnet/minecraft/class_10186$class_10190;
+         4: areturn
+
+  public net.minecraft.class_5321<net.minecraft.class_10394> comp_3201();
+    Code:
+         0: aload_0
+         1: getfield      #44                 // Field comp_3201:Lnet/minecraft/class_5321;
+         4: areturn
+}
