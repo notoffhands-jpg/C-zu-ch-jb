@@ -28,6 +28,7 @@ public final class Frames {
         players = 0;
         worldNanos = 0L;
         dev.armyfps.parallel.ParallelModels.drawnThisFrame = 0;
+        dev.armyfps.parallel.ParallelItems.drawnThisFrame = 0;
         if (AVAILABLE) {
             FrameEvent event = new FrameEvent();
             if (event.isEnabled()) {
@@ -44,6 +45,7 @@ public final class Frames {
             event.worldNanos = worldNanos;
             event.players = players;
             event.parallelModels = dev.armyfps.parallel.ParallelModels.drawnThisFrame;
+            event.parallelItems = dev.armyfps.parallel.ParallelItems.drawnThisFrame;
             event.enabled = ArmyFps.enabled;
             event.commit();
         }

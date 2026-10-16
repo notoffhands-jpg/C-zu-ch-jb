@@ -28,6 +28,9 @@ public final class FrameEvent extends Event {
     @Label("Models built on worker threads")
     public int parallelModels;
 
+    @Label("Items built on worker threads")
+    public int parallelItems;
+
     @Label("ArmyFPS on")
     public boolean enabled;
 }

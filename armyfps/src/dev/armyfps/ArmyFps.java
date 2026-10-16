@@ -32,6 +32,10 @@ public final class ArmyFps {
     public static boolean fastSort = true;
     /** Pose and build players, bots and their armour on several CPU cores. */
     public static boolean parallel = true;
+    /** Also held/dropped items (swords, axes ... with glint) on several cores. */
+    public static boolean parallelItems = true;
+    /** Keep laid-out name tags instead of laying them out again every frame. */
+    public static boolean textCache = true;
     /** Threads for that, the render thread included. */
     public static int parallelThreads = Math.max(2, Math.min(12, Runtime.getRuntime().availableProcessors() / 2));
     /** Below this many humanoid models in a frame, the render thread does it alone (not worth it). */
@@ -93,6 +97,8 @@ public final class ArmyFps {
         fastSort = !"false".equalsIgnoreCase(properties.getProperty("fastSort", "true").trim());
         toggleKey = (int)number(properties, "toggleKey", toggleKey);
         parallel = !"false".equalsIgnoreCase(properties.getProperty("parallel", "true").trim());
+        parallelItems = !"false".equalsIgnoreCase(properties.getProperty("parallelItems", "true").trim());
+        textCache = !"false".equalsIgnoreCase(properties.getProperty("textCache", "true").trim());
         parallelThreads = Math.max(1, (int)number(properties, "parallelThreads", parallelThreads));
         parallelMinCommands = Math.max(1, (int)number(properties, "parallelMinCommands", parallelMinCommands));
         save();
@@ -115,6 +121,8 @@ public final class ArmyFps {
         properties.setProperty("fastSort", String.valueOf(fastSort));
         properties.setProperty("toggleKey", String.valueOf(toggleKey));
         properties.setProperty("parallel", String.valueOf(parallel));
+        properties.setProperty("parallelItems", String.valueOf(parallelItems));
+        properties.setProperty("textCache", String.valueOf(textCache));
         properties.setProperty("parallelThreads", String.valueOf(parallelThreads));
         properties.setProperty("parallelMinCommands", String.valueOf(parallelMinCommands));
         try (Writer writer = Files.newBufferedWriter(FILE)) {
