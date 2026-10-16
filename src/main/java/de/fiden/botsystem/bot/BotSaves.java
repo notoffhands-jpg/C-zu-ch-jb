@@ -304,7 +304,8 @@ public final class BotSaves {
         GameProfile profile = new GameProfile(Bots.offlineUuid(botName), botName);
         if (o.has("skinValue") || o.has("skinColor") || o.has("skinFile")) {
             Multimap<String, Property> map = LinkedHashMultimap.create();
-            if (o.has("skinValue")) {
+            // A coloured bot goes without its real skin: the client mod only colours the plain skin.
+            if (o.has("skinValue") && !o.has("skinColor")) {
                 map.put("textures", new Property("textures", o.get("skinValue").getAsString(), str(o, "skinSignature")));
             }
 
